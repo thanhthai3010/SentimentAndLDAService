@@ -166,15 +166,15 @@ public class LDAProcess implements Serializable {
 		 * TopicID: <DocumentID, Probability>
 		 */
 		Map<Integer, HashMap<Long, Double>> topicDoc = new HashMap<Integer, HashMap<Long, Double>>();
-		int idx = 0;
+		int idxTopicID = 1;
 		for (Tuple2<long[], double[]> tpDoc : topicDocuments) {
 			HashMap<Long, Double> valueOfRs = new HashMap<Long, Double>();
 			for (int i = 0; i < tpDoc._1.length; i++) {
 				valueOfRs.put(tpDoc._1[i], tpDoc._2[i]);
 			}
-			topicDoc.put(idx, valueOfRs);
+			topicDoc.put(idxTopicID, valueOfRs);
 			// increment value index of TopicID
-			idx++;
+			idxTopicID++;
 
 		}
 		
@@ -209,7 +209,7 @@ public class LDAProcess implements Serializable {
 		 */
 		Map<Integer, HashMap<String, Double>> describeTopic = new HashMap<Integer, HashMap<String,Double>>();
 		
-		int idxOfTopic = 0;
+		int idxOfTopic = 1;
 		for (Tuple2<int[], double[]> topic : topicIndices) {
 			HashMap<String, Double> valueOfRs = new HashMap<String, Double>();
 			
@@ -349,7 +349,7 @@ public class LDAProcess implements Serializable {
 		List<Double> arrLog = new ArrayList<Double>();
 		int theBeginIndex = 2;
 		
-		for (int i = theBeginIndex; i < 7; i++) {
+		for (int i = theBeginIndex; i < 10; i++) {
 			
 			DistributedLDAModel estimateLDA =	(DistributedLDAModel) new LDA()
 			.setK(theBeginIndex).setMaxIterations(maxIterations).run(inputVectorForLDA);

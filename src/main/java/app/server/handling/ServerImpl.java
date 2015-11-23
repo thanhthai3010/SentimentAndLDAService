@@ -16,6 +16,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
@@ -137,6 +138,7 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 	// TODO
 	@Override
 	public void processLDA(InputDataForLDA inputDataForLDA) {
+		long startTime = System.currentTimeMillis();
 		List<String> beforeSpell = new ArrayList<String>();
 		// before processLDA we need to check spelling.
 		for (String input : inputDataForLDA.getListOfPostFBForLDA()) {
@@ -147,6 +149,9 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 		System.out.println("Finish check spell");
 		inputDataForLDA.setListOfPostFBForLDA(beforeSpell);
 		LDAProcess.mainProcessLDA(inputDataForLDA);
+		long endTime   = System.currentTimeMillis();
+		long totalTime = endTime - startTime;
+		System.out.println("Time to run this program: " + TimeUnit.MILLISECONDS.toSeconds(totalTime));
 	}
 	
 }
