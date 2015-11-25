@@ -10,7 +10,7 @@ import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.Function;
 import org.apache.spark.api.java.function.VoidFunction;
 
-import utils.SparkUtil;
+import app.utils.spark.SparkUtil;
 
 /**
  * get score of String input for check this is positive or negetive

@@ -7,7 +7,7 @@ import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.PairFunction;
 
 import scala.Tuple2;
-import utils.SparkUtil;
+import app.utils.spark.SparkUtil;
 
 /**
  * get data for correct dictionary
