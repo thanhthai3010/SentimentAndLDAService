@@ -26,8 +26,8 @@ import org.apache.spark.mllib.clustering.LDA;
 import org.apache.spark.mllib.linalg.Vector;
 import org.apache.spark.mllib.linalg.Vectors;
 
+import app.utils.dto.InputDataForLDA;
 import scala.Tuple2;
-import spring.fb.demo.dto.InputDataForLDA;
 import utils.SparkUtil;
 
 /**
@@ -41,6 +41,8 @@ public class LDAProcess implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
+	private static Map<Integer, HashMap<String, Double>> describeTopic = new HashMap<Integer, HashMap<String, Double>>();
 
 	/**
 	 * JavaSparkContext
@@ -143,63 +145,62 @@ public class LDAProcess implements Serializable {
 		 */
 		DistributedLDAModel ldaModel = runLDAModel(inputVectorForLDA, maxIterations);
 
-		JavaRDD<Tuple2<Object, Vector>> topicdistributes = ldaModel
-				.topicDistributions().toJavaRDD();
+//		JavaRDD<Tuple2<Object, Vector>> topicdistributes = ldaModel
+//				.topicDistributions().toJavaRDD();
 		
 		/**
 		 * Get describe for each Topics
 		 * In this case, this is: Topic: term1, term2
 		 */
-		Tuple2<int[], double[]>[] topicIndices = ldaModel
-				.describeTopics(maxTermsPerTopic);
+		Tuple2<int[], double[]>[] topicIndices = ldaModel.describeTopics(maxTermsPerTopic);
 
-		System.out.println("Document-Topic distribution: \n"
-				+ topicdistributes.collect());
+//		System.out.println("Document-Topic distribution: \n"
+//				+ topicdistributes.collect());
 
 		/**
 		 * We need to know how many Documents are talking about each Topic
 		 */
-		Tuple2<long[], double[]>[] topicDocuments = ldaModel.topDocumentsPerTopic(maxDocumentPerTopic);
+//		Tuple2<long[], double[]>[] topicDocuments = ldaModel.topDocumentsPerTopic(maxDocumentPerTopic);
 		
 		/**
 		 * This will contain
 		 * TopicID: <DocumentID, Probability>
 		 */
-		Map<Integer, HashMap<Long, Double>> topicDoc = new HashMap<Integer, HashMap<Long, Double>>();
-		int idxTopicID = 1;
-		for (Tuple2<long[], double[]> tpDoc : topicDocuments) {
-			HashMap<Long, Double> valueOfRs = new HashMap<Long, Double>();
-			for (int i = 0; i < tpDoc._1.length; i++) {
-				valueOfRs.put(tpDoc._1[i], tpDoc._2[i]);
-			}
-			topicDoc.put(idxTopicID, valueOfRs);
-			// increment value index of TopicID
-			idxTopicID++;
-
-		}
+//		Map<Integer, HashMap<Long, Double>> topicDoc = new HashMap<Integer, HashMap<Long, Double>>();
+//		int idxTopicID = 1;
+//		for (Tuple2<long[], double[]> tpDoc : topicDocuments) {
+//			HashMap<Long, Double> valueOfRs = new HashMap<Long, Double>();
+//			for (int i = 0; i < tpDoc._1.length; i++) {
+//				valueOfRs.put(tpDoc._1[i], tpDoc._2[i]);
+//			}
+//			topicDoc.put(idxTopicID, valueOfRs);
+//			// increment value index of TopicID
+//			idxTopicID++;
+//
+//		}
 		
 		/**
 		 * writing data Topic- List of Documents
 		 */
-		try (Writer writer = new BufferedWriter(new OutputStreamWriter(
-				new FileOutputStream("TOPIC-DOCUMENT.txt"), "utf-8"))) {
-
-			for (int key : topicDoc.keySet()) {
-				writer.write("TOPIC: ");
-
-				// write key
-				writer.write(key + "\n");
-				HashMap<Long, Double> value = topicDoc.get(key);
-				for (Entry<Long, Double> entry : value.entrySet()) {
-					writer.write(entry.getKey() + ":\t" + entry.getValue()
-							+ "\n");
-				}
-
-			}
-			writer.write("\n");
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
+//		try (Writer writer = new BufferedWriter(new OutputStreamWriter(
+//				new FileOutputStream("TOPIC-DOCUMENT.txt"), "utf-8"))) {
+//
+//			for (int key : topicDoc.keySet()) {
+//				writer.write("TOPIC: ");
+//
+//				// write key
+//				writer.write(key + "\n");
+//				HashMap<Long, Double> value = topicDoc.get(key);
+//				for (Entry<Long, Double> entry : value.entrySet()) {
+//					writer.write(entry.getKey() + ":\t" + entry.getValue()
+//							+ "\n");
+//				}
+//
+//			}
+//			writer.write("\n");
+//		} catch (Exception e) {
+//			// TODO: handle exception
+//		}
 
 
 		
@@ -207,7 +208,7 @@ public class LDAProcess implements Serializable {
 		 * This will contain
 		 * TopicID, <Word, Probability>
 		 */
-		Map<Integer, HashMap<String, Double>> describeTopic = new HashMap<Integer, HashMap<String,Double>>();
+//		Map<Integer, HashMap<String, Double>> describeTopic = new HashMap<Integer, HashMap<String,Double>>();
 		
 		int idxOfTopic = 1;
 		for (Tuple2<int[], double[]> topic : topicIndices) {
@@ -233,7 +234,7 @@ public class LDAProcess implements Serializable {
 			
 			
 			for (int key : describeTopic.keySet()) {
-				writer.write("TOPIC: \n");
+				writer.write("TOPIC: " + key + "\n");
 
 				// write key
 				HashMap<String, Double> value = describeTopic.get(key);
@@ -349,7 +350,7 @@ public class LDAProcess implements Serializable {
 		List<Double> arrLog = new ArrayList<Double>();
 		int theBeginIndex = 2;
 		
-		for (int i = theBeginIndex; i < 10; i++) {
+		for (int i = theBeginIndex; i < 8; i++) {
 			
 			DistributedLDAModel estimateLDA =	(DistributedLDAModel) new LDA()
 			.setK(theBeginIndex).setMaxIterations(maxIterations).run(inputVectorForLDA);
@@ -366,5 +367,9 @@ public class LDAProcess implements Serializable {
 		
 		System.out.println("Done");
 		return ldaModel;
+	}
+	
+	public static Map<Integer, HashMap<String, Double>> getDescribeTopics(){
+		return describeTopic;
 	}
 }
