@@ -37,7 +37,7 @@ import app.utils.dto.TextValue;
 import app.utils.dto.Topic;
 import scala.Tuple2;
 import spellcheker.Checker;
-import utils.SparkUtil;
+import app.utils.spark.SparkUtil;
 import vietSentiData.VietSentiData;
 import vn.hus.nlp.tokenizer.VietTokenizer;
 
