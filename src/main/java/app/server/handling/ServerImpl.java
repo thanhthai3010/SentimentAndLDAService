@@ -1,41 +1,22 @@
 package app.server.handling;
 
-import java.io.BufferedWriter;
-import java.io.FileOutputStream;
-import java.io.OutputStreamWriter;
-import java.io.Writer;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.spark.api.java.JavaPairRDD;
-import org.apache.spark.api.java.JavaRDD;
-import org.apache.spark.api.java.JavaSparkContext;
-import org.apache.spark.api.java.function.FlatMapFunction;
-import org.apache.spark.api.java.function.Function;
-import org.apache.spark.api.java.function.Function2;
-import org.apache.spark.api.java.function.PairFunction;
-import org.apache.spark.mllib.clustering.DistributedLDAModel;
-import org.apache.spark.mllib.clustering.LDA;
-import org.apache.spark.mllib.linalg.Vector;
-import org.apache.spark.mllib.linalg.Vectors;
-
 import app.processing.lda.LDAProcess;
 import app.utils.dto.InputDataForLDA;
 import app.utils.dto.ListTopic;
 import app.utils.dto.TextValue;
 import app.utils.dto.Topic;
-import scala.Tuple2;
 import spellcheker.Checker;
 import app.utils.spark.SparkUtil;
 import vietSentiData.VietSentiData;
