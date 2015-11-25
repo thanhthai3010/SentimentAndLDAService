@@ -28,7 +28,7 @@ import org.apache.spark.mllib.linalg.Vectors;
 
 import app.utils.dto.InputDataForLDA;
 import scala.Tuple2;
-import utils.SparkUtil;
+import app.utils.spark.SparkUtil;
 
 /**
  * Implement Process of LDA Model
