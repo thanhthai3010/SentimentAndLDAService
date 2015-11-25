@@ -31,9 +31,12 @@ import org.apache.spark.mllib.linalg.Vector;
 import org.apache.spark.mllib.linalg.Vectors;
 
 import app.processing.lda.LDAProcess;
+import app.utils.dto.InputDataForLDA;
+import app.utils.dto.ListTopic;
+import app.utils.dto.TextValue;
+import app.utils.dto.Topic;
 import scala.Tuple2;
 import spellcheker.Checker;
-import spring.fb.demo.dto.InputDataForLDA;
 import utils.SparkUtil;
 import vietSentiData.VietSentiData;
 import vn.hus.nlp.tokenizer.VietTokenizer;
@@ -153,5 +156,25 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 		long totalTime = endTime - startTime;
 		System.out.println("Time to run this program: " + TimeUnit.MILLISECONDS.toSeconds(totalTime));
 	}
+
+	@Override
+	public ListTopic getDescribeTopics() {
+		Map<Integer, HashMap<String, Double>> describeTopics = LDAProcess.getDescribeTopics();
+		
+		ListTopic listTP = new ListTopic();
+
+		for (Integer key : describeTopics.keySet()) {
+			Topic tp = new Topic(key);
+			HashMap<String, Double> value = describeTopics.get(key);
+			for (Entry<String, Double> entry : value.entrySet()) {
+				TextValue ns = new TextValue(entry.getKey(), entry.getValue());
+				tp.getTextValues().add(ns);
+			}
+			listTP.add(tp);
+		}
+		
+		return listTP;
+	}
+	
 	
 }

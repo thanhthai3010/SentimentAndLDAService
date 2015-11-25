@@ -2,8 +2,8 @@ package app.server.handling;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
-
-import spring.fb.demo.dto.InputDataForLDA;
+import app.utils.dto.InputDataForLDA;
+import app.utils.dto.ListTopic;
 
 
 public interface ServerInterf extends Remote {
@@ -20,4 +20,6 @@ public interface ServerInterf extends Remote {
 	 * @throws RemoteException
 	 */
 	public void processLDA(InputDataForLDA input) throws RemoteException;
+	
+	public ListTopic getDescribeTopics() throws RemoteException;
 }
