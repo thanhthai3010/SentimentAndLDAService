@@ -103,8 +103,15 @@ public class LDAProcess implements Serializable {
 	 */
 	private static JavaSparkContext sc;
 
+	/**
+	 * Function to process LDA, this method using FacebookData from client
+	 * @param inputDataForLDA FacebookData
+	 */
 	public static void mainProcessLDA(FacebookData inputDataForLDA) {
 		
+		/**
+		 * Stored data for sentiment process
+		 */
 		fbDataForSentiment = inputDataForLDA;
 	
 		tokenizer = new VietTokenizer("tokenizer.properties");
@@ -462,6 +469,11 @@ public class LDAProcess implements Serializable {
 		return topicDoc;
 	}
 	
+	/**
+	 * Get data for Sentimen Process
+	 * @param topicID value of topicID, user has clicked
+	 * @return List<String> containt status and comment of topicID
+	 */
 	public static List<String> getFbDataForSentiment(int topicID){
 		
 		/**
