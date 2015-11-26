@@ -5,15 +5,14 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.TimeUnit;
 
 import app.processing.lda.LDAProcess;
-import app.utils.dto.InputDataForLDA;
+import app.utils.dto.FacebookData;
+import app.utils.dto.ListPieData;
 import app.utils.dto.ListTopic;
 import app.utils.dto.TextValue;
 import app.utils.dto.Topic;
@@ -77,11 +76,6 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 		if (isNeedToCheck) {
 			// check spell
 			try {
-				/*String[] rsCheckSpell = check.correct(tokenizer
-						.tokenize(inputText));
-				rs = VietSentiData.scoreTokens(rsCheckSpell);
-				*/
-				////////////////////////////////////////////////////
 				String[] rsCheckedAndToken = runSpellCheckAndToken(inputText);
 				if(rsCheckedAndToken.length > 0){
 					rs = VietSentiData.scoreTokens(rsCheckedAndToken);
@@ -101,45 +95,30 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 	@Override
 	public String[] runSpellCheckAndToken(String inputText) throws RemoteException {
 
-		// check spell
-		//String[] rsCheckSpell = check.correct(tokenizer.tokenize(inputText));
-		String temp[] = new String[1];
-		temp[0] = inputText.replaceAll("[\n\r]", " ");
-//		String[] rsParseEmoticon = check.parseEmoticons(temp);
-//		if(rsParseEmoticon != null && rsParseEmoticon.length > 0 && rsParseEmoticon[0] != null){
-//			temp = tokenizer.tokenize(rsParseEmoticon[0]);
-//		}
-		//String[] rsCheckSpell = check.correct(temp);
-		String[] rsToken = new String[1];
-		//if(rsCheckSpell.length > 0){
-		//	rsToken = tokenizer.tokenize(rsCheckSpell[0]);
-		//	rs = VietSentiData.scoreTokens(rsToken);
-		//}
+		String[] rsCheckedAndToken = new String [1];
+		String afterSpell = "";
+		String[] tokenText = tokenizer.tokenize(inputText.replaceAll("[\n\r0-9]", ""));			
+		afterSpell = Checker.correct(tokenText[0]);
+		rsCheckedAndToken = afterSpell.split(" ");
 
-		return temp;
+		return rsCheckedAndToken;
 	}
 
 	// TODO
 	@Override
-	public void processLDA(InputDataForLDA inputDataForLDA) {
+	public void processLDA(FacebookData inputDataForLDA) {
 		long startTime = System.currentTimeMillis();
-		List<String> beforeSpell = new ArrayList<String>();
-		// before processLDA we need to check spelling.
-		for (String input : inputDataForLDA.getListOfPostFBForLDA()) {
-			String[] tokenText = tokenizer.tokenize(input.replaceAll("[0-9]", ""));			
-			String spell = Checker.correct(tokenText[0]);
-			beforeSpell.add(spell);
-		}
-		System.out.println("Finish check spell");
-		inputDataForLDA.setListOfPostFBForLDA(beforeSpell);
+		
 		LDAProcess.mainProcessLDA(inputDataForLDA);
+		
 		long endTime   = System.currentTimeMillis();
 		long totalTime = endTime - startTime;
+		
 		System.out.println("Time to run this program: " + TimeUnit.MILLISECONDS.toSeconds(totalTime));
 	}
 
 	@Override
-	public ListTopic getDescribeTopics() {
+	public ListTopic getDescribleTopics() {
 		Map<Integer, HashMap<String, Double>> describeTopics = LDAProcess.getDescribeTopics();
 		
 		ListTopic listTP = new ListTopic();
@@ -155,6 +134,12 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 		}
 		
 		return listTP;
+	}
+
+	@Override
+	public ListPieData processSentiment(int topicID) throws RemoteException {
+		
+		return null;
 	}
 	
 	

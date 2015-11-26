@@ -26,8 +26,10 @@ import org.apache.spark.mllib.clustering.LDA;
 import org.apache.spark.mllib.linalg.Vector;
 import org.apache.spark.mllib.linalg.Vectors;
 
-import app.utils.dto.InputDataForLDA;
 import scala.Tuple2;
+import spellcheker.Checker;
+import vn.hus.nlp.tokenizer.VietTokenizer;
+import app.utils.dto.FacebookData;
 import app.utils.spark.SparkUtil;
 
 /**
@@ -42,31 +44,68 @@ public class LDAProcess implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	
+	/**
+	 * Determine number of Documents are talking about each Topic
+	 */
+	private static final int MAX_DOCUMENT_PER_TOPIC_20 = 20;
+
+	/**
+	 * Max words for each topic is there
+	 */
+	private static final int MAX_TERMS_PER_TOPIC_10 = 10;
+
+	/**
+	 * Number of iterations
+	 */
+	private static final int MAX_ITERATIONS_10 = 10;
+	
+	/**
+	 * Some parameter to run LDA Model
+	 * TODO: need to estimate value of this k-means
+	 */
+	private static final int DEFAULT_NUMBER_OF_TOPIC = 2;
+	
+	/**
+	 * This will contain
+	 * TopicID, <Word, Probability>
+	 */
 	private static Map<Integer, HashMap<String, Double>> describeTopic = new HashMap<Integer, HashMap<String, Double>>();
 
+	/**
+	 * This will contain
+	 * TopicID: <DocumentID, Probability>
+	 */
+	private static Map<Integer, HashMap<Long, Double>> topicDoc = new HashMap<Integer, HashMap<Long,Double>>();
+	
+	private static VietTokenizer tokenizer;
+	
+	private static FacebookData fbDataForSentiment;
+	
 	/**
 	 * JavaSparkContext
 	 */
 	private static JavaSparkContext sc;
 
-	public static void mainProcessLDA(InputDataForLDA inputDataForLDA) {
+	public static void mainProcessLDA(FacebookData inputDataForLDA) {
 		
-		// Some parameter to run LDA Model
-		//TODO: need to estimate value of this k-means
-		//int numTopics = 7;
-		int maxIterations = 10;
-		// Max words for each topic is there
-		int maxTermsPerTopic = 10;
+		fbDataForSentiment = inputDataForLDA;
+	
+		tokenizer = new VietTokenizer("tokenizer.properties");
 		
-		// Determine number of Documents are talking about this Topic
-		int maxDocumentPerTopic = 20;
+		List<String> checkSpell = new ArrayList<String>();
 		
+		// before processLDA we need to check spelling.
+		for (String input : inputDataForLDA.getFbDataForService().keySet()) {
+			
+			String[] tokenText = tokenizer.tokenize(input.replaceAll("[0-9]", ""));			
+			String spell = Checker.correct(tokenText[0]);
+			checkSpell.add(spell);
+		}
 		
 		// get JavaSparkContext from SparkUtil
 		sc = SparkUtil.getJavaSparkContext();
 
-		JavaRDD<String> data = sc.parallelize(inputDataForLDA
-				.getListOfPostFBForLDA());
+		JavaRDD<String> data = sc.parallelize(checkSpell);
 
 		/**
 		 * Transform data input into a List of VietNamese Words
@@ -143,7 +182,7 @@ public class LDAProcess implements Serializable {
 		/**
 		 * Run LDA model
 		 */
-		DistributedLDAModel ldaModel = runLDAModel(inputVectorForLDA, maxIterations);
+		DistributedLDAModel ldaModel = runLDAModel(inputVectorForLDA, MAX_ITERATIONS_10);
 
 //		JavaRDD<Tuple2<Object, Vector>> topicdistributes = ldaModel
 //				.topicDistributions().toJavaRDD();
@@ -152,63 +191,47 @@ public class LDAProcess implements Serializable {
 		 * Get describe for each Topics
 		 * In this case, this is: Topic: term1, term2
 		 */
-		Tuple2<int[], double[]>[] topicIndices = ldaModel.describeTopics(maxTermsPerTopic);
-
-//		System.out.println("Document-Topic distribution: \n"
-//				+ topicdistributes.collect());
+		Tuple2<int[], double[]>[] topicIndices = ldaModel.describeTopics(MAX_TERMS_PER_TOPIC_10);
 
 		/**
 		 * We need to know how many Documents are talking about each Topic
 		 */
-//		Tuple2<long[], double[]>[] topicDocuments = ldaModel.topDocumentsPerTopic(maxDocumentPerTopic);
+		Tuple2<long[], double[]>[] topicDocuments = ldaModel.topDocumentsPerTopic(MAX_DOCUMENT_PER_TOPIC_20);
 		
-		/**
-		 * This will contain
-		 * TopicID: <DocumentID, Probability>
-		 */
-//		Map<Integer, HashMap<Long, Double>> topicDoc = new HashMap<Integer, HashMap<Long, Double>>();
-//		int idxTopicID = 1;
-//		for (Tuple2<long[], double[]> tpDoc : topicDocuments) {
-//			HashMap<Long, Double> valueOfRs = new HashMap<Long, Double>();
-//			for (int i = 0; i < tpDoc._1.length; i++) {
-//				valueOfRs.put(tpDoc._1[i], tpDoc._2[i]);
-//			}
-//			topicDoc.put(idxTopicID, valueOfRs);
-//			// increment value index of TopicID
-//			idxTopicID++;
-//
-//		}
+		int idxTopicID = 1;
+		for (Tuple2<long[], double[]> tpDoc : topicDocuments) {
+			HashMap<Long, Double> valueOfRs = new HashMap<Long, Double>();
+			for (int i = 0; i < tpDoc._1.length; i++) {
+				valueOfRs.put(tpDoc._1[i], tpDoc._2[i]);
+			}
+			topicDoc.put(idxTopicID, valueOfRs);
+			// increment value index of TopicID
+			idxTopicID++;
+
+		}
 		
 		/**
 		 * writing data Topic- List of Documents
 		 */
-//		try (Writer writer = new BufferedWriter(new OutputStreamWriter(
-//				new FileOutputStream("TOPIC-DOCUMENT.txt"), "utf-8"))) {
-//
-//			for (int key : topicDoc.keySet()) {
-//				writer.write("TOPIC: ");
-//
-//				// write key
-//				writer.write(key + "\n");
-//				HashMap<Long, Double> value = topicDoc.get(key);
-//				for (Entry<Long, Double> entry : value.entrySet()) {
-//					writer.write(entry.getKey() + ":\t" + entry.getValue()
-//							+ "\n");
-//				}
-//
-//			}
-//			writer.write("\n");
-//		} catch (Exception e) {
-//			// TODO: handle exception
-//		}
+		try (Writer writer = new BufferedWriter(new OutputStreamWriter(
+				new FileOutputStream("TOPIC-DOCUMENT.txt"), "utf-8"))) {
 
+			for (int key : topicDoc.keySet()) {
+				writer.write("TOPIC: ");
 
-		
-		/**
-		 * This will contain
-		 * TopicID, <Word, Probability>
-		 */
-//		Map<Integer, HashMap<String, Double>> describeTopic = new HashMap<Integer, HashMap<String,Double>>();
+				// write key
+				writer.write(key + "\n");
+				HashMap<Long, Double> value = topicDoc.get(key);
+				for (Entry<Long, Double> entry : value.entrySet()) {
+					writer.write(entry.getKey() + ":\t" + entry.getValue()
+							+ "\n");
+				}
+
+			}
+			writer.write("\n");
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 		
 		int idxOfTopic = 1;
 		for (Tuple2<int[], double[]> topic : topicIndices) {
@@ -246,6 +269,10 @@ public class LDAProcess implements Serializable {
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
+		
+		
+		//THAINT
+		getFbDataForSentiment(1);
 	}
 
 	/**
@@ -348,19 +375,18 @@ public class LDAProcess implements Serializable {
 		DistributedLDAModel ldaModel = null;
 		
 		List<Double> arrLog = new ArrayList<Double>();
-		int theBeginIndex = 2;
 		
-		for (int i = theBeginIndex; i < 8; i++) {
+		for (int i = DEFAULT_NUMBER_OF_TOPIC; i < 8; i++) {
 			
 			DistributedLDAModel estimateLDA =	(DistributedLDAModel) new LDA()
-			.setK(theBeginIndex).setMaxIterations(maxIterations).run(inputVectorForLDA);
+			.setK(i).setMaxIterations(maxIterations).run(inputVectorForLDA);
 			
 			// get logLikelihood() value:
 			double logLikelihood = estimateLDA.logLikelihood();
 			arrLog.add(logLikelihood);
 		}
 		Double maxValue = Collections.max(arrLog);
-		int theBestNumberOfTopic = arrLog.indexOf(maxValue) + theBeginIndex;
+		int theBestNumberOfTopic = arrLog.indexOf(maxValue) + DEFAULT_NUMBER_OF_TOPIC;
 		
 		ldaModel =	(DistributedLDAModel) new LDA()
 		.setK(theBestNumberOfTopic).setMaxIterations(maxIterations).run(inputVectorForLDA);
@@ -369,7 +395,51 @@ public class LDAProcess implements Serializable {
 		return ldaModel;
 	}
 	
+	/**
+	 * Get HashMap of Topic to create word-cloud
+	 * @return Map<Integer, HashMap<String, Double>>
+	 */
 	public static Map<Integer, HashMap<String, Double>> getDescribeTopics(){
 		return describeTopic;
 	}
+	
+	/**
+	 * Get HashMap using for calculate sentiment score
+	 * @return Map<Integer, HashMap<Long, Double>>
+	 */
+	public static Map<Integer, HashMap<Long, Double>> getTopicDocs() {
+		return topicDoc;
+	}
+	
+	public static List<String> getFbDataForSentiment(int topicID){
+		
+		List<String> commentsForSentiment = new ArrayList<String>();
+		
+		HashMap<Long, Double> listDocuments = topicDoc.get(topicID);
+		List<Long> listDocumentID = new ArrayList<Long>(listDocuments.keySet());
+		
+		// get list of status and get list of comment
+		// and get list of
+		List<String> listStatus = new ArrayList<String>(fbDataForSentiment.getFbDataForService().keySet());
+		
+		List<String> commentTemp = new ArrayList<String>();
+		for (Long dcID : listDocumentID) {
+			commentTemp.add(listStatus.get(Integer.parseInt(dcID.toString())));
+		}
+		
+		//
+		for (String item : commentTemp) {
+			commentsForSentiment.add(item);
+		}
+		
+		for (String it : commentTemp) {
+			for (String comment : fbDataForSentiment.getFbDataForService().get(it)) {
+				commentsForSentiment.add(comment);
+			}
+		}
+		
+		return commentsForSentiment;
+		
+	}
+	
 }

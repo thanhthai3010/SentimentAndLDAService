@@ -36,7 +36,8 @@ public class Stopwords {
 			"cuộc", "bờ_rào", "hình_như", "khóa", "mềnh", "loại", "chọn",
 			"chúng_ta", "cảm_thấy", "làm_sao", "khỏi", "bóng", "nghỉ", "vượt",
 			"có_lẽ", "thành", "thời", "cuốn", "chuyển", "bước", "bảng",
-			"thế_này", "hoài", "xong" };
+			"thế_này", "hoài", "xong", "khoảng", "thay", "cũng_như", "phần",
+			"minh", "rưỡi" };
 
 	public static Set<String> stopWordSet = new HashSet<String>(
 			Arrays.asList(stopwords));
