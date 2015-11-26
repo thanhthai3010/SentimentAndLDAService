@@ -10,6 +10,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -181,25 +182,25 @@ public class LDAProcess implements Serializable {
 		 * Create a list of Vocabulary
 		 */
 		int sizeOfVocabulary = termCounts.size();
-		List<String> vocabulary = new ArrayList<String>();
+		List<String> vocabularys = new ArrayList<String>();
 		for (int i = 0; i < sizeOfVocabulary; i++) {
-			vocabulary.add(termCounts.get(i)._1);
+			vocabularys.add(termCounts.get(i)._1);
 		}
 
 		/**
-		 * Create a list of Vocabulary and their word-count
+		 * Create a list of Vocabulary and set ID increment from 0 for each word.
 		 */
-		final HashMap<String, Long> vocabAndCount = new HashMap<String, Long>();
-		for (Tuple2<String, Long> item : sc.parallelize(vocabulary)
+		final HashMap<String, Long> wordAndIndexOfWord = new HashMap<String, Long>();
+		for (Tuple2<String, Long> item : sc.parallelize(vocabularys)
 				.zipWithIndex().collect()) {
-			vocabAndCount.put(item._1, item._2);
+			wordAndIndexOfWord.put(item._1, item._2);
 		}
 
 		/**
 		 * Create input data for LDA Model
 		 * Create a vector Word-Count vector
 		 */
-		JavaRDD<Tuple2<Long, Vector>> documents = wordCountVector(corpuss, vocabAndCount);
+		JavaRDD<Tuple2<Long, Vector>> documents = wordCountVector(corpuss, wordAndIndexOfWord);
 
 		/**
 		 * Convert from JavaRDD to JavaPairRDD
@@ -272,7 +273,7 @@ public class LDAProcess implements Serializable {
 			double[] termWeights = topic._2;
 			
 			for (int i = 0; i < terms.length; i++) {
-				valueOfRs.put(vocabulary.get(terms[i]), termWeights[i]);
+				valueOfRs.put(vocabularys.get(terms[i]), termWeights[i]);
 			}
 			describeTopic.put(idxOfTopic, valueOfRs);
 			// increment value index of TopicID
@@ -356,7 +357,7 @@ public class LDAProcess implements Serializable {
 	 * @param vocabAndCount
 	 * @return
 	 */
-	public static JavaRDD<Tuple2<Long, Vector>> wordCountVector(JavaRDD<List<String>> corpuss, HashMap<String, Long> vocabAndCount) {
+	public static JavaRDD<Tuple2<Long, Vector>> wordCountVector(JavaRDD<List<String>> corpuss, HashMap<String, Long> wordAndIndexOfWord) {
 		JavaRDD<Tuple2<Long, Vector>> result = corpuss
 		.zipWithIndex()
 		.map(new Function<Tuple2<List<String>, Long>, Tuple2<Long, Vector>>() {
@@ -364,29 +365,52 @@ public class LDAProcess implements Serializable {
 			private static final long serialVersionUID = 1L;
 
 			@Override
-			public Tuple2<Long, Vector> call(Tuple2<List<String>, Long> t) throws Exception {
-				HashMap<Long, Double> counts = new HashMap<Long, Double>(0);
-				for (String item : t._1) {
-					if (vocabAndCount.containsKey(item)) {
-						Long idx = vocabAndCount.get(item);
-						if (!counts.containsKey(idx)) {
-							counts.put(idx, 0.0);
+			public Tuple2<Long, Vector> call(Tuple2<List<String>, Long> listWord) throws Exception {
+				Map<Long, Double> wordIDAndWordCount = new LinkedHashMap<Long, Double>(0);
+				for (String item : listWord._1) {
+					// For each word in listWord of Document input
+					if (wordAndIndexOfWord.containsKey(item.toLowerCase())) {
+						// Check if vocabAndCount has contain this word
+						
+						// Get Id of Word.
+						Long idxOfWord = wordAndIndexOfWord.get(item.toLowerCase());
+						if (!wordIDAndWordCount.containsKey(idxOfWord)) {
+							// if this is the first time. Add to HashMap value <idOfWord, 0>
+							wordIDAndWordCount.put(idxOfWord, 0.0);
 						}
-						counts.put(idx, counts.get(idx) + 1.0);
+						// Increase the number of appear
+						wordIDAndWordCount.put(idxOfWord, wordIDAndWordCount.get(idxOfWord) + 1.0);
 					}
 				}
-				int[] key = new int[counts.size()];
-				double[] value = new double[counts.size()];
+				/**
+				 * create array stored posisions
+				 */
+				int[] key = new int[wordIDAndWordCount.size()];
+				
+				/**
+				 * value at each posision
+				 */
+				double[] value = new double[wordIDAndWordCount.size()];
 
 				int i = 0;
-				for (Long item : counts.keySet()) {
-					key[i] = item.intValue();
-					value[i] = counts.get(item);
+				for (Long wordIndex : wordIDAndWordCount.keySet()) {
+					// get wordIndex
+					key[i] = wordIndex.intValue();
+					// wordCount of wordIndex
+					value[i] = wordIDAndWordCount.get(wordIndex);
 					i++;
 
 				}
-				return new Tuple2<Long, Vector>(t._2, Vectors.sparse(
-						vocabAndCount.size(), key, value));
+				
+				/**
+				 * Create vector base: using parameter
+				 * listWord._2: Id of document input
+				 * wordAndWordID.size(): size of Vector, it means we have vector with size column
+				 * key: the index of column
+				 * value: the value in key posision
+				 */
+				return new Tuple2<Long, Vector>(listWord._2, Vectors.sparse(
+						wordAndIndexOfWord.size(), key, value));
 			}
 		});
 		return result;
