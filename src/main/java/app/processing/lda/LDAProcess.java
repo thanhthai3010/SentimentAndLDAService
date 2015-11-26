@@ -45,9 +45,9 @@ public class LDAProcess implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	/**
-	 * Determine number of Documents are talking about each Topic
+	 * The offset value for documents per topic
 	 */
-	private static final int MAX_DOCUMENT_PER_TOPIC_20 = 20;
+	private static final int OFFSET_DOCUMENTS_PER_TOPIC = 3;
 
 	/**
 	 * Max words for each topic is there
@@ -66,6 +66,11 @@ public class LDAProcess implements Serializable {
 	private static final int DEFAULT_NUMBER_OF_TOPIC = 2;
 	
 	/**
+	 * Max value of number of topics
+	 */
+	private static final int MAX_NUMBER_TOPIC_8 = 8;
+	
+	/**
 	 * This will contain
 	 * TopicID, <Word, Probability>
 	 */
@@ -77,9 +82,20 @@ public class LDAProcess implements Serializable {
 	 */
 	private static Map<Integer, HashMap<Long, Double>> topicDoc = new HashMap<Integer, HashMap<Long,Double>>();
 	
+	/**
+	 * VietTokenizer
+	 */
 	private static VietTokenizer tokenizer;
 	
+	/**
+	 * This variable store data for Sentiment Processing.
+	 */
 	private static FacebookData fbDataForSentiment;
+	
+	/**
+	 * Determine number of topic, after calculate using logLikelihood function
+	 */
+	private static int theBestNumberOfTopic = 1;
 	
 	/**
 	 * JavaSparkContext
@@ -97,9 +113,11 @@ public class LDAProcess implements Serializable {
 		// before processLDA we need to check spelling.
 		for (String input : inputDataForLDA.getFbDataForService().keySet()) {
 			
-			String[] tokenText = tokenizer.tokenize(input.replaceAll("[0-9]", ""));			
-			String spell = Checker.correct(tokenText[0]);
-			checkSpell.add(spell);
+			// Check spell before tokenizer
+			String spell = Checker.correct(input);
+			String[] tokenText = tokenizer.tokenize(spell.replaceAll("[0-9]", ""));			
+			
+			checkSpell.add(tokenText[0]);
 		}
 		
 		// get JavaSparkContext from SparkUtil
@@ -116,6 +134,9 @@ public class LDAProcess implements Serializable {
 
 		List<List<String>> afterFilterStopword = new ArrayList<List<String>>();
 		
+		/**
+		 * In this step, we will remove all of StopWords
+		 */
 		afterFilterStopword = filterOutStopWord(corpus);
 
 
@@ -156,12 +177,18 @@ public class LDAProcess implements Serializable {
 			}
 		});
 
+		/**
+		 * Create a list of Vocabulary
+		 */
 		int sizeOfVocabulary = termCounts.size();
 		List<String> vocabulary = new ArrayList<String>();
 		for (int i = 0; i < sizeOfVocabulary; i++) {
 			vocabulary.add(termCounts.get(i)._1);
 		}
 
+		/**
+		 * Create a list of Vocabulary and their word-count
+		 */
 		final HashMap<String, Long> vocabAndCount = new HashMap<String, Long>();
 		for (Tuple2<String, Long> item : sc.parallelize(vocabulary)
 				.zipWithIndex().collect()) {
@@ -196,7 +223,11 @@ public class LDAProcess implements Serializable {
 		/**
 		 * We need to know how many Documents are talking about each Topic
 		 */
-		Tuple2<long[], double[]>[] topicDocuments = ldaModel.topDocumentsPerTopic(MAX_DOCUMENT_PER_TOPIC_20);
+		// TODO: how to know how many document are talking about each topic.
+		
+		int documentPerTopic = (int)(inputVectorForLDA.count() / theBestNumberOfTopic) + OFFSET_DOCUMENTS_PER_TOPIC;
+		
+		Tuple2<long[], double[]>[] topicDocuments = ldaModel.topDocumentsPerTopic(documentPerTopic);
 		
 		int idxTopicID = 1;
 		for (Tuple2<long[], double[]> tpDoc : topicDocuments) {
@@ -269,10 +300,6 @@ public class LDAProcess implements Serializable {
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
-		
-		
-		//THAINT
-		getFbDataForSentiment(1);
 	}
 
 	/**
@@ -376,7 +403,7 @@ public class LDAProcess implements Serializable {
 		
 		List<Double> arrLog = new ArrayList<Double>();
 		
-		for (int i = DEFAULT_NUMBER_OF_TOPIC; i < 8; i++) {
+		for (int i = DEFAULT_NUMBER_OF_TOPIC; i < MAX_NUMBER_TOPIC_8; i++) {
 			
 			DistributedLDAModel estimateLDA =	(DistributedLDAModel) new LDA()
 			.setK(i).setMaxIterations(maxIterations).run(inputVectorForLDA);
@@ -386,7 +413,7 @@ public class LDAProcess implements Serializable {
 			arrLog.add(logLikelihood);
 		}
 		Double maxValue = Collections.max(arrLog);
-		int theBestNumberOfTopic = arrLog.indexOf(maxValue) + DEFAULT_NUMBER_OF_TOPIC;
+		theBestNumberOfTopic = arrLog.indexOf(maxValue) + DEFAULT_NUMBER_OF_TOPIC;
 		
 		ldaModel =	(DistributedLDAModel) new LDA()
 		.setK(theBestNumberOfTopic).setMaxIterations(maxIterations).run(inputVectorForLDA);
@@ -413,27 +440,41 @@ public class LDAProcess implements Serializable {
 	
 	public static List<String> getFbDataForSentiment(int topicID){
 		
+		/**
+		 * This variable will store data for Sentiment Process
+		 */
 		List<String> commentsForSentiment = new ArrayList<String>();
 		
-		HashMap<Long, Double> listDocuments = topicDoc.get(topicID);
-		List<Long> listDocumentID = new ArrayList<Long>(listDocuments.keySet());
+		/**
+		 * get list documents are talking about topicID
+		 */
+		List<Long> listDocumentID = new ArrayList<Long>(topicDoc.get(topicID).keySet());
 		
-		// get list of status and get list of comment
-		// and get list of
+		/**
+		 * Get list of status of document related with topicID
+		 */
 		List<String> listStatus = new ArrayList<String>(fbDataForSentiment.getFbDataForService().keySet());
 		
-		List<String> commentTemp = new ArrayList<String>();
+		/**
+		 * Get all of status of specify documentID
+		 */
+		List<String> allOfStatus = new ArrayList<String>();
 		for (Long dcID : listDocumentID) {
-			commentTemp.add(listStatus.get(Integer.parseInt(dcID.toString())));
+			allOfStatus.add(listStatus.get(Integer.parseInt(dcID.toString())));
 		}
 		
-		//
-		for (String item : commentTemp) {
-			commentsForSentiment.add(item);
+		/**
+		 *	Transfer data
+		 */
+		for (String itStatus : allOfStatus) {
+			commentsForSentiment.add(itStatus);
 		}
 		
-		for (String it : commentTemp) {
-			for (String comment : fbDataForSentiment.getFbDataForService().get(it)) {
+		/**
+		 * In this step, we will get specify comment of each documentID
+		 */
+		for (String status : allOfStatus) {
+			for (String comment : fbDataForSentiment.getFbDataForService().get(status)) {
 				commentsForSentiment.add(comment);
 			}
 		}
