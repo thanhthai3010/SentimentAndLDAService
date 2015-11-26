@@ -702,3 +702,4 @@ nt	nhắn tin
 c	chị
 cmt	bình luận
 sv	sinh viên
+cgai	con gái

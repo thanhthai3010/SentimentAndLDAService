@@ -3,13 +3,22 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Class represent for each Topic <TopicID, list words of this Topic and percent>
+ * @author thaint
+ *
+ */
 public class Topic implements Serializable {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
+	/** topic ID */
 	private int idTopic;
+	
+	/** value to draw Word-Cloud */
 	private List<TextValue> textValues;
 
 	public Topic(int idTopic) {

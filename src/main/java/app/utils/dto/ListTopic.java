@@ -5,6 +5,11 @@ import java.util.ArrayList;
 import com.google.gson.Gson;
 
 
+/**
+ * List class content data of Topics, for draw Word-Cloud
+ * @author thaint
+ *
+ */
 public class ListTopic extends ArrayList<Topic> implements Serializable{
 
 	/**
