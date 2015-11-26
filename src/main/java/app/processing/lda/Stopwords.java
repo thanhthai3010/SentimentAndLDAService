@@ -7,10 +7,10 @@ import java.util.Set;
 public class Stopwords {
 
 	public static String[] stopwords = { "nhận", "rằng", "cao", "nhà", "quá",
-			"riêng", "gì", "muốn", "rồi", "số", "thấy", "hay", "lên", "lần",
-			"nào", "qua", "bằng", "điều", "biết", "lớn", "khác", "vừa", "nếu",
-			"thời_gian", "họ", "từng", "đây", "tháng", "trước", "chính", "cả",
-			"việc", "chưa", "do", "nói", "ra", "nên", "đều", "đi", "tới",
+			"riêng", "gì", "muốn", "muon", "rồi", "số", "thấy", "hay", "lên",
+			"lần", "nào", "qua", "bằng", "điều", "biết", "lớn", "khác", "vừa",
+			"nếu", "thời_gian", "họ", "từng", "đây", "tháng", "trước", "chính",
+			"cả", "việc", "chưa", "do", "nói", "ra", "nên", "đều", "đi", "tới",
 			"tôi", "có_thể", "cùng", "vì", "làm", "lại", "mới", "ngày", "đó",
 			"vẫn", "mình", "chỉ", "thì", "đang", "còn", "bị", "mà", "năm",
 			"nhất", "hơn", "sau", "ông", "rất", "anh", "phải", "như", "trên",
@@ -29,15 +29,16 @@ public class Stopwords {
 			"bao_giờ", "thật_sự", "anh_chị", "tiếng", "from", "quên", "ngoài",
 			"phòng", "thêm", "ngay", "đứng", "tuần", "typn", "hoặc", "thằng",
 			"ngành", "đá", "rio", "cừu", "liên_hệ", "đầu_tiên", "đại_học",
-			"thông_tin", "chạy", "sinh_viên", "nắng", "mang", "hình",
-			"vui_lòng", "hôm_nay", "confession", "kiểu", "tính", "ngta",
-			"quen", "đóng", "lòng", "nàng", "chẳng_hạn", "rõ_rệt", "cho_biết",
-			"tuổi", "ngừng", "đồng", "nước", "hàng", "triệu", "cho_biết",
-			"cuộc", "bờ_rào", "hình_như", "khóa", "mềnh", "loại", "chọn",
-			"chúng_ta", "cảm_thấy", "làm_sao", "khỏi", "bóng", "nghỉ", "vượt",
-			"có_lẽ", "thành", "thời", "cuốn", "chuyển", "bước", "bảng",
-			"thế_này", "hoài", "xong", "khoảng", "thay", "cũng_như", "phần",
-			"minh", "rưỡi" };
+			"thông_tin", "chạy", "sinh", "nắng", "mang", "hình", "vui_lòng",
+			"hôm_nay", "confession", "kiểu", "tính", "ngta", "quen", "đóng",
+			"lòng", "nàng", "chẳng_hạn", "rõ_rệt", "cho_biết", "tuổi", "ngừng",
+			"đồng", "nước", "hàng", "triệu", "cho_biết", "cuộc", "bờ_rào",
+			"hình_như", "khóa", "mềnh", "loại", "chọn", "chúng_ta", "cảm_thấy",
+			"làm_sao", "khỏi", "bóng", "nghỉ", "vượt", "có_lẽ", "thành",
+			"thời", "cuốn", "chuyển", "bước", "bảng", "thế_này", "hoài",
+			"xong", "khoảng", "thay", "cũng_như", "phần", "minh", "rưỡi",
+			"mà_còn", "tiện", "chừng", "canh", "điền", "thui", "tưởng",
+			"thế_nào", "như_thế_nào", "như_thế", "tầng" };
 
 	public static Set<String> stopWordSet = new HashSet<String>(
 			Arrays.asList(stopwords));
