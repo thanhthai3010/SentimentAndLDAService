@@ -98,7 +98,7 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 		String[] rsCheckedAndToken = new String [1];
 		String afterSpell = "";
 		String[] tokenText = tokenizer.tokenize(inputText.replaceAll("[\n\r0-9]", ""));			
-		afterSpell = Checker.correct(tokenText[0]);
+		afterSpell = Checker.correctSpell(tokenText[0]);
 		rsCheckedAndToken = afterSpell.split(" ");
 
 		return rsCheckedAndToken;
@@ -108,7 +108,7 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 	@Override
 	public void processLDA(FacebookData inputDataForLDA) {
 		long startTime = System.currentTimeMillis();
-		
+
 		LDAProcess.mainProcessLDA(inputDataForLDA);
 		
 		long endTime   = System.currentTimeMillis();
