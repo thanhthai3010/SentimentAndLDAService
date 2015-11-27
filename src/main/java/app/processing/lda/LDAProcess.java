@@ -122,7 +122,7 @@ public class LDAProcess implements Serializable {
 		for (String input : inputDataForLDA.getFbDataForService().keySet()) {
 			
 			// Check spell before tokenizer
-			String spell = Checker.correct(input);
+			String spell = Checker.correctSpell(input);
 			String[] tokenText = tokenizer.tokenize(spell.replaceAll("[0-9]", ""));			
 			
 			checkSpell.add(tokenText[0]);
@@ -221,7 +221,6 @@ public class LDAProcess implements Serializable {
 
 //		JavaRDD<Tuple2<Object, Vector>> topicdistributes = ldaModel
 //				.topicDistributions().toJavaRDD();
-		
 		/**
 		 * Get describe for each Topics
 		 * In this case, this is: Topic: term1, term2
