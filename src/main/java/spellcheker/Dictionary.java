@@ -1,6 +1,5 @@
 package spellcheker;
 
-import java.util.List;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
@@ -15,10 +14,29 @@ import app.utils.spark.SparkUtil;
  *
  */
 public class Dictionary {
+	/**
+	 * dictionay path
+	 */
 	private final static String DICTIONARY_PATH = "./src/main/resources/dictionary.txt";
+	
+	/**
+	 * Facebook emoticons path
+	 */
 	private final static String EMOTICONS_PATH = "./src/main/resources/emoticon.txt";
+	
+	/**
+	 * store dictionary for check spell
+	 */
 	private static JavaPairRDD<String, String> dictCheckSpells;
+	
+	/**
+	 * store emoticons for convert to string
+	 */
 	private static JavaPairRDD<String, String> dictEmoticons;
+	
+	/**
+	 * JavaSparkContext
+	 */
 	private static JavaSparkContext sc;
 
 	/**
@@ -76,20 +94,6 @@ public class Dictionary {
 						}
 					}
 				});
-	}
-
-	/**
-	 * get the correct meaning of sign word
-	 * @param word String
-	 * @return correctWord String
-	 */
-	public static String getDefination(String word) {
-		//qtran
-		List<String> foundList = dictCheckSpells.lookup(word.trim().toLowerCase());
-		if (foundList != null && !foundList.isEmpty()){
-			return foundList.get(0);
-		} 
-		return word;
 	}
 	
 	/**

@@ -21,15 +21,14 @@ public class Checker implements Serializable {
 	 * default constructor
 	 */
 	public static void init() {
-		// SparkUtil.createJavaSparkContext();
 		Dictionary.init();
 	}
 
 	/**
 	 * get the correct of sentences
 	 * 
-	 * @param sentences String[]
-	 * @return result String[]
+	 * @param String input sentences
+	 * @return result String after corrected
 	 */
 	public static String correct(String sentences) {
 		Map<String, String> dictCheckSpell = Dictionary.getDict().collectAsMap();
@@ -47,34 +46,4 @@ public class Checker implements Serializable {
 		return sentences;
 	}
 
-	/**
-	 * get the correct of sentence
-	 * 
-	 * @param sentence
-	 *            String
-	 * @return String
-	 */
-	public static String correctSentence(String sentence) {
-		String rplace = sentence.replaceAll("[,.]", "");
-		String[] split = rplace.split(" ");
-		StringBuilder sb = new StringBuilder();
-		for (String inputStr : split) {
-			sb.append(correctWord(inputStr));
-			sb.append(" ");
-		}
-
-		return sb.toString();
-	}
-
-	/**
-	 * get the correct word
-	 * 
-	 * @param word
-	 *            String
-	 * @return word String
-	 */
-	private static String correctWord(String word) {
-		word = Dictionary.getDefination(word);
-		return word;
-	}
 }
