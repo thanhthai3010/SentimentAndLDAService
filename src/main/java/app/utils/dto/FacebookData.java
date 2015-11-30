@@ -22,7 +22,7 @@ public class FacebookData implements Serializable{
 	private Map<String, List<String>> fbDataForService;
 
 	/**
-	 * getFbDataForService
+	 * getFbDataForService <Post data, List Of Comments>
 	 * @return Map<String, List<String>>
 	 */
 	public Map<String, List<String>> getFbDataForService() {
