@@ -3,6 +3,9 @@ package spellcheker;
 import java.io.Serializable;
 import java.util.Map;
 
+import vn.hus.nlp.tokenizer.VietTokenizer;
+import app.utils.spark.SparkUtil;
+
 /**
  * Check spelling of String[] input
  * 
@@ -75,10 +78,20 @@ public class Checker implements Serializable {
 			Map<String, String> dictUnicodes = Dictionary.getDictUnicodes().collectAsMap();
 			
 			for (Map.Entry<String, String> unicode : dictUnicodes.entrySet()) {
-				sentences = sentences.replaceAll("\\b" + unicode.getKey() + "\\b", unicode.getValue());
+				sentences = sentences.replaceAll(unicode.getKey(), unicode.getValue());
 			}
 		}
 		return sentences;
 	}
 
+//	public static void main(String[] args) {
+//		SparkUtil.createJavaSparkContext();
+//		Checker.init();
+//		System.out.println(Checker.correctUnicodeCharacters("Mình viết confession này là muốn chia sẻ niềm vui với"));
+//		VietTokenizer to = new VietTokenizer();
+//		String[] rs = to.tokenize(Checker.correctUnicodeCharacters("Mình viết confession này là muốn chia sẻ niềm vui với"));
+//		for (String string : rs) {
+//			System.out.println(string);
+//		}
+//	}
 }
