@@ -20,17 +20,30 @@ import app.utils.dto.Post_Data;
 
 public class FBDatabaseProcess {
 
+	/**
+	 * List store pageID input
+	 */
 	private String[] listPageID;
 
+	/**
+	 * facebook data to insert into database
+	 */
 	private FacebookDataToInsertDB fbDataToInsertDB;
 
 	private static final Logger logger = LoggerFactory
 			.getLogger(FBDatabaseProcess.class);
 
+	/**
+	 * Default constructor
+	 */
 	public FBDatabaseProcess() {
 
 	}
 
+	/**
+	 * Constructor with data
+	 * @param fbDataToInsertDB
+	 */
 	public FBDatabaseProcess(FacebookDataToInsertDB fbDataToInsertDB) {
 		this.fbDataToInsertDB = fbDataToInsertDB;
 		this.listPageID = fbDataToInsertDB.getListPageID();
@@ -231,7 +244,8 @@ public class FBDatabaseProcess {
 					+ " ON B.PAGE_ID = A.PAGE_ID "
 					+ " AND B.POST_ID = A.POST_ID "
 					+ " WHERE "
-					+ " A.PAGE_ID = ?" + " AND A.DATE_TIME BETWEEN ? and ?";
+					+ " A.PAGE_ID = ?" + " AND A.DATE_TIME BETWEEN ? and ?"
+					+ " ORDER BY A.POST_ID";
 
 			try {
 				preparedStatement = JdbcMySQLDriver.getPrepareStm(getTableSQL);
