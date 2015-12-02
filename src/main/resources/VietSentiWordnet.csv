@@ -17,7 +17,7 @@ a	64787	0.625	0	có lợi#1	"có phẩm chất, chất lượng cao hơn mức b
 a	65064	0.75	0	tích_cực#3	"có tác dụng khẳng định, thúc đẩy sự phát triển; ""cô ấy có suy nghĩ tích cực"""
 a	65488	0	0.75	bất_lợi#1	"gây thiệt hại; ""đó là vấn đề bất lợi với chúng ta"""
 a	67038	0.625	0	khuyến_khích#1	"xứng đáng được đề nghị hoặc đề xuất; ""nó được khuyến khích làm việc đó"""
-a	67379	0.75	0	tốt hơn#3 tốt nhất#2	"khôn ngoan hơn hoặc có nhiều thuận lợi hơn; ""cái xe này tốt hơn xe kia"""
+a	67379	0.75	0	tốt_hơn#3 tốt_nhất#2	"khôn ngoan hơn hoặc có nhiều thuận lợi hơn; ""cái xe này tốt hơn xe kia"""
 a	70939	0.125	0.5	ảnh_hưởng#1	"có tác động đến một điều gì đó; ""tôi bị ảnh hưởng bởi tiếng ồn"""
 a	71142	0.5	0	ấn_tượng#1	"chịu tác động hoặc ảnh hưởng rõ rệt; ""tôi ấn tượng với cách trả lời của cô ấy"""
 a	75515	0	0.75	phủ_định#2	"bác bỏ sự tồn tại, sự cần thiết của cái gì; ""câu phủ định"""
@@ -88,7 +88,7 @@ a	16647	0.5	0.125	xanh_tươi#1	tươi tốt, đầy sức sống của cây
 a	17024	0	0.875	hiếm#3	"rất ít có, rất ít xảy ra; ""hiếm các loại thảo mộc"", ""hiếm bản vá lỗi của màu xanh lá cây trong sa mạc"""
 a	17186	0.125	0.5	chặt_chẽ#6	"không để rời khỏi sự theo dõi, không buông lỏng; ""một thị trường chặt chẽ"""
 a	17352	0	0.625	ngược_đãi#1	"đối xử tàn tệ, ngược với đạo lí; ""một người vợ bị lạm dụng"""
-a	17782	0.625	0	chấp_nhận_được#1	"xứng đáng với sự chấp nhận hoặc thỏa đáng; ""mức chấp nhận được của bức xạ"", ""biểu diễn đa dạng từ chấp nhận tuyệt vời"""
+a	17782	0.625	0	chấp_nhận#1	"xứng đáng với sự chấp nhận hoặc thỏa đáng; ""mức chấp nhận được của bức xạ"", ""biểu diễn đa dạng từ chấp nhận tuyệt vời"""
 a	24834	0	0.75	không quen_thuộc#1	"lạ với lần đầu, không quen với; ""không quen thuộc để mặc bộ quần áo"""
 a	31974	0.5	0.125	hoạt_động#5	"đặc trưng bởi các hoạt động năng động; ""một em bé đang hoạt động"", ""hoạt động như một con linh dương"", ""một người đàn ông hoạt động là một người đàn ông của hành động"""
 a	33077	0.5	0	nóng#21	"đánh dấu bằng hoạt động kích thích trong một thời gian ngắn, ""một tuần nóng trên thị trường chứng khoán"""
@@ -115,7 +115,7 @@ a	95280	0	0.75	chết#1	"mất khả năng sống, không còn có biểu hiện
 a	99290	0.5	0	sống#2	"ở trạng thái còn sống, chưa chết; ""cây vẫn còn sống"""
 a	100373	0	0.75	vô_hồn#4	"ở trạng thái đờ đẫn , mất hết sự  sống, ""một ánh mắt vô hồn"""
 a	94324	0.125	0.5	không_thể đổi#1 không_thể chuyển_nhượng#1	"không có khả năng được chuyển giao;""vị trí này không thể đổi cho người khác được"""
-a	82160	0.625	0.25	không hốt_hoảng#1	"không bị ảnh hưởng bởi sợ hãi; ""anh ấy không hốt hưởng trước sự cố đó"""
+a	82160	0	0.625	hốt_hoảng#1	"không bị ảnh hưởng bởi sợ hãi; ""anh ấy không hốt hưởng trước sự cố đó"""
 a	80098	0	0.75	kị#2	"không hợp nhau, không thể cùng tồn tại ; ""Hai loại thức ăn này kị nhau"""
 a	284400	0.125	0.5	dịu#4 mềm#19	"không xuất sắc hoặc rõ ràng; ""mặt trăng đổ bóng mềm"", ""màu pastel mềm"""
 a	285506	0.25	0.625	ghen#2	"khó chịu, bực dọc với người được hưởng cái gì đó (thường là về tinh thần, tình cảm) hơn mình, có được cái mình muốn mà không có ; ""nhìn với ánh mắt ghen """
@@ -129,7 +129,7 @@ a	301187	0.5	0	tính được#1	"có khả năng được tính toán hoặc ư�
 a	301777	0.125	0.625	khôn_lường#1	"khó có khả năng được tính toán hoặc liệt kê, biết trước được ; ""biến hóa khôn lường"""
 a	304144	0.375	0.5	hoang_dã#13	"có tính chất tự nhiên của núi rừng, xa đời sống của xã hội loài người ; ""động vật hoang dã"""
 a	305590	0	0.75	dơ#12	"bẩn ;""chiếc áo bị dơ"""
-a	310943	0.5	0	quá cẩn_thận#1	"quá nhiều hoặc quá mức cẩn thận ; ""anh ta quá cẩn thận"""
+a	310943	0.5	0	cẩn_thận#1	"quá nhiều hoặc quá mức cẩn thận ; ""anh ta quá cẩn thận"""
 a	312757	0.125	0.75	liều_lĩnh#2	"bất chấp nguy hiểm hoặc hậu quả tai hại có thể xảy ra; ""hành động liều lĩnh"""
 a	325281	0.75	0	thận_trọng#1	"hiển thị cẩn thận suy tính trước; ""anh ta rất thận trọng trong công việc"""
 a	328528	0.5	0	mạch_lạc#3	"diễn đạt trôi trảy, mạch lạc , từng đoạn một ;""ăn nói mạch lạc"""

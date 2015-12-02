@@ -4,6 +4,11 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Data for draw pie chart
+ * @author thaint
+ *
+ */
 public class PieChart implements Serializable{
 
 	/**
@@ -36,7 +41,7 @@ public class PieChart implements Serializable{
 	public void setPercent(int percent) {
 		this.percent = percent;
 	}
-
+	
 	public static String pieChartsToJson(List<PieChart> inputPieChart){
 		String result = "";
 		

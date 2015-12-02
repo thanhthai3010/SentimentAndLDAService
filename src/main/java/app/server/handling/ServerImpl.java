@@ -5,13 +5,16 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.sql.SQLException;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.TimeUnit;
 
+import app.processing.database.FBDatabaseProcess;
 import app.processing.lda.LDAProcess;
 import app.utils.dto.FacebookData;
+import app.utils.dto.FacebookDataToInsertDB;
 import app.utils.dto.ListPieData;
 import app.utils.dto.ListTopic;
 import app.utils.dto.TextValue;
@@ -23,7 +26,7 @@ import vn.hus.nlp.tokenizer.VietTokenizer;
 
 
 public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
-
+	
 	final int MAXTHREAD = 100;
 	private static final String IP_THIS_SERVER = "127.0.0.1";
 
@@ -32,6 +35,7 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 
 	private static VietTokenizer tokenizer;
 
+	
 	public void start() throws Exception {
 		rmiRegistry = LocateRegistry.createRegistry(1099);
 		rmiRegistry.bind("server", this);
@@ -117,15 +121,18 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 		System.out.println("Time to run this program: " + TimeUnit.MILLISECONDS.toSeconds(totalTime));
 	}
 
+	/**
+	 * get list topic
+	 */
 	@Override
 	public ListTopic getDescribleTopics() {
-		Map<Integer, HashMap<String, Double>> describeTopics = LDAProcess.getDescribeTopics();
+		Map<Integer, LinkedHashMap<String, Double>> describeTopics = LDAProcess.getDescribeTopics();
 		
 		ListTopic listTP = new ListTopic();
 
 		for (Integer key : describeTopics.keySet()) {
 			Topic tp = new Topic(key);
-			HashMap<String, Double> value = describeTopics.get(key);
+			LinkedHashMap<String, Double> value = describeTopics.get(key);
 			for (Entry<String, Double> entry : value.entrySet()) {
 				TextValue ns = new TextValue(entry.getKey(), entry.getValue());
 				tp.getTextValues().add(ns);
@@ -141,6 +148,19 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 		
 		return null;
 	}
-	
-	
+
+	@Override
+	public void saveFBData(FacebookDataToInsertDB fbDataToInsertDB) {
+		FBDatabaseProcess fbDatabase = new FBDatabaseProcess(fbDataToInsertDB);
+		// Call save method
+		fbDatabase.saveFBData();
+
+	}
+
+	@Override
+	public FacebookData getFBDataByPageIDAndDate(List<String> lstPageID,
+			String startDate, String endDate) throws RemoteException {
+		FBDatabaseProcess fbDatabase = new FBDatabaseProcess();
+		return fbDatabase.getFBDataByPageIDAndDate(lstPageID, startDate, endDate);
+	}
 }

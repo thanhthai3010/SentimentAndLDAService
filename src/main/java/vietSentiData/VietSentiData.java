@@ -5,11 +5,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.Function;
 import org.apache.spark.api.java.function.VoidFunction;
 
+import vn.hus.nlp.tokenizer.VietTokenizer;
 import app.utils.spark.SparkUtil;
 
 /**
@@ -202,27 +204,52 @@ public class VietSentiData implements Serializable {
 	 */
 	public static double scoreTokens(String[] words) {
 
+		int numOfPos = 0;
+		int numOfNeg = 0;
+		double posScore = 0.0;
+		double negScore = 0.0;
+		int totalNum = 0;
+
 		double totalScore = 0.0;
-		//qtran
-		//flag to check if the previous is a negative word
+		// qtran
+		// flag to check if the previous is a negative word
 		boolean isNegativeBefore = false;
 		for (String word : words) {
 			isNegativeBefore = false;
-			for (String str : word.split(" ")) {
-				double senti = extract(str);
-				if (dictNegative.contains(str)) {
-					isNegativeBefore = true;
-					continue;
-				}
-				if(isNegativeBefore) {
-					totalScore += (senti*-1);
-					isNegativeBefore = false;
-				} else {
-					totalScore += senti;
-				}
-				
+			double senti = extract(word);
+
+			// check if word is contain in dictionary
+			if (senti != 0.0) {
+				totalNum++;
+			}
+
+			if (dictNegative.contains(word)) {
+				isNegativeBefore = true;
+				continue;
+			}
+
+			if (isNegativeBefore) {
+				senti = (senti * -1);
+				isNegativeBefore = false;
+			}
+
+			totalScore += senti;
+			// increment
+			if (senti > 0) {
+				posScore += senti;
+				numOfPos++;
+			} else if (senti < 0) {
+				negScore += senti;
+				numOfNeg++;
 			}
 		}
+
+		if (totalNum == 0) {
+			totalScore = 0.0;
+		} else {
+			totalScore = ((posScore * numOfPos) + (negScore * numOfNeg)) / totalNum;
+		}
+
 		return totalScore;
 	}
 
@@ -232,5 +259,17 @@ public class VietSentiData implements Serializable {
 	public static void readNegativeWord() {
 		JavaRDD<String> negativeWord = sc.textFile(PATH_TO_NEGATIVE_WORD);
 		dictNegative = negativeWord.collect();
+	}
+	
+	public static void main(String[] args) {
+		SparkUtil.createJavaSparkContext();
+		VietSentiData.init();
+		
+		VietTokenizer tk = new VietTokenizer();
+		String ip = "thật là thất vọng";
+		String[] rs = tk.tokenize(ip);
+		
+		double score = VietSentiData.scoreTokens(rs[0].split(" "));
+		System.out.println("Score " + score);
 	}
 }

@@ -63,5 +63,22 @@ public class Checker implements Serializable {
 		}
 		return sentences;
 	}
+	
+	/**
+	 * get the correct of sentences has emoticons
+	 * 
+	 * @param String input sentences
+	 * @return result String after corrected
+	 */
+	public static String correctUnicodeCharacters(String sentences){
+		if (sentences != null && !STRING_BLANK.equals(sentences)) {
+			Map<String, String> dictUnicodes = Dictionary.getDictUnicodes().collectAsMap();
+			
+			for (Map.Entry<String, String> unicode : dictUnicodes.entrySet()) {
+				sentences = sentences.replaceAll("\\b" + unicode.getKey() + "\\b", unicode.getValue());
+			}
+		}
+		return sentences;
+	}
 
 }

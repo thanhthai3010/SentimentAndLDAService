@@ -703,3 +703,5 @@ c	chị
 cmt	bình luận
 sv	sinh viên
 cgai	con gái
+ktx	kí túc xá
+thks	thanks

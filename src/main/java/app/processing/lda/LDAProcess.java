@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -26,6 +25,8 @@ import org.apache.spark.mllib.clustering.DistributedLDAModel;
 import org.apache.spark.mllib.clustering.LDA;
 import org.apache.spark.mllib.linalg.Vector;
 import org.apache.spark.mllib.linalg.Vectors;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import scala.Tuple2;
 import spellcheker.Checker;
@@ -40,10 +41,19 @@ import app.utils.spark.SparkUtil;
  */
 public class LDAProcess implements Serializable {
 
+
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
+	/**
+	 * String blank
+	 */
+	private static final String STRING_BLANK = "";
+	
+	private static final Logger logger = LoggerFactory
+			.getLogger(LDAProcess.class);
 	
 	/**
 	 * The offset value for documents per topic
@@ -58,7 +68,7 @@ public class LDAProcess implements Serializable {
 	/**
 	 * Number of iterations
 	 */
-	private static final int MAX_ITERATIONS_10 = 10;
+	private static final int MAX_ITERATIONS_10 = 20;
 	
 	/**
 	 * Some parameter to run LDA Model
@@ -69,19 +79,19 @@ public class LDAProcess implements Serializable {
 	/**
 	 * Max value of number of topics
 	 */
-	private static final int MAX_NUMBER_TOPIC_8 = 8;
+	private static final int MAX_NUMBER_TOPIC = 10;
 	
 	/**
 	 * This will contain
 	 * TopicID, <Word, Probability>
 	 */
-	private static Map<Integer, HashMap<String, Double>> describeTopic = new HashMap<Integer, HashMap<String, Double>>();
+	private static Map<Integer, LinkedHashMap<String, Double>> describeTopic = new LinkedHashMap<Integer, LinkedHashMap<String, Double>>();
 
 	/**
 	 * This will contain
 	 * TopicID: <DocumentID, Probability>
 	 */
-	private static Map<Integer, HashMap<Long, Double>> topicDoc = new HashMap<Integer, HashMap<Long,Double>>();
+	private static Map<Integer, LinkedHashMap<Long, Double>> topicDoc = new LinkedHashMap<Integer, LinkedHashMap<Long,Double>>();
 	
 	/**
 	 * VietTokenizer
@@ -123,7 +133,7 @@ public class LDAProcess implements Serializable {
 			
 			// Check spell before tokenizer
 			String spell = Checker.correctSpell(input);
-			String[] tokenText = tokenizer.tokenize(spell.replaceAll("[0-9]", ""));			
+			String[] tokenText = tokenizer.tokenize(spell.replaceAll("[0-9]", STRING_BLANK));			
 			
 			checkSpell.add(tokenText[0]);
 		}
@@ -165,7 +175,14 @@ public class LDAProcess implements Serializable {
 					private static final long serialVersionUID = 1L;
 
 					public Tuple2<String, Long> call(String s) {
-						return new Tuple2<String, Long>(s.toLowerCase(), 1L);
+						// Check if all of s is UPPER CASE
+						String result = STRING_BLANK;
+						if (s.equals(s.toUpperCase())) {
+							result = s;
+						} else {
+							result = s.toLowerCase();
+						}
+						return new Tuple2<String, Long>(result, 1L);
 					}
 				}).reduceByKey(new Function2<Long, Long, Long>() {
 					private static final long serialVersionUID = 1L;
@@ -197,7 +214,7 @@ public class LDAProcess implements Serializable {
 		/**
 		 * Create a list of Vocabulary and set ID increment from 0 for each word.
 		 */
-		final HashMap<String, Long> wordAndIndexOfWord = new HashMap<String, Long>();
+		final Map<String, Long> wordAndIndexOfWord = new LinkedHashMap<String, Long>();
 		for (Tuple2<String, Long> item : sc.parallelize(vocabularys)
 				.zipWithIndex().collect()) {
 			wordAndIndexOfWord.put(item._1, item._2);
@@ -238,7 +255,7 @@ public class LDAProcess implements Serializable {
 		
 		int idxTopicID = 1;
 		for (Tuple2<long[], double[]> tpDoc : topicDocuments) {
-			HashMap<Long, Double> valueOfRs = new HashMap<Long, Double>();
+			LinkedHashMap<Long, Double> valueOfRs = new LinkedHashMap<Long, Double>();
 			for (int i = 0; i < tpDoc._1.length; i++) {
 				valueOfRs.put(tpDoc._1[i], tpDoc._2[i]);
 			}
@@ -259,7 +276,7 @@ public class LDAProcess implements Serializable {
 
 				// write key
 				writer.write(key + "\n");
-				HashMap<Long, Double> value = topicDoc.get(key);
+				LinkedHashMap<Long, Double> value = topicDoc.get(key);
 				for (Entry<Long, Double> entry : value.entrySet()) {
 					writer.write(entry.getKey() + ":\t" + entry.getValue()
 							+ "\n");
@@ -268,12 +285,12 @@ public class LDAProcess implements Serializable {
 			}
 			writer.write("\n");
 		} catch (Exception e) {
-			// TODO: handle exception
+			logger.info(e.getMessage());
 		}
 		
 		int idxOfTopic = 1;
 		for (Tuple2<int[], double[]> topic : topicIndices) {
-			HashMap<String, Double> valueOfRs = new HashMap<String, Double>();
+			LinkedHashMap<String, Double> valueOfRs = new LinkedHashMap<String, Double>();
 			
 			int[] terms = topic._1;
 			double[] termWeights = topic._2;
@@ -298,15 +315,18 @@ public class LDAProcess implements Serializable {
 				writer.write("TOPIC: " + key + "\n");
 
 				// write key
-				HashMap<String, Double> value = describeTopic.get(key);
+				LinkedHashMap<String, Double> value = describeTopic.get(key);
 				for (Entry<String, Double> entry : value.entrySet()) {
 					writer.write(entry.getKey() + ":\t" + entry.getValue() + "\n");
 				}
 			}
 			
 		} catch (Exception e) {
-			// TODO: handle exception
+			logger.info(e.getMessage());
 		}
+		
+		logger.info("Stop JavaSparkContext");
+//		sc.close();
 	}
 
 	/**
@@ -327,7 +347,7 @@ public class LDAProcess implements Serializable {
 				return Arrays.asList(string_arrays);
 			}
 		});
-		
+		logger.info("Done transform data");
 		return corpus;
 	}
 	
@@ -352,7 +372,7 @@ public class LDAProcess implements Serializable {
 					}).collect();
 			result.add(tmp);
 		}
-		
+		logger.info("Done filter stopWord");
 		return result;
 		
 	}
@@ -363,7 +383,7 @@ public class LDAProcess implements Serializable {
 	 * @param vocabAndCount
 	 * @return
 	 */
-	public static JavaRDD<Tuple2<Long, Vector>> wordCountVector(JavaRDD<List<String>> corpuss, HashMap<String, Long> wordAndIndexOfWord) {
+	public static JavaRDD<Tuple2<Long, Vector>> wordCountVector(JavaRDD<List<String>> corpuss, Map<String, Long> wordAndIndexOfWord) {
 		JavaRDD<Tuple2<Long, Vector>> result = corpuss
 		.zipWithIndex()
 		.map(new Function<Tuple2<List<String>, Long>, Tuple2<Long, Vector>>() {
@@ -419,6 +439,7 @@ public class LDAProcess implements Serializable {
 						wordAndIndexOfWord.size(), key, value));
 			}
 		});
+		logger.info("Done word-count vector");
 		return result;
 	}
 
@@ -433,7 +454,7 @@ public class LDAProcess implements Serializable {
 		
 		List<Double> arrLog = new ArrayList<Double>();
 		
-		for (int i = DEFAULT_NUMBER_OF_TOPIC; i < MAX_NUMBER_TOPIC_8; i++) {
+		for (int i = DEFAULT_NUMBER_OF_TOPIC; i < MAX_NUMBER_TOPIC; i++) {
 			
 			DistributedLDAModel estimateLDA =	(DistributedLDAModel) new LDA()
 			.setK(i).setMaxIterations(maxIterations).run(inputVectorForLDA);
@@ -456,7 +477,7 @@ public class LDAProcess implements Serializable {
 	 * Get HashMap of Topic to create word-cloud
 	 * @return Map<Integer, HashMap<String, Double>>
 	 */
-	public static Map<Integer, HashMap<String, Double>> getDescribeTopics(){
+	public static Map<Integer, LinkedHashMap<String, Double>> getDescribeTopics(){
 		return describeTopic;
 	}
 	
@@ -464,7 +485,7 @@ public class LDAProcess implements Serializable {
 	 * Get HashMap using for calculate sentiment score
 	 * @return Map<Integer, HashMap<Long, Double>>
 	 */
-	public static Map<Integer, HashMap<Long, Double>> getTopicDocs() {
+	public static Map<Integer, LinkedHashMap<Long, Double>> getTopicDocs() {
 		return topicDoc;
 	}
 	

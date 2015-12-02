@@ -25,6 +25,11 @@ public class Dictionary {
 	private final static String EMOTICONS_PATH = "./src/main/resources/emoticon.txt";
 	
 	/**
+	 * Convert error character to Unicode
+	 */
+	private final static String COMPOSITE2UNICODE_PATH = "./src/main/resources/Composite2Unicode.txt";
+	
+	/**
 	 * store dictionary for check spell
 	 */
 	private static JavaPairRDD<String, String> dictCheckSpells;
@@ -33,6 +38,11 @@ public class Dictionary {
 	 * store emoticons for convert to string
 	 */
 	private static JavaPairRDD<String, String> dictEmoticons;
+	
+	/**
+	 * store unicodes character for convert to string
+	 */
+	private static JavaPairRDD<String, String> dictUnicodes;
 	
 	/**
 	 * JavaSparkContext
@@ -46,6 +56,7 @@ public class Dictionary {
 		sc = SparkUtil.getJavaSparkContext();
 		readDictionaryFromFile(DICTIONARY_PATH);
 		readEmoticonsFromFile(EMOTICONS_PATH);
+		readComposite2UnicodeFromFile(COMPOSITE2UNICODE_PATH);
 	}
 
 	/**
@@ -97,6 +108,30 @@ public class Dictionary {
 	}
 	
 	/**
+	 * Read file emoticons
+	 * @param filePath
+	 */
+	private static void readComposite2UnicodeFromFile(String filePath) {
+		JavaRDD<String> unicodesFile = sc.textFile(filePath);
+
+		dictUnicodes = unicodesFile
+				.mapToPair(new PairFunction<String, String, String>() {
+					private static final long serialVersionUID = 1L;
+
+					@Override
+					public Tuple2<String, String> call(String text)
+							throws Exception {
+						if(text.split("\t").length > 1){
+							return new Tuple2<String, String>(text.split("\t")[0],
+								text.split("\t")[1]);
+						} else {
+							return new Tuple2<String, String>("","");
+						}
+					}
+				});
+	}
+	
+	/**
 	 * Get dictionary for check spell VietNamese
 	 * @return JavaPairRDD<String, String> dictionary
 	 */
@@ -112,4 +147,11 @@ public class Dictionary {
 		return dictEmoticons;
 	}
 	
+	/**
+	 * Get dictionary for check spell VietNamese
+	 * @return JavaPairRDD<String, String> dictionary
+	 */
+	public static JavaPairRDD<String, String> getDictUnicodes(){
+		return dictUnicodes;
+	}
 }
