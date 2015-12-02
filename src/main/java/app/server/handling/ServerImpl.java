@@ -11,6 +11,9 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.TimeUnit;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import app.processing.database.FBDatabaseProcess;
 import app.processing.lda.LDAProcess;
 import app.utils.dto.FacebookData;
@@ -31,9 +34,11 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 	private static final String IP_THIS_SERVER = "127.0.0.1";
 
 	private static final long serialVersionUID = 1L;
+	
+	private static final Logger logger = LoggerFactory
+			.getLogger(ServerImpl.class);
+	
 	private Registry rmiRegistry;
-
-	private static VietTokenizer tokenizer;
 
 	
 	public void start() throws Exception {
@@ -53,10 +58,9 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 		super();
 		try {
 			SparkUtil.createJavaSparkContext();
-			tokenizer = new VietTokenizer("tokenizer.properties");
 			// Check spelling
 			Checker.init();
-			
+			// Init VietSentidata
 			VietSentiData.init();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -66,46 +70,6 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 	@Override
 	public String hello() throws RemoteException {
 		return "Server " + IP_THIS_SERVER + " say: Hi client!";
-	}
-
-	@Override
-	public double runAnalyzeSentiment(String inputText, boolean isNeedToCheck)
-			throws RemoteException {
-
-		if (inputText == null || "".equals(inputText)) {
-			return -6.0;
-		}
-
-		double rs = -3.0;
-		if (isNeedToCheck) {
-			// check spell
-			try {
-				String[] rsCheckedAndToken = runSpellCheckAndToken(inputText);
-				if(rsCheckedAndToken.length > 0){
-					rs = VietSentiData.scoreTokens(rsCheckedAndToken);
-				}			
-				
-			} catch (Exception ex) {
-				ex.printStackTrace();
-				return -3.0;
-			}
-		} else {
-			rs = VietSentiData.scoreTokens(tokenizer.tokenize(inputText));
-		}
-
-		return rs;
-	}
-
-	@Override
-	public String[] runSpellCheckAndToken(String inputText) throws RemoteException {
-
-		String[] rsCheckedAndToken = new String [1];
-		String afterSpell = "";
-		String[] tokenText = tokenizer.tokenize(inputText.replaceAll("[\n\r0-9]", ""));			
-		afterSpell = Checker.correctSpell(tokenText[0]);
-		rsCheckedAndToken = afterSpell.split(" ");
-
-		return rsCheckedAndToken;
 	}
 
 	// TODO
@@ -118,7 +82,7 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 		long endTime   = System.currentTimeMillis();
 		long totalTime = endTime - startTime;
 		
-		System.out.println("Time to run this program: " + TimeUnit.MILLISECONDS.toSeconds(totalTime));
+		logger.info("Time to run this program: " + TimeUnit.MILLISECONDS.toSeconds(totalTime));
 	}
 
 	/**

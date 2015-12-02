@@ -22,9 +22,9 @@ public interface ServerInterf extends Remote {
 	 */
 	public void saveFBData(FacebookDataToInsertDB fbDataToInsertDB) throws RemoteException;
 	
-	public double runAnalyzeSentiment(String inputText, boolean isNeedToCheck) throws RemoteException;	
+//	public double runAnalyzeSentiment(String inputText) throws RemoteException;	
 	
-	public String[] runSpellCheckAndToken(String inputText) throws RemoteException;
+//	public String[] runSpellCheckAndToken(String inputText) throws RemoteException;
 	
 	/**
 	 * thaint
@@ -44,6 +44,15 @@ public interface ServerInterf extends Remote {
 	
 	public ListPieData processSentiment(int topicID) throws RemoteException;
 	
+	/**
+	 * This function will get data of facebook using list pageID input and dates
+	 * @param lstPageID list page ID
+	 * @param startDate date
+	 * @param endDate date
+	 * @return
+	 * @throws RemoteException
+	 */
 	public FacebookData getFBDataByPageIDAndDate(List<String> lstPageID, String startDate,
 			String endDate) throws RemoteException;
+	
 }
