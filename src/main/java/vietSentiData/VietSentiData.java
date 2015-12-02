@@ -12,6 +12,7 @@ import org.apache.spark.api.java.function.Function;
 import org.apache.spark.api.java.function.VoidFunction;
 
 import vn.hus.nlp.tokenizer.VietTokenizer;
+import app.process.spellcheker.Checker;
 import app.utils.spark.SparkUtil;
 
 /**
@@ -208,7 +209,6 @@ public class VietSentiData implements Serializable {
 		int numOfNeg = 0;
 		double posScore = 0.0;
 		double negScore = 0.0;
-		int totalNum = 0;
 
 		double totalScore = 0.0;
 		// qtran
@@ -217,11 +217,6 @@ public class VietSentiData implements Serializable {
 		for (String word : words) {
 			isNegativeBefore = false;
 			double senti = extract(word);
-
-			// check if word is contain in dictionary
-			if (senti != 0.0) {
-				totalNum++;
-			}
 
 			if (dictNegative.contains(word)) {
 				isNegativeBefore = true;
@@ -244,11 +239,16 @@ public class VietSentiData implements Serializable {
 			}
 		}
 
-		if (totalNum == 0) {
-			totalScore = 0.0;
-		} else {
-			totalScore = ((posScore * numOfPos) + (negScore * numOfNeg)) / totalNum;
+		// convert to 1
+		if (numOfPos == 0) {
+			numOfPos = 1;
 		}
+		if (numOfNeg == 0) {
+			numOfNeg = 1;
+		}
+		
+		totalScore = (posScore / numOfPos) + (negScore / numOfNeg);
+		
 
 		return totalScore;
 	}
@@ -263,11 +263,12 @@ public class VietSentiData implements Serializable {
 	
 	public static void main(String[] args) {
 		SparkUtil.createJavaSparkContext();
+		Checker.init();
 		VietSentiData.init();
 		
 		VietTokenizer tk = new VietTokenizer();
-		String ip = "thật là thất vọng";
-		String[] rs = tk.tokenize(ip);
+		String ip =     "mình cũng đi mà k tìm vậy  :'(";
+		String[] rs = tk.tokenize(Checker.correctEmoticons(ip));
 		
 		double score = VietSentiData.scoreTokens(rs[0].split(" "));
 		System.out.println("Score " + score);

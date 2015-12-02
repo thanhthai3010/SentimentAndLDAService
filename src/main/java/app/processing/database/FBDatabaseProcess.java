@@ -11,7 +11,7 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import spellcheker.Checker;
+import app.process.spellcheker.Checker;
 import app.server.handling.JdbcMySQLDriver;
 import app.utils.dto.Comment_Data;
 import app.utils.dto.FacebookData;
