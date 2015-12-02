@@ -1013,4 +1013,12 @@ a	1937982	0.6	0	xinh_xắn#1	"xinh và rất ưa nhìn; ""căn phòng xinh xắn
 a	1937983	0.125	0.5	khờ#1	"kém về trí khôn và sự tinh nhanh, không đủ khả năng suy xét để ứng phó với hoàn cảnh, để biết làm những gì nên làm ; ""con bé hãy còn khờ"""
 a	1937984	0	0.75	ngu#1	"rất kém về trí lực, không hiểu biết gì về cả những điều ai cũng hiểu, cũng biết ; ""Rồng vàng tắm nước ao tù, Người khôn ở với người ngu bực mình."" "
 a	1937986	0.75	0	giỏi#1	"có trình độ cao, đáng được khâm phục, khen ngợi ; ""giáo viên dạy giỏi"""
-a	svx1937981	0	0.5	xấu#1 xấu_xí#1	"có hình dáng và những đường nét rất khó coi (thường nói về đồ vật, đôi khi nói về ai đó) ; ""cái máy trông rất xấu"""
+a	1937989	0	0.5	xấu#1 xấu_xí#1	"có hình dáng và những đường nét rất khó coi (thường nói về đồ vật, đôi khi nói về ai đó) ; ""cái máy trông rất xấu"""
+a	1937990	0	0.5	khóc_lóc#1	khóc lóc, than thở
+v	1937991	0.5	0	nháy_mắt#1	vui vẻ nháy mắt
+v	1937992	0	0.75	nhăn_nhó#1	nhăn nhó, tỏ vẻ khó chịu
+v	1937993	0.5	0	cười#1	mỉm cười vui vẻ
+v	1937994	0.8	0	bật_cười#1	cười lớn thành tiếng, vui vẻ, náo động
+a	1937995	0.8	0	khoái_trá#1	cười đểu, cười khoái trá
+a	1937996	0	0.4	băn_khoăn#1	không vui, cảm thấy bối rối
+a	1937996	0.25	0	ngại_ngùng#1	bĩu môi, ngại ngùng trước sự việc. Cảm thấy thích thú với việc này lắm
