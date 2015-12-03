@@ -10,6 +10,7 @@ import app.process.spellcheker.Checker;
 import app.utils.dto.ListPieData;
 import app.utils.dto.PieChart;
 import app.utils.dto.PieData;
+import app.utils.spark.SparkUtil;
 import vn.hus.nlp.tokenizer.VietTokenizer;
 
 public class SentimentProcess {
@@ -142,20 +143,22 @@ public class SentimentProcess {
 		return lstPieChar;
 	}
 	
-//	public static void main(String[] args) {
-//		SparkUtil.createJavaSparkContext();
-//		Checker.init();
-//		VietSentiData.init();
-//		
-//		SentimentProcess smP = new SentimentProcess();
-//		List<String> lstInputForSenti = new ArrayList<String>();
-//		lstInputForSenti.add("bỏ liền đi bạn...gì cũng đc nhưng phản bội là không đc :3");
-//		lstInputForSenti.add("Bỏ đi bạn. Lời khuyên chân thành. Rồi tha thứ làm bạn như bình thường.");
-//		ListPieData ls = smP.processSentiment(lstInputForSenti);
-//		for (PieData pieData : ls) {
-//			System.out.println(pieData.getTypeColor());
-//			System.out.println(pieData.getContentData());
-//		}
-//		
-//	}
+	public static void main(String[] args) {
+		SparkUtil.createJavaSparkContext();
+		Checker.init();
+		VietSentiData.init();
+
+		SentimentProcess smP = new SentimentProcess();
+		List<String> lstInputForSenti = new ArrayList<String>();
+		lstInputForSenti
+				.add("hai người yêu nhau không gì là không thể. Tin đi bạn");
+		lstInputForSenti
+				.add("Bỏ đi bạn. Lời khuyên chân thành. Rồi tha thứ làm bạn như bình thường.");
+		ListPieData ls = smP.processSentiment(lstInputForSenti);
+		for (PieData pieData : ls) {
+			System.out.println(pieData.getTypeColor());
+			System.out.println(pieData.getContentData());
+		}
+
+	}
 }

@@ -215,6 +215,11 @@ public class VietSentiData implements Serializable {
 		// flag to check if the previous is a negative word
 		boolean isNegativeBefore = false;
 		for (String word : words) {
+			
+			if (word.equals("biết")) {
+				int a = 5;
+			}
+			
 			isNegativeBefore = false;
 			double senti = extract(word);
 
@@ -262,12 +267,13 @@ public class VietSentiData implements Serializable {
 	}
 	
 	public static void main(String[] args) {
+		
 		SparkUtil.createJavaSparkContext();
 		Checker.init();
 		VietSentiData.init();
 		
 		VietTokenizer tk = new VietTokenizer();
-		String ip =     "mình cũng đi mà k tìm vậy  :'(";
+		String ip =     "mấy cái cảm giác đó chưa là tất cả những gì bạn sẽ trải nghiệm đâu, đừng thần thánh hóa nó quá, sống lâu mới biết có nhiều thứ quan trọng hơn ty. mạnh mẽ lên :)";
 		String[] rs = tk.tokenize(Checker.correctEmoticons(ip));
 		
 		double score = VietSentiData.scoreTokens(rs[0].split(" "));

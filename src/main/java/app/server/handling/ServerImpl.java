@@ -14,6 +14,7 @@ import java.util.concurrent.TimeUnit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import vietSentiData.VietSentiData;
 import app.process.spellcheker.Checker;
 import app.processing.database.FBDatabaseProcess;
 import app.processing.lda.LDAProcess;
@@ -24,8 +25,6 @@ import app.utils.dto.ListTopic;
 import app.utils.dto.TextValue;
 import app.utils.dto.Topic;
 import app.utils.spark.SparkUtil;
-import vietSentiData.VietSentiData;
-import vn.hus.nlp.tokenizer.VietTokenizer;
 
 
 public class ServerImpl extends UnicastRemoteObject implements ServerInterf {

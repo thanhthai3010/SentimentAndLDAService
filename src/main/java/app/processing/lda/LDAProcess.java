@@ -29,9 +29,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import scala.Tuple2;
-import spellcheker.Checker;
+import vietSentiData.SentimentProcess;
 import vn.hus.nlp.tokenizer.VietTokenizer;
+import app.process.spellcheker.Checker;
 import app.utils.dto.FacebookData;
+import app.utils.dto.ListPieData;
+import app.utils.dto.PieData;
 import app.utils.spark.SparkUtil;
 
 /**
@@ -325,8 +328,11 @@ public class LDAProcess implements Serializable {
 			logger.info(e.getMessage());
 		}
 		
-		logger.info("Stop JavaSparkContext");
-//		sc.close();
+		logger.info("Done LDA processing");
+		
+		//thaint
+		// TODO
+		getFbDataForSentiment(1);
 	}
 
 	/**
@@ -440,6 +446,7 @@ public class LDAProcess implements Serializable {
 			}
 		});
 		logger.info("Done word-count vector");
+		
 		return result;
 	}
 
@@ -516,7 +523,7 @@ public class LDAProcess implements Serializable {
 		 */
 		List<String> allOfStatus = new ArrayList<String>();
 		for (Long dcID : listDocumentID) {
-			allOfStatus.add(listStatus.get(Integer.parseInt(dcID.toString())));
+			commentsForSentiment.add(listStatus.get(Integer.parseInt(dcID.toString())));
 		}
 		
 		/**
@@ -533,6 +540,14 @@ public class LDAProcess implements Serializable {
 			for (String comment : fbDataForSentiment.getFbDataForService().get(status)) {
 				commentsForSentiment.add(comment);
 			}
+		}
+		
+		//TODO
+		SentimentProcess smP = new SentimentProcess();
+		ListPieData lstPieDt = smP.processSentiment(commentsForSentiment);
+		for (PieData pieData : lstPieDt) {
+			System.out.println(pieData.getTypeColor());
+			System.out.println(pieData.getContentData());
 		}
 		
 		return commentsForSentiment;
