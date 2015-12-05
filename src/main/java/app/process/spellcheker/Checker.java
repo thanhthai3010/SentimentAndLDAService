@@ -76,6 +76,7 @@ public class Checker implements Serializable {
 			
 			for (Map.Entry<String, String> unicode : dictUnicodes.entrySet()) {
 				sentences = sentences.replaceAll(unicode.getKey(), unicode.getValue());
+				sentences = sentences.replaceAll(unicode.getKey().toUpperCase(), unicode.getValue().toUpperCase());
 			}
 		}
 		return sentences;
