@@ -29,12 +29,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import scala.Tuple2;
-import vietSentiData.SentimentProcess;
 import vn.hus.nlp.tokenizer.VietTokenizer;
 import app.process.spellcheker.Checker;
 import app.utils.dto.FacebookData;
-import app.utils.dto.ListPieData;
-import app.utils.dto.PieData;
 import app.utils.spark.SparkUtil;
 
 /**
@@ -71,7 +68,7 @@ public class LDAProcess implements Serializable {
 	/**
 	 * Number of iterations
 	 */
-	private static final int MAX_ITERATIONS_10 = 20;
+	private static final int MAX_ITERATIONS = 20;
 	
 	/**
 	 * Some parameter to run LDA Model
@@ -237,7 +234,7 @@ public class LDAProcess implements Serializable {
 		/**
 		 * Run LDA model
 		 */
-		DistributedLDAModel ldaModel = runLDAModel(inputVectorForLDA, MAX_ITERATIONS_10);
+		DistributedLDAModel ldaModel = runLDAModel(inputVectorForLDA, MAX_ITERATIONS);
 
 //		JavaRDD<Tuple2<Object, Vector>> topicdistributes = ldaModel
 //				.topicDistributions().toJavaRDD();
@@ -329,10 +326,6 @@ public class LDAProcess implements Serializable {
 		}
 		
 		logger.info("Done LDA processing");
-		
-		//thaint
-		// TODO
-		getFbDataForSentiment(1);
 	}
 
 	/**
@@ -476,7 +469,7 @@ public class LDAProcess implements Serializable {
 		ldaModel =	(DistributedLDAModel) new LDA()
 		.setK(theBestNumberOfTopic).setMaxIterations(maxIterations).run(inputVectorForLDA);
 		
-		System.out.println("Done");
+		logger.info("Done runLDAModel");
 		return ldaModel;
 	}
 	
@@ -533,14 +526,6 @@ public class LDAProcess implements Serializable {
 			for (String comment : lstComment) {
 				commentsForSentiment.add(comment);
 			}
-		}
-		
-		//TODO
-		SentimentProcess smP = new SentimentProcess();
-		ListPieData lstPieDt = smP.processSentiment(commentsForSentiment);
-		for (PieData pieData : lstPieDt) {
-			System.out.println(pieData.getTypeColor());
-			System.out.println(pieData.getContentData());
 		}
 		
 		return commentsForSentiment;
