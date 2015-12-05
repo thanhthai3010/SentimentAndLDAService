@@ -1,6 +1,8 @@
 package vietSentiData;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -100,6 +102,15 @@ public class SentimentProcess {
 			listPieData.add(pieData);
 		}
 		
+		// Sort this list pie data follow: POSITIVE > NEUTRAL > NEGATIVE
+		Collections.sort(listPieData, new Comparator<PieData>() {
+
+			@Override
+			public int compare(PieData p1, PieData p2) {
+				return p2.getTypeColor() - p1.getTypeColor();
+			}
+		});
+		
 		return listPieData;
 	}
 	
@@ -159,6 +170,6 @@ public class SentimentProcess {
 			System.out.println(pieData.getTypeColor());
 			System.out.println(pieData.getContentData());
 		}
-
+		
 	}
 }

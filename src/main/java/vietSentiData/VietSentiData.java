@@ -216,10 +216,6 @@ public class VietSentiData implements Serializable {
 		boolean isNegativeBefore = false;
 		for (String word : words) {
 			
-			if (word.equals("biết")) {
-				int a = 5;
-			}
-			
 			isNegativeBefore = false;
 			double senti = extract(word);
 
@@ -232,8 +228,6 @@ public class VietSentiData implements Serializable {
 				senti = (senti * -1);
 				isNegativeBefore = false;
 			}
-
-			totalScore += senti;
 			// increment
 			if (senti > 0) {
 				posScore += senti;
@@ -273,7 +267,7 @@ public class VietSentiData implements Serializable {
 		VietSentiData.init();
 		
 		VietTokenizer tk = new VietTokenizer();
-		String ip =     "mấy cái cảm giác đó chưa là tất cả những gì bạn sẽ trải nghiệm đâu, đừng thần thánh hóa nó quá, sống lâu mới biết có nhiều thứ quan trọng hơn ty. mạnh mẽ lên :)";
+		String ip =     "Thầy Toan có dạy k10 ko :))";
 		String[] rs = tk.tokenize(Checker.correctEmoticons(ip));
 		
 		double score = VietSentiData.scoreTokens(rs[0].split(" "));
