@@ -2,6 +2,11 @@ package app.utils.dto;
 
 import java.io.Serializable;
 
+/**
+ * TABLE COMMENT_DATA
+ * @author thaint
+ *
+ */
 public class Comment_Data implements Serializable {
 
 	/**

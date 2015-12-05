@@ -2,6 +2,11 @@ package app.utils.dto;
 
 import java.io.Serializable;
 
+/**
+ * TABLE POST_DATA
+ * @author thaint
+ *
+ */
 public class Post_Data implements Serializable{
 
 	/**
