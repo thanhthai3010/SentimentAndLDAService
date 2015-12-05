@@ -14,6 +14,7 @@ import java.util.concurrent.TimeUnit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import vietSentiData.SentimentProcess;
 import vietSentiData.VietSentiData;
 import app.process.spellcheker.Checker;
 import app.processing.database.FBDatabaseProcess;
@@ -71,7 +72,6 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 		return "Server " + IP_THIS_SERVER + " say: Hi client!";
 	}
 
-	// TODO
 	@Override
 	public void processLDA(FacebookData inputDataForLDA) {
 		long startTime = System.currentTimeMillis();
@@ -81,7 +81,7 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 		long endTime   = System.currentTimeMillis();
 		long totalTime = endTime - startTime;
 		
-		logger.info("Time to run this program: " + TimeUnit.MILLISECONDS.toSeconds(totalTime));
+		logger.info("Time to run LDA process: " + TimeUnit.MILLISECONDS.toSeconds(totalTime));
 	}
 
 	/**
@@ -106,10 +106,33 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 		return listTP;
 	}
 
+	/**
+	 * Calling method to get data display report about topicID
+	 */
 	@Override
 	public ListPieData processSentiment(int topicID) throws RemoteException {
+		long startTime = System.currentTimeMillis();
+		/**
+		 * Create return data
+		 */
+		ListPieData affterSentiment = new ListPieData(); 
 		
-		return null;
+		/**
+		 * Create instance of sentimentProcess
+		 */
+		SentimentProcess sentimentProcess = new SentimentProcess();
+		/**
+		 * Analysis and return to data
+		 */
+		List<String> fbDataForSentiment = LDAProcess.getFbDataForSentiment(topicID);
+		
+		affterSentiment = sentimentProcess.processSentiment(fbDataForSentiment);
+		
+		long endTime   = System.currentTimeMillis();
+		long totalTime = endTime - startTime;
+		logger.info("Time to run get data for Analysis: " + TimeUnit.MILLISECONDS.toSeconds(totalTime));
+		
+		return affterSentiment;
 	}
 
 	@Override

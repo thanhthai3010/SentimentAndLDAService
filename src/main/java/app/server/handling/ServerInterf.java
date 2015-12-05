@@ -13,7 +13,7 @@ import app.utils.dto.ListTopic;
 public interface ServerInterf extends Remote {
 
 	public String hello() throws RemoteException;
-
+	
 	/**
 	 * thaint
 	 * Save facebook data into database
@@ -21,10 +21,6 @@ public interface ServerInterf extends Remote {
 	 * @throws RemoteException
 	 */
 	public void saveFBData(FacebookDataToInsertDB fbDataToInsertDB) throws RemoteException;
-	
-//	public double runAnalyzeSentiment(String inputText) throws RemoteException;	
-	
-//	public String[] runSpellCheckAndToken(String inputText) throws RemoteException;
 	
 	/**
 	 * thaint
@@ -42,6 +38,12 @@ public interface ServerInterf extends Remote {
 	 */
 	public ListTopic getDescribleTopics() throws RemoteException;
 	
+	/**
+	 * Start sentiment process using topic ID
+	 * @param topicID
+	 * @return
+	 * @throws RemoteException
+	 */
 	public ListPieData processSentiment(int topicID) throws RemoteException;
 	
 	/**
@@ -54,5 +56,4 @@ public interface ServerInterf extends Remote {
 	 */
 	public FacebookData getFBDataByPageIDAndDate(List<String> lstPageID, String startDate,
 			String endDate) throws RemoteException;
-	
 }
