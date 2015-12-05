@@ -521,23 +521,16 @@ public class LDAProcess implements Serializable {
 		/**
 		 * Get all of status of specify documentID
 		 */
-		List<String> allOfStatus = new ArrayList<String>();
 		for (Long dcID : listDocumentID) {
 			commentsForSentiment.add(listStatus.get(Integer.parseInt(dcID.toString())));
 		}
 		
 		/**
-		 *	Transfer data
-		 */
-		for (String itStatus : allOfStatus) {
-			commentsForSentiment.add(itStatus);
-		}
-		
-		/**
 		 * In this step, we will get specify comment of each documentID
 		 */
-		for (String status : allOfStatus) {
-			for (String comment : fbDataForSentiment.getFbDataForService().get(status)) {
+		for (String status : listStatus) {
+			List<String> lstComment = fbDataForSentiment.getFbDataForService().get(status);
+			for (String comment : lstComment) {
 				commentsForSentiment.add(comment);
 			}
 		}
