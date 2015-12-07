@@ -494,12 +494,12 @@ public class LDAProcess implements Serializable {
 	 * @param topicID value of topicID, user has clicked
 	 * @return List<String> containt status and comment of topicID
 	 */
-	public static List<String> getFbDataForSentiment(int topicID){
+	public static Map<String, List<String>> getFbDataForSentiment(int topicID){
 		
 		/**
 		 * This variable will store data for Sentiment Process
 		 */
-		List<String> commentsForSentiment = new ArrayList<String>();
+		Map<String, List<String>> sttAndCm = new LinkedHashMap<String, List<String>>();
 		
 		/**
 		 * get list documents are talking about topicID
@@ -507,28 +507,31 @@ public class LDAProcess implements Serializable {
 		List<Long> listDocumentID = new ArrayList<Long>(topicDoc.get(topicID).keySet());
 		
 		/**
-		 * Get list of status of document related with topicID
+		 * Get list all of status
 		 */
-		List<String> listStatus = new ArrayList<String>(fbDataForSentiment.getFbDataForService().keySet());
+		List<String> listAllOfStatus = new ArrayList<String>(fbDataForSentiment.getFbDataForService().keySet());
+		
+		/**
+		 * List status with documentID
+		 */
+		List<String> listStatusWithDocument = new ArrayList<String>();
 		
 		/**
 		 * Get all of status of specify documentID
 		 */
 		for (Long dcID : listDocumentID) {
-			commentsForSentiment.add(listStatus.get(Integer.parseInt(dcID.toString())));
+			listStatusWithDocument.add(listAllOfStatus.get(Integer.parseInt(dcID.toString())));
 		}
 		
 		/**
 		 * In this step, we will get specify comment of each documentID
 		 */
-		for (String status : listStatus) {
+		for (String status : listAllOfStatus) {
 			List<String> lstComment = fbDataForSentiment.getFbDataForService().get(status);
-			for (String comment : lstComment) {
-				commentsForSentiment.add(comment);
-			}
+			sttAndCm.put(status, lstComment);
 		}
 		
-		return commentsForSentiment;
+		return sttAndCm;
 		
 	}
 	
