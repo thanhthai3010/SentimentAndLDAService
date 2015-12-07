@@ -6,8 +6,9 @@ import java.util.List;
 
 import app.utils.dto.FacebookData;
 import app.utils.dto.FacebookDataToInsertDB;
-import app.utils.dto.ListPieData;
+import app.utils.dto.ListReportData;
 import app.utils.dto.ListTopic;
+import app.utils.dto.Page_Info;
 
 
 public interface ServerInterf extends Remote {
@@ -44,7 +45,7 @@ public interface ServerInterf extends Remote {
 	 * @return
 	 * @throws RemoteException
 	 */
-	public ListPieData processSentiment(int topicID) throws RemoteException;
+	public List<ListReportData> processSentiment(int topicID) throws RemoteException;
 	
 	/**
 	 * This function will get data of facebook using list pageID input and dates
@@ -56,4 +57,18 @@ public interface ServerInterf extends Remote {
 	 */
 	public FacebookData getFBDataByPageIDAndDate(List<String> lstPageID, String startDate,
 			String endDate) throws RemoteException;
+	
+	/**
+	 * Save facebook page info
+	 * @param listFanPage
+	 * @throws RemoteException
+	 */
+	public void savePageInfo(List<Page_Info> listFanPage) throws RemoteException;
+	
+	/**
+	 * get all of facebook page info
+	 * @param listFanPage
+	 * @throws RemoteException
+	 */
+	public List<Page_Info> getListPageInfo() throws RemoteException;
 }

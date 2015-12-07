@@ -5,6 +5,7 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -21,8 +22,9 @@ import app.processing.database.FBDatabaseProcess;
 import app.processing.lda.LDAProcess;
 import app.utils.dto.FacebookData;
 import app.utils.dto.FacebookDataToInsertDB;
-import app.utils.dto.ListPieData;
+import app.utils.dto.ListReportData;
 import app.utils.dto.ListTopic;
+import app.utils.dto.Page_Info;
 import app.utils.dto.TextValue;
 import app.utils.dto.Topic;
 import app.utils.spark.SparkUtil;
@@ -31,6 +33,7 @@ import app.utils.spark.SparkUtil;
 public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 	
 	final int MAXTHREAD = 100;
+	
 	private static final String IP_THIS_SERVER = "127.0.0.1";
 
 	private static final long serialVersionUID = 1L;
@@ -40,13 +43,25 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 	
 	private Registry rmiRegistry;
 
+	/**
+	 * facebook database process
+	 */
+	private FBDatabaseProcess fbDatabase;
 	
+	/**
+	 * Start service RMI
+	 * @throws Exception
+	 */
 	public void start() throws Exception {
 		rmiRegistry = LocateRegistry.createRegistry(1099);
 		rmiRegistry.bind("server", this);
 		System.out.println("Server " + IP_THIS_SERVER + " started successful!");
 	}
 
+	/**
+	 * Stop service RMI
+	 * @throws Exception
+	 */
 	public void stop() throws Exception {
 		rmiRegistry.unbind("server");
 		unexportObject(this, true);
@@ -54,6 +69,11 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 		System.out.println("Server stopped");
 	}
 
+	/**
+	 * default constructor
+	 * @throws RemoteException
+	 * @throws SQLException
+	 */
 	public ServerImpl() throws RemoteException, SQLException {
 		super();
 		try {
@@ -62,6 +82,8 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 			Checker.init();
 			// Init VietSentidata
 			VietSentiData.init();
+			// facebook database process
+			fbDatabase = new FBDatabaseProcess();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -110,12 +132,12 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 	 * Calling method to get data display report about topicID
 	 */
 	@Override
-	public ListPieData processSentiment(int topicID) throws RemoteException {
+	public List<ListReportData> processSentiment(int topicID) throws RemoteException {
 		long startTime = System.currentTimeMillis();
 		/**
 		 * Create return data
 		 */
-		ListPieData affterSentiment = new ListPieData(); 
+		List<ListReportData> affterSentiment = new ArrayList<ListReportData>(); 
 		
 		/**
 		 * Create instance of sentimentProcess
@@ -124,7 +146,7 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 		/**
 		 * Analysis and return to data
 		 */
-		List<String> fbDataForSentiment = LDAProcess.getFbDataForSentiment(topicID);
+		Map<String, List<String>> fbDataForSentiment = LDAProcess.getFbDataForSentiment(topicID);
 		
 		affterSentiment = sentimentProcess.processSentiment(fbDataForSentiment);
 		
@@ -146,7 +168,17 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 	@Override
 	public FacebookData getFBDataByPageIDAndDate(List<String> lstPageID,
 			String startDate, String endDate) throws RemoteException {
-		FBDatabaseProcess fbDatabase = new FBDatabaseProcess();
 		return fbDatabase.getFBDataByPageIDAndDate(lstPageID, startDate, endDate);
+	}
+
+	@Override
+	public void savePageInfo(List<Page_Info> listFanPage)
+			throws RemoteException {
+		fbDatabase.savePageInfo(listFanPage);
+	}
+
+	@Override
+	public List<Page_Info> getListPageInfo() throws RemoteException {
+		return fbDatabase.getListPageInfo();
 	}
 }

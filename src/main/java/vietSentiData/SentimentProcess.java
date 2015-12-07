@@ -1,17 +1,17 @@
 package vietSentiData;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
+import org.apache.commons.lang3.StringEscapeUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import app.process.spellcheker.Checker;
-import app.utils.dto.ListPieData;
-import app.utils.dto.PieChart;
-import app.utils.dto.PieData;
+import app.utils.dto.ListReportData;
+import app.utils.dto.ReportData;
 import app.utils.spark.SparkUtil;
 import vn.hus.nlp.tokenizer.VietTokenizer;
 
@@ -83,93 +83,100 @@ public class SentimentProcess {
 	 * @param lstInputForSenti
 	 * @return Object for web client
 	 */
-	public ListPieData processSentiment(List<String> lstInputForSenti) {
+	public List<ListReportData> processSentiment(Map<String, List<String>> lstInputForSenti) {
 		
-		ListPieData listPieData = new ListPieData();
+		List<ListReportData> listPieData = new ArrayList<ListReportData>();
 		
 		// loop all of String input
-		for (String inputSenti : lstInputForSenti) {
-			double sentiScore = runAnalyzeSentiment(inputSenti);
-			int tyleColor = 0;
-			if (sentiScore > 0) {
-				tyleColor = POSITIVE;
-			} else if (sentiScore < 0) {
-				tyleColor = NEGATIVE;
-			} else if (sentiScore == 0) {
-				tyleColor = NEUTRAL;
+		for (String status : lstInputForSenti.keySet()) {
+			double totalScore = 0.0;
+			// create pieData stored status
+			ListReportData lstRP = new ListReportData();
+			
+			// get sentiScore of status
+			double sentiStatus = runAnalyzeSentiment(status);
+			totalScore += sentiStatus;
+			
+			// create ReportData stored data for status
+			ReportData statusReport = new ReportData(getTypeOfColor(sentiStatus), status);
+			
+			// set status data to List return object
+			lstRP.setStatusData(statusReport);
+			
+			List<ReportData> listCommentReport = new ArrayList<ReportData>();
+			// loop for all comment
+			for (String comments : lstInputForSenti.get(status)) {
+				// sentiment value of comment
+				double sentiComment = runAnalyzeSentiment(comments);
+				// sum of total
+				totalScore += sentiComment;
+				
+				// create comment report object
+				ReportData commentReport = new ReportData(getTypeOfColor(getTypeOfColor(sentiComment)), comments);
+				listCommentReport.add(commentReport);
 			}
-			PieData pieData = new PieData(tyleColor, inputSenti);
-			listPieData.add(pieData);
+			
+			// set list comment
+			lstRP.setListCommentData(listCommentReport);
+			
+			// set total score
+			totalScore = totalScore / (lstInputForSenti.get(status).size() + 1);
+			lstRP.setSentimentType(getTypeOfColor(totalScore));
+			
+			listPieData.add(lstRP);
 		}
-		
-		// Sort this list pie data follow: POSITIVE > NEUTRAL > NEGATIVE
-		Collections.sort(listPieData, new Comparator<PieData>() {
-
-			@Override
-			public int compare(PieData p1, PieData p2) {
-				return p2.getTypeColor() - p1.getTypeColor();
-			}
-		});
 		
 		return listPieData;
 	}
 	
 	/**
-	 * Object to draw pie chart
-	 * @param lisPieData
-	 * @return
+	 * get type sentiment: POSITIVE, NEGATIVE or NEUTRAL base on sentiScore
+	 * @param sentiScore
+	 * @return POSITIVE, NEGATIVE or NEUTRAL
 	 */
-	public List<PieChart> getCharData(ListPieData lisPieData){
-		// loop all pieData input to calculate sum of each type color
-		
-		List<PieChart> lstPieChar = new ArrayList<PieChart>();
-		
-		int numOfPos = 0;
-		int numOfNeg = 0;
-		int numOfNeu = 0;
-		for (PieData pieData : lisPieData) {
-			switch (pieData.getTypeColor()) {
-			case POSITIVE:
-				numOfPos++;
-				break;
-			case NEGATIVE:
-				numOfNeg++;
-				break;
-			case NEUTRAL: 
-				numOfNeu++;
-				break;
-			default:
-				break;
-			}
+	private int getTypeOfColor(double sentiScore){
+		if (sentiScore > 0) {
+			return POSITIVE;
+		} else if (sentiScore < 0) {
+			return NEGATIVE;
+		} else if (sentiScore == 0) {
+			return NEUTRAL;
 		}
-		
-		PieChart piePositive = new PieChart("Positive Percent", numOfPos);
-		PieChart pieNegative = new PieChart("Negative Percent", numOfNeg);
-		PieChart pieNeutral = new PieChart("Neutral Percent", numOfNeu);
-		
-		lstPieChar.add(piePositive);
-		lstPieChar.add(pieNegative);
-		lstPieChar.add(pieNeutral);
-		
-		return lstPieChar;
+		return NEUTRAL;
 	}
 	
 	public static void main(String[] args) {
 		SparkUtil.createJavaSparkContext();
 		Checker.init();
 		VietSentiData.init();
-
-		SentimentProcess smP = new SentimentProcess();
-		List<String> lstInputForSenti = new ArrayList<String>();
-		lstInputForSenti
-				.add("hai người yêu nhau không gì là không thể. Tin đi bạn");
-		lstInputForSenti
-				.add("Bỏ đi bạn. Lời khuyên chân thành. Rồi tha thứ làm bạn như bình thường.");
-		ListPieData ls = smP.processSentiment(lstInputForSenti);
-		for (PieData pieData : ls) {
-			System.out.println(pieData.getTypeColor());
-			System.out.println(pieData.getContentData());
-		}
 		
+		String a = StringEscapeUtils.escapeJava("😀");
+		System.out.println(a);
+		
+		SentimentProcess smP = new SentimentProcess();
+		Map<String, List<String>> sttAndCm = new LinkedHashMap<String, List<String>>();
+		
+		sttAndCm.put("status1 :'( lắm mà", new ArrayList<String>(){{
+			add(":( of status 1");
+		}});
+		
+		sttAndCm.put("hôm nay tôi rất là vui", new ArrayList<String>(){{
+			add("chuyện này =)) quá of status 2");
+		}});
+		
+		List<ListReportData> rs = smP.processSentiment(sttAndCm);
+		
+		System.out.println(ListReportData.toJson(rs));
+		
+//		for (ListReportData ite : rs) {
+//			System.out.println("score: " + ite.getSentimentType());
+//			System.out.println("---------------");
+//			System.out.println(" status: " + ite.getStatusData().getContentData());
+//			System.out.println("---------------");
+//			for (ReportData listReportData : ite.getListCommentData()) {
+//				System.out.println("comment: " + listReportData.getContentData());
+//				System.out.println("---------------");
+//			}
+//		}
 	}
 }
