@@ -51,14 +51,4 @@ public class ReportData implements Serializable{
 		this.contentData = contentData;
 	}
 	
-	public static void main(String[] args) {
-		ListReportData listPie = new ListReportData();
-		for (int i = 0; i < 8; i++) {
-			ReportData a = new ReportData(i, "this is content of " + i);
-			listPie.add(a);
-		}
-		
-		System.out.println(listPie.pieDataToJson());
-	}
-	
 }
