@@ -5,7 +5,12 @@ import java.util.ArrayList;
 
 import com.google.gson.Gson;
 
-public class ListPieData extends ArrayList<PieData> implements Serializable{
+/**
+ * List all of report object
+ * @author thaint
+ *
+ */
+public class ListReportData extends ArrayList<ReportData> implements Serializable{
 
 	/**
 	 * 

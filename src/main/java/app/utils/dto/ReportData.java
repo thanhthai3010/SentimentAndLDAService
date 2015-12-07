@@ -7,7 +7,7 @@ import java.io.Serializable;
  * @author thaint
  *
  */
-public class PieData implements Serializable{
+public class ReportData implements Serializable{
 
 	/**
 	 * 
@@ -22,7 +22,7 @@ public class PieData implements Serializable{
 	/**
 	 * default constructor
 	 */
-	public PieData() {
+	public ReportData() {
 	}
 
 	/**
@@ -30,8 +30,8 @@ public class PieData implements Serializable{
 	 * @param tyleColor
 	 * @param contentData
 	 */
-	public PieData(int tyleColor, String contentData) {
-		this.typeColor = tyleColor;
+	public ReportData(int typeColor, String contentData) {
+		this.typeColor = typeColor;
 		this.contentData = contentData;
 	}
 
@@ -39,8 +39,8 @@ public class PieData implements Serializable{
 		return typeColor;
 	}
 
-	public void setTypeColor(int tyleColor) {
-		this.typeColor = tyleColor;
+	public void setTypeColor(int typeColor) {
+		this.typeColor = typeColor;
 	}
 
 	public String getContentData() {
@@ -52,9 +52,9 @@ public class PieData implements Serializable{
 	}
 	
 	public static void main(String[] args) {
-		ListPieData listPie = new ListPieData();
+		ListReportData listPie = new ListReportData();
 		for (int i = 0; i < 8; i++) {
-			PieData a = new PieData(i, "this is content of " + i);
+			ReportData a = new ReportData(i, "this is content of " + i);
 			listPie.add(a);
 		}
 		
