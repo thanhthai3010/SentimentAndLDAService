@@ -1,5 +1,6 @@
 package app.processing.database;
 
+import java.rmi.RemoteException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -16,6 +17,7 @@ import app.server.handling.JdbcMySQLDriver;
 import app.utils.dto.Comment_Data;
 import app.utils.dto.FacebookData;
 import app.utils.dto.FacebookDataToInsertDB;
+import app.utils.dto.Page_Info;
 import app.utils.dto.Post_Data;
 
 public class FBDatabaseProcess {
@@ -290,6 +292,13 @@ public class FBDatabaseProcess {
 				logger.info(e.getMessage());
 			} catch (SQLException e) {
 				logger.info(e.getMessage());
+			} finally {
+				if (preparedStatement != null)
+					try {
+						preparedStatement.close();
+						JdbcMySQLDriver.closeConn();
+					} catch (SQLException logOrIgnore) {
+					}
 			}
 		}
 		// set for return data
@@ -297,11 +306,85 @@ public class FBDatabaseProcess {
 		return fbDataFromDB;
 	}
 	
+	/**
+	 * Save facebook page info
+	 * @param listFanPage
+	 * @throws RemoteException
+	 */
+	public void savePageInfo(List<Page_Info> listFanPage) {
+		// PreparedStatement
+		PreparedStatement preparedStatement = null;
+		for (Page_Info pageInfo : listFanPage) {
+			String insertTableSQL = "INSERT INTO PAGE_INFO"
+					+ " (PAGE_ID, PAGE_NAME) VALUES" + " (?, ?)";
+
+			try {
+				preparedStatement = JdbcMySQLDriver
+						.getPrepareStm(insertTableSQL);
+
+				// set page ID
+				preparedStatement.setLong(1, pageInfo.getPageID());
+
+				// Set page name
+				preparedStatement.setString(2, pageInfo.getPageName());
+				// execute insert SQL stetement
+				preparedStatement.executeUpdate();
+			} catch (SQLException e) {
+				logger.info(e.getMessage());
+			} finally {
+				if (preparedStatement != null)
+					try {
+						preparedStatement.close();
+						JdbcMySQLDriver.closeConn();
+					} catch (SQLException logOrIgnore) {
+					}
+			}
+		}
+	}
+	
+	/**
+	 * get all of pageInfo in database to display web
+	 * @return
+	 */
+	public List<Page_Info> getListPageInfo() {
+
+		List<Page_Info> listAllPageInfo = new ArrayList<Page_Info>();
+ 		// PreparedStatement
+		PreparedStatement preparedStatement = null;
+		
+		String getTableSQL = "SELECT PAGE_ID, PAGE_NAME"
+				+ " FROM PAGE_INFO";
+		
+		try {
+			preparedStatement = JdbcMySQLDriver.getPrepareStm(getTableSQL);
+			
+			ResultSet rs = preparedStatement.executeQuery();
+			while (rs.next()) {
+				Page_Info pageInfo = new Page_Info(rs.getLong("PAGE_ID"), rs.getString("PAGE_NAME"));
+				listAllPageInfo.add(pageInfo);
+			}
+		} catch (SQLException e) {
+			logger.info(e.getMessage());
+		} finally {
+			if (preparedStatement != null)
+				try {
+					preparedStatement.close();
+					JdbcMySQLDriver.closeConn();
+				} catch (SQLException logOrIgnore) {
+				}
+		}
+		
+		return listAllPageInfo;
+	}
+	
 //	public static void main(String[] args) {
 //		JdbcMySQLDriver.getConnetion();
 //		FBDatabaseProcess fbd = new FBDatabaseProcess();
 //		List<String> a = new ArrayList<String>();
 //		a.add("2311");
-//		FacebookData fbdx = fbd.getFBDataByPageIDAndDate(a, "2015-01-11", "2015-01-21");
+//		List<Page_Info> fbdx = fbd.getListPageInfo();
+//		for (Page_Info page_Info : fbdx) {
+//			logger.info(page_Info.getPageID().toString());
+//		}
 //	}
 }
