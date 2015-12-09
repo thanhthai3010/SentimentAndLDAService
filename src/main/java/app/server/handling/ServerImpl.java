@@ -15,8 +15,8 @@ import java.util.concurrent.TimeUnit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import vietSentiData.SentimentProcess;
-import vietSentiData.VietSentiData;
+import app.process.sentiment.SentimentProcess;
+import app.process.sentiment.VietSentiData;
 import app.process.spellcheker.Checker;
 import app.process.database.FBDatabaseProcess;
 import app.process.lda.LDAProcess;
