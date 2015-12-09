@@ -145,6 +145,10 @@ public class SentimentProcess {
 		return NEUTRAL;
 	}
 	
+	private void writeData() {
+		
+	}
+	
 	public static void main(String[] args) {
 		SparkUtil.createJavaSparkContext();
 		Checker.init();
