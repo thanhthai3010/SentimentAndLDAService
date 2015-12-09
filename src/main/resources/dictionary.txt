@@ -707,3 +707,4 @@ ktx	kí túc xá
 thks	thanks
 chuc	chúc
 man	mắn
+face	facebook

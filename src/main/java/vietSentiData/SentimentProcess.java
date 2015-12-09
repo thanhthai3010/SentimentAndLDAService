@@ -150,23 +150,20 @@ public class SentimentProcess {
 		Checker.init();
 		VietSentiData.init();
 		
-		String a = StringEscapeUtils.escapeJava("😀");
+		String a = StringEscapeUtils.escapeJava(" chào mọi người 😀");
 		System.out.println(a);
+		System.out.println(StringEscapeUtils.unescapeJava(a));
 		
-		SentimentProcess smP = new SentimentProcess();
-		Map<String, List<String>> sttAndCm = new LinkedHashMap<String, List<String>>();
-		
-		sttAndCm.put("status1 :'( lắm mà", new ArrayList<String>(){{
-			add(":( of status 1");
-		}});
-		
-		sttAndCm.put("hôm nay tôi rất là vui", new ArrayList<String>(){{
-			add("chuyện này =)) quá of status 2");
-		}});
-		
-		List<ListReportData> rs = smP.processSentiment(sttAndCm);
-		
-		System.out.println(ListReportData.toJson(rs));
+//		SentimentProcess smP = new SentimentProcess();
+//		Map<String, List<String>> sttAndCm = new LinkedHashMap<String, List<String>>();
+//		
+//		sttAndCm.put("Mình là nam. Cao 1m7 hơn không mập củng không ốm. Bề ngoài ưa nhìn. Hôm nay mình viết cái cfs này vì lí do FA lâu rồi, mình muốn tìm bạn để trò chuyện. Bạn nữ nào cũng FA như mình và có thời gian thì nhắn tin với mình cho đỡ buồn nha. Đây fb của mình:https://www.facebook.com/zZChristianTaiZz p/s: stt viết lúc 2h khuya :)", new ArrayList<String>(){{
+//			add(" of status 1");
+//		}});
+//		
+//		List<ListReportData> rs = smP.processSentiment(sttAndCm);
+//		
+//		System.out.println(ListReportData.toJson(rs));
 		
 //		for (ListReportData ite : rs) {
 //			System.out.println("score: " + ite.getSentimentType());

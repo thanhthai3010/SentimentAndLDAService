@@ -52,6 +52,11 @@ public class LDAProcess implements Serializable {
 	 */
 	private static final String STRING_BLANK = "";
 	
+	/**
+	 * String space
+	 */
+	private static final String STRING_SPACE = " ";
+	
 	private static final Logger logger = LoggerFactory
 			.getLogger(LDAProcess.class);
 	
@@ -133,7 +138,7 @@ public class LDAProcess implements Serializable {
 			
 			// Check spell before tokenizer
 			String spell = Checker.correctSpell(input);
-			String[] tokenText = tokenizer.tokenize(spell.replaceAll("[0-9]", STRING_BLANK));			
+			String[] tokenText = tokenizer.tokenize(replaceURLFromText(spell));			
 			
 			checkSpell.add(tokenText[0]);
 		}
@@ -329,11 +334,22 @@ public class LDAProcess implements Serializable {
 	}
 
 	/**
+	 * Replace all number and URL from input
+	 * @param input
+	 * @return
+	 */
+	private static String replaceURLFromText(String input){
+		input = input.replaceAll("[0-9]", STRING_BLANK);
+		input = input.replaceAll("(https?|http):((//)|(\\\\))+[\\w\\d:#@%/;$()~_?\\+-=\\\\\\.&]*", STRING_SPACE);
+		return input;
+	}
+	
+	/**
 	 * Split each sentences input into a List of VietNamese Words
 	 * @param data JavaRDD<String>
 	 * @return List of each words
 	 */
-	public static JavaRDD<List<String>> transformInputData(JavaRDD<String> data) {
+	private static JavaRDD<List<String>> transformInputData(JavaRDD<String> data) {
 		/**
 		 * Split each sentences input into a List of VietNamese Words
 		 */
@@ -355,7 +371,7 @@ public class LDAProcess implements Serializable {
 	 * @param inputSentences
 	 * @return
 	 */
-	public static List<List<String>> filterOutStopWord(JavaRDD<List<String>> inputSentences){
+	private static List<List<String>> filterOutStopWord(JavaRDD<List<String>> inputSentences){
 		
 		List<List<String>> result = new ArrayList<List<String>>();
 		
@@ -382,7 +398,7 @@ public class LDAProcess implements Serializable {
 	 * @param vocabAndCount
 	 * @return
 	 */
-	public static JavaRDD<Tuple2<Long, Vector>> wordCountVector(JavaRDD<List<String>> corpuss, Map<String, Long> wordAndIndexOfWord) {
+	private static JavaRDD<Tuple2<Long, Vector>> wordCountVector(JavaRDD<List<String>> corpuss, Map<String, Long> wordAndIndexOfWord) {
 		JavaRDD<Tuple2<Long, Vector>> result = corpuss
 		.zipWithIndex()
 		.map(new Function<Tuple2<List<String>, Long>, Tuple2<Long, Vector>>() {

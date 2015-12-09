@@ -832,7 +832,7 @@ v	2579447	0	0.625	bại_hoại#1 lật_đổ thô_tục#1 gởi lộn#1 suy đ�
 v	2588122	0	0.5	chống_đỡ#1	"cố gắng để quản lý mà không cần giúp đỡ, ""Các cầu thủ trẻ đã phải tự lo liệu chống đỡ cho bản thân sau khi cha mẹ của họ qua đời"""
 v	2552829	0.625	0	phục_hồi chức_năng#3	"khôi phục lại trạng thái của tình trạng tốt hay hoạt động; ""phòng tập phục hồi chức năng"""
 v	2496498	0.5	0	giải_phóng#1 giải trừ#2	"miễn phí từ chế độ nô lệ hay nô dịch; ""Sài Gòn giải phóng, nhân dân được giải trừ khỏi ách đô hộ"""
-v	2343595	0	0.5	hy_sinh#1 cho#16	"chịu đựng những mất mát, ""Ông đã cho trẻ em cuộc sống của mình"", ""Tôi đã hy sinh hai con trai cho chiến tranh"""
+v	2343595	0	0.5	hy_sinh#1	"chịu đựng những mất mát, ""Ông đã cho trẻ em cuộc sống của mình"", ""Tôi đã hy sinh hai con trai cho chiến tranh"""
 v	2301000	0	0.5	trả_giá cao hơn#1	"chào giá cao hơn giá thầu của đối thủ khi một trong những đối tác đã không chào giá hoặc tăng gấp đôi; ""Ông ta trả giá cao hơn để nhất định mua được món hàng"""
 v	1820077	0	0.5	bụi#1	làm khó chịu hay gặp khó khăn
 v	1808769	0.25	0.125	đẩy_lùi#2	"làm giảm tác động, giảm sức mạnh ; ""Mong sao bệnh tật bị đẩy lùi"""
@@ -877,7 +877,7 @@ a	788541	0	0.5	khô_khan#1	"không có cảm xúc ; ""lời văn khô khan"""
 a	788542	0.125	0.5	ngây_ngô đến vậy#1	"kém tinh khôn hoặc kém hiểu biết đến mức khờ dại ; ""sao nó lại có thể hành động ngây ngô đến vậy"""
 v	788543	0	0.6	hành_hạ#1	"làm cho vất vả , khổ sở; ""bà ta hành hạ trẻ em nhỏ"""
 v	788544	0.125	0.5	thấy sợ#1	"cảm giác không dám đối mặt vì quá nguy hiểm; ""tôi thấy sợ những người như thế"""
-v	788545	0.125	0.5	vã_mồ_hôi#1	" cảm giác sợ sệt, lo lắng; ""tôi sợ vã mồ hôi ra"""
+v	788545	0.125	0.5	mồ_hôi#1	" cảm giác sợ sệt, lo lắng; ""tôi sợ vã mồ hôi ra"""
 v	788546	0	0.75	bạo_hành#1	"hành động tàn ác; ""nạn bạo hành trẻ em"""
 v	788547	0	0.6	tổn_thương#1	"mất mát một phần, không còn được hoàn toàn nguyên vẹn như trước ; ""lòng tự trọng bị tổn thương"""
 v	788548	0.125	0.5	canh_cánh#1	"lúc nào cũng ở bên lòng, không để cho yên ; ""tôi lo canh cánh"""
@@ -1020,5 +1020,6 @@ v	1937992	0	0.75	nhăn_nhó#1	nhăn nhó, tỏ vẻ khó chịu
 v	1937993	0.5	0	cười#1	mỉm cười vui vẻ
 v	1937994	0.8	0	bật_cười#1	cười lớn thành tiếng, vui vẻ, náo động
 a	1937995	0.8	0	khoái_trá#1	cười đểu, cười khoái trá
-a	1937996	0	0.4	băn_khoăn#1	không vui, cảm thấy bối rối
-a	1937996	0.25	0	ngại_ngùng#1	bĩu môi, ngại ngùng trước sự việc. Cảm thấy thích thú với việc này lắm
+a	1937997	0	0.4	băn_khoăn#1	không vui, cảm thấy bối rối
+a	1937998	0.25	0	ngại_ngùng#1	bĩu môi, ngại ngùng trước sự việc. Cảm thấy thích thú với việc này lắm
+a	1937999	0.3	0	nụ_hôn#1	trao nhau nụ hôn. Anh ấy đã hôn cô ấy. Một nụ hôn thật nồng nhiệt
