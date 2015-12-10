@@ -3,6 +3,11 @@ package app.process.spellcheker;
 import java.io.Serializable;
 import java.util.Map;
 
+import com.vdurmont.emoji.EmojiParser;
+
+import vn.hus.nlp.tokenizer.VietTokenizer;
+import app.utils.spark.SparkUtil;
+
 /**
  * Check spelling of String[] input
  * 
@@ -70,6 +75,25 @@ public class Checker implements Serializable {
 	 * @param String input sentences
 	 * @return result String after corrected
 	 */
+	public static String correctSpecialEmoticons(String sentences){
+		if (sentences != null && !STRING_BLANK.equals(sentences)) {
+			Map<String, String> dictSpecialEmoticons = Dictionary.getSpecialDictEmoticons().collectAsMap();
+			
+			// convert sentences input into unicode character
+			sentences = EmojiParser.parseToAliases(sentences);
+			for (Map.Entry<String, String> emoticon : dictSpecialEmoticons.entrySet()) {
+				sentences = sentences.replaceAll(emoticon.getKey(), emoticon.getValue() + " ");
+			}
+		}
+		return sentences;
+	}
+	
+	/**
+	 * get the correct of sentences has emoticons
+	 * 
+	 * @param String input sentences
+	 * @return result String after corrected
+	 */
 	public static String correctUnicodeCharacters(String sentences){
 		if (sentences != null && !STRING_BLANK.equals(sentences)) {
 			Map<String, String> dictUnicodes = Dictionary.getDictUnicodes().collectAsMap();
@@ -82,14 +106,14 @@ public class Checker implements Serializable {
 		return sentences;
 	}
 
-//	public static void main(String[] args) {
-//		SparkUtil.createJavaSparkContext();
-//		Checker.init();
-//		System.out.println(Checker.correctUnicodeCharacters("Mình viết confession này là muốn chia sẻ niềm vui với"));
-//		VietTokenizer to = new VietTokenizer();
-//		String[] rs = to.tokenize(Checker.correctUnicodeCharacters("Mình viết confession này là muốn chia sẻ niềm vui với"));
-//		for (String string : rs) {
-//			System.out.println(string);
-//		}
-//	}
+	public static void main(String[] args) {
+		SparkUtil.createJavaSparkContext();
+		Checker.init();
+		String outPut = Checker.correctSpecialEmoticons("hôm nay là một ngày 😃");
+		VietTokenizer to = new VietTokenizer();
+		String[] rs = to.tokenize(outPut);
+		for (String string : rs) {
+			System.out.println(string);
+		}
+	}
 }

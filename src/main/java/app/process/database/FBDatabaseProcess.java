@@ -116,6 +116,34 @@ public class FBDatabaseProcess {
 	}
 
 	/**
+	 * Delete all of record in table PAGE_INFO has pageID
+	 */
+	private void deletePageInfo(Long pageID) {
+		PreparedStatement preparedStatement = null;
+
+		String insertTableSQL = "DELETE FROM PAGE_INFO WHERE PAGE_ID = ?";
+
+		try {
+			preparedStatement = JdbcMySQLDriver.getPrepareStm(insertTableSQL);
+
+			preparedStatement.setLong(1, pageID);
+			// execute SQL stetement
+			preparedStatement.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			logger.info(e.getMessage());
+		} finally {
+			if (preparedStatement != null)
+				try {
+					preparedStatement.close();
+					JdbcMySQLDriver.closeConn();
+				} catch (SQLException logOrIgnore) {
+				}
+		}
+
+		logger.info("Done delete PAGE_INFO with PageID");
+	}
+	/**
 	 * Save post data into table POST_DATA
 	 * 
 	 * @param pageID
@@ -188,7 +216,11 @@ public class FBDatabaseProcess {
 				preparedStatement.setInt(3, cmData.getCommentID());
 				
 				// Convert character to Unicode before insert into database
-				preparedStatement.setString(4, Checker.correctUnicodeCharacters(cmData.getCommentContent()));
+				// TODO: need to remove checker here
+				String commentData = Checker.correctUnicodeCharacters(cmData.getCommentContent());
+				commentData = Checker.correctSpell(commentData);
+				commentData = Checker.correctSpecialEmoticons(commentData);
+				preparedStatement.setString(4, commentData);
 
 				// execute insert SQL stetement
 				preparedStatement.executeUpdate();
@@ -312,9 +344,14 @@ public class FBDatabaseProcess {
 	 * @throws RemoteException
 	 */
 	public void savePageInfo(List<Page_Info> listFanPage) {
+		
 		// PreparedStatement
 		PreparedStatement preparedStatement = null;
 		for (Page_Info pageInfo : listFanPage) {
+			
+			// delete PAGE_INFO
+			deletePageInfo(pageInfo.getPageID());
+			
 			String insertTableSQL = "INSERT INTO PAGE_INFO"
 					+ " (PAGE_ID, PAGE_NAME) VALUES" + " (?, ?)";
 
@@ -375,6 +412,29 @@ public class FBDatabaseProcess {
 		}
 		
 		return listAllPageInfo;
+	}
+	
+	public List<String> getCommentData() {
+		List<String> listComment = new ArrayList<String>();
+
+		PreparedStatement preparedStatement = null;
+
+		String getTableSQL = "SELECT COMMENT_CONTENT" + " FROM COMMENT_DATA "
+				+ " WHERE PAGE_ID =220306294811118";
+		preparedStatement = JdbcMySQLDriver.getPrepareStm(getTableSQL);
+		ResultSet rs;
+		try {
+			rs = preparedStatement.executeQuery();
+
+			while (rs.next()) {
+				String comment = rs.getString("COMMENT_CONTENT");
+				listComment.add(comment);
+			}
+		} catch (SQLException e) {
+			logger.info("Can not get COMMENT_DATA");
+		}
+		logger.info("Done get COMMENT_DATA");
+		return listComment;
 	}
 	
 //	public static void main(String[] args) {

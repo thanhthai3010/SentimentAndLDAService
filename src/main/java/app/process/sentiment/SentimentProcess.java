@@ -1,14 +1,20 @@
 package app.process.sentiment;
 
+import java.io.BufferedWriter;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import app.process.database.FBDatabaseProcess;
 import app.process.spellcheker.Checker;
 import app.utils.dto.ListReportData;
 import app.utils.dto.ReportData;
@@ -54,6 +60,24 @@ public class SentimentProcess {
 			String correctSentence = correctSpellAndEmoticons(inputText);
 			// Token each word in this sentence
 			String[] rsCheckedAndToken = tokenizer.tokenize(correctSentence);
+			if (rsCheckedAndToken.length > 0) {
+				// Calculate score of this sentence
+				rs = VietSentiData.scoreTokens(rsCheckedAndToken[0].split(REGEX_SPACE));
+			}
+
+		} catch (Exception ex) {
+			logger.info(ex.getMessage());
+			return rs;
+		}
+
+		return rs;
+	}
+	
+	private double runAnalyzeSentiment(String[] rsCheckedAndToken) {
+
+		double rs = 0.0;
+		try {
+			// Token each word in this sentence
 			if (rsCheckedAndToken.length > 0) {
 				// Calculate score of this sentence
 				rs = VietSentiData.scoreTokens(rsCheckedAndToken[0].split(REGEX_SPACE));
@@ -145,8 +169,63 @@ public class SentimentProcess {
 		return NEUTRAL;
 	}
 	
-	private void writeData() {
+	private static String replaceURLFromText(String input){
+		input = input.replaceAll("[0-9]", "");
+		input = input.replaceAll("(https?|http):((//)|(\\\\))+[\\w\\d:#@%/;$()~_?\\+-=\\\\\\.&]*", " ");
+		return input;
+	}
+	
+	private void writeData(List<String> listComment) {
 		
+		List<String> lstPositive = new ArrayList<String>();
+		List<String> lstNegative = new ArrayList<String>();
+		List<String> lstNeutral = new ArrayList<String>();
+		
+		for (String inputText : listComment) {
+			
+			inputText = replaceURLFromText(inputText);
+			inputText = Checker.correctEmoticons(inputText);
+			String[] rsCheckedAndToken = tokenizer.tokenize(inputText);
+			double sentiScore = runAnalyzeSentiment(rsCheckedAndToken);
+			if (sentiScore > 0) {
+				lstPositive.add(rsCheckedAndToken[0]);
+			} else if (sentiScore < 0) {
+				lstNegative.add(rsCheckedAndToken[0]);
+			} else if (sentiScore == 0) {
+				lstNeutral.add(rsCheckedAndToken[0]);
+			}
+		}
+		
+		// write
+		try (Writer writer = new BufferedWriter(new OutputStreamWriter(
+				new FileOutputStream("POSITIVE.txt"), "utf-8"))) {
+
+			for (String posi : lstPositive) {
+				writer.write(posi + "\n");
+			}
+		} catch (Exception e) {
+			logger.info(e.getMessage());
+		}
+		
+		try (Writer writer = new BufferedWriter(new OutputStreamWriter(
+				new FileOutputStream("NEGATIVE.txt"), "utf-8"))) {
+
+			for (String nega : lstNegative) {
+				writer.write(nega + "\n");
+			}
+		} catch (Exception e) {
+			logger.info(e.getMessage());
+		}
+		
+		try (Writer writer = new BufferedWriter(new OutputStreamWriter(
+				new FileOutputStream("NEUTRAL.txt"), "utf-8"))) {
+
+			for (String neu : lstNeutral) {
+				writer.write(neu + "\n");
+			}
+		} catch (Exception e) {
+			logger.info(e.getMessage());
+		}
 	}
 	
 	public static void main(String[] args) {
@@ -154,30 +233,9 @@ public class SentimentProcess {
 		Checker.init();
 		VietSentiData.init();
 		
-		String a = StringEscapeUtils.escapeJava(" chào mọi người 😀");
-		System.out.println(a);
-		System.out.println(StringEscapeUtils.unescapeJava(a));
-		
-//		SentimentProcess smP = new SentimentProcess();
-//		Map<String, List<String>> sttAndCm = new LinkedHashMap<String, List<String>>();
-//		
-//		sttAndCm.put("Mình là nam. Cao 1m7 hơn không mập củng không ốm. Bề ngoài ưa nhìn. Hôm nay mình viết cái cfs này vì lí do FA lâu rồi, mình muốn tìm bạn để trò chuyện. Bạn nữ nào cũng FA như mình và có thời gian thì nhắn tin với mình cho đỡ buồn nha. Đây fb của mình:https://www.facebook.com/zZChristianTaiZz p/s: stt viết lúc 2h khuya :)", new ArrayList<String>(){{
-//			add(" of status 1");
-//		}});
-//		
-//		List<ListReportData> rs = smP.processSentiment(sttAndCm);
-//		
-//		System.out.println(ListReportData.toJson(rs));
-		
-//		for (ListReportData ite : rs) {
-//			System.out.println("score: " + ite.getSentimentType());
-//			System.out.println("---------------");
-//			System.out.println(" status: " + ite.getStatusData().getContentData());
-//			System.out.println("---------------");
-//			for (ReportData listReportData : ite.getListCommentData()) {
-//				System.out.println("comment: " + listReportData.getContentData());
-//				System.out.println("---------------");
-//			}
-//		}
+		FBDatabaseProcess fbDt = new FBDatabaseProcess();
+		List<String> cmData = fbDt.getCommentData();
+		SentimentProcess stm = new SentimentProcess();
+		stm.writeData(cmData);
 	}
 }
