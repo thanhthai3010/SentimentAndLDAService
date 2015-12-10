@@ -9,26 +9,29 @@
 			<param name="ConversionPattern" value="%-5p: %c - %m%n" />
 		</layout>
 	</appender>
-	
+
 	<!-- Application Loggers -->
 	<logger name="app.server.handling">
 		<level value="info" />
 	</logger>
-	<logger name="app.processing.lda">
+	<logger name="app.process.lda">
 		<level value="info" />
 	</logger>
-	<logger name="app.processing.database">
+	<logger name="app.process.database">
+		<level value="info" />
+	</logger>
+	<logger name="app.process.sentiment">
 		<level value="info" />
 	</logger>
 	<!-- 3rdparty Loggers -->
 	<logger name="org.springframework.core">
 		<level value="info" />
 	</logger>
-	
+
 	<logger name="org.springframework.beans">
 		<level value="info" />
 	</logger>
-	
+
 	<logger name="org.springframework.context">
 		<level value="info" />
 	</logger>
@@ -42,5 +45,5 @@
 		<priority value="warn" />
 		<appender-ref ref="console" />
 	</root>
-	
+
 </log4j:configuration>

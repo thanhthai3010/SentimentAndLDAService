@@ -1,32 +1,31 @@
-\ uD83D \ uDE03	vui vẻ
-\ uD83D \ uDE04	vui vẻ
-\ uD83D \ uDE0A	ngại ngùng
-\ uD83D \ uDE0F	cười đểu
-\ uD83D \ uDE1E	thất vọng
-\uD83D\uDE18	yêu
-\uD83D\uDE31	hoảng sợ
-\uD83D\uDE35	nhăn nhó
-\uD83D\uDE22	khóc lóc
-\uD83D\uDE0C	khó hiểu
-\uD83D\uDE1E	buồn bã
-\uD83D\uDE1E	yêu
-\uD83D\uDE21	bực bội
-\uD83D\uDE1A	nụ hôn
-\uD83D\uDE37	bệnh
-\uD83D\uDE13	toát mồ hôi
-\uD83D\uDE30	sợ hãi
-\uD83D\uDE25	thất vọng
-\uD83D\uDE28	sợ hãi
-\uD83D\uDE31	khủng khiếp
-\uD83D\uDE35	choáng váng
-\uD83D\uDE2D	buồn phiền
-\uD83D\uDE20	giận dữ
-\uD83D\uDE33	đỏ ửng
-\uD83D\uDE32	ngạc nhiên
-\uD83D\uDE1C	nháy mắt
-\uD83D\uDE14	suy nghĩ
-\uD83D\uDE12	lác mắt
-\uD83D\uDE21	hờn dỗi
-\uD83D\uDE02	hài hước
-\uD83D\uDE09	vui nhộn
-
+:smiley:	vui vẻ
+:smile:	vui vẻ
+:blush:	ngại ngùng
+:smirk:	cười đểu
+:disappointed:	thất vọng
+:kissing_heart:	yêu
+:scream:	hoảng sợ
+:dizzy_face:	nhăn nhó
+:cry:	khóc lóc
+:relieved:	khó hiểu
+:disappointed:	buồn bã
+:heart_eyes:	yêu
+:rage	bực bội
+:kissing_closed_eyes:	nụ hôn
+:mask:	bệnh
+:sweat:	toát mồ hôi
+:cold_sweat:	sợ hãi
+:disappointed_relieved:	thất vọng
+:fearful:	sợ hãi
+:scream:	khủng khiếp
+:dizzy_face:	choáng váng
+:sob:	buồn phiền
+:angry:	giận dữ
+:flushed:	đỏ ửng
+:astonished:	ngạc nhiên
+:stuck_out_tongue_winking_eye:	nháy mắt
+:pensive:	suy nghĩ
+:unamused:	lác mắt
+:rage:	hờn dỗi
+:joy:	hài hước
+:wink:	vui nhộn
