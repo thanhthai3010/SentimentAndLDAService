@@ -1,31 +1,31 @@
-:smiley:	vui vẻ
-:smile:	vui vẻ
-:blush:	ngại ngùng
-:smirk:	cười đểu
-:disappointed:	thất vọng
-:kissing_heart:	yêu
-:scream:	hoảng sợ
-:dizzy_face:	nhăn nhó
-:cry:	khóc lóc
-:relieved:	khó hiểu
-:disappointed:	buồn bã
-:heart_eyes:	yêu
-:rage	bực bội
-:kissing_closed_eyes:	nụ hôn
-:mask:	bệnh
-:sweat:	toát mồ hôi
-:cold_sweat:	sợ hãi
-:disappointed_relieved:	thất vọng
-:fearful:	sợ hãi
-:scream:	khủng khiếp
-:dizzy_face:	choáng váng
-:sob:	buồn phiền
-:angry:	giận dữ
-:flushed:	đỏ ửng
-:astonished:	ngạc nhiên
-:stuck_out_tongue_winking_eye:	nháy mắt
-:pensive:	suy nghĩ
-:unamused:	lác mắt
-:rage:	hờn dỗi
-:joy:	hài hước
-:wink:	vui nhộn
+:smiley:	 vui vẻ 
+:smile:	 vui vẻ 
+:blush:	 ngại ngùng 
+:smirk:	 cười đểu 
+:disappointed:	 thất vọng 
+:kissing_heart:	 yêu 
+:scream:	 hoảng sợ 
+:dizzy_face:	 nhăn nhó 
+:cry:	 khóc lóc 
+:relieved:	 khó hiểu 
+:disappointed:	 buồn bã 
+:heart_eyes:	 yêu 
+:rage	 bực bội 
+:kissing_closed_eyes:	 nụ hôn 
+:mask:	 bệnh 
+:sweat:	 toát mồ hôi 
+:cold_sweat:	 sợ hãi 
+:disappointed_relieved:	 thất vọng 
+:fearful:	 sợ hãi 
+:scream:	 khủng khiếp 
+:dizzy_face:	 choáng váng 
+:sob:	 buồn phiền 
+:angry:	 giận dữ 
+:flushed:	 đỏ ửng 
+:astonished:	 ngạc nhiên 
+:stuck_out_tongue_winking_eye:	 nháy mắt 
+:pensive:	 suy nghĩ 
+:unamused:	 lác mắt 
+:rage:	 hờn dỗi 
+:joy:	 hài hước 
+:wink:	 vui nhộn
