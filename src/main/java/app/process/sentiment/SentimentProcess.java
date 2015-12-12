@@ -1,8 +1,11 @@
 package app.process.sentiment;
 
 import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
 import java.io.Writer;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -40,18 +43,18 @@ public class SentimentProcess {
 
 	private static final Logger logger = LoggerFactory
 			.getLogger(SentimentProcess.class);
-	
+
 	/**
 	 * String SPACE
 	 */
 	private static final String REGEX_SPACE = " ";
-	
+
 	private VietTokenizer tokenizer;
-	
+
 	public SentimentProcess() {
 		tokenizer = new VietTokenizer("tokenizer.properties");
 	}
-	
+
 	private double runAnalyzeSentiment(String inputText) {
 
 		double rs = 0.0;
@@ -62,7 +65,8 @@ public class SentimentProcess {
 			String[] rsCheckedAndToken = tokenizer.tokenize(correctSentence);
 			if (rsCheckedAndToken.length > 0) {
 				// Calculate score of this sentence
-				rs = VietSentiData.scoreTokens(rsCheckedAndToken[0].split(REGEX_SPACE));
+				rs = VietSentiData.scoreTokens(rsCheckedAndToken[0]
+						.split(REGEX_SPACE));
 			}
 
 		} catch (Exception ex) {
@@ -72,7 +76,7 @@ public class SentimentProcess {
 
 		return rs;
 	}
-	
+
 	private double runAnalyzeSentiment(String[] rsCheckedAndToken) {
 
 		double rs = 0.0;
@@ -80,7 +84,8 @@ public class SentimentProcess {
 			// Token each word in this sentence
 			if (rsCheckedAndToken.length > 0) {
 				// Calculate score of this sentence
-				rs = VietSentiData.scoreTokens(rsCheckedAndToken[0].split(REGEX_SPACE));
+				rs = VietSentiData.scoreTokens(rsCheckedAndToken[0]
+						.split(REGEX_SPACE));
 			}
 
 		} catch (Exception ex) {
@@ -90,10 +95,12 @@ public class SentimentProcess {
 
 		return rs;
 	}
-	
+
 	/**
 	 * In this step, we need correct spelling and correct emoticons
-	 * @param inputText String sentence input
+	 * 
+	 * @param inputText
+	 *            String sentence input
 	 * @return sentence after correct spell and emoticons
 	 */
 	private String correctSpellAndEmoticons(String inputText) {
@@ -101,32 +108,36 @@ public class SentimentProcess {
 		String emoticonsCorrect = Checker.correctEmoticons(spellCorrect);
 		return emoticonsCorrect;
 	}
-	
+
 	/**
-	 * Create Object after analysis sentiment and then send this object to client
+	 * Create Object after analysis sentiment and then send this object to
+	 * client
+	 * 
 	 * @param lstInputForSenti
 	 * @return Object for web client
 	 */
-	public List<ListReportData> processSentiment(Map<String, List<String>> lstInputForSenti) {
-		
+	public List<ListReportData> processSentiment(
+			Map<String, List<String>> lstInputForSenti) {
+
 		List<ListReportData> listPieData = new ArrayList<ListReportData>();
-		
+
 		// loop all of String input
 		for (String status : lstInputForSenti.keySet()) {
 			double totalScore = 0.0;
 			// create pieData stored status
 			ListReportData lstRP = new ListReportData();
-			
+
 			// get sentiScore of status
 			double sentiStatus = runAnalyzeSentiment(status);
 			totalScore += sentiStatus;
-			
+
 			// create ReportData stored data for status
-			ReportData statusReport = new ReportData(getTypeOfColor(sentiStatus), status);
-			
+			ReportData statusReport = new ReportData(
+					getTypeOfColor(sentiStatus), status);
+
 			// set status data to List return object
 			lstRP.setStatusData(statusReport);
-			
+
 			List<ReportData> listCommentReport = new ArrayList<ReportData>();
 			// loop for all comment
 			for (String comments : lstInputForSenti.get(status)) {
@@ -134,31 +145,33 @@ public class SentimentProcess {
 				double sentiComment = runAnalyzeSentiment(comments);
 				// sum of total
 				totalScore += sentiComment;
-				
+
 				// create comment report object
-				ReportData commentReport = new ReportData(getTypeOfColor(getTypeOfColor(sentiComment)), comments);
+				ReportData commentReport = new ReportData(
+						getTypeOfColor(getTypeOfColor(sentiComment)), comments);
 				listCommentReport.add(commentReport);
 			}
-			
+
 			// set list comment
 			lstRP.setListCommentData(listCommentReport);
-			
+
 			// set total score
 			totalScore = totalScore / (lstInputForSenti.get(status).size() + 1);
 			lstRP.setSentimentType(getTypeOfColor(totalScore));
-			
+
 			listPieData.add(lstRP);
 		}
-		
+
 		return listPieData;
 	}
-	
+
 	/**
 	 * get type sentiment: POSITIVE, NEGATIVE or NEUTRAL base on sentiScore
+	 * 
 	 * @param sentiScore
 	 * @return POSITIVE, NEGATIVE or NEUTRAL
 	 */
-	private int getTypeOfColor(double sentiScore){
+	private int getTypeOfColor(double sentiScore) {
 		if (sentiScore > 0) {
 			return POSITIVE;
 		} else if (sentiScore < 0) {
@@ -168,71 +181,114 @@ public class SentimentProcess {
 		}
 		return NEUTRAL;
 	}
-	
-	private static String replaceURLFromText(String input){
+
+	private static String replaceURLFromText(String input) {
 		input = input.replaceAll("[0-9]", "");
-		input = input.replaceAll("(https?|http):((//)|(\\\\))+[\\w\\d:#@%/;$()~_?\\+-=\\\\\\.&]*", " ");
+		input = input
+				.replaceAll(
+						"(https?|http):((//)|(\\\\))+[\\w\\d:#@%/;$()~_?\\+-=\\\\\\.&]*",
+						" ");
 		return input;
 	}
-	
+
 	private void writeData(List<String> listComment) {
-		
-		List<String> lstPositive = new ArrayList<String>();
-		List<String> lstNegative = new ArrayList<String>();
-		List<String> lstNeutral = new ArrayList<String>();
-		
+
+		List<ReportData> lstPositive = new ArrayList<ReportData>();
+//		List<String> lstNegative = new ArrayList<String>();
+//		List<String> lstNeutral = new ArrayList<String>();
+		System.out.println("Lexicon classify comment...");
+		int count = 0;
+		int WriteTimes = 0;
+
+		Writer writerPos = null;
+//		Writer writerNetr = null;
+//		Writer writerNeg = null;
+		try {
+			writerPos = new BufferedWriter(new OutputStreamWriter(
+					new FileOutputStream("DATA.txt"), "utf-8"));
+//			writerNeg = new BufferedWriter(new OutputStreamWriter(
+//					new FileOutputStream("NEGATIVE.txt"), "utf-8"));
+//			writerNetr = new BufferedWriter(new OutputStreamWriter(
+//					new FileOutputStream("NEUTRAL.txt"), "utf-8"));
+
+		} catch (UnsupportedEncodingException e1) {
+			e1.printStackTrace();
+		} catch (FileNotFoundException e1) {
+			e1.printStackTrace();
+		}
+
+		int count2 = 0;
+		int count1 = 0;
+		int count0 = 0;
 		for (String inputText : listComment) {
-			
+			/*
+			 * if(inputText.contains("gvcn năm 12 là người tôi sợ hơn phụ huynh")
+			 * ){ String a = "pause"; a.toCharArray(); }
+			 */
+
+			// .replaceAll("[0-9\\<\\>\\|\\”\\“\\/\\?\\\"\\:\\!\\.\\#\\,\\)\\(\\%\\+\\\\]",
+			// "").replaceAll("\\-", " ").replaceAll("\\s+", " ")
+
 			inputText = replaceURLFromText(inputText);
 			inputText = Checker.correctEmoticons(inputText);
-			String[] rsCheckedAndToken = tokenizer.tokenize(inputText);
-			double sentiScore = runAnalyzeSentiment(rsCheckedAndToken);
-			if (sentiScore > 0) {
-				lstPositive.add(rsCheckedAndToken[0]);
-			} else if (sentiScore < 0) {
-				lstNegative.add(rsCheckedAndToken[0]);
-			} else if (sentiScore == 0) {
-				lstNeutral.add(rsCheckedAndToken[0]);
+			inputText = inputText.replaceAll(
+					"[0-9\\<\\>\\|\\”\\“\\/\\?\\\"\\:\\!\\#\\)\\(\\%\\+]", "")
+					.replaceAll("\\-", " ");
+			if (inputText.length() > 4) {
+				String[] rsCheckedAndToken = tokenizer.tokenize(inputText);
+				double sentiScore = runAnalyzeSentiment(rsCheckedAndToken);
+				if (sentiScore > 0) {
+					count2++;
+					if (count2 < 2200) {
+						lstPositive.add(new ReportData(2, rsCheckedAndToken[0]));
+					}
+				} else if (sentiScore < 0) {
+					count0++;
+					if (count0 < 2200) {
+						lstPositive.add(new ReportData(0, rsCheckedAndToken[0]));
+					}
+				} else if (sentiScore == 0) {
+					count1++;
+					if (count1 < 2200) {
+						lstPositive.add(new ReportData(1, rsCheckedAndToken[0]));
+					}
+				}
+
+				count++;
+				if (count > 1000) {
+					count = 0;// reset
+					WriteTimes++;
+					// write
+					System.out
+							.println("Writing data to file for 1000 records in times: "
+									+ WriteTimes);
+					try {
+						for (ReportData item : lstPositive) {
+							writerPos.write(item.getTypeColor() + "\t" + item.getContentData());
+							writerPos.write("\n");
+						}
+					} catch (Exception e) {
+						logger.info(e.getMessage());
+					}
+					
+					lstPositive.clear();
+				}
 			}
 		}
-		
-		// write
-		try (Writer writer = new BufferedWriter(new OutputStreamWriter(
-				new FileOutputStream("POSITIVE.txt"), "utf-8"))) {
 
-			for (String posi : lstPositive) {
-				writer.write(posi + "\n");
-			}
-		} catch (Exception e) {
-			logger.info(e.getMessage());
-		}
-		
-		try (Writer writer = new BufferedWriter(new OutputStreamWriter(
-				new FileOutputStream("NEGATIVE.txt"), "utf-8"))) {
-
-			for (String nega : lstNegative) {
-				writer.write(nega + "\n");
-			}
-		} catch (Exception e) {
-			logger.info(e.getMessage());
-		}
-		
-		try (Writer writer = new BufferedWriter(new OutputStreamWriter(
-				new FileOutputStream("NEUTRAL.txt"), "utf-8"))) {
-
-			for (String neu : lstNeutral) {
-				writer.write(neu + "\n");
-			}
-		} catch (Exception e) {
-			logger.info(e.getMessage());
+		try {
+			writerPos.flush();
+			writerPos.close();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 	}
-	
+
 	public static void main(String[] args) {
 		SparkUtil.createJavaSparkContext();
 		Checker.init();
 		VietSentiData.init();
-		
+
 		FBDatabaseProcess fbDt = new FBDatabaseProcess();
 		List<String> cmData = fbDt.getCommentData();
 		SentimentProcess stm = new SentimentProcess();
