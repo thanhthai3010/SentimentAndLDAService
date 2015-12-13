@@ -4,6 +4,7 @@ k	không
 hok	không
 hông	không
 hnay	hôm nay
+hqua	hôm qua
 hn	hôm nay
 nc	nói chuyện
 mn	mọi người

@@ -1,6 +1,12 @@
 package app.process.sentiment;
 
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
 import java.io.Serializable;
+import java.io.UnsupportedEncodingException;
+import java.io.Writer;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -13,6 +19,7 @@ import org.apache.spark.api.java.function.VoidFunction;
 
 import vn.hus.nlp.tokenizer.VietTokenizer;
 import app.process.spellcheker.Checker;
+import app.utils.dto.ReportData;
 import app.utils.spark.SparkUtil;
 
 /**
@@ -34,6 +41,8 @@ public class VietSentiData implements Serializable {
 	private static final int ID_IDX_1 = 1;
 
 	private static final int POS_IDX_0 = 0;
+	
+	private static List<String> lstCorpus = new ArrayList<String>();
 
 	/**
 	 * 
@@ -48,7 +57,7 @@ public class VietSentiData implements Serializable {
 	/**
 	 * path to VietSentiWordNet file
 	 */
-	private static String PATH_TO_VSWN = "./src/main/resources/VietSentiWordnet.csv";
+	private static String PATH_TO_VSWN = "./src/main/resources/VietSentiWordNetopen1.1.txt";
 
 	/**
 	 * path to negative_words file
@@ -95,6 +104,7 @@ public class VietSentiData implements Serializable {
 								.valueOf(fields[POS_SCORE_IDX_2]), Double
 								.valueOf(fields[NEG_SCORE_IDX_3]),
 						fields[SYNSET_TERMS_IDX_4], fields[GLOSS_IDX_5]);
+				
 				return rowDT;
 			}
 		});
@@ -172,6 +182,9 @@ public class VietSentiData implements Serializable {
 			score /= sum;
 
 			dictVSWN.put(word, score);
+			
+			//TODO
+			lstCorpus.add(word);
 		}
 
 	}
@@ -216,7 +229,6 @@ public class VietSentiData implements Serializable {
 		boolean isNegativeBefore = false;
 		for (String word : words) {
 			
-			isNegativeBefore = false;
 			double senti = extract(word);
 
 			if (dictNegative.contains(word)) {
@@ -226,6 +238,8 @@ public class VietSentiData implements Serializable {
 
 			if (isNegativeBefore) {
 				senti = (senti * -1);
+				isNegativeBefore = false;
+			} else {
 				isNegativeBefore = false;
 			}
 			// increment
@@ -267,10 +281,33 @@ public class VietSentiData implements Serializable {
 		VietSentiData.init();
 		
 		VietTokenizer tk = new VietTokenizer();
-		String ip =     "Thầy Toan có dạy k10 ko :))";
+		String ip = "Mọi người ơi cho mình ý kiến đi ạ. Mình là nam năm 1 học KHTN và mình đã lỡ thích 1 chị bên IU. Chị ấy hơn mình tận 2 tuổi. "
+				+ "Trước giờ mình chưa từng thích người lớn tuổi hơn mình nhưng giờ lỡ rồi, mình không biết làm sao hết. "
+				+ "Chị ấy đẹp lắm nhìn thích lắm. Nhưng hình như chị chưa thích mình. Giờ mình phải làm sao ạ. "
+				+ "Mọi người giúp mình với. :(";
 		String[] rs = tk.tokenize(Checker.correctEmoticons(ip));
 		
 		double score = VietSentiData.scoreTokens(rs[0].split(" "));
 		System.out.println("Score " + score);
+		
+		Writer writerCorpus = null;
+		try {
+			writerCorpus = new BufferedWriter(new OutputStreamWriter(
+					new FileOutputStream("corpus.txt"), "utf-8"));
+
+		} catch (UnsupportedEncodingException e1) {
+			e1.printStackTrace();
+		} catch (FileNotFoundException e1) {
+			e1.printStackTrace();
+		}
+		
+		try {
+			for (String item : VietSentiData.lstCorpus) {
+				writerCorpus.write(item + "\n");
+			}
+		} catch (Exception e) {
+		}
+		
+		System.out.println("done save");
 	}
 }

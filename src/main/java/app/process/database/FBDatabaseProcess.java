@@ -420,7 +420,7 @@ public class FBDatabaseProcess {
 		PreparedStatement preparedStatement = null;
 
 		String getTableSQL = "SELECT COMMENT_CONTENT" + " FROM COMMENT_DATA "
-				+ " WHERE PAGE_ID =220306294811118";
+				+ " WHERE COMMENT_ID BETWEEN 0 AND 9000";
 		preparedStatement = JdbcMySQLDriver.getPrepareStm(getTableSQL);
 		ResultSet rs;
 		try {

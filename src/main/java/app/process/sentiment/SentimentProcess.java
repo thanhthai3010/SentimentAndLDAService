@@ -237,19 +237,19 @@ public class SentimentProcess {
 			if (inputText.length() > 4) {
 				String[] rsCheckedAndToken = tokenizer.tokenize(inputText);
 				double sentiScore = runAnalyzeSentiment(rsCheckedAndToken);
-				if (sentiScore > 0) {
+				if (sentiScore >= 0.15) {
 					count2++;
-					if (count2 < 2200) {
+					if (count2 < 1500) {
 						lstPositive.add(new ReportData(2, rsCheckedAndToken[0]));
 					}
-				} else if (sentiScore < 0) {
+				} else if (sentiScore <= -0.15) {
 					count0++;
-					if (count0 < 2200) {
+					if (count0 < 3500) {
 						lstPositive.add(new ReportData(0, rsCheckedAndToken[0]));
 					}
-				} else if (sentiScore == 0) {
+				} else if (sentiScore > -0.15 && sentiScore < 0.15) {
 					count1++;
-					if (count1 < 2200) {
+					if (count1 < 2000) {
 						lstPositive.add(new ReportData(1, rsCheckedAndToken[0]));
 					}
 				}
