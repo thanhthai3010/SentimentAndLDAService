@@ -1,5 +1,6 @@
 :)	 tức cười 
 :D	 vui vẻ 
+:-)	 vui vẻ 
 :(	 buồn bã 
 :'(	 bất hạnh 
 :p	 pha_trò 
@@ -9,10 +10,12 @@ o.O	 khó hiểu
 ;)	 nháy mắt 
 :O	 giận dữ 
 -_-	 ngang ngược 
->:O	 tê_tái 
+>:O	 tê tái 
+:-(	 tê tái 
 :-*	 hôn 
 :*	 hôn 
 <3	 thân yêu 
+❤	 thân yêu 
 ^_^	 vui tươi 
 8-)	 ngầu 
 8|	 ngầu 

@@ -5,6 +5,7 @@
 :relaxed:	 thoải mái 
 :wink:	 vui nhộn 
 :heart_eyes:	 yêu 
+:sparkling_heart:	 yêu 
 :kissing_heart:	 vui tươi 
 :kissing_closed_eyes:	 dịu hiền 
 :kissing:	 vui thích 
@@ -13,7 +14,6 @@
 :stuck_out_tongue_closed_eyes:	 tươi cười 
 :stuck_out_tongue:	 pha trò 
 :flushed:	 đỏ ửng 
-:grin:	 cười 
 :pensive:	 suy nghĩ 
 :relieved:	 nhẹ nhõm 
 :unamused:	 không hài lòng 
@@ -53,4 +53,16 @@
 :innocent:	 vô tội 
 :smirk:	 cười đểu 
 :expressionless:	 vô cảm 
-
+:facepunch:	 đánh bại 
+:grimacing:	 nhăn nhó 
+:grin:	 tươi cười 
+:ok_woman:	đồng ý 
+:ok_hand:	đồng ý 
+:laughing:	 hài lòng 
+:joy_cat:	 khóc lóc 
+:hand:	 đồng ý 
+:clap:	 vui mừng 
+:smile_cat:	 tươi cười 
+:wave:	 ầm ầm 
+:information_desk_person:	 nồng ấm 
+:broken_heart:	 vỡ mộng 

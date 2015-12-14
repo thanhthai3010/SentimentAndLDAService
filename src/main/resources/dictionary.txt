@@ -61,9 +61,7 @@ xj	xi
 ốj	ối
 ổj	ổi
 ơj	ơi
-uj	ui
 iu	yêu
-<3	yêu
 ns	nói
 gj	gì
 sjêu	siêu
@@ -143,7 +141,6 @@ tjệc	tiệc
 tjết	tiết
 thjch	thích
 iu	yêu
-aj	ai
 ljeu	liệu
 bàj	bài
 baj	bài
@@ -316,7 +313,6 @@ vin	viên
 vịn	viện
 vĩn	viễn
 chin	chiên
-
 phin	phiên
 thin	thiên
 nghing	nghiêng
@@ -475,7 +471,6 @@ kòn	còn
 kột	cột
 kối	cối
 koi	coi
-ko	co
 fiền	phiền
 fiên	phiên
 fương	phương
