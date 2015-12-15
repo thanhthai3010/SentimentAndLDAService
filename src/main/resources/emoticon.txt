@@ -1,16 +1,16 @@
 :)	 tức cười 
-:D	 vui vẻ 
+:d	 vui vẻ 
 :-)	 vui vẻ 
 :(	 buồn bã 
 :'(	 bất hạnh 
 :p	 pha_trò 
-O:)	 dễ thương 
+o:)	 dễ thương 
 3:)	 nguy hiểm 
-o.O	 khó hiểu 
+o.o	 khó hiểu 
 ;)	 nháy mắt 
-:O	 giận dữ 
+:o	 giận dữ 
 -_-	 ngang ngược 
->:O	 tê tái 
+>:o	 tê tái 
 :-(	 tê tái 
 :-*	 hôn 
 :*	 hôn 
@@ -35,8 +35,8 @@ o.O	 khó hiểu
 @@	 ngạc nhiên 
 :((	 đau 
 :s	 gian dối 
-=D	 vui vẻ 
+=d	 vui vẻ 
 =))	 bật cười 
-B|	 sành điệu 
+b|	 sành điệu 
 >.<	 nhăn nhó 
 =]]	 vui tươi 

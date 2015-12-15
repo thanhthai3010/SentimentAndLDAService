@@ -2,16 +2,16 @@ a	1	0.24	0.46	a dua#1	"làm theo, bắt chước theo việc làm sai trái củ
 a	2	0.39	0.3	a ma tơ#1	[phong cách, lối làm việc] phóng túng, tuỳ thích, không có sự chuyên tâm;học hành rất a ma tơ ~ tính a ma tơ	
 a	4	0.31	0.42	ác_chiến#1	chiến đấu cực kì ác liệt, có nhiều thương vong;trận ác chiến	
 a	5	0.14	0.57	ác_độc#1	null;thủ đoạn ác độc ~ tâm địa ác độc	
-a	6	0.22	0.54	ác_hại#1	có hại lớn, gây tổn thất lớn;trận mưa đá ác hại	
-a	7	0.17	0.64	ác_hiểm#1	nguy hiểm đáng sợ;mưu mô ác hiểm ~ ngón đòn ác hiểm	
-a	8	0.19	0.56	ác hơn_cả thú#1	"quá ác độc; ""hành động ác hơn cả thú"""	
+a	6	0.14	0.54	ác_hại#1	có hại lớn, gây tổn thất lớn;trận mưa đá ác hại	
+a	7	0.1	0.64	ác_hiểm#1	nguy hiểm đáng sợ;mưu mô ác hiểm ~ ngón đòn ác hiểm	
+a	8	0.1	0.56	ác hơn_cả thú#1	"quá ác độc; ""hành động ác hơn cả thú"""	
 a	9	0.24	0.55	ác_khẩu#1 ác_miệng#1	hay nói những lời độc địa;đừng có ác khẩu ~ ác khẩu nhưng không ác tâm	
-a	10	0.22	0.5	ác_liệt#1	[hoạt động đối lập nhau] rất gay gắt, quyết liệt, gây ra nhiều thiệt hại đáng sợ;cuộc chiến ác liệt ~ địch đánh phá ngày càng ác liệt	
-a	11	0.22	0.52	ác_nghiệt#1	ác và khắt khe;đối xử ác nghiệt ~ người dì ghẻ ác nghiệt	
-a	12	0.25	0.46	ác_ôn#1	"có nhiều hành động tàn ác, dã man [cũng dùng làm tiếng rủa];đồ ác ôn! ~ ""Thằng Xăm ác ôn lắm, nó dám bắn bà mẹ như chơi."" (Anh Đức; 16)"	
-a	13	0.26	0.46	ác_tính	"[bệnh tật] hiểm nghèo, có thể gây tử vong trong thời gian ngắn;u ác tính ~ sốt rét ác tính;nguy hiểm cho sức khỏe, đặc trưng bởi sự phát triển tiến bộ và không kiểm soát được (đặc biệt là của một khối u); ""Cô ta bị mắc những khối u ác tính"""	
-a	14	0.22	0.51	ác#1	"về mặt đạo đức xấu về nguyên tắc hành nghề; ""Một người hành nghề độc ác"""	
-a	15	0.24	0.48	ác#2	"[người hoặc việc] gây hoặc thích gây đau khổ, tai hoạ cho người khác;không nên gieo tiếng ác cho người khác ~ ""Ở hiền thì lại gặp lành, ở ác gặp dữ tan tành như tro."" (Cdao),có tác dụng xấu, dẫn đến hậu quả không hay;ác quá, sắp thi thì lại ốm ~ trời cứ mưa như thế này mãi thì ác thật ;ở mức độ cao khác thường, gây ấn tượng mạnh;năm nay rét ác hơn mọi năm ~ pháo địch bắn rất ác ~ cô ta dạo này diện ác!"	
+a	10	0.1	0.5	ác_liệt#1	[hoạt động đối lập nhau] rất gay gắt, quyết liệt, gây ra nhiều thiệt hại đáng sợ;cuộc chiến ác liệt ~ địch đánh phá ngày càng ác liệt	
+a	11	0.1	0.52	ác_nghiệt#1	ác và khắt khe;đối xử ác nghiệt ~ người dì ghẻ ác nghiệt	
+a	12	0.05	0.46	ác_ôn#1	"có nhiều hành động tàn ác, dã man [cũng dùng làm tiếng rủa];đồ ác ôn! ~ ""Thằng Xăm ác ôn lắm, nó dám bắn bà mẹ như chơi."" (Anh Đức; 16)"	
+a	13	0.16	0.46	ác_tính	"[bệnh tật] hiểm nghèo, có thể gây tử vong trong thời gian ngắn;u ác tính ~ sốt rét ác tính;nguy hiểm cho sức khỏe, đặc trưng bởi sự phát triển tiến bộ và không kiểm soát được (đặc biệt là của một khối u); ""Cô ta bị mắc những khối u ác tính"""	
+a	14	0.02	0.51	ác#1	"về mặt đạo đức xấu về nguyên tắc hành nghề; ""Một người hành nghề độc ác"""	
+a	15	0.14	0.48	ác#2	"[người hoặc việc] gây hoặc thích gây đau khổ, tai hoạ cho người khác;không nên gieo tiếng ác cho người khác ~ ""Ở hiền thì lại gặp lành, ở ác gặp dữ tan tành như tro."" (Cdao),có tác dụng xấu, dẫn đến hậu quả không hay;ác quá, sắp thi thì lại ốm ~ trời cứ mưa như thế này mãi thì ác thật ;ở mức độ cao khác thường, gây ấn tượng mạnh;năm nay rét ác hơn mọi năm ~ pháo địch bắn rất ác ~ cô ta dạo này diện ác!"	
 a	16	0.28	0.45	ách#1	[bụng] đầy ứ, có cảm giác tức, khó chịu;ăn no ách bụng	
 a	17	0.43	0.28	ái_ân#1	"âu yếm và chung chăn gối với nhau; ""họ đã có nhiều hành động ái ân với nhau"""	
 a	18	0.58	0.19	ái_mộ#1	"mến chuộng và kính trọng ; ""nữ diễn viên được nhiều người ái mộ"""	
@@ -28,18 +28,18 @@ a	29	0.44	0.28	âm_ấm#1	hơi ấm;pha nước âm ấm ~ giọng hát âm ấm
 a	30	0.26	0.3	âm_ẩm#1	hơi ẩm;quần áo phơi vẫn còn âm ẩm	
 a	31	0.26	0.45	ầm_ầm#1	từ mô phỏng tiếng động vang to và rền liên tiếp;cười nói ầm ầm ~ ầm ầm tiếng sóng	
 a	32	0.27	0.42	ăm_ắp#1	null;ruộng ăm ắp nước ~ đầy ăm ắp	
-a	33	0.43	0.3	ấm_áp#1	"ấm và gây cảm giác dễ chịu [nói khái quát];nắng xuân ấm áp ~ giọng đọc ấm áp, truyền cảm ~ ""Họ ngồi bên nhau, không nói, nhưng cũng thấy ấm áp hơn."" (Nguyễn Đình Thi; 6)"	
-a	34	0.42	0.3	ấm_cúng#1	có tác dụng gây cảm giác thân mật, dễ chịu;căn phòng ấm cúng ~ cảnh gia đình ấm cúng	
+a	33	0.43	0	ấm_áp#1	"ấm và gây cảm giác dễ chịu [nói khái quát];nắng xuân ấm áp ~ giọng đọc ấm áp, truyền cảm ~ ""Họ ngồi bên nhau, không nói, nhưng cũng thấy ấm áp hơn."" (Nguyễn Đình Thi; 6)"	
+a	34	0.42	0.1	ấm_cúng#1	có tác dụng gây cảm giác thân mật, dễ chịu;căn phòng ấm cúng ~ cảnh gia đình ấm cúng	
 a	36	0.27	0.47	ảm_đạm#1	không sáng sủa, gợi cảm giác buồn;nét mặt ảm đạm ~ tiền đồ ảm đạm (b)	
-a	37	0.28	0.44	ấm_đầu#1	trẻ con] hơi sốt, hơi ốm [lối nói kiêng tránh];thằng bé bị ấm đầu	
-a	38	0.28	0.44	ấm_đầu#2	có những biểu hiện về tính tình, hành vi không bình thường;ấm đầu hay sao mà làm thế?	
+a	37	0.18	0.44	ấm_đầu#1	trẻ con] hơi sốt, hơi ốm [lối nói kiêng tránh];thằng bé bị ấm đầu	
+a	38	0.1	0.44	ấm_đầu#2	có những biểu hiện về tính tình, hành vi không bình thường;ấm đầu hay sao mà làm thế?	
 a	39	0.57	0.19	ấm_êm#2	null;gia đình ấm êm	
 a	40	0.59	0.2	ấm êm#1	"(quan hệ trong gia đình) thuận hoà, tốt đẹp ; ""gia đình ấm êm"""	
 a	41	0.39	0.31	am_hiểu#2 biết#3	"hiểu biết thông tin đầy đủ, ""một nhà sưu tập sách hiếm hiểu biết"", ""ngạc nhiên về sự hiểu biết về những gì đang xảy ra"""	
-a	42	0.25	0.46	âm_ỉ#1	"ngấm ngầm, không dữ dội, nhưng kéo dài;bụng đau âm ỉ ~ ""Một mình âm ỉ đêm chầy, Đĩa dầu vơi, nước mắt đầy, năm canh."" (TKiều)"	
+a	42	0.12	0.46	âm_ỉ#1	"ngấm ngầm, không dữ dội, nhưng kéo dài;bụng đau âm ỉ ~ ""Một mình âm ỉ đêm chầy, Đĩa dầu vơi, nước mắt đầy, năm canh."" (TKiều)"	
 a	43	0.25	0.45	ầm_ì#1	"từ mô phỏng tiếng động nghe nhỏ, rền đều đều và kéo dài từ xa vọng tới;tiếng máy bay ầm ì ở chân trời ~ ""Tiếng sấm ầm ì như vọng lại từ lòng đất."" (LVThảo; 8)"	
 a	44	0.23	0.48	ầm_ĩ#1	ồn ào, náo động, gây cảm giác khó chịu;quát tháo ầm ĩ ~ reo hò ầm ĩ ~ chưa hiểu mô tê gì đã làm ầm ĩ lên	
-a	45	0.28	0.39	ẩm_mốc#1	ẩm và có mốc do thiếu ánh sáng hoặc do không được chăm sóc [nói khái quát];căn phòng ẩm mốc ~ càng vào sâu trong hang càng ẩm mốc	
+a	45	0.12	0.39	ẩm_mốc#1	ẩm và có mốc do thiếu ánh sáng hoặc do không được chăm sóc [nói khái quát];căn phòng ẩm mốc ~ càng vào sâu trong hang càng ẩm mốc	
 a	46	0.21	0.47	ám_muội#1	[việc làm] không rõ ràng, có điều gì đó không chính đáng, phải giấu kín;hành động ám muội ~ không làm điều gì ám muội	
 a	47	0.24	0.44	ám_muội#1	"không rõ ràng, có điều gì đó không chính đáng, phải giấu kín ; ""hành động ám muội"""	
 a	48	0.58	0.22	ấm_no#1	đầy đủ về vật chất, như đủ ăn, đủ mặc [nói khái quát];cuộc sống ấm no	
@@ -51,9 +51,9 @@ a	53	0.28	0.29	ẩm_sì#1	rất ẩm;quần áo ẩm sì ~ nền đất ẩm sì
 a	54	0.53	0.23	âm_tần#1	có tần số cỡ tần số âm thanh;	
 a	55	0.27	0.4	âm_thầm#1	"lặng lẽ trong hoạt động, không tỏ ra cho người khác biết;âm thầm hi sinh ~ đau khổ âm thầm ~ ""Trong cung quế âm thầm chiếc bóng, Đêm năm canh trông ngóng lần lần."" (CO)"	
 a	56	0.27	0.42	âm_thầm#2	"lặng lẽ trong hoạt động, không tỏ ra cho người khác biết ; ""chị đã âm thầm hi sinh tuổi trẻ của mình cho kháng chiến"""	
-a	57	0.23	0.48	ẩm_thấp#1	ẩm, do đọng nhiều hơi nước [nói khái quát];khí hậu ẩm thấp ~ ngôi nhà tối tăm, ẩm thấp	
+a	57	0.13	0.48	ẩm_thấp#1	ẩm, do đọng nhiều hơi nước [nói khái quát];khí hậu ẩm thấp ~ ngôi nhà tối tăm, ẩm thấp	
 a	58	0.37	0.29	âm_tính#1	[kết quả xét nghiệm] không thấy có mầm bệnh đối với một số bệnh nào đó, hoặc không thấy có phản ứng đối với một số thuốc đặc biệt nào đó; đối lập với dương tính;xét nghiệm cho kết quả âm tính	
-a	59	0.28	0.42	âm_u#1	[khung cảnh] thiếu ánh sáng tự nhiên, gây một cảm giác nặng nề;rừng núi âm u ~ bầu trời âm u	
+a	59	0.18	0.42	âm_u#1	[khung cảnh] thiếu ánh sáng tự nhiên, gây một cảm giác nặng nề;rừng núi âm u ~ bầu trời âm u	
 a	60	0.28	0.42	ậm_ực#1	ấm ức lắm;ậm ực muốn khóc	
 a	61	0.24	0.45	ẩm_ương#1	dở, chẳng ra làm sao, chẳng có tác dụng gì;tính khí ẩm ương ~ chuyện ẩm ương	
 a	63	0.23	0.47	ẩm_ướt#1	"ẩm, do thấm nhiều nước hoặc có chứa nhiều hơi nước; ""nền nhà ẩm ướt"""	
@@ -64,33 +64,32 @@ a	67	0.26	0.47	ầm#1	từ mô phỏng tiếng động to, trầm và vang xa;s�
 a	68	0.23	0.49	ẩm#1	có thấm một ít nước hoặc có chứa nhiều hơi nước;quần áo còn ẩm, chưa khô ~ thuốc chống ẩm	
 a	69	0.42	0.29	âm#2	bé hơn số không; phân biệt với dương;kết quả là một số âm ~ nhiệt độ xuống đến âm 10 độ	
 a	70	0.51	0.25	ấm#2	có tác dụng gây cảm giác êm dịu, dễ chịu;ấm lòng ~ giọng hát rất ấm	
-a	71	0.23	0.45	ăn#1	gắn, dính chặt vào nhau, khớp với nhau;hồ dán không ăn ~ phanh không ăn	
-a	72	0.49	0.18	Ăn#2	hợp với nhau, tạo nên sự hài hoà;chiếc áo đen ăn với màu da trắng	
+a	71	0.3	0.4	ăn#1	gắn, dính chặt vào nhau, khớp với nhau;hồ dán không ăn ~ phanh không ăn	
 a	73	0.39	0.29	ân_cần#1	"[đối xử] đầy nhiệt tình và chu đáo;tiếp đãi ân cần ~ ""Thuý Vân chợt tỉnh giấc xuân, Dưới đèn ghé đến, ân cần hỏi han."" (TKiều)"	
-a	74	0.28	0.39	ăn_cắp#1	"mất mà không có sự đồng ý của chủ sở hữu; ""Ai đó đã ăn cắp ví tiền của tôi trên tàu"", ""tác giả này lấy ăn cắp toàn bộ các đoạn văn từ luận văn của tôi"""	
+a	74	0	0.39	ăn_cắp#1	"mất mà không có sự đồng ý của chủ sở hữu; ""Ai đó đã ăn cắp ví tiền của tôi trên tàu"", ""tác giả này lấy ăn cắp toàn bộ các đoạn văn từ luận văn của tôi"""	
 a	75	0.48	0.23	ăn_chơi#1	có dáng vẻ, phong cách của dân ăn chơi;bộ quần áo trông rất ăn chơi	
 a	76	0.24	0.46	ăn đủ#1	"hứng chịu hoàn toàn điều không hay hoặc thiệt hại về mình ; ""xe gây tai nạn, tài xế bỏ chạy, mình chủ hàng ăn đủ"""	
-a	77	0.24	0.45	ân_hận#1	"băn khoăn, day dứt và tự trách mình đã để xảy ra việc không hay ; ""hắn ân hận về những gì đã làm với cô ấy"""	
-a	78	0.26	0.46	ăn_hiếp#1	"ỷ thế mạnh bắt người khác phải chịu lép mà làm theo ý muốn của mình ; ""nó cậy thế khỏe ăn hiếp yếu"""	
+a	77	0	0.45	ân_hận#1	"băn khoăn, day dứt và tự trách mình đã để xảy ra việc không hay ; ""hắn ân hận về những gì đã làm với cô ấy"""	
+a	78	0	0.46	ăn_hiếp#1	"ỷ thế mạnh bắt người khác phải chịu lép mà làm theo ý muốn của mình ; ""nó cậy thế khỏe ăn hiếp yếu"""	
 a	79	0.42	0.29	ăn_khách#1	"bán được nhiều do được khách ưa chuộng ; ""mặt hàng này đang rất ăn khách"""	
-a	80	0.51	0.26	an_khang#1	bình yên và mạnh khoẻ;kính chúc gia đình an khang, thịnh vượng	
+a	80	0.51	0.16	an_khang#1	bình yên và mạnh khoẻ;kính chúc gia đình an khang, thịnh vượng	
 a	81	0.49	0.24	ăn_khớp#1	vừa khít với nhau, hợp với nhau về mặt kích thước, khả năng, v.v.;mộng ghép rất ăn khớp	
-a	82	0.55	0.26	an_lành#1	null;giấc ngủ an lành ~ cuộc sống an lành	
+a	82	0.55	0.16	an_lành#1	null;giấc ngủ an lành ~ cuộc sống an lành	
 a	83	0.28	0.39	ăn_liền#1	có thể ăn ngay, không cần qua chế biến, nấu nướng [thứ thường phải chế biến, nấu nướng];mì ăn liền	
 a	84	0.43	0.31	ẩn_nấp#1	"giấu mình ở nơi kín đáo hoặc nơi có vật che chở; ""xuống hầm ẩn nấp tránh nạn"""	
-a	85	0.45	0.29	ân_nghĩa#1	"tình nghĩa thắm thiết, gắn bó do có chịu ơn sâu với nhau ; ""con cái có ân nghĩa với cha mẹ"""	
+a	85	0.45	0.19	ân_nghĩa#1	"tình nghĩa thắm thiết, gắn bó do có chịu ơn sâu với nhau ; ""con cái có ân nghĩa với cha mẹ"""	
 a	86	0.23	0.54	an_nhàn#1	thảnh thơi và được yên ổn, không phải vất vả, khó nhọc;cuộc sống an nhàn	
 a	87	0.4	0.33	an_nhiên#1	yên ổn, bình thản như tự nhiên vốn thế;thái độ an nhiên tự tại	
-a	88	0.27	0.47	an_ninh#1	yên ổn về mặt trật tự xã hội, không có rối loạn;mất an ninh ~ lực lượng an ninh	
+a	88	0.57	0.17	an_ninh#1	yên ổn về mặt trật tự xã hội, không có rối loạn;mất an ninh ~ lực lượng an ninh	
 a	89	0.27	0.44	an_phận#1	"yên với phận của mình và cảnh sống hiện tại, không phấn đấu để có được một sự thay đổi ; ""hắn cam chịu với cuộc sống nghèo khó"""	
 a	90	0.59	0.21	an_sinh#1	an toàn cuộc sống;vấn đề an sinh xã hội	
 a	91	0.41	0.29	an_thân#1	null;chưa có chốn an thân ~ chỉ muốn được an thân	
 a	92	0.33	0.31	ăn_thua#1	"đạt được kết quả hay có một tác dụng nào đó ; ""làm như thế không ăn thua"""	
 a	93	0.36	0.32	an_toàn#1	yên ổn, loại trừ nguy hiểm, hoặc tránh được sự cố;cầu đã được sửa, đi lại rất an toàn ~ van an toàn	
-a	94	0.32	0.39	an_toàn#2	"không có các mối nguy hiểm hoặc rủi ro; ""tài sản của ông đã được an toàn"", ""làm một nơi an toàn cho mình trong lĩnh vực của mình"""	
+a	94	0.32	0.1	an_toàn#2	"không có các mối nguy hiểm hoặc rủi ro; ""tài sản của ông đã được an toàn"", ""làm một nơi an toàn cho mình trong lĩnh vực của mình"""	
 a	95	0.45	0.17	ấn_tượng#1	có tác dụng gây cảm xúc mạnh mẽ và tạo thành dấu ấn trong nhận thức;gương mặt rất ấn tượng ~ một pha biểu diễn ấn tượng	
-a	97	0.38	0.29	ăn_ý#1	hợp ý với nhau, tạo ra sự nhất trí trong hành động, lời nói;chọn bạn diễn ăn ý ~ đội bóng chơi thiếu ăn ý	
-a	98	0.42	0.3	ẩn_ý#2	"ý kín đáo bên trong, vốn là cái chính muốn nói, nhưng không nói rõ, chỉ để ngầm hiểu ; ""lời nói có ẩn ý"""	
+a	97	0.38	0.19	ăn_ý#1	hợp ý với nhau, tạo ra sự nhất trí trong hành động, lời nói;chọn bạn diễn ăn ý ~ đội bóng chơi thiếu ăn ý	
+a	98	0.42	0.2	ẩn_ý#2	"ý kín đáo bên trong, vốn là cái chính muốn nói, nhưng không nói rõ, chỉ để ngầm hiểu ; ""lời nói có ẩn ý"""	
 a	99	0.21	0.54	ẩn#1	"khó phát hiện; ""mặt trời ẩn trong đám mây"""	
 a	100	0.22	0.54	ắng#1	có cảm giác như bị vật gì làm tắc, làm nghẹn ở cổ họng;cổ ắng lại, không nói nên lời	
 a	102	0.21	0.49	ằng_ặc#1	"từ mô phỏng âm thanh phát ra trầm đục, yếu ớt, nghe không thành tiếng như bị tắc nghẹt trong cổ họng;kêu ằng ặc ~ ""Ninh khóc ằng ặc như người nuốt phải ngụm gì đắng quá, nó quánh vào cổ họng."" (Nam Cao; 33)"	
@@ -102,7 +101,7 @@ a	108	0.43	0.29	anh_dũng#1	dũng cảm quên mình;hi sinh anh dũng
 a	109	0.66	0.15	anh_hùng#1	đặc biệt anh dũng;một dân tộc anh hùng	
 a	110	0.46	0.24	anh_hùng cá_nhân#1	có tính chất anh hùng, nhưng nhằm mục đích đề cao cá nhân, coi thường quần chúng, tách rời tập thể;	
 a	111	0.45	0.26	anh_hùng chủ_nghĩa#1	ít nhiều có tính chất anh hùng, nhưng phiêu lưu, mạo hiểm;mang nặng tư tưởng anh hùng chủ nghĩa	
-a	112	0.36	0.37	anh_hùng_rơm#1	"có những lời lẽ khoe khoang làm ra vẻ có khí phách, nhưng thực chất lại là hèn nhát;""Rõ khéo! Chỉ anh hùng rơm! Nói thì một tấc đến giời mà chẳng dám kiện ai."" (Mạnh Phú Tư; 1)"	
+a	112	0	0.37	anh_hùng_rơm#1	"có những lời lẽ khoe khoang làm ra vẻ có khí phách, nhưng thực chất lại là hèn nhát;""Rõ khéo! Chỉ anh hùng rơm! Nói thì một tấc đến giời mà chẳng dám kiện ai."" (Mạnh Phú Tư; 1)"	
 a	113	0.26	0.45	ảnh_hưởng#1	"có tác động đến một điều gì đó; ""tôi bị ảnh hưởng bởi tiếng ồn"""	
 a	114	0.38	0.3	anh_linh#1	"null;""Sống trung liệt, thác anh linh, Suối vàng thơm phách, mây xanh thoả hồn."" (NĐM)"	
 a	115	0.58	0.22	anh_minh#1	[người lãnh đạo] tài giỏi và sáng suốt;vị vua anh minh	
@@ -112,21 +111,21 @@ a	118	0.17	0.55	ào_ào#1	từ mô phỏng tiếng gió thổi mạnh, tiếng n
 a	119	0.34	0.32	ào_ạt#1	"[di chuyển] nhanh, mạnh và dồn dập trên phạm vi lớn;tiến quân ào ạt ~ ""Cũng có khi vô cớ, Biển ào ạt xô thuyền."" (Xuân Quỳnh; 8)"	
 a	120	0.28	0.16	ảo_huyền#1	null;đôi mắt đen ảo huyền ~ màu sắc ảo huyền	
 a	121	0.21	0.47	ảo_não#1	buồn thảm, não nuột;bộ mặt ảo não ~ thở dài ảo não	
-a	122	0.33	0.32	ảo_tưởng#1	"sự tưởng tượng (hướng về tương lai), dựa trên mong muốn, ước mơ, thoát li hiện thực ; ""nó hay sống trong ảo tưởng"""	
+a	122	0	0.32	ảo_tưởng#1	"sự tưởng tượng (hướng về tương lai), dựa trên mong muốn, ước mơ, thoát li hiện thực ; ""nó hay sống trong ảo tưởng"""	
 a	123	0.4	0.42	ắp#1	gần sát, liền sát;ngón áp út (cạnh ngón út) ~ những ngày áp Tết	
 a	124	0.25	0.45	ắp#2	đầy đến mức không còn có thể chứa thêm vào được nữa;ruộng ắp nước ~ một bát đầy ắp thức ăn	
 a	125	0.38	0.32	áp_chót#1	"liền sát với vị trí cuối cùng, hoặc với thời điểm kết thúc;xe máy đời áp chót ~ ""Tôi là người đi áp chót, tức là sau tôi chỉ còn có chị Ba."" (Anh Đức; 30)"	
-a	126	0.26	0.48	ấp_úng#1	"từ gợi tả cách nói không nên lời hoặc nói không gãy gọn, không rành mạch vì lúng túng ; ""nó trả lòi ấp úng"""	
+a	126	0.16	0.48	ấp_úng#1	"từ gợi tả cách nói không nên lời hoặc nói không gãy gọn, không rành mạch vì lúng túng ; ""nó trả lòi ấp úng"""	
 a	127	0.52	0.21	au#1	[màu sắc, thường là đỏ] tươi ửng lên, trông thích mắt;quả cam vàng au ~ mái ngói đỏ au	
-a	128	0.22	0.5	ẩu#1	cẩu thả, bừa bãi, không kể gì phép tắc, nền nếp, cách thức;làm ẩu ~ lái xe chạy ẩu	
-a	129	0.32	0.38	âu_sầu#1	"buồn sâu sắc xen lẫn lo âu;""Lòng nàng xiết nỗi xót xa, Má đào ủ dột mặt hoa âu sầu."" (QÂTK)"	
-a	130	0.18	0.55	ẩu_tả#1	quá ẩu;làm ăn ẩu tả ~ quen thói ẩu tả	
+a	128	0	0.5	ẩu#1	cẩu thả, bừa bãi, không kể gì phép tắc, nền nếp, cách thức;làm ẩu ~ lái xe chạy ẩu	
+a	129	0	0.38	âu_sầu#1	"buồn sâu sắc xen lẫn lo âu;""Lòng nàng xiết nỗi xót xa, Má đào ủ dột mặt hoa âu sầu."" (QÂTK)"	
+a	130	0.08	0.55	ẩu_tả#1	quá ẩu;làm ăn ẩu tả ~ quen thói ẩu tả	
 a	131	0.36	0.33	ấu_thơ#1	"null;""Thương con đương độ ấu thơ, Con côi, mẹ goá bây giờ cậy ai!"" (TS)"	
-a	132	0.27	0.43	ấu_trĩ#1	non nớt, có những suy nghĩ giản đơn, thiếu kinh nghiệm;ấu trĩ về chính trị ~ suy nghĩ hết sức ấu trĩ	
-a	133	0.28	0.42	Bã#1	"rời, nát và nhạt nhẽo như chỉ là cái bã còn lại;giò bã ~ ""Miếng cám ngậm trong miệng hắn đã bã ra chát sít."" (Kim Lân; 9)"	
+a	132	0.17	0.43	ấu_trĩ#1	non nớt, có những suy nghĩ giản đơn, thiếu kinh nghiệm;ấu trĩ về chính trị ~ suy nghĩ hết sức ấu trĩ	
+a	133	0.28	0.42	bã#1	"rời, nát và nhạt nhẽo như chỉ là cái bã còn lại;giò bã ~ ""Miếng cám ngậm trong miệng hắn đã bã ra chát sít."" (Kim Lân; 9)"	
 a	135	0.42	0.42	bả_lả#1	lả lơi, không đứng đắn;cười nói bả lả	
 a	136	0.21	0.56	ba_lăng_nhăng#1	vớ vẩn, không đâu vào đâu, không có giá trị, ý nghĩa gì;ăn nói ba lăng nhăng	
-a	137	0.25	0.48	ba_phải#1	đằng nào cũng cho là đúng, là phải, không có hoặc không dám bộc lộ quan điểm, chính kiến riêng;con người ba phải ~ đồ ba phải! (tiếng mắng)	
+a	137	0.1	0.48	ba_phải#1	đằng nào cũng cho là đúng, là phải, không có hoặc không dám bộc lộ quan điểm, chính kiến riêng;con người ba phải ~ đồ ba phải! (tiếng mắng)	
 a	138	0.41	0.44	ba_que#1	xảo trá, đểu giả;giở trò ba que ~ đồ ba que!	
 a	139	0.42	0.42	ba_rọi#1	nửa đùa nửa thật, có ý xỏ xiên;lối nói ba rọi ~ tính ba rọi	
 a	140	0.42	0.43	ba_rọi#2	pha tạp một cách lố lăng;nói tiếng Tây ba rọi	
@@ -142,8 +141,8 @@ a	149	0.16	0.59	bạc_ác#1	bất nhân, ăn ở ác;con người bạc ác
 a	150	0.59	0.18	bác_ái#1	có lòng thương yêu rộng khắp;có lòng bác ái	
 a	151	0.27	0.46	bắc_bậc#1	"có thái độ tỏ ra ta đây hơn người;""Em đừng bắc bậc thấp cao, Bèo sông khó kiếm bèo ao khó gì."" (Cdao)"	
 a	153	0	0.42	bạc_bẽo#1	không đền bù tương xứng với công lao;nghề bạc bẽo	
-a	154	0.28	0.43	bạc_bẽo#2	"khó chịu, ""Tôi sẽ không thực hiện công việc bạc bẽo như so sánh các trường hợp thất bại"" Abraham Lincoln"	
-a	155	0.28	0.4	bạc_đãi#1	"đối xử rẻ rúng (với cái lẽ ra phải được coi trọng); ""hắn bạc đãi với người làm thuê"""	
+a	154	0.18	0.43	bạc_bẽo#2	"khó chịu, ""Tôi sẽ không thực hiện công việc bạc bẽo như so sánh các trường hợp thất bại"" Abraham Lincoln"	
+a	155	0.18	0.4	bạc_đãi#1	"đối xử rẻ rúng (với cái lẽ ra phải được coi trọng); ""hắn bạc đãi với người làm thuê"""	
 a	156	0.32	0.32	bạc_đầu#1	"[tuổi] già;bạc đầu rồi còn dại ~ ""Trăm năm thề những bạc đầu, Chớ tham phú quý, đi cầu trăng hoa."" (Cdao)"	
 a	157	0.39	0.31	bạc_đầu#2	"[một số loài động vật, thực vật, hoặc một số sự vật] có đầu, có ngọn màu trắng;sóng bạc đầu ~ cỏ bạc đầu ~ ""Vì sương nên núi bạc đầu, Biển lay bởi gió, hoa sầu vì mưa."" (Cdao)"	
 a	158	0.42	0.28	bác_học#1	theo lối của nhà bác học, có tính chất khó hiểu, không bình dân;văn chương bác học ~ dòng âm nhạc bác học	
@@ -152,72 +151,72 @@ a	160	0.4	0.29	bạc_má#1	[dùng trong tên gọi một số loài động vậ
 a	161	0.26	0.44	bạc_mặt#1	[mặt mũi] nhợt nhạt, mất đi vẻ tươi tắn, khoẻ khoắn do quá lo lắng hoặc quá vất vả;làm bạc mặt mới đủ sống ~ chạy cho xong thủ tục giấy tờ cũng đủ bạc mặt!	
 a	162	0.37	0.32	bạc_màu#1	[đất] có lớp trên mặt bị rửa trôi nhiều, nghèo dinh dưỡng và đã nhạt màu hoặc chuyển sang màu trắng;cánh đồng bạc màu ~ cải tạo đất bạc màu	
 a	163	0.28	0.43	bạc_mầu#1	null;cải tạo đất bạc mầu	
-a	164	0.23	0.49	bạc_nhược#1	quá yếu đuối về tinh thần, không có ý chí đấu tranh, không đủ sức vượt qua khó khăn, trở lực dù là nhỏ;con người bạc nhược ~ ý chí bạc nhược	
+a	164	0	0.49	bạc_nhược#1	quá yếu đuối về tinh thần, không có ý chí đấu tranh, không đủ sức vượt qua khó khăn, trở lực dù là nhỏ;con người bạc nhược ~ ý chí bạc nhược	
 a	165	0.28	0.28	bạc_phếch#1	bị phai màu đến mức ngả sang màu trắng đục, trông cũ và xấu;chiếc quần bò bạc phếch	
 a	166	0.45	0.25	bạc_phơ#1	[râu, tóc] hoàn toàn bạc trắng;cụ già râu tóc bạc phơ	
-a	167	0.28	0.39	bạc_tình#1	"bội bạc trong tình yêu;ăn ở bạc tình ~ ""Bạc tình nổi tiếng lầu xanh, Một tay chôn biết mấy cành phù dung!"" (TKiều)"	
-a	168	0.47	0.26	Bạch#1	trắng toàn một màu;ngựa bạch ~ hoa hồng bạch ~ trời đã sáng bạch	
+a	167	0	0.39	bạc_tình#1	"bội bạc trong tình yêu;ăn ở bạc tình ~ ""Bạc tình nổi tiếng lầu xanh, Một tay chôn biết mấy cành phù dung!"" (TKiều)"	
+a	168	0.47	0.26	bạch#1	trắng toàn một màu;ngựa bạch ~ hoa hồng bạch ~ trời đã sáng bạch	
 a	169	0.28	0.42	bạch_bạch#1	từ mô phỏng tiếng phát ra nhỏ, không vang do các vật mềm có mặt phẳng hơi rộng vỗ đập vào nhau;đàn chim vỗ cánh bạch bạch ~ giậm chân bạch bạch	
 a	170	0.42	0.22	bách_bổ#1	[thuốc] bổ nhiều mặt, nói chung;cao bách bổ	
-a	171	0.28	0.44	bại#1	bị giảm hoặc mất khả năng cử động, do tổn thương thần kinh hoặc cơ;bại cánh tay ~ bại nửa người	
-a	172	0.28	0.39	bại#2	suy yếu đến mức gần như cạn kiệt [thường nói về sức lực];làm nhiều nên bại sức ~ khuynh gia bại sản	
+a	171	0.18	0.44	bại#1	bị giảm hoặc mất khả năng cử động, do tổn thương thần kinh hoặc cơ;bại cánh tay ~ bại nửa người	
+a	172	0.18	0.39	bại#2	suy yếu đến mức gần như cạn kiệt [thường nói về sức lực];làm nhiều nên bại sức ~ khuynh gia bại sản	
 a	173	0.29	0.36	bai_bải#1	"[nói] không ngớt miệng;cứ bai bải cái mồm ~ ""Gã đã gặng hỏi nhiều lần, người con gái chỉ chối, chối bai bải."" (Tô Hoài; 33)"	
 a	174	0.39	0.29	bài_bản#1	đúng theo những gì đã được định ra và được xem là hợp lí;được đào tạo rất bài bản ~ đầu tư tự phát, thiếu bài bản	
 a	175	0.24	0.42	bãi_bỏ#1	"bỏ đi một cách chính thức, không còn giá trị thi hành nữa ; ""nhà nước bãi bỏ một đạo luật"""	
 a	176	0.28	0.42	bải_hải#1	[tiếng kêu la] to và thất thanh;la bải hải	
 a	177	0.28	0.33	bải_hoải#1	mệt mỏi đến mức có cảm giác như các bộ phận của cơ thể rã rời ra;bải hoải chân tay	
-a	178	0.26	0.46	bại_hoại#1 lật_đổ thô_tục#1 gởi lộn#1 suy_đồi#1 hư#1 nhục#1	"hỏng về mặt đạo đức hay không điều độ hoặc cảm thụ; ""những người trẻ tuổi hư với rượu vang và phụ nữ"", ""Socrates bị buộc tội làm hư hỏng thanh niên"""	
-a	179	0.32	0.38	bại_liệt#1	bị giảm nhiều hoặc mất hẳn khả năng cử động, do tổn thương thần kinh hoặc cơ [nói khái quát];bại liệt nửa người ~ chân bị bại liệt	
-a	180	0.31	0.31	bãi_nhiệm#1	"bãi bỏ chức vụ (thường là quan trọng) trong bộ máy nhà nước (của người nào đó) ; ""thủ tướng bị bãi nhiệm"""	
+a	178	0	0.46	bại_hoại#1 lật_đổ thô_tục#1 gởi lộn#1 suy_đồi#1 hư#1 nhục#1	"hỏng về mặt đạo đức hay không điều độ hoặc cảm thụ; ""những người trẻ tuổi hư với rượu vang và phụ nữ"", ""Socrates bị buộc tội làm hư hỏng thanh niên"""	
+a	179	0	0.38	bại_liệt#1	bị giảm nhiều hoặc mất hẳn khả năng cử động, do tổn thương thần kinh hoặc cơ [nói khái quát];bại liệt nửa người ~ chân bị bại liệt	
+a	180	0	0.31	bãi_nhiệm#1	"bãi bỏ chức vụ (thường là quan trọng) trong bộ máy nhà nước (của người nào đó) ; ""thủ tướng bị bãi nhiệm"""	
 a	181	0.28	0.29	bái_xái#1	[thua] liểng xiểng;chạy bái xái	
 a	182	0.29	0.32	bầm#1	"thâm tím và hơi đen;mặt tím bầm ~ áo nâu bầm ~ ""Cái mắt thì ngầu lên, hai chân thì đi lảo đảo, cái môi bầm lại mà run bần bật."" (Nam Cao; 3)"	
 a	183	0.42	0.29	bẫm#1	khoẻ;cho trâu ăn bẫm ~ bẫm sức ~ cày sâu cuốc bẫm	
 a	185	0.39	0.31	bậm#1	[cây hoặc bộ phận của cây] to bề ngang và mọng nước, trông có vẻ khoẻ mạnh;mầm cây rất bậm	
 a	186	0.28	0.42	bậm_bạch#1	[đi, chạy] có vẻ nặng nề, khó khăn;chiếc xe bậm bạch bò lên dốc ~ chạy bậm bạch	
 a	187	0.74	0.16	bậm_bạp#1	bậm và chắc [nói khái quát];	
-a	188	0.27	0.42	bầm_giập#1	trải qua nhiều đau đớn, tủi nhục;cuộc đời bầm giập	
+a	188	0.1	0.42	bầm_giập#1	trải qua nhiều đau đớn, tủi nhục;cuộc đời bầm giập	
 a	189	0.47	0.29	bẩm_sinh	[đặc điểm] vốn có từ lúc sinh ra;dị tật bẩm sinh ~ năng khiếu bẩm sinh	
 a	190	0.21	0.51	bấn	có khó khăn trong công việc do thiếu người, thiếu tiền bạc hoặc thì giờ, mà không biết giải quyết ra sao;nhà bấn người ~ dạo này công việc bấn quá	
 a	191	0.29	0.4	bấn	"rối bời, cuống quýt, không biết xử trí ra sao trước công việc dồn dập;lo bấn người ~ ""Tổ nào tổ ấy bấn lên về mạ ..."" (Vũ Thị Thường; 1)"	
-a	192	0.27	0.47	bẩn	có nhiều bụi bặm, rác rưởi, cáu ghét hoặc bị hoen ố;nước bẩn ~ quần áo bị dây bẩn	
+a	192	0.17	0.47	bẩn#1	có nhiều bụi bặm, rác rưởi, cáu ghét hoặc bị hoen ố;nước bẩn ~ quần áo bị dây bẩn	
 a	193	0.22	0.49	bẩn	xấu xa, tồi tệ đến mức đáng khinh;bẩn tính ~ chơi bẩn với bạn bè	
 a	194	0.2	0.47	bận	ở trạng thái đang phải làm việc gì đó nên không thể làm việc nào khác;đang bận học ~ bận việc đồng áng ~ bận tối mắt tối mũi	
 a	195	0.27	0.44	bận	[sự việc] có liên quan và làm cho phải lo nghĩ đến;chuyện người ta bận gì đến mình?	
 a	196	0.28	0.42	bần_bật	"[run, rung] mạnh, giật nẩy lên liên tiếp;sợ quá, chân tay run lên bần bật ~ ""Gió bên ngoài bần bật như muốn xé tung phên cửa."" (Dương Thị Xuân Quý; 1)"	
 a	197	0.21	0.5	bằn_bặt	null;đi bằn bặt mấy năm trời	
-a	198	0.28	0.39	bần_bật#1	"(run, rung) mạnh, giật nẩy lên liên tiếp ; ""sợ quá , tay chân run bần bật"""	
+a	198	0.08	0.39	bần_bật#1	"(run, rung) mạnh, giật nẩy lên liên tiếp ; ""sợ quá , tay chân run bần bật"""	
 a	199	0.27	0.49	bấn_bít	không biết xử trí ra sao do có quá nhiều công việc cần phải làm một lúc;mùa màng bấn bít	
 a	200	0.26	0.44	bấn_bíu	null;dạo này công việc bấn bíu quá	
 a	201	0.42	0.27	bận_bịu	bận việc [nói khái quát];công việc bận bịu ~ cả ngày bận bịu với con cái, nhà cửa	
 a	202	0.45	0.25	bán công	[trường học, bệnh viện] nửa quốc lập, nửa dân lập;trường tiểu học bán công	
 a	203	0.28	0.3	bán công_khai	[tổ chức, hoạt động] nửa công khai, nửa bí mật;tổ chức hoạt động bán công khai	
-a	204	0.27	0.49	bần_cùng	nghèo khổ đến cùng cực;cảnh sống bần cùng ~ cứu giúp kẻ bần cùng	
-a	205	0.28	0.42	bần_cùng	[làm việc gì] ở vào thế cùng, thế bí, không có cách nào khác;bần cùng lắm tôi mới phải nhờ đến anh ~ đó cũng chỉ là chuyện bần cùng!	
+a	204	0.1	0.49	bần_cùng#1	nghèo khổ đến cùng cực;cảnh sống bần cùng ~ cứu giúp kẻ bần cùng	
+a	205	0.18	0.42	bần_cùng#1	[làm việc gì] ở vào thế cùng, thế bí, không có cách nào khác;bần cùng lắm tôi mới phải nhờ đến anh ~ đó cũng chỉ là chuyện bần cùng!	
 a	206	0.28	0.39	bàn_cuốc	[răng, bàn chân] có hình to bè ra và thô, tựa như hình cái bàn cuốc;răng bàn cuốc ~ chân bàn cuốc	
 a	207	0.32	0.31	bán_dẫn	[máy, thiết bị] dùng transistor thay cho đèn điện tử;đài bán dẫn ~ linh kiện bán dẫn	
 a	208	0.36	0.42	bần_hàn	nghèo khổ và đói rét;cuộc sống bần hàn	
 a	209	0.27	0.38	bán_khai	đã qua trạng thái dã man, nhưng chưa tới trình độ văn minh;một dân tộc bán khai	
-a	210	0.28	0.42	băn_khoăn	"không yên lòng vì đang có những điều bắt buộc phải nghĩ ngợi, cân nhắc;lòng băn khoăn, lo lắng ~ ""Nói xong, Huệ tự thấy băn khoăn, không hiểu câu nói đó định ám chỉ ai (...)"" (Nguyễn Đình Lạp; 2)"	
-a	211	0.47	0.25	bản_lĩnh	có bản lĩnh;một con người rất bản lĩnh	
-a	212	0.2	0.51	bấn_loạn	bị rối loạn, không tự chủ được, không biết xử trí thế nào;tinh thần bấn loạn ~ tâm trí bấn loạn	
-a	213	0.28	0.43	bận_lòng	"phải nghĩ ngợi đến, phải phiền lòng;con hư làm bận lòng cha mẹ ~ ""Đã quyết không mong sum họp mãi, Bận lòng chi nữa lúc chia phôi?"" (Thế Lữ; 3)"	
+a	210	0.12	0.42	băn_khoăn#1	"không yên lòng vì đang có những điều bắt buộc phải nghĩ ngợi, cân nhắc;lòng băn khoăn, lo lắng ~ ""Nói xong, Huệ tự thấy băn khoăn, không hiểu câu nói đó định ám chỉ ai (...)"" (Nguyễn Đình Lạp; 2)"	
+a	211	0.47	0.25	bản_lĩnh#1	có bản lĩnh;một con người rất bản lĩnh	
+a	212	0	0.51	bấn_loạn#1	bị rối loạn, không tự chủ được, không biết xử trí thế nào;tinh thần bấn loạn ~ tâm trí bấn loạn	
+a	213	0.18	0.43	bận_lòng#1	"phải nghĩ ngợi đến, phải phiền lòng;con hư làm bận lòng cha mẹ ~ ""Đã quyết không mong sum họp mãi, Bận lòng chi nữa lúc chia phôi?"" (Thế Lữ; 3)"	
 a	214	0.44	0.29	bẩn_mình	[phụ nữ] đang có kinh nguyệt [lối nói kiêng tránh];	
 a	215	0.25	0.42	bận_mọn	[phụ nữ] bận bịu con mọn;bận mọn cả ngày, không đi đâu được	
-a	216	0.28	0.29	bận_rộn	bận nhiều việc một lúc, việc nọ tiếp liền việc kia;công việc bận rộn ~ ngày mùa bận rộn ~ không khí bận rộn	
-a	217	0.2	0.5	bận_tâm	phải để tâm lo lắng, suy nghĩ đến;bận tâm đến chuyện con cái ~ chuyện nhỏ, không đáng phải bận tâm	
-a	218	0.28	0.42	bần_thần	kém vẻ linh hoạt vì mệt mỏi hoặc vì đang có điều băn khoăn, lo nghĩ;nét mặt bần thần ~ bần thần cả người	
+a	216	0.18	0.29	bận_rộn#1	bận nhiều việc một lúc, việc nọ tiếp liền việc kia;công việc bận rộn ~ ngày mùa bận rộn ~ không khí bận rộn	
+a	217	0.1	0.5	bận_tâm#1	phải để tâm lo lắng, suy nghĩ đến;bận tâm đến chuyện con cái ~ chuyện nhỏ, không đáng phải bận tâm	
+a	218	0.18	0.42	bần_thần#1	kém vẻ linh hoạt vì mệt mỏi hoặc vì đang có điều băn khoăn, lo nghĩ;nét mặt bần thần ~ bần thần cả người	
 a	219	0.18	0.63	bẩn thẩn bần_thần	hết sức bần thần;	
 a	220	0.33	0.35	bán_tháo#1	"bán với giá thấp hơn hẳn giá thị trường, nhằm thu hồi vốn nhanh ; ""công ty phải bán tháo lo hàng tồn kho"""	
-a	221	0.28	0.44	bẩn_thỉu	bẩn [nói khái quát];nhà cửa bẩn thỉu ~ ăn bẩn ăn thỉu ~ mưu đồ bẩn thỉu	
-a	222	0.29	0.44	bẩn_thỉu dơ_bẩn#2	"phi đạo đức hoặc không trung thực ; ""một kế hoạch  bẩn thỉu dơ bẩn"""	
-a	223	0.27	0.47	bẩn_thỉu#12	"có nhiều bụi bặm, rác rưởi, cáu ghét hoặc bị hoen ố; ""cái giỏ bẩn thỉu"""	
-a	224	0.29	0.42	bần_tiện	không rộng rãi, có những tính toán về tiền nong một cách nhỏ nhen, đáng khinh;tính bần tiện ~ đồ bần tiện! (tiếng mắng chửi)	
+a	221	0	0.44	bẩn_thỉu#1	bẩn [nói khái quát];nhà cửa bẩn thỉu ~ ăn bẩn ăn thỉu ~ mưu đồ bẩn thỉu	
+a	222	0.19	0.44	bẩn_thỉu dơ_bẩn#2	"phi đạo đức hoặc không trung thực ; ""một kế hoạch  bẩn thỉu dơ bẩn"""	
+a	223	0	0.47	bẩn_thỉu#2	"có nhiều bụi bặm, rác rưởi, cáu ghét hoặc bị hoen ố; ""cái giỏ bẩn thỉu"""	
+a	224	0	0.42	bần_tiện#1	không rộng rãi, có những tính toán về tiền nong một cách nhỏ nhen, đáng khinh;tính bần tiện ~ đồ bần tiện! (tiếng mắng chửi)	
 a	225	0.42	0.29	bẳn_tính	có tính hay cáu gắt;mệt mỏi đâm ra bẳn tính	
 a	226	0.47	0.26	bán_trú	[trường học] được tổ chức cho học sinh học và ăn ở tại trường cả ngày, chỉ về nhà vào buổi tối;trường tiểu học bán trú ~ học sinh bán trú	
 a	227	0.35	0.3	bán tự_động	[máy móc] có tính chất tự hoạt động một phần sau khi được khởi động, một phần do con người tác động vào;thiết bị bán tự động	
 a	228	0.4	0.35	bản_vị	[trong công tác] chỉ quan tâm đến lợi ích của đơn vị mình, không quan tâm đến lợi ích của các đơn vị khác, đến toàn cục;tư tưởng bản vị	
 a	229	0.43	0.27	bán vũ_trang	được vũ trang [thường bằng những vũ khí thô sơ] để vừa chiến đấu vừa sản xuất;lực lượng dân quân bán vũ trang	
-a	230	0.28	0.42	phản_bội#2	"chuyển giao cho một kẻ thù của sự phản bội, ""Judas bán Chúa Giêsu"", ""Các điệp viên phản bội đất nước"""	
+a	230	0.08	0.42	phản_bội#2	"chuyển giao cho một kẻ thù của sự phản bội, ""Judas bán Chúa Giêsu"", ""Các điệp viên phản bội đất nước"""	
 a	231	0.22	0.51	băng	hoàn toàn như thế trên khắp phạm vi được nói đến;bãi đất đã bị ngập băng	
 a	232	0.28	0.42	băng	trạng thái ở yên một chỗ, không hoạt động, không phát triển được;tiền đóng băng trong ngân hàng ~ thị trường nhà đất đã có dấu hiệu tan băng	
 a	233	0.3	0.37	bằng	không hơn, không kém;cao bằng nhau ~ chia thành hai phần bằng nhau	
@@ -228,12 +227,12 @@ a	237	0.24	0.5	bẵng	im bặt, vắng bặt, hoàn toàn không có tin tức, 
 a	238	0.15	0.6	bẵng	ở tình trạng hoàn toàn không nghĩ đến, không để ý gì đến nữa;quên bẵng ~ cây đàn bị bỏ bẵng, không ai động tới	
 a	239	0.28	0.42	bàng_bạc	"có màu hơi bạc;đám mây bàng bạc ~ ""(…) trên mặt sông, ánh sao mờ mờ hắt xuống những vệt lăn tăn bàng bạc đẹp đến lạ lùng."" (Nguyễn Huy Thiệp; 1)"	
 a	240	0.46	0.28	bằng_bặn	phẳng và đều đặn;mái lợp bằng bặn ~ hàng rào được cắt xén rất bằng bặn	
-a	241	0.19	0.5	băng_giá	lạnh đến mức như xung quanh có băng giá;màn đêm băng giá ~ nét mặt băng giá, không một chút cảm xúc	
+a	241	0.19	0.5	băng_giá#1	lạnh đến mức như xung quanh có băng giá;màn đêm băng giá ~ nét mặt băng giá, không một chút cảm xúc	
 a	242	0.29	0.42	băng_hoại	hư hỏng, đổ nát, mất đi những gì tốt đẹp nhất về mặt tinh thần;băng hoại đạo đức ~ lối sống truỵ lạc làm băng hoại thuần phong mĩ tục	
-a	243	0.26	0.46	bàng_hoàng	"ngẩn người ra, choáng váng đến mức như không còn ý thức được gì nữa;bàng hoàng trước tin dữ ~ ""Bàng hoàng dở tỉnh dở say (...)"" (TKiều)"	
-a	244	0.22	0.51	bàng_hoàng#1	"ngẩn người ra, choáng váng đến mức như không còn ý thức được gì nữa ; ""bàng hoàng trước tin dữ"""	
+a	243	0.16	0.46	bàng_hoàng	"ngẩn người ra, choáng váng đến mức như không còn ý thức được gì nữa;bàng hoàng trước tin dữ ~ ""Bàng hoàng dở tỉnh dở say (...)"" (TKiều)"	
+a	244	0	0.51	bàng_hoàng#1	"ngẩn người ra, choáng váng đến mức như không còn ý thức được gì nữa ; ""bàng hoàng trước tin dữ"""	
 a	245	0.21	0.53	bằng không	không có gì, coi như vô ích;nói với nó thì cũng bằng không ~ bao công sức đổ vào đấy, giờ cũng bằng không	
-a	246	0.32	0.4	bâng_khuâng	"có những cảm xúc luyến tiếc, nhớ thương xen lẫn nhau, gây ra trạng thái như hơi ngẩn ngơ;lòng dạ bâng khuâng ~ ""Bâng khuâng nhớ cảnh, nhớ người, Nhớ nơi kỳ ngộ, vội dời chân đi."" (TKiều)"	
+a	246	0.32	0.4	bâng_khuâng#1	"có những cảm xúc luyến tiếc, nhớ thương xen lẫn nhau, gây ra trạng thái như hơi ngẩn ngơ;lòng dạ bâng khuâng ~ ""Bâng khuâng nhớ cảnh, nhớ người, Nhớ nơi kỳ ngộ, vội dời chân đi."" (TKiều)"	
 a	247	0.39	0.3	bâng_lâng	ở trạng thái bâng khuâng, vấn vương và cảm thấy nhẹ nhàng, dễ chịu;cảm giác bâng lâng ~ bâng lâng cả người	
 a	248	0.28	0.41	bảng_lảng	"[ánh sáng] lờ mờ, chập chờn, không rõ nét;""Trời chiều bảng lảng bóng hoàng hôn, Tiếng ốc xa đưa vẳng trống dồn."" (Bà Huyện Thanh Quan; 1)"	
 a	249	0.41	0.35	bắng_nhắng	cố làm rối rít, ồn ào để tỏ vẻ ta đây quan trọng hoặc tài giỏi;tính hay bắng nhắng	
@@ -241,7 +240,7 @@ a	250	0.26	0.44	bằng_phẳng	có bề mặt không gồ ghề, không lồi l�
 a	251	0.39	0.3	bằng_phẳng	suôn sẻ, bình yên, ít có sự xáo động;cuộc đời bằng phẳng	
 a	252	0.26	0.46	bàng_quan#1	"tự coi mình là người ngoài cuộc, coi là không dính líu đến mình ; ""thái độ bàng quan vô trách nhiệm"""	
 a	253	0.28	0.42	bâng_quơ	vu vơ, không nhằm trực tiếp vào một đối tượng, một mục đích nào rõ ràng;nói bâng quơ vài câu ~ suy nghĩ bâng quơ ~ mắt nhìn bâng quơ	
-a	254	0.28	0.47	bằng_thừa	không ích lợi gì, không có tác dụng gì;hư thế thì học giỏi cũng bằng thừa ~ nó đang nóng, có nói cũng bằng thừa	
+a	254	0.28	0.47	bằng_thừa#1	không ích lợi gì, không có tác dụng gì;hư thế thì học giỏi cũng bằng thừa ~ nó đang nóng, có nói cũng bằng thừa	
 a	255	0.42	0.29	bàng_tiếp	[vòng tròn] tiếp xúc với một cạnh của một tam giác và với các phần kéo dài của hai cạnh kia;	
 a	256	0.54	0.21	bằng vai	ngang hàng với nhau về quan hệ thứ bậc trong họ hàng;anh em là những người bằng vai nhau	
 a	257	0.28	0.45	banh	tan tành, vụn nát;ngôi nhà bị bom đạn phá banh	
@@ -250,19 +249,19 @@ a	259	0.45	0.25	bảnh	[vẻ bên ngoài] sang và đẹp một cách chải chu
 a	260	0.4	0.29	bảnh	cừ, giỏi;làm được như thế thì bảnh thật!	
 a	261	0.28	0.39	bạnh	rộng, to về bề ngang [thường nói về quai hàm];cằm bạnh ~ cổ to bạnh ~ quai hàm hơi bạnh	
 a	262	0.24	0.52	bành_bạnh	quá bạnh, trông thô và rất mất cân đối;cằm bành bạnh	
-a	263	0.46	0.25	bảnh_bao	"bảnh [nói khái quát; thường chỉ nói về đàn ông];anh ta trông khá bảnh bao ~ ""Quá niên trạc ngoại tứ tuần, Mày râu nhẵn nhụi, áo quần bảnh bao."" (TKiều)"	
+a	263	0.46	0.25	bảnh_bao#1	"bảnh [nói khái quát; thường chỉ nói về đàn ông];anh ta trông khá bảnh bao ~ ""Quá niên trạc ngoại tứ tuần, Mày râu nhẵn nhụi, áo quần bảnh bao."" (TKiều)"	
 a	264	0.39	0.31	bảnh_choẹ	"có vẻ oai vệ, tự đắc [thường nói về tư thế ngồi];""Ghế tréo lọng xanh ngồi bảnh choẹ, Nghĩ rằng đồ thật hoá đồ chơi."" (Nguyễn Khuyến; 5)"	
 a	265	0.23	0.45	bánh_tẻ	[cây hoặc bộ phận của cây] không non, nhưng cũng không già;tre bánh tẻ ~ lá chuối bánh tẻ ~ lạc bánh tẻ	
-a	266	0.45	0.24	bảnh_trai	đẹp trai;một thanh niên bảnh trai	
+a	266	0.45	0.24	bảnh_trai#1	đẹp trai;một thanh niên bảnh trai	
 a	267	0.19	0.54	bạo	có cử chỉ, hành động tỏ ra là không rụt rè, không e ngại;con bé bạo lắm, không sợ gì cả ~ đánh bạo hỏi một câu	
 a	268	0.58	0.18	bảo_đảm	có đầy đủ các điều như quy định;chất lượng bảo đảm ~ kĩ thuật bảo đảm	
 a	269	0.42	0.29	bảo_đảm	tốt, chắc chắn, không có gì đáng ngại;dây bảo hiểm rất bảo đảm	
-a	270	0.42	0.29	bảo_đảm#1	"bảo đảm không để thất bại, ""một công thức bảo đảm cho bánh phồng pho mát"""	
-a	271	0.24	0.48	bạo_dạn	bạo, không rụt rè, không sợ sệt [nói khái quát];ăn nói bạo dạn ~ cử chỉ bạo dạn	
-a	272	0.23	0.45	báo_động#1	"cảm giác bất ngờ về một sự nguy hiểm nào đó; ""tiếng chuông báo động"""	
+a	270	0.42	0.19	bảo_đảm#1	"bảo đảm không để thất bại, ""một công thức bảo đảm cho bánh phồng pho mát"""	
+a	271	0.24	0.48	bạo_dạn#1	bạo, không rụt rè, không sợ sệt [nói khái quát];ăn nói bạo dạn ~ cử chỉ bạo dạn	
+a	272	0.123	0.45	báo_động#1	"cảm giác bất ngờ về một sự nguy hiểm nào đó; ""tiếng chuông báo động"""	
 a	273	0.48	0.25	bao_dung	rộng lòng cảm thông, thương yêu đối với mọi người;nụ cười bao dung ~ tấm lòng bao dung	
-a	274	0.28	0.46	bạo_gan	có gan làm những việc người khác thường e sợ, e ngại;anh ta bạo gan thật!	
-a	275	0.17	0.6	bạo_hành#1	"hành động tàn ác; ""nạn bạo hành trẻ em"""	
+a	274	0.11	0.46	bạo_gan#1	có gan làm những việc người khác thường e sợ, e ngại;anh ta bạo gan thật!	
+a	275	0.1	0.6	bạo_hành#1	"hành động tàn ác; ""nạn bạo hành trẻ em"""	
 a	276	0.42	0.28	bảo_hiểm#1	"có khả năng được bảo hiểm hoặc đủ điều kiện để được bảo hiểm; ""Anh ta được bảo hiểm trong mọi lần tai nạn"""	
 a	277	0.21	0.57	bão_hoà	[chất lỏng] ở trạng thái không thể hoà tan thêm được nữa; hoặc [khoảng không gian] ở trạng thái không thể chứa thêm hơi nước được nữa;dung dịch bão hoà ~ không khí bão hoà hơi nước	
 a	278	0.38	0.31	bão_hoà	[đại lượng] ở trạng thái không thể tăng thêm được khi những yếu tố có ảnh hưởng vẫn tăng;dòng điện bão hoà trong đèn hai cực	
@@ -270,94 +269,94 @@ a	279	0.29	0.45	bão_hoà	ở trạng thái không thể chứa thêm [cái đan
 a	280	0.51	0.26	bảo_hoàng	có xu hướng ủng hộ, bảo vệ chế độ quân chủ;phái bảo hoàng ~ tư tưởng bảo hoàng	
 a	281	0.39	0.3	bao_la	rộng lớn đến mức như bao trùm lên tất cả;vũ trụ bao la ~ lòng mẹ bao la ~ biển rộng bao la	
 a	282	0.41	0.31	bảo_lãnh#1	"bảo đảm cho (một cá nhân hoặc tổ chức) làm một việc hoặc hưởng một quyền lợi có gắn với nghĩa vụ, chịu trách nhiệm nếu (cá nhân hoặc tổ chức ấy) sau này không thực hiện nghĩa vụ ; ""cô ấy được bảo lãnh ra tù"""	
-a	283	0.29	0.38	bạo_miệng	null;con bé rất bạo miệng thật	
-a	284	0.28	0.43	bạo_mồm	dám nói những điều người khác thường e ngại, không muốn nói;con bé rất bạo mồm, gì cũng nói được	
-a	285	0.13	0.61	bạo_nghịch	ngang ngược phá bỏ kỉ cương, không coi ai ra gì;hành động bạo nghịch	
-a	286	0.23	0.53	bạo_ngược	[kẻ có quyền thế] tàn ác, ngang ngược, bất chấp công lí, đạo lí;đối xử bạo ngược ~ hành động bạo ngược	
-a	287	0.28	0.44	báo_oán#1	"đáp lại bằng hành động tương xứng kẻ đã gây oán với mình ; ""đền ân báo oán"""	
+a	283	0.1	0.38	bạo_miệng#1	null;con bé rất bạo miệng thật	
+a	284	0.18	0.43	bạo_mồm#1	dám nói những điều người khác thường e ngại, không muốn nói;con bé rất bạo mồm, gì cũng nói được	
+a	285	0.13	0.61	bạo_nghịch#1	ngang ngược phá bỏ kỉ cương, không coi ai ra gì;hành động bạo nghịch	
+a	286	0.113	0.53	bạo_ngược#1	[kẻ có quyền thế] tàn ác, ngang ngược, bất chấp công lí, đạo lí;đối xử bạo ngược ~ hành động bạo ngược	
+a	287	0	0.44	báo_oán#1	"đáp lại bằng hành động tương xứng kẻ đã gây oán với mình ; ""đền ân báo oán"""	
 a	288	0.28	0.45	bạo_phổi	có gan nói hoặc làm những việc người khác thường e ngại;bạo phổi mới dám làm như thế	
-a	289	0.26	0.55	bạo_tàn	null;nhân nghĩa thắng bạo tàn ~ hành vi bạo tàn	
-a	290	0.21	0.5	bảo_thủ cực_đoan#1	"được đẩy tới mức quá đáng, tới cực độ ; ""thái độ cực đoan"""	
+a	289	0	0.55	bạo_tàn#1	null;nhân nghĩa thắng bạo tàn ~ hành vi bạo tàn	
+a	290	0	0.5	bảo_thủ cực_đoan#1	"được đẩy tới mức quá đáng, tới cực độ ; ""thái độ cực đoan"""	
 a	291	0.42	0.31	bảo_tồn#1	"bảo vệ khỏi tác hại, mất mát ; ""di tích lịch sử cần được bảo tồn"""	
-a	292	0.23	0.45	báo_trước#1 cảnh_báo#1	"cảnh báo về bất hạnh trong tương lai; ""Hãy nghe lời cảnh báo của đôi mắt"""	
+a	292	0	0.45	báo_trước#1 cảnh_báo#1	"cảnh báo về bất hạnh trong tương lai; ""Hãy nghe lời cảnh báo của đôi mắt"""	
 a	293	0.44	0.27	bảo_vệ#1	" (sử dụng đặc biệt là máy móc) được bảo vệ bởi lá chắn để ngăn ngừa chấn thương; ""hệ thống bảo vệ của tòa nhà"""	
 a	294	0.26	0.44	bao_xa#1	"xa bao nhiêu;từ đây đến đó bao xa? ~ ""Phút chốc trong tâm tưởng Bính lại hiện ra những hình ảnh không bao xa."" (Nguyên Hồng; 1)"	
-a	295	0.28	0.42	bấp ba bấp_bênh#1	null;tư tưởng bấp ba bấp bênh	
-a	296	0.28	0.42	bập bà bập_bõm#1	null;nghe cứ bập bà bập bõm ~	
+a	295	0.13	0.42	bấp ba bấp_bênh#1	null;tư tưởng bấp ba bấp bênh	
+a	296	0.13	0.42	bập bà bập_bõm#1	null;nghe cứ bập bà bập bõm ~	
 a	297	0.25	0.48	bập bà bập_bùng#1	null;lửa cháy bập bà bập bùng ~ ánh đuốc bập bà bập bùng	
-a	298	0.28	0.43	bấp_bênh#1	dễ mất thăng bằng, dễ nghiêng lệch vì không có chỗ tựa vững chắc;tấm ván kê bấp bênh	
-a	302	0.26	0.45	bập_bõm#1	"một cách không chắc chắn và không đầy đủ, chỗ được chỗ không ; ""tôi chỉ bập bõm được vài câu tiếng anh"""	
+a	298	0.18	0.43	bấp_bênh#1	dễ mất thăng bằng, dễ nghiêng lệch vì không có chỗ tựa vững chắc;tấm ván kê bấp bênh	
+a	302	0.13	0.45	bập_bõm#1	"một cách không chắc chắn và không đầy đủ, chỗ được chỗ không ; ""tôi chỉ bập bõm được vài câu tiếng anh"""	
 a	305	0.28	0.42	bập_bùng#1	[tiếng trống, tiếng đàn] khi lên cao khi hạ thấp một cách nhịp nhàng;tiếng đàn guitar bập bùng	
 a	306	0.27	0.41	bặt#1	không để lại dư âm hay tin tức gì;bặt tin nhau ~ vắng bặt bóng người	
-a	307	0.25	0.5	bất_an#1	không yên ổn;tình hình bất an ~ ngọc thể bất an ~ thấy trong lòng bất an	
+a	307	0.15	0.5	bất_an#1	không yên ổn;tình hình bất an ~ ngọc thể bất an ~ thấy trong lòng bất an	
 a	308	0.3	0.41	bất_biến#1	ở trạng thái không hề thay đổi, không phát triển; phân biệt với khả biến;không có hiện tượng thiên nhiên cũng như xã hội nào là bất biến ~ nhất thành bất biến (tng)	
-a	309	0.23	0.52	bất_bình#1	không bằng lòng trước việc trái với lẽ thường, hoặc bất công, mà sinh ra bực tức;bất bình trước thái độ hách dịch, cửa quyền ~ tỏ thái độ bất bình	
+a	309	0.123	0.52	bất_bình#1	không bằng lòng trước việc trái với lẽ thường, hoặc bất công, mà sinh ra bực tức;bất bình trước thái độ hách dịch, cửa quyền ~ tỏ thái độ bất bình	
 a	310	0.28	0.42	bắt_buộc#1	"về mặt đạo đức hay pháp lý ràng buộc hay bắt buộc; ""tại nhà là bắt buộc"", ""một đóng góp bắt buộc"""	
-a	311	0.21	0.52	bất_cẩn#1	không cẩn thận, vô ý;canh phòng bất cẩn	
-a	312	0.23	0.49	bất_cẩn#2	"vô ý, không cẩn thận; ""canh phòng bất cẩn"""	
-a	313	0.28	0.41	bất_chính#1	không chính đáng, trái với đạo đức, trái pháp luật;thu nhập bất chính ~ quan hệ nam nữ bất chính ~ có hành vi bất chính	
+a	311	0.11	0.52	bất_cẩn#1	không cẩn thận, vô ý;canh phòng bất cẩn	
+a	312	0.13	0.49	bất_cẩn#2	"vô ý, không cẩn thận; ""canh phòng bất cẩn"""	
+a	313	0.18	0.41	bất_chính#1	không chính đáng, trái với đạo đức, trái pháp luật;thu nhập bất chính ~ quan hệ nam nữ bất chính ~ có hành vi bất chính	
 a	314	0.16	0.65	bất_công#1	không công bằng;đối xử bất công	
-a	315	0.26	0.5	bất_công#3 không_công bằng#1	"không công bằng; ""việc phân chia không công bằng của cải"", ""không công bằng thuế"""	
+a	315	0.16	0.5	bất_công#3 không_công bằng#1	"không công bằng; ""việc phân chia không công bằng của cải"", ""không công bằng thuế"""	
 a	316	0.22	0.5	bất_diệt#1	[cái có giá trị tinh thần] không bao giờ mất, còn mãi mãi;niềm tin bất diệt ~ tinh thần bất diệt	
-a	317	0.27	0.42	bất_định#1	không nhất định, không chắc chắn;khắc phục rủi ro, hạn chế độ bất định trong kinh doanh	
-a	318	0.25	0.46	bất_định#2	[trạng thái tâm lí, nhận thức] mơ hồ, không có gì rõ rệt;tâm thần bất định	
-a	319	0.31	0.39	bất_đồng#1	[ngôn ngữ hoặc tư tưởng] khác nhau;ý kiến bất đồng ~ bất đồng về quan điểm	
+a	317	0.17	0.42	bất_định#1	không nhất định, không chắc chắn;khắc phục rủi ro, hạn chế độ bất định trong kinh doanh	
+a	318	0.1	0.46	bất_định#2	[trạng thái tâm lí, nhận thức] mơ hồ, không có gì rõ rệt;tâm thần bất định	
+a	319	0.1	0.39	bất_đồng#1	[ngôn ngữ hoặc tư tưởng] khác nhau;ý kiến bất đồng ~ bất đồng về quan điểm	
 a	320	0.18	0.55	bất_động#1	ở trạng thái cơ thể không cử động;bệnh nhân nằm bất động trên giường ~ ngồi bất động	
-a	322	0.15	0.67	bất_hạnh	[người] không may mà chết;kẻ bất hạnh	
-a	324	0.31	0.39	bất_hảo#1	[con người, việc làm] không tốt;phần tử bất hảo ~ thành tích bất hảo	
-a	325	0.21	0.47	bất_hiếu#1	[thái độ đối với cha mẹ] tệ bạc, đối xử không phải đạo;đứa con bất hiếu ~ ăn ở bất hiếu	
+a	322	0	0.67	bất_hạnh#1	[người] không may mà chết;kẻ bất hạnh	
+a	324	0.11	0.39	bất_hảo#1	[con người, việc làm] không tốt;phần tử bất hảo ~ thành tích bất hảo	
+a	325	0	0.47	bất_hiếu#1	[thái độ đối với cha mẹ] tệ bạc, đối xử không phải đạo;đứa con bất hiếu ~ ăn ở bất hiếu	
 a	326	0.23	0.5	bạt_hơi#1	khó thở vì gió tạt mạnh;xe chạy nhanh nên bị bạt hơi	
 a	327	0.21	0.6	bất_hợp_lệ#1	không hợp lệ;phiếu bầu bất hợp lệ	
 a	328	0.3	0.43	bất_hợp_lí#1	không hợp lí;một chính sách bất hợp lí ~ những điều bất hợp lí trong dự thảo kế hoạch	
 a	329	0.28	0.42	bất_hợp_lý#1	điều không hợp lý;	
-a	330	0.22	0.51	bất_hợp_pháp#1	trái với pháp luật;làm ăn bất hợp pháp	
-a	331	0.25	0.47	bất_hợp_tác#1	không hợp tác;thái độ bất hợp tác ~ chủ trương bất hợp tác	
-a	332	0.31	0.42	bất_hợp_tác#1	"không muốn hợp tác; ""một nhân chứng bất hợp tác"""	
+a	330	0	0.51	bất_hợp_pháp#1	trái với pháp luật;làm ăn bất hợp pháp	
+a	331	0.15	0.47	bất_hợp_tác#1	không hợp tác;thái độ bất hợp tác ~ chủ trương bất hợp tác	
+a	332	0.1	0.42	bất_hợp_tác#1	"không muốn hợp tác; ""một nhân chứng bất hợp tác"""	
 a	333	0.27	0.43	bất_hủ#1	[cái có giá trị tư tưởng, tinh thần] không bao giờ mất, mãi mãi còn nguyên giá trị;một áng văn bất hủ	
 a	334	0.06	0.75	bất_khả#1	không thể được;	
-a	335	0.42	0.29	bất_khả chiến_bại#1	"chiến thắng; ""bất khả chiến bại trong trận chiến"", ""một đội bất khả chiến bại"""	
+a	335	0.42	0.19	bất_khả chiến_bại#1	"chiến thắng; ""bất khả chiến bại trong trận chiến"", ""một đội bất khả chiến bại"""	
 a	336	0.19	0.59	bất_khả_kháng#1	không thể, không có khả năng chống lại được;lí do bất khả kháng ~ ở vào tình thế bất khả kháng	
-a	337	0.26	0.49	bất_khả_thi#1	không thể, không có khả năng thực hiện được;một kế hoạch bất khả thi	
+a	337	0.16	0.49	bất_khả_thi#1	không thể, không có khả năng thực hiện được;một kế hoạch bất khả thi	
 a	338	0.26	0.46	bất_kham#1	[ngựa] dữ, không dễ dàng chịu để cho điều khiển;con ngựa bất kham	
 a	339	0.24	0.47	bất_khuất#1	không chịu khuất phục;tinh thần bất khuất ~ đấu tranh bất khuất ~ người chiến sĩ kiên cường, bất khuất	
 a	340	0.24	0.47	bất_kì#1	không có điều kiện nào kèm theo;kẻ một đường thẳng bất kì ~ lấy một câu thơ bất kì trong Truyện Kiều	
-a	341	0.24	0.48	bất_kính#1	thiếu sự tôn kính [như phải có];bất kính với người trên	
-a	342	0.32	0.4	bất_kính#1	"hiện sự thiếu tôn trọng hay tôn kính do, ""học giả bất kính chế giễu những điều thiêng liêng"", ""khách du lịch ồn ào bất kính"""	
+a	341	0.1	0.48	bất_kính#1	thiếu sự tôn kính [như phải có];bất kính với người trên	
+a	342	0.1	0.4	bất_kính#1	"hiện sự thiếu tôn trọng hay tôn kính do, ""học giả bất kính chế giễu những điều thiêng liêng"", ""khách du lịch ồn ào bất kính"""	
 a	343	0.24	0.45	bất_kỳ#1	null;kẻ một đường thẳng bất kỳ	
-a	344	0.28	0.45	bất_lịch_sự#1	"không lịch sự ; ""anh ta có thái độ bất lịch sự"""	
-a	345	0.26	0.54	bất_lợi#1	không có lợi, không thuận lợi;thời tiết bất lợi ~ điều kiện bất lợi	
-a	346	0.24	0.5	bất_lợi#1	"gây thiệt hại; ""đó là vấn đề bất lợi với chúng ta"""	
-a	347	0.2	0.56	bất_lực#1	không đủ sức lực, điều kiện để làm việc gì;bất lực trước hoàn cảnh ~ đành khoanh tay chịu bất lực	
-a	348	0.21	0.5	bất_lực#3	"không thể quản lý độc lập; ""bất lực như một em bé"""	
-a	349	0.15	0.59	bất_lương	không lương thiện;người bất lương	
-a	350	0.27	0.47	bất_mãn#1	[tâm trạng, thái độ] không bằng lòng do không được thoả mãn điều gì đó mà tự nghĩ là mình đáng được hưởng;một nhà nho bất mãn với thời cuộc ~ thái độ bất mãn	
-a	351	0.24	0.52	bất_mãn#1	"không bằng lòng do không được thoả mãn điều gì đó mà tự nghĩ là mình đáng được hưởng; ""thái độ bất mãn"""	
+a	344	0	0.45	bất_lịch_sự#1	"không lịch sự ; ""anh ta có thái độ bất lịch sự"""	
+a	345	0.16	0.54	bất_lợi#1	không có lợi, không thuận lợi;thời tiết bất lợi ~ điều kiện bất lợi	
+a	346	0.14	0.5	bất_lợi#1	"gây thiệt hại; ""đó là vấn đề bất lợi với chúng ta"""	
+a	347	0.1	0.56	bất_lực#1	không đủ sức lực, điều kiện để làm việc gì;bất lực trước hoàn cảnh ~ đành khoanh tay chịu bất lực	
+a	348	0.1	0.5	bất_lực#3	"không thể quản lý độc lập; ""bất lực như một em bé"""	
+a	349	0.1	0.59	bất_lương	không lương thiện;người bất lương	
+a	350	0.1	0.47	bất_mãn#1	[tâm trạng, thái độ] không bằng lòng do không được thoả mãn điều gì đó mà tự nghĩ là mình đáng được hưởng;một nhà nho bất mãn với thời cuộc ~ thái độ bất mãn	
+a	351	0.14	0.52	bất_mãn#1	"không bằng lòng do không được thoả mãn điều gì đó mà tự nghĩ là mình đáng được hưởng; ""thái độ bất mãn"""	
 a	352	0.26	0.47	bạt_mạng#1	liều lĩnh, bất chấp tất cả;ăn chơi bạt mạng ~ phóng xe bạt mạng	
 a	353	0.28	0.42	bất_minh#1	không rõ ràng, có chỗ đáng nghi ngờ;quan hệ bất minh ~ đồng tiền bất minh	
-a	354	0.22	0.52	bắt_nạt#1	"cậy quyền thế, sức mạnh mà doạ dẫm làm cho phải sợ ; ""bắt nạt trẻ con"""	
+a	354	0.12	0.52	bắt_nạt#1	"cậy quyền thế, sức mạnh mà doạ dẫm làm cho phải sợ ; ""bắt nạt trẻ con"""	
 a	355	0.26	0.42	bạt_ngàn#1	nhiều vô kể và trải ra trên một vùng rất rộng;rừng núi bạt ngàn ~ một đồi chè bạt ngàn đến hút tầm mắt	
 a	356	0.3	0.36	bát_ngát#1	"rộng lớn đến mức tầm mắt không sao bao quát hết được;cánh đồng bát ngát ~ ""Bốn bề bát ngát xa trông, Cát vàng cồn nọ, bụi hồng dặm kia."" (TKiều)"	
 a	357	0.28	0.42	bất_nghĩa#1	"trái với đạo đức và lẽ phải;ăn ở bất nghĩa ~ ""Lời ngay, đông mặt trong ngoài, Kẻ chê bất nghĩa, người cười vô lương!"" (TKiều)"	
 a	358	0.21	0.5	bất_ngờ#1	[sự việc] không ngờ tới, xảy ra ngoài dự tính;cuộc gặp gỡ bất ngờ ~ sự việc xảy ra hết sức bất ngờ	
 a	359	0.25	0.44	bất_nhã#1	[cách đối xử, nói năng] không nhã nhặn, có phần thiếu lịch sự;thái độ bất nhã ~ lời nói bất nhã ~ cử chỉ bất nhã	
-a	360	0.24	0.49	bất_nhân#1	không có tình người [thường dùng làm tiếng rủa];lòng dạ bất nhân ~ đồ bất nhân! ~ ăn ở bất nhân	
+a	360	0.14	0.49	bất_nhân#1	không có tình người [thường dùng làm tiếng rủa];lòng dạ bất nhân ~ đồ bất nhân! ~ ăn ở bất nhân	
 a	361	0.22	0.59	bất_nhẫn#1	hơi tàn nhẫn;hành động bất nhẫn	
-a	362	0.27	0.49	bát_nháo#1	hết sức lộn xộn, lung tung;ăn nói bát nháo	
-a	363	0.21	0.49	bất_ổn#1	ở trong trạng thái không yên ổn [do có vấn đề khó khăn cần phải giải quyết];tình hình bất ổn ~ có điều gì đó bất ổn	
-a	364	0.21	0.47	bất_ổn_định#1	ở trong trạng thái có những biến động không bình thường;giá cả bất ổn định	
-a	365	0.29	0.42	bất_tài#1	không có tài năng [thường dùng để nói khiêm tốn về mình];kẻ bất tài	
-a	366	0.21	0.53	bặt_tăm#1	null;đi bặt tăm, không có tin tức gì	
+a	362	0.17	0.49	bát_nháo#1	hết sức lộn xộn, lung tung;ăn nói bát nháo	
+a	363	0.11	0.49	bất_ổn#1	ở trong trạng thái không yên ổn [do có vấn đề khó khăn cần phải giải quyết];tình hình bất ổn ~ có điều gì đó bất ổn	
+a	364	0.11	0.47	bất_ổn_định#1	ở trong trạng thái có những biến động không bình thường;giá cả bất ổn định	
+a	365	0.19	0.42	bất_tài#1	không có tài năng [thường dùng để nói khiêm tốn về mình];kẻ bất tài	
+a	366	0.11	0.53	bặt_tăm#1	null;đi bặt tăm, không có tin tức gì	
 a	367	0.26	0.46	bất_tận#1	"nhiều đến mức như không bao giờ hết;kho tàng ca dao bất tận ~ niềm vui bất tận ~ ""Đêm ngắn tũn, ngày lại dài tưởng như bất tận."" (Bùi Bình Thi; 4)"	
 a	368	0.19	0.57	bất_thần#1	[sự việc] không dè trước được, xảy đến bất thình lình;cái chết bất thần ~ khẩu súng nhả đạn bất thần	
 a	369	0.48	0.28	bặt_thiệp#1	lịch sự, khéo léo, thông thạo trong cách giao thiệp;một con người bặt thiệp	
 a	370	0.1	0.65	bất_thường#1	không phải thường lệ;cuộc họp bất thường ~ khoản chi bất thường	
-a	372	0.24	0.48	bất_thường#2	"thấp dưới tiêu chuẩn của nhà sản xuất ""loại vải bất thường"""	
-a	373	0.25	0.5	bất_tiện#1	không thuận tiện;đường sá xa xôi, đi lại rất bất tiện	
+a	372	0.14	0.48	bất_thường#2	"thấp dưới tiêu chuẩn của nhà sản xuất ""loại vải bất thường"""	
+a	373	0.15	0.5	bất_tiện#1	không thuận tiện;đường sá xa xôi, đi lại rất bất tiện	
 a	376	0.12	0.59	bất_tín#3 vô_thần#1	"không tín thần; ""họ theo đạo vô thần"""	
-a	377	0.19	0.54	bất_tỉnh#1	ở trạng thái thần kinh cảm giác bị ức chế đột ngột, mê man không biết gì;bị thương nặng, nằm bất tỉnh ~ nghe tin sét đánh, ngã lăn ra bất tỉnh	
+a	377	0.11	0.54	bất_tỉnh#1	ở trạng thái thần kinh cảm giác bị ức chế đột ngột, mê man không biết gì;bị thương nặng, nằm bất tỉnh ~ nghe tin sét đánh, ngã lăn ra bất tỉnh	
 a	378	0.2	0.58	bất_trắc#1	[sự việc không hay] không liệu trước được;chuyện bất trắc ~ phòng khi bất trắc	
-a	379	0.23	0.52	bất_trị#1	rất ngang ngạnh, rất khó dạy bảo, khó đưa vào khuôn phép;đứa con bất trị	
-a	380	0.23	0.47	bất_trị#2 không_thể kiềm_chế#1 không bị kiểm_soát#1 không bị ngăn_chặn#1	"không hạn chế hoặc kiểm soát, ""cơn giận dữ không kiềm chế"", ""một cơn giận không được kiểm soát"", ""cơn thịnh nộ bất trị"""	
+a	379	0.13	0.52	bất_trị#1	rất ngang ngạnh, rất khó dạy bảo, khó đưa vào khuôn phép;đứa con bất trị	
+a	380	0.13	0.47	bất_trị#2 không_thể kiềm_chế#1 không bị kiểm_soát#1 không bị ngăn_chặn#1	"không hạn chế hoặc kiểm soát, ""cơn giận dữ không kiềm chế"", ""một cơn giận không được kiểm soát"", ""cơn thịnh nộ bất trị"""	
 a	381	0.31	0.36	bất_tử#1	[người đã chết, cái có giá trị tinh thần] mãi mãi còn sống trong trí nhớ, trong tình cảm của người đời;một áng văn bất tử ~ những anh hùng đã trở thành bất tử	
 a	383	0.28	0.42	bạt_tử#1	null;ăn chơi bạt tử	
 a	384	0.42	0.29	báu#1	quý giá;của báu ~ gươm báu ~ hạng ấy thì báu gì!	
@@ -381,15 +380,15 @@ a	401	0.25	0.46	bé#2	rất ít tuổi, còn non trẻ;thuở bé ~ được cư
 a	402	0.31	0.42	bé#3	[âm thanh] rất khẽ, phải chú ý mới nghe thấy;nói bé quá, nghe không rõ ~ bé cái mồm thôi!	
 a	403	0.29	0.36	bè#1	có bề ngang rất rộng [thường nói về thân thể hoặc bộ phận của thân thể];cằm vuông bè ~ bàn chân to và bè ra ~ dáng người hơi bè	
 a	404	0.34	0.32	bẽ#1	"thẹn, ngượng, vì cảm thấy bị người ta cười chê;""Trinh hơi bẽ, hai má nóng bừng. Nàng nghẹn ngào chỉ muốn oà lên khóc (...)"" (Thạch Lam; 3)"	
-a	405	0.3	0.4	bẽ_bàng#1	"hổ thẹn và buồn tủi vì cảm thấy bị người ta chê cười;""Bẽ bàng mây sớm đèn khuya, Nửa tình, nửa cảnh như chia tấm lòng."" (TKiều)"	
+a	405	0	0.4	bẽ_bàng#1	"hổ thẹn và buồn tủi vì cảm thấy bị người ta chê cười;""Bẽ bàng mây sớm đèn khuya, Nửa tình, nửa cảnh như chia tấm lòng."" (TKiều)"	
 a	406	0.29	0.38	be_bé#1	"[kích thước, âm thanh] hơi bé;túp lều be bé ~ ""Những âm thanh chỉ be bé, mơ hồ, gần như hư không."" (Tô Hoài; 35)"	
 a	407	0.19	0.49	bè_bè#1	có bề ngang rộng quá mức bình thường, làm mất cân đối, trông rất khó coi;mặt to bè bè ~ tấm lưng bè bè	
 a	408	0.29	0.42	bề_bề#1	nhiều lắm, cái nọ tiếp liền cái kia;công việc bề bề ~ ruộng bề bề không bằng một nghề trong tay (tng)	
 a	409	0.19	0.53	be_bét#1	bị giập nát đến mức không còn hình thù gì nữa;ruộng lúa bị giẫm be bét ~ quả chuối nát be nát bét	
 a	410	0.29	0.42	be_bét#2	[tình trạng sai sót, hư hỏng] nhiều và tồi tệ hết sức;rượu chè be bét ~ tính sai be bét ~ sự việc be bét hết cả	
 a	411	0.37	0.3	be_bét#3	null;chân tay lấm bùn be bét ~ mặt mũi be bét những máu	
-a	412	0.29	0.42	bê_bết#1	bị dây dính nhiều và chỗ nào cũng có;quần áo bê bết dầu mỡ ~ máu me bê bết ~ bùn đất lấm bê lấm bết	
-a	413	0.23	0.49	bê_bết#2	ở tình trạng yếu kém đến mức tồi tệ, không tiến lên được;công việc bê bết ~ bị một trận ốm bê bết	
+a	412	0.1	0.42	bê_bết#1	bị dây dính nhiều và chỗ nào cũng có;quần áo bê bết dầu mỡ ~ máu me bê bết ~ bùn đất lấm bê lấm bết	
+a	413	0.12	0.49	bê_bết#2	ở tình trạng yếu kém đến mức tồi tệ, không tiến lên được;công việc bê bết ~ bị một trận ốm bê bết	
 a	414	0.25	0.45	bê_bết#3	bệ rạc hết sức;rượu chè bê bết	
 a	415	0.28	0.46	be_bét#1	"(tình trạng sai sót, hư hỏng) nhiều và tồi tệ hết sức ; ""nó tính sai be bét"""	
 a	416	0.28	0.42	bê_bối#1	ở vào hoàn cảnh khó khăn lúng túng về nhiều mặt, khó giải quyết, thu xếp cho ổn thoả;công việc bê bối ~ hoàn cảnh gia đình khá bê bối	
@@ -403,7 +402,7 @@ a	423	0.26	0.53	bé_mọn#1	bé nhỏ và thấp kém;vật bé mọn ~ bụng d
 a	424	0.44	0.28	bé_nhỏ#1	bé [nói khái quát];đôi bàn tay bé nhỏ, xinh xắn ~ niềm vui bé nhỏ	
 a	425	0.28	0.42	bè_phái#1	có xu hướng gây chia rẽ trong nội bộ tổ chức;tư tưởng bè phái ~ óc bè phái	
 a	426	0.35	0.32	bệ_rạc#1	lôi thôi, tồi tệ đến mức ảnh hưởng tới nhân cách;nhà ở bệ rạc ~ sống bệ rạc	
-a	427	0.28	0.43	bế_tắc#1	[quá trình hoạt động hoặc tiến triển] bị ngừng hẳn lại, vì gặp trở ngại lớn, không có lối thoát;công việc bế tắc ~ lâm vào tình trạng bế tắc	
+a	427	0.1	0.43	bế_tắc#1	[quá trình hoạt động hoặc tiến triển] bị ngừng hẳn lại, vì gặp trở ngại lớn, không có lối thoát;công việc bế tắc ~ lâm vào tình trạng bế tắc	
 a	428	0.28	0.42	bê_tha#1	bệ rạc, tồi tàn;sống vất vưởng bê tha	
 a	429	0.44	0.27	bề_thế#1	có bề thế;gia đình bề thế ~ toà nhà trông rất bề thế	
 a	430	0.46	0.25	bệ_vệ#1	có bộ dạng oai nghiêm [thường chỉ nói về đàn ông];đi đứng bệ vệ ~ dáng người to béo, bệ vệ	
@@ -420,8 +419,8 @@ a	444	0.48	0.28	bén_ngót#1	sắc ngọt;con dao cau bén ngót
 a	445	0.43	0.29	bền_vững#1	vững chắc và bền lâu;mối quan hệ bền vững ~ sự phát triển không bền vững	
 a	447	0.17	0.51	bệnh#1	ốm;đang bệnh, không đi chơi được	
 a	448	0.28	0.42	bềnh_bệch#1	"hơi bệch;nước da bềnh bệch ~ ""Mặt đầm chìm trong một mầu bềnh bệch như nước luộc cá."" (Hồng Nhu; 3)"	
-a	450	0.28	0.45	bệnh_hoạn#1	[tư tưởng, tình cảm] không được bình thường, không lành mạnh;con người bệnh hoạn ~ đầu óc bệnh hoạn ~ lối suy nghĩ bệnh hoạn	
-a	451	0.28	0.45	bệnh_lý#1 bệnh_học#1 bệnh_hoạn#3 bệnh#1	"gây ra bởi hoặc bị thay đổi do bệnh biểu hiện hoặc hoặc bệnh lý; ""bệnh viêm amiđan"", ""một sự phát triển bệnh hoạn"", ""mô bệnh học"", ""các quá trình bệnh lý của cơ thể """	
+a	450	0.1	0.45	bệnh_hoạn#1	[tư tưởng, tình cảm] không được bình thường, không lành mạnh;con người bệnh hoạn ~ đầu óc bệnh hoạn ~ lối suy nghĩ bệnh hoạn	
+a	451	0.1	0.45	bệnh_lý#1 bệnh_học#1 bệnh_hoạn#3 bệnh#1	"gây ra bởi hoặc bị thay đổi do bệnh biểu hiện hoặc hoặc bệnh lý; ""bệnh viêm amiđan"", ""một sự phát triển bệnh hoạn"", ""mô bệnh học"", ""các quá trình bệnh lý của cơ thể """	
 a	452	0.26	0.42	beo#1	gầy tóp lại và nhăn nhúm;bụng ỏng, đít beo	
 a	453	0.42	0.29	béo#1	[cơ thể người, động vật] có nhiều mỡ;con lợn béo ~ càng ngày càng béo ra ~ béo như con cun cút	
 a	454	0.54	0.21	béo#2	có tính chất của mỡ, của dầu thực vật;chất béo	
@@ -464,7 +463,7 @@ a	496	0.27	0.43	bị biến_đổi#2	"thay đổi hoặc làm cho thay đổi th
 a	497	0.19	0.52	bì_bõm#1	từ mô phỏng tiếng lội hay tiếng đập nước nhẹ và liên tiếp;mái chèo khua bì bõm ~ lội bì bõm	
 a	498	0.28	0.41	bị cạn_kiệt#2	"có khả năng được sử dụng hết, có khả năng bị cạn kiệt; ""Chúng tôi bị cạn kiệt nhiên liệu hóa thạch dự trữ"""	
 a	499	0.28	0.42	bị chứng_phù#1 phù#1	"sưng lên với một sự tích lũy quá mức của chất lỏng; ""Vết bỏng đã bị phù lên"""	
-a	500	0.28	0.42	bi_đát#1	rất đau thương;một số phận bi đát ~ tình cảnh bi đát	
+a	500	0.1	0.42	bi_đát#1	rất đau thương;một số phận bi đát ~ tình cảnh bi đát	
 a	501	0.26	0.48	bị đau_mắt#1	"có đau mắt, đau mắt đỏ hoặc viêm kết mạc; ""bệnh đau mắt có thể lây lan"""	
 a	502	0.26	0.43	bị_động#1	ở tình thế buộc phải hành động theo sự chi phối của người khác hoặc hoàn cảnh bên ngoài;rơi vào thế bị động ~ đối phó một cách bị động	
 a	503	0.27	0.42	bị giãn tĩnh_mạch#1	"mạch bị sưng hoặc có nhiều màu bất thường; ""giãn tĩnh mạch"""	
@@ -476,15 +475,15 @@ a	508	0.3	0.38	bí_mật#1	được giữ kín trong phạm vi một số ít ng
 a	509	0.29	0.42	bí_mật#2	"được giữ kín trong phạm vi một số ít người, không để lộ cho người ngoài biết; ""hầm bí mật"""	
 a	510	0.21	0.54	bị nhọt#1 có nhọt#1	"bị đau vì mụn nhọt; ""ăn nhiều mật ong sẽ bị nhọt"""	
 a	511	0.18	0.5	bỉ_ổi#1	xấu xa, hèn hạ, đáng khinh;thủ đoạn bỉ ổi ~ bộ mặt bỉ ổi	
-a	512	0.39	0.33	bi_quan#1	có cách nhìn nặng nề về mặt tiêu cực, không tin tưởng ở sự phát triển theo hướng tốt, ở tương lai;thái độ bi quan ~ nhìn đời bằng cặp mắt bi quan	
-a	513	0.49	0.27	bi_quan#2	[tình hình] khó cứu vãn, tuyệt vọng;tình thế rất bi quan	
+a	512	0.1	0.33	bi_quan#1	có cách nhìn nặng nề về mặt tiêu cực, không tin tưởng ở sự phát triển theo hướng tốt, ở tương lai;thái độ bi quan ~ nhìn đời bằng cặp mắt bi quan	
+a	513	0.1	0.27	bi_quan#2	[tình hình] khó cứu vãn, tuyệt vọng;tình thế rất bi quan	
 a	514	0.3	0.41	bí_rì#1	rất bí, không sao tìm được lối thoát;công việc bí rì	
 a	515	0.25	0.51	bị sâu#1	" (răng) bị ảnh hưởng bởi sâu răng hoặc sâu răng; ""răng bị sâu rất đau"""	
 a	516	0.23	0.5	bì_sị#1	null;mặt mày bì sị	
 a	517	0.24	0.47	bị_sị#1	[vẻ mặt] xịu xuống, lầm lì do có điều không vừa ý;mặt mày bị sị	
-a	518	0.26	0.45	bi_thảm#1	rất đau thương, khiến ai cũng phải động lòng thương xót;cái chết bi thảm ~ câu chuyện bi thảm	
+a	518	0.1	0.45	bi_thảm#1	rất đau thương, khiến ai cũng phải động lòng thương xót;cái chết bi thảm ~ câu chuyện bi thảm	
 a	519	0.22	0.54	bị thối hoại#1 hoại_tử#1	"bị chết mô; ""vết thương đang hoại tử"	
-a	520	0.42	0.3	bi_thương#1	"rất đỗi thương tâm;khúc hát bi thương ~ ""Lên cao trông thức mây lồng, Lòng nào là chẳng động lòng bi thương."" (CPN)"	
+a	520	0.12	0.5	bi_thương#1	"rất đỗi thương tâm;khúc hát bi thương ~ ""Lên cao trông thức mây lồng, Lòng nào là chẳng động lòng bi thương."" (CPN)"	
 a	521	0.28	0.42	bỉ_tiện#1	quê mùa và ngu dốt, ti tiện;giở trò bỉ tiện ~ đồ bỉ tiện! (tiếng chửi mắng)	
 a	522	0.7	0.14	bi_tráng#1	vừa có tính chất bi ai, vừa có tính chất hùng tráng;khúc ca bi tráng	
 a	523	0.39	0.28	bí_truyền#1	được bí mật truyền lại cho một số rất ít người;môn võ bí truyền ~ phương thuốc bí truyền	
@@ -518,17 +517,17 @@ a	554	0.35	0.38	bình_phục#1 chữa lành#1 chữa khỏi#1	"giải thoát kh�
 a	555	0.43	0.27	bình_quân#1	được tính chia đều, hơn bù kém, lấy con số trung bình;thu nhập bình quân đầu người ~ sản lượng bình quân là 3 tạ một sào ~ tính bình quân	
 a	556	0.53	0.24	bình_quyền#1	bình đẳng về quyền lợi;thực hiện nam nữ bình quyền	
 a	557	0.28	0.41	bình_thản#1	"tự nhiên như thường, coi như không có việc gì xảy ra [trước việc dễ làm lo sợ, hoảng hốt hoặc tức giận];nét mặt bình thản ~ ""Lão nói bình thản thế, nhưng trong lòng lão vẫn còn rối lên như mớ bòng bong."" (Đào Vũ; 1)"	
-a	558	0.21	0.47	bình_thường#1	không có gì khác thường, không có gì đặc biệt;sức khoẻ bình thường ~ mọi sự vẫn bình thường, không có gì thay đổi	
-a	559	0.35	0.27	bình_thường#2	thường ngày;bình thường anh ấy dậy rất sớm	
+a	558	0.21	0.47	bình_thường	không có gì khác thường, không có gì đặc biệt;sức khoẻ bình thường ~ mọi sự vẫn bình thường, không có gì thay đổi	
+a	559	0.35	0.27	bình_thường	thường ngày;bình thường anh ấy dậy rất sớm	
 a	560	0.22	0.45	bình_thường mà#1	"không có gì đặc biệt ; ""chuyện ấy cũng bình thường mà"""	
-a	561	0.28	0.42	bình_tĩnh#1	"[trước tình thế dễ làm mất tự chủ] không bối rối, mà làm chủ được tình cảm, hành động của mình;mất bình tĩnh ~ bình tĩnh nghe xong câu chuyện ~ ""Nàng cố giữ bình tĩnh nhưng đã thấy nghẹn ngào."" (Đỗ Đức Thu; 2)"	
-a	562	0.2	0.52	bình_tĩnh#2	"không bối rối, mà làm chủ được tình cảm, hành động của mình; ""bạn không nên mất bình tĩnh như thế"""	
+a	561	0.38	0.1	bình_tĩnh#1	"[trước tình thế dễ làm mất tự chủ] không bối rối, mà làm chủ được tình cảm, hành động của mình;mất bình tĩnh ~ bình tĩnh nghe xong câu chuyện ~ ""Nàng cố giữ bình tĩnh nhưng đã thấy nghẹn ngào."" (Đỗ Đức Thu; 2)"	
+a	562	0.52	0.2	bình_tĩnh#2	"không bối rối, mà làm chủ được tình cảm, hành động của mình; ""bạn không nên mất bình tĩnh như thế"""	
 a	563	0.28	0.42	bình_yên#1	ở tình trạng không gặp điều gì không hay xảy ra, làm ảnh hưởng đến sức khoẻ, đời sống;cuộc sống bình yên ~ gia đình được bình yên, khoẻ mạnh	
 a	564	0.36	0.42	bịp_bợm#1	xảo trá, chỉ nhằm đánh lừa người để mưu lợi riêng;giở trò bịp bợm ~ kẻ bịp bợm	
 a	565	0.42	0.42	bít_bùng#1	null;cửa đóng bít bùng	
 a	566	0.23	0.5	bịt_bùng#2	"kín mít, không còn chỗ nào hở;cửa đóng bịt bùng ~ ""Bốn bề đá lấp bịt bùng, Mẹ con than khóc không trông ra rồi."" (LVT)"	
 a	567	0.49	0.26	bổ#1	có tác dụng tăng thêm chất dinh dưỡng, tăng thêm sức khoẻ cho cơ thể;thuốc bổ ~ chất bổ	
-a	568	0.28	0.41	bộ#1	[làm việc gì] không dùng công cụ, vũ khí, chỉ bằng tay không, chân không;tra tấn bằng các loại đòn bộ	
+a	568	0.28	0.41	bộ	[làm việc gì] không dùng công cụ, vũ khí, chỉ bằng tay không, chân không;tra tấn bằng các loại đòn bộ	
 a	569	0.3	0.41	bở#1	dễ tơi ra, vụn ra khi chịu tác động của lực cơ học;khoai bở tung ~ đất bở như vôi	
 a	570	0.36	0.3	bở#2	không bền, dễ bục, dễ đứt ra khi chịu tác động của lực cơ học;sợi dây rất bở ~ chiếc áo mặc lâu ngày đã bở sợi	
 a	571	0.28	0.43	bở#3	dễ mang lại lợi, mang lại hiệu quả mà không phải tốn nhiều sức;vớ được món bở	
@@ -554,12 +553,12 @@ a	592	0.14	0.63	bốc_mùi hôi_thối#2	"mùi khó chịu; ""trong bếp bốc 
 a	593	0.31	0.42	bộc_trực#1	có tính nghĩ sao nói vậy một cách thẳng thắn;ăn nói bộc trực ~ tính khí bộc trực, thẳng thắn	
 a	594	0.3	0.4	bộc_tuệch#1	thật thà một cách vụng về, không giữ gìn tế nhị;tính bộc tuệch ~ ăn nói bộc tuệch	
 a	595	0.31	0.28	bội#1	được nhân lên nhiều lần, hơn nhiều so với một mức nhất định;thu bội lên đến hơn chục triệu ~ người đông gấp bội	
-a	596	0.24	0.43	bội_bạc#1	không nhớ ơn nghĩa, làm những việc sai trái, không xứng với công ơn, tình nghĩa;con người bội bạc ~ ăn ở bội bạc	
+a	596	0.14	0.43	bội_bạc#1	không nhớ ơn nghĩa, làm những việc sai trái, không xứng với công ơn, tình nghĩa;con người bội bạc ~ ăn ở bội bạc	
 a	597	0.28	0.37	bời_bời#1	"nhiều và ngổn ngang, lộn xộn;việc nhà việc nước bời bời ~ ""Bao nhiêu ý nghĩ đen tối, ghê rợn, nối tiếp bời bời trong đầu óc ông lão."" (Kim Lân; 5)"	
 a	599	0.26	0.43	bồi_hồi#1	"ở trong trạng thái có những cảm xúc, ý nghĩ trở đi trở lại, làm xao xuyến không yên [thường là khi nghĩ đến việc đã qua];trong dạ bồi hồi ~ ""Lòng chàng nghĩ lại bồi hồi, Trước tuy còn giận sau rồi lại thương."" (QÂTK)"	
-a	601	0.25	0.46	bối_rối#1	"lúng túng, mất bình tĩnh, không biết nên xử trí thế nào;vẻ mặt bối rối ~ ""Lòng ngán ngẫm buồn tênh mọi nỗi, Khúc sầu tràng bối rối dường tơ."" (CO)"	
+a	601	0.15	0.46	bối_rối#1	"lúng túng, mất bình tĩnh, không biết nên xử trí thế nào;vẻ mặt bối rối ~ ""Lòng ngán ngẫm buồn tênh mọi nỗi, Khúc sầu tràng bối rối dường tơ."" (CO)"	
 a	602	0.55	0.27	bợm#1	sành sỏi và khôn khéo, có nhiều mánh khoé táo tợn;xoay xở rất bợm!	
-a	603	0.51	0.29	bợm_bãi#1 lừa#1	có nhiều mánh khoé lừa bịp [nói khái quát];có tính bợm bãi ~ tay bợm bãi	
+a	603	0.1	0.29	bợm_bãi#1 lừa#1	có nhiều mánh khoé lừa bịp [nói khái quát];có tính bợm bãi ~ tay bợm bãi	
 a	605	0.3	0.38	bôm_bốp#1	"từ mô phỏng âm thanh đều và to, phát ra liên tiếp do hơi bị nén bật ra;vỗ tay bôm bốp ~ ""Người ta vỗ tay hoặc cười lăn cười lộn. Nút chai lại bôm bốp phụt lên trần nhà."" (Vũ Trọng Phụng; 4)"	
 a	606	0.23	0.49	bồm_bộp#1	từ mô phỏng âm thanh đều và trầm đục, liên tiếp phát ra do vật cứng đập vào vật mềm rỗng hoặc không đặc ruột;vỗ bồm bộp vào vai	
 a	607	0.3	0.41	bờm_xờm#1	[lông, tóc] dài ngắn không đều và rối bù;tóc tai bờm xờm	
@@ -568,7 +567,7 @@ a	609	0.11	0.58	bón#1	táo;trẻ bị bón
 a	610	0.42	0.24	bộn#1	nhiều và ngổn ngang;công việc bộn lên ~ thóc lúa bộn nhà	
 a	611	0.42	0.29	bộn#2	nhiều, khá nhiều;anh ta đã bộn tuổi ~ kiếm được bộn tiền	
 a	612	0.23	0.5	bợn#1	có chút gì làm cho bẩn đi;nhà sạch đến nỗi không bợn một chút rác	
-a	614	0.42	0.29	bộn_bề#1	null;nhà cửa bộn bề ~ công việc bộn bề	
+a	614	0.1	0.29	bộn_bề#1	null;nhà cửa bộn bề ~ công việc bộn bề	
 a	615	0.42	0.27	bon_bon#1	rất bon;xe chạy bon bon	
 a	616	0.28	0.46	bồn_chồn#1	ở trong trạng thái thấp thỏm, mong ngóng, chờ đợi một việc gì chưa đến, chưa biết sẽ ra sao;trong dạ bồn chồn ~ bồn chồn chờ kết quả thi	
 a	617	0.42	0.29	bôn_sê_vích#1	theo chủ nghĩa bôn sê vích, theo chủ nghĩa Marx	Lenin;một đảng bôn sê vích ~ tinh thần bôn sê vích
@@ -612,19 +611,19 @@ a	656	0.29	0.36	bù_xù#2 bị làm_nhàu#1 nhăn_nhúm#1 nhăn_nhúm#1	"trong t
 a	657	0.22	0.58	bừa#1	không có trật tự, không kể gì trật tự;giấy má vứt bừa ra nhà ~ nhà cửa để bừa, không chịu dọn	
 a	658	0.25	0.5	bừa#2	liều, không kể gì hậu quả, đúng sai, chỉ cốt làm cho xong;tự ý làm bừa ~ không biết nhưng cứ nói bừa	
 a	659	0.28	0.42	bửa#1	ngang bướng, trái với lí lẽ, với khuôn phép;nói bửa ~ ăn chằng vay bửa ~ tính rất bửa!	
-a	660	0.43	0.35	bừa_bãi	bừa [nói khái quát];giấy má vứt bừa bãi ~ nói năng bừa bãi	
-a	661	0.28	0.42	bừa_bãi#2	"không có trật tự, không kể gì trật tự ; ""thói quen đọc bừa bãi"", ""một hỗn hợp bừa bãi của màu sắc và phong cách"""	
-a	662	0.29	0.43	bừa_bộn#1	nhiều và ngổn ngang, không có trật tự;nhà cửa để bừa bộn ~ giấy má vứt bừa bộn trên bàn	
-a	663	0.26	0.44	bừa_bộn#2	"dơ bẩn và mất trật tự, ""một phòng ngủ quấy khóc bừa bộn"", ""thói quen ăn uống lộn xộn của một đứa trẻ"""	
+a	660	0.1	0.35	bừa_bãi	bừa [nói khái quát];giấy má vứt bừa bãi ~ nói năng bừa bãi	
+a	661	0.08	0.42	bừa_bãi#2	"không có trật tự, không kể gì trật tự ; ""thói quen đọc bừa bãi"", ""một hỗn hợp bừa bãi của màu sắc và phong cách"""	
+a	662	0.12	0.43	bừa_bộn#1	nhiều và ngổn ngang, không có trật tự;nhà cửa để bừa bộn ~ giấy má vứt bừa bộn trên bàn	
+a	663	0.12	0.44	bừa_bộn#2	"dơ bẩn và mất trật tự, ""một phòng ngủ quấy khóc bừa bộn"", ""thói quen ăn uống lộn xộn của một đứa trẻ"""	
 a	664	0.23	0.52	bừa_phứa#1	bừa bãi, bất chấp, không kể gì hết [nói khái quát];thức ăn bừa phứa trên bàn	
 a	665	0.2	0.51	bức#1	nóng ngột ngạt, rất khó chịu;trời bức quá!	
-a	666	0.51	0.23	bức_bối#1	bức [nói khái quát];thời tiết nóng nực, bức bối	
-a	667	0.25	0.42	bức_bối#2	khó chịu, bực dọc trong người;bức bối trong lòng	
-a	668	0.28	0.42	bực_bội#2	"gây khó khăn trong việc tìm kiếm một câu trả lời hay giải pháp, nhiều tranh chấp; ""bực bội vấn đề ưu tiên"""	
-a	669	0.28	0.42	bực_dọc#2	"bực tức đến mức không chịu được, lộ rõ ở nét mặt, cử chỉ; ""cô ta tỏ vẻ bực dọc"""	
+a	666	0.05	0.43	bức_bối#1	bức [nói khái quát];thời tiết nóng nực, bức bối	
+a	667	0.12	0.22	bức_bối#2	khó chịu, bực dọc trong người;bức bối trong lòng	
+a	668	0.1	0.42	bực_bội#2	"gây khó khăn trong việc tìm kiếm một câu trả lời hay giải pháp, nhiều tranh chấp; ""bực bội vấn đề ưu tiên"""	
+a	669	0.12	0.42	bực_dọc#2	"bực tức đến mức không chịu được, lộ rõ ở nét mặt, cử chỉ; ""cô ta tỏ vẻ bực dọc"""	
 a	670	0.25	0.3	bức_thiết#1	rất cần thiết, đến mức không thể trì hoãn;việc bức thiết ~ yêu cầu bức thiết	
-a	671	0.29	0.29	bức_xúc#1	hết sức cấp bách, đòi hỏi phải sớm được giải quyết;ma tuý là vấn đề bức xúc của toàn xã hội	
-a	672	0.31	0.29	bức_xúc#2	"hết sức cấp bách, đòi hỏi phải sớm được giải quyết ; ""đây là vấn đề bức xúc cần được giải quyết"""	
+a	671	0.129	0.39	bức_xúc#1	hết sức cấp bách, đòi hỏi phải sớm được giải quyết;ma tuý là vấn đề bức xúc của toàn xã hội	
+a	672	0.11	0.39	bức_xúc#2	"hết sức cấp bách, đòi hỏi phải sớm được giải quyết ; ""đây là vấn đề bức xúc cần được giải quyết"""	
 a	673	0.24	0.5	búi#1	"rối;""(...) Tóc không xe tóc búi, ruột không dần ruột đau."" (Cdao)"	
 a	675	0.42	0.31	bùi#1	có vị ngon hơi beo béo như vị của lạc, của hạt dẻ;hạt dẻ ăn rất bùi	
 a	676	0.42	0.29	bụi#1	bụi đời [nói tắt];bỏ nhà đi bụi ~ dân bụi	
@@ -632,8 +631,8 @@ a	678	0.35	0.36	bùi_ngùi#1	"buồn vì thương cảm, xen lẫn luyến tiế
 a	679	0.51	0.25	bùi tai#1	[lời nói] dễ làm cho người ta vui lòng nghe theo, thuận theo;nghe bùi tai nên đồng ý	
 a	680	0.05	0.85	bụi#1	làm khó chịu hay gặp khó khăn	
 a	681	0.42	0.42	bủn#1	null;cái chiếu nát bủn	
-a	682	0.28	0.42	bủn_rủn#1	rã rời gân cốt, như không còn cử động nổi nữa;sợ quá, chân tay bủn rủn ~ nghe tin dữ, bủn rủn cả người	
-a	683	0.24	0.49	bủn_xỉn#1	hà tiện quá đáng, đến mức không dám chi tiêu về cả những khoản hết sức nhỏ nhặt;con người bủn xỉn ~ tính bủn xỉn	
+a	682	0.18	0.42	bủn_rủn#1	rã rời gân cốt, như không còn cử động nổi nữa;sợ quá, chân tay bủn rủn ~ nghe tin dữ, bủn rủn cả người	
+a	683	0.14	0.49	bủn_xỉn#1	hà tiện quá đáng, đến mức không dám chi tiêu về cả những khoản hết sức nhỏ nhặt;con người bủn xỉn ~ tính bủn xỉn	
 a	684	0.27	0.42	bủng#1	"[nước da] nhợt nhạt và như mọng nước, do ốm yếu;da xanh bủng ~ ""Bà chủ quán cũng ốm rề rề, quanh năm bủng vàng như nghệ."" (Tô Hoài; 28)"	
 a	685	0.28	0.4	bủng_beo#1	"bủng và gầy tóp, xanh xao;mặt bủng beo ~ ""Cao su đi dễ khó về, Khi đi trai tráng, khi về bủng beo."" (Cdao)"	
 a	686	0.42	0.29	bùng_bục#1	dễ bục ra;vải bở bùng bục	
@@ -645,37 +644,35 @@ a	691	0.23	0.57	bùng_nhùng#1	null;đất bùng nhùng
 a	692	0.38	0.42	bụng_nhụng#1	mềm và nhão [thường nói về thịt];miếng thịt bụng nhụng	
 a	693	0.25	0.48	buộc_lòng#1	ở trong cái thế đành phải làm, phải chấp nhận mặc dù không muốn;buộc lòng ra đi ~ bị ép nên buộc lòng phải nhận	
 a	694	0.43	0.27	bươm#1	[rách] tả tơi thành nhiều mảnh;tờ giấy nát bươm ~ quần áo bươm như xơ mướp	
-a	695	0.29	0.38	buồn#1	có tác động làm cho tâm trạng không thích thú;một kỉ niệm buồn ~ câu chuyện buồn	
-a	696	0.27	0.44	buồn#2	có cảm giác bứt rứt khó chịu trong cơ thể, muốn có cử chỉ, hành động nào đó;buồn miệng hát nghêu ngao ~ ngồi không mãi cũng buồn chân buồn tay	
-a	697	0.28	0.46	buồn#3	có cảm giác khó nhịn được cười khi bị kích thích trên da thịt;bị cù buồn không nhịn được cười	
-a	698	0.38	0.32	buồn_bã#1	có tâm trạng hoặc có tính chất buồn [nói khái quát];tâm trạng buồn bã ~ nét mặt trở nên buồn bã, âu sầu	
+a	695	0.11	0.38	buồn#1	có tác động làm cho tâm trạng không thích thú;một kỉ niệm buồn ~ câu chuyện buồn	
+a	696	0	0.44	buồn#2	có cảm giác bứt rứt khó chịu trong cơ thể, muốn có cử chỉ, hành động nào đó;buồn miệng hát nghêu ngao ~ ngồi không mãi cũng buồn chân buồn tay	
+a	697	0	0.46	buồn#3	có cảm giác khó nhịn được cười khi bị kích thích trên da thịt;bị cù buồn không nhịn được cười	
+a	698	0	0.32	buồn_bã#1	có tâm trạng hoặc có tính chất buồn [nói khái quát];tâm trạng buồn bã ~ nét mặt trở nên buồn bã, âu sầu	
 a	699	0.28	0.43	bươn_bả#1	vội vàng, tất tả;bươn bả bước đi ~ bươn bả chuẩn bị cho kịp giờ	
-a	700	0.28	0.42	buồn_bã#1	"một cách đáng tiếc, ""thật đáng buồn, ông đã chết trước khi ông có thể nhìn thấy đứa cháu của mình"""	
-a	701	0.26	0.46	buồn_bực#1	buồn và khó chịu, bứt rứt trong lòng;buồn bực chuyện gia đình ~ có cảm giác chán nản, buồn bực	
-a	702	0.26	0.44	buồn_cười#1	khó mà nhịn được cười, làm cho không nhịn được cười;chuyện đó không có gì đáng buồn cười ~ cái mặt nó trông buồn cười lắm!	
-a	703	0.24	0.5	buồn_hiu#1	buồn với vẻ cô đơn, lặng lẽ;ánh mắt buồn hiu ~ mặt buồn hiu	
-a	704	0.28	0.43	buồn_ngủ#1	ở trạng thái cảm thấy muốn ngủ, cần ngủ ngay;thức khuya nên buồn ngủ ~ cơn buồn ngủ ập đến	
-a	705	0.21	0.48	buồn_nôn#1	ở trạng thái cảm thấy muốn nôn;chóng mặt, buồn nôn	
-a	706	0.22	0.52	buồn_phiền#1	buồn và lo nghĩ, không yên lòng;con hư làm cha mẹ buồn phiền ~ tâm trạng buồn phiền	
-a	707	0.3	0.39	buồn_rầu#1	"có tâm trạng buồn và để lộ rõ ra bên ngoài qua nét mặt, dáng điệu, v.v.;vẻ mặt buồn rầu, thiểu não ~ ""Buồn rầu nói chẳng nên lời, Hoa đèn kia với bóng người khá thương."" (CPN)"	
-a	708	0.41	0.31	buồn_rượi#1	buồn và lộ vẻ ủ rũ;nét mặt buồn rượi ~ tâm trí buồn rượi	
-a	709	0.24	0.47	buồn_rười_rượi#1	null;mặt buồn rười rượi	
-a	710	0.25	0.47	buồn_tẻ#1	tẻ nhạt, không có gì vui, không có gì gây hứng thú;một công việc buồn tẻ ~ cuộc đời buồn tẻ	
-a	711	0.26	0.49	buồn_tênh#1	"buồn vì cảm thấy như hụt hẫng, như thiếu vắng một cái gì không rõ rệt;lòng buồn tênh ~ ""Nàng càng ủ dột thu ba, Đoạn trường lúc ấy nghĩ mà buồn tênh."" (TKiều)"	
-a	712	0.23	0.5	buồn_teo#1	buồn vì cảm thấy vắng lặng;cảnh vật buồn teo ~ làng xóm buồn teo	
-a	713	0.24	0.49	buồn_thảm#1	buồn đến mức thảm đạm;một cuộc đời buồn thảm ~ bài hát nghe rất buồn thảm	
-a	714	0.25	0.48	buồn_thiu#1	buồn với vẻ thất vọng, mất hứng thú;nét mặt buồn thiu ~ ngồi buồn thiu, chẳng nói chẳng rằng	
+a	700	0.18	0.42	buồn_bã#2	"một cách đáng tiếc, ""thật đáng buồn, ông đã chết trước khi ông có thể nhìn thấy đứa cháu của mình"""	
+a	701	0	0.46	buồn_bực#1	buồn và khó chịu, bứt rứt trong lòng;buồn bực chuyện gia đình ~ có cảm giác chán nản, buồn bực	
+a	702	0.56	0.14	buồn_cười#1	khó mà nhịn được cười, làm cho không nhịn được cười;chuyện đó không có gì đáng buồn cười ~ cái mặt nó trông buồn cười lắm!	
+a	703	0	0.5	buồn_hiu#1	buồn với vẻ cô đơn, lặng lẽ;ánh mắt buồn hiu ~ mặt buồn hiu	
+a	704	0.12	0.43	buồn_ngủ#1	ở trạng thái cảm thấy muốn ngủ, cần ngủ ngay;thức khuya nên buồn ngủ ~ cơn buồn ngủ ập đến	
+a	705	0	0.48	buồn_nôn#1	ở trạng thái cảm thấy muốn nôn;chóng mặt, buồn nôn	
+a	707	0	0.39	buồn_rầu#1	"có tâm trạng buồn và để lộ rõ ra bên ngoài qua nét mặt, dáng điệu, v.v.;vẻ mặt buồn rầu, thiểu não ~ ""Buồn rầu nói chẳng nên lời, Hoa đèn kia với bóng người khá thương."" (CPN)"	
+a	708	0	0.31	buồn_rượi#1	buồn và lộ vẻ ủ rũ;nét mặt buồn rượi ~ tâm trí buồn rượi	
+a	709	0	0.47	buồn_rười_rượi#1	null;mặt buồn rười rượi	
+a	710	0	0.47	buồn_tẻ#1	tẻ nhạt, không có gì vui, không có gì gây hứng thú;một công việc buồn tẻ ~ cuộc đời buồn tẻ	
+a	711	0	0.49	buồn_tênh#1	"buồn vì cảm thấy như hụt hẫng, như thiếu vắng một cái gì không rõ rệt;lòng buồn tênh ~ ""Nàng càng ủ dột thu ba, Đoạn trường lúc ấy nghĩ mà buồn tênh."" (TKiều)"	
+a	712	0	0.5	buồn_teo#1	buồn vì cảm thấy vắng lặng;cảnh vật buồn teo ~ làng xóm buồn teo	
+a	713	0	0.49	buồn_thảm#1	buồn đến mức thảm đạm;một cuộc đời buồn thảm ~ bài hát nghe rất buồn thảm	
+a	714	0	0.48	buồn_thiu#1	buồn với vẻ thất vọng, mất hứng thú;nét mặt buồn thiu ~ ngồi buồn thiu, chẳng nói chẳng rằng	
 a	715	0.12	0.6	buồn_tình#1	buồn vì cảm thấy trống rỗng và không có việc gì làm, không biết làm gì;ngồi không buồn tình, lôi mấy tờ báo cũ ra xem	
-a	716	0.26	0.43	buồn_tủi#1	buồn và cảm thấy tủi hổ, thương xót cho mình;giọt lệ buồn tủi ~ cảm thấy cô đơn, buồn tủi	
+a	716	0.1	0.43	buồn_tủi#1	buồn và cảm thấy tủi hổ, thương xót cho mình;giọt lệ buồn tủi ~ cảm thấy cô đơn, buồn tủi	
 a	717	0.13	0.62	buồn_xo#1	null;mặt buồn xo	
-a	718	0.22	0.53	bướng#1	khó bảo, không chịu nghe lời, cứ một mực theo ý mình;đã sai lại còn cãi bướng ~ thằng bé bướng lắm!	
-a	719	0.55	0.2	bướng_bỉnh#1	bướng [nói khái quát];tính nết bướng bỉnh, ương ngạnh	
+a	718	0.12	0.53	bướng#1	khó bảo, không chịu nghe lời, cứ một mực theo ý mình;đã sai lại còn cãi bướng ~ thằng bé bướng lắm!	
+a	719	0.11	0.4	bướng_bỉnh#1	bướng [nói khái quát];tính nết bướng bỉnh, ương ngạnh	
 a	720	0.24	0.46	buông_tuồng#1	tự do bừa bãi, không chút giữ gìn trong cách sống;sống buông tuồng ~ ăn nói buông tuồng, thiếu ý tứ	
 a	721	0.24	0.5	buốt#1	có cảm giác đau nhức, như thấm sâu đến tận xương [do rét hoặc do vết thương gây nên];buốt như kim châm ~ trời lạnh buốt	
-a	722	0.24	0.46	bứt_rứt#1 châm_chích#4	cảm thấy khó chịu không yên trong người, trong lòng;chân tay bứt rứt khó chịu ~ lòng bứt rứt không yên	
-a	723	0.24	0.48	bứt_rứt#2 châm_chích#4	"gây ra một cơn đau nhói , "" cây kim đâm da của mình gây bứt rứt"""	
-a	724	0.37	0.32	cả#1	cao nhất, lớn nhất, đứng hàng đầu trong loại [về phạm vi, mức độ tác động, hay chức năng, giá trị tinh thần, v.v.];con cả ~ nghĩa cả ~ chớ thấy sóng cả mà ngã tay chèo (tng)	
-a	725	0.32	0.32	cá_biệt#1	riêng lẻ, ít có, không phổ biến hoặc không điển hình;thành phần cá biệt ~ một học sinh cá biệt	
+a	722	0.14	0.46	bứt_rứt#1 châm_chích#4	cảm thấy khó chịu không yên trong người, trong lòng;chân tay bứt rứt khó chịu ~ lòng bứt rứt không yên	
+a	723	0.14	0.48	bứt_rứt#2 châm_chích#4	"gây ra một cơn đau nhói , "" cây kim đâm da của mình gây bứt rứt"""	
+a	725	0.12	0.32	cá_biệt#1	riêng lẻ, ít có, không phổ biến hoặc không điển hình;thành phần cá biệt ~ một học sinh cá biệt	
 a	726	0.26	0.46	cà_cộ#1	null;chiếc xe đạp cà cộ	
 a	727	0.2	0.5	cả_gan#1	liều lĩnh, táo tợn, dám làm những việc nguy hiểm hoặc bị ngăn cấm;cả gan ăn cắp	
 a	728	0.22	0.44	cà_gỉ#1	null;chiếc xe cà gỉ	
@@ -711,8 +708,8 @@ a	766	0.25	0.43	cấm_cảu#1	gắt gỏng, cáu kỉnh;giọng cấm cảu ~ ă
 a	767	0.37	0.29	cảm_động#1	có tác dụng làm cảm động;câu chuyện rất cảm động	
 a	768	0.42	0.29	cam_go#1	gay go, gian khổ;chịu đựng nhiều cam go, thử thách ~ cuộc chiến đầy cam go	
 a	769	0.28	0.45	cám_hấp#1	dở hơi;đồ cám hấp! (tiếng rủa)	
-a	770	0.21	0.51	câm_lặng#1	im lặng hoàn toàn, như không thể nói hay phát ra một tiếng động nào;ngồi câm lặng ~ mối tình câm lặng	
-a	771	0.25	0.49	câm_nín#1	nín lặng, không nói một lời;ngồi câm nín	
+a	770	0.11	0.51	câm_lặng#1	im lặng hoàn toàn, như không thể nói hay phát ra một tiếng động nào;ngồi câm lặng ~ mối tình câm lặng	
+a	771	0.15	0.49	câm_nín#1	nín lặng, không nói một lời;ngồi câm nín	
 a	772	0.27	0.38	cảm#1	"đặc trưng bởi cảm xúc ; ""cảm thấy lạnh"""	
 a	773	0.21	0.51	càn#1	[hành động] bừa, không kể gì phải hay trái, nên hay không nên;chó dại cắn càn ~ nói càn nói bậy	
 a	774	0.26	0.43	cân#1	có hai phía ngang bằng nhau, không lệch;gánh không cân, đầu nặng đầu nhẹ ~ chỉnh lại bức tranh cho cân	
@@ -733,7 +730,7 @@ a	797	0.52	0.21	cân_đối#1	tương xứng hợp lí và hài hoà giữa các
 a	798	0.5	0.19	cân_đối#2	"có một hình dạng cân đối và hài lòng, ""một vòng eo thon và đôi chân cân đối"""	
 a	799	0.49	0.25	cặn_kẽ#1	kĩ lưỡng, đầy đủ mọi khía cạnh;giải thích cặn kẽ cho mọi người hiểu ~ tìm hiểu thật cặn kẽ	
 a	800	0.42	0.29	cần_kiệm#1	cần cù và tiết kiệm;tính cần kiệm ~ ăn tiêu cần kiệm	
-a	801	0.21	0.53	cạn_kiệt#2	"cạn sạch, đến mức không còn tìm đâu, lấy đâu ra nữa ; ""nguyên liệu cạn kiệt"""	
+a	801	0.1	0.53	cạn_kiệt#2	"cạn sạch, đến mức không còn tìm đâu, lấy đâu ra nữa ; ""nguyên liệu cạn kiệt"""	
 a	802	0.37	0.29	cần_kíp#1	cần được giải quyết ngay, giải quyết kịp thời;nhiệm vụ cần kíp ~ việc cần kíp, phải làm ngay	
 a	803	0.51	0.23	cần_mẫn#1	siêng năng và lanh lợi;làm việc cần mẫn ~ siêng năng cần mẫn	
 a	804	0.39	0.32	cẩn_mật#1	cẩn thận, không để có sơ suất;giữ gìn cẩn mật ~ canh phòng cẩn mật	
@@ -752,14 +749,14 @@ a	816	0.42	0.25	cần_yếu#1	cần thiết và quan trọng;điều kiện cầ
 a	817	0.28	0.42	câng#1	[mặt] trơ lì và vênh váo, tỏ ra bướng bỉnh, trông rất đáng ghét;mặt cứ câng lên, trông đến ghét ~ mặt câng câng	
 a	818	0.28	0.42	căng#1	ở trạng thái dãn thẳng ra đến mức cao nhất, do sức kéo hoặc do lực ép từ bên trong;quả bóng bơm rất căng ~ no căng bụng ~ vú căng sữa	
 a	821	0.22	0.51	căng_cắc#1	từ mô phỏng tiếng phát ra liên tiếp, vang và đanh gọn, như tiếng của vật cứng, giòn bị bẻ gãy hay bị nghiền vỡ;nhai xương căng cắc	
-a	822	0.28	0.42	căng_thẳng#1	ở trạng thái sự chú ý, sự suy nghĩ được tập trung đến mức rất cao;đầu óc căng thẳng ~ làm việc căng thẳng ~ thần kinh quá căng thẳng vì lo lắng	
-a	823	0.38	0.3	căng_thẳng#2	ở trạng thái mâu thuẫn phát triển đến cao độ;quan hệ căng thẳng ~ tình hình chiến sự ngày càng trở nên căng thẳng	
-a	824	0.31	0.39	căng_thẳng#3	"thiếu tự phát, không tự nhiên, ""một nụ cười hạn chế"", ""buộc sự ân cần"", ""một nụ cười căng thẳng"""	
+a	822	0.18	0.42	căng_thẳng#1	ở trạng thái sự chú ý, sự suy nghĩ được tập trung đến mức rất cao;đầu óc căng thẳng ~ làm việc căng thẳng ~ thần kinh quá căng thẳng vì lo lắng	
+a	823	0.18	0.3	căng_thẳng#2	ở trạng thái mâu thuẫn phát triển đến cao độ;quan hệ căng thẳng ~ tình hình chiến sự ngày càng trở nên căng thẳng	
+a	824	0.2	0.39	căng_thẳng#3	"thiếu tự phát, không tự nhiên, ""một nụ cười hạn chế"", ""buộc sự ân cần"", ""một nụ cười căng thẳng"""	
 a	825	0.27	0.49	cành#1	[bụng] đầy căng lên, gây cảm giác khó chịu;ăn một bữa no cành ~ bụng căng cành như cái trống	
 a	826	0.24	0.42	cành_cạch#1	từ mô phỏng âm thanh phát ra trầm đục, nghe hơi nặng, giống như tiếng hai vật cứng gõ nhẹ vào nhau từng chặp một;tiếng búa gõ vào sắt cành cạch	
 a	827	0.28	0.43	canh_cánh#1	[điều lo, nghĩ] lúc nào cũng ở bên lòng, không để cho yên;lo canh cánh ~ canh cánh bên lòng	
 a	828	0.26	0.46	canh_cánh#2	"lúc nào cũng ở bên lòng, không để cho yên ; ""tôi lo canh cánh"""	
-a	829	0.22	0.48	cảnh_giác#2 nghi_ngờ#1	công khai không tin tưởng và không muốn để tâm sự	
+a	829	0.1	0.48	cảnh_giác#2 nghi_ngờ#1	công khai không tin tưởng và không muốn để tâm sự	
 a	830	0.44	0.25	cánh_gián#1	màu nâu thẫm và bóng như màu cánh con gián;tủ sơn màu cánh gián	
 a	831	0.4	0.42	cạnh_khoé#1	[lối nói năng] không chỉ thẳng ra mà nói gần nói xa, nhằm xỏ xiên, xoi móc;buông lời cạnh khoé ~ nói cạnh khoé	
 a	832	0.42	0.29	cánh_sẻ#1	tả hình đan chéo vào nhau hàng loạt như hình cánh chim sẻ;rào cánh sẻ ~ bắn chéo cánh sẻ	
@@ -822,23 +819,23 @@ a	893	0.43	0.27	cấp_tiến#1	có tư tưởng chính trị tiến bộ;trí th
 a	894	0.42	0.29	cấp_tính#1	[bệnh] ở trạng thái phát triển nhanh;sốt rét cấp tính	
 a	895	0.25	0.38	cấp_tốc#1	rất nhanh để tranh thủ thời gian;cuộc hành quân cấp tốc ~ hội ý cấp tốc ~ học một lớp tiếng Anh cấp tốc	
 a	896	0.51	0.19	cấp_trên#6 hạng_sang#1	"có một thứ hạng cao hơn, ""viên chức cao cấp"""	
-a	897	0.28	0.42	cắt_cổ#1	[giá cả hoặc mức lãi] cao đến mức đáng sợ;bán với giá cắt cổ ~ cho vay với lãi suất cắt cổ	
+a	897	0.18	0.42	cắt_cổ#1	[giá cả hoặc mức lãi] cao đến mức đáng sợ;bán với giá cắt cổ ~ cho vay với lãi suất cắt cổ	
 a	898	0.5	0.27	cất_nhắc#1	"nâng đỡ, đưa lên một chức vụ cao hơn ; ""anh ta được cất nhăc vào vị trí trưởng phòng"""	
 a	899	0.4	0.42	cát_pha#1	[đất] chứa nhiều hạt cát hơn các loại hạt khác;đất cát pha	
-a	900	0.28	0.29	cáu#1	bẩn do có cáu bám vào;chân tay cáu ghét ~ cái nắp ấm cáu đen	
+a	900	0.18	0.29	cáu#1	bẩn do có cáu bám vào;chân tay cáu ghét ~ cái nắp ấm cáu đen	
 a	901	0.28	0.42	càu_cạu#1	có vẻ bực dọc, giận dữ;nét mặt càu cạu	
 a	902	0.29	0.39	cầu_kì#1	không đơn giản, không tự nhiên, mà quá chú trọng về mặt nào đó, khiến cho có vẻ khác thường một cách cố ý;ăn mặc cầu kì ~ trang điểm quá cầu kì ~ lễ nghi cầu kì, phức tạp	
-a	903	0.24	0.49	cau_mày#1	"cho thấy không hài lòng hoặc giận dữ; ""cô ta cau mày khó chịu"""	
-a	904	0.25	0.47	cẩu_thả#1	[làm việc gì] không đến nơi đến chốn, không cẩn thận, chỉ cốt cho xong;làm ăn cẩu thả ~ tính cẩu thả	
-a	905	0.26	0.44	cẩu_thả#1	"đặc trưng bởi quá đáng, bỏ bê, thiếu quan tâm;""cha mẹ cẩu thả"", ""cẩu thả của các chi tiết"", ""cẩu thả trong thư của mình"""	
+a	903	0.14	0.49	cau_mày#1	"cho thấy không hài lòng hoặc giận dữ; ""cô ta cau mày khó chịu"""	
+a	904	0	0.47	cẩu_thả#1	[làm việc gì] không đến nơi đến chốn, không cẩn thận, chỉ cốt cho xong;làm ăn cẩu thả ~ tính cẩu thả	
+a	905	0.16	0.44	cẩu_thả#1	"đặc trưng bởi quá đáng, bỏ bê, thiếu quan tâm;""cha mẹ cẩu thả"", ""cẩu thả của các chi tiết"", ""cẩu thả trong thư của mình"""	
 a	906	0.28	0.42	cay#1	có vị làm cho nóng, tê xót đầu lưỡi, như vị của ớt, của gừng, v.v.;gừng cay muối mặn ~ vị cay của ớt	
 a	909	0.42	0.28	cay_chua#1	null;lời nói cay chua ~ lên giọng cay chua	
-a	910	0.2	0.51	cay_cú#1	tức tối vì bị mất mát, thua thiệt và nôn nóng muốn gỡ lại cho kì được;cay cú cờ bạc ~ bị thua nên cay cú	
-a	911	0.21	0.52	cay_cực#1	cực nhục và xót xa;nỗi cay cực của người dân mất nước	
-a	912	0.26	0.45	cay_đắng#1	"đau khổ, xót xa một cách thấm thía;thất bại cay đắng ~ ""Mùi tục luỵ dường kia cay đắng, Vui chi mà đeo đẳng trần duyên."" (CO)"	
-a	913	0.26	0.49	cay_đắng#2	"rất khó khăn để chấp nhận hoặc chịu, ""sự thật cay đắng"", ""một nỗi buồn cay đắng"""	
-a	914	0.2	0.51	cay_độc#1	thâm hiểm đến mức khiến cho người khác phải đau đớn, xót xa đến cực độ;lời rủa cay độc ~ nói những lời cay độc	
-a	915	0.28	0.43	cay_nghiệt#1	khắt khe, nghiệt ngã trong đối xử, làm cho người khác phải khổ sở;người mẹ ghẻ cay nghiệt	
+a	910	0.1	0.51	cay_cú#1	tức tối vì bị mất mát, thua thiệt và nôn nóng muốn gỡ lại cho kì được;cay cú cờ bạc ~ bị thua nên cay cú	
+a	911	0.11	0.52	cay_cực#1	cực nhục và xót xa;nỗi cay cực của người dân mất nước	
+a	912	0	0.45	cay_đắng#1	"đau khổ, xót xa một cách thấm thía;thất bại cay đắng ~ ""Mùi tục luỵ dường kia cay đắng, Vui chi mà đeo đẳng trần duyên."" (CO)"	
+a	913	0.12	0.49	cay_đắng#2	"rất khó khăn để chấp nhận hoặc chịu, ""sự thật cay đắng"", ""một nỗi buồn cay đắng"""	
+a	914	0.12	0.51	cay_độc#1	thâm hiểm đến mức khiến cho người khác phải đau đớn, xót xa đến cực độ;lời rủa cay độc ~ nói những lời cay độc	
+a	915	0.12	0.43	cay_nghiệt#1	khắt khe, nghiệt ngã trong đối xử, làm cho người khác phải khổ sở;người mẹ ghẻ cay nghiệt	
 a	916	0.16	0.61	cay_sè#1	[mắt] có cảm giác cay khó chịu, do thiếu ngủ hoặc bị khói xông;mắt cay sè vì buồn ngủ	
 a	917	0.28	0.42	chả_chớt#1	[giọng] nửa đùa nửa thật, không đứng đắn;ăn nói chả chớt ~ giọng chả chớt	
 a	918	0.3	0.39	chắc#1	có khả năng chịu đựng tác dụng của lực cơ học mà vẫn giữ nguyên trạng thái toàn khối hoặc giữ nguyên vị trí gắn chặt vào vật khác, không bị tách rời;đinh đóng rất chắc ~ thang dựa chắc vào tường	
@@ -847,20 +844,20 @@ a	920	0.32	0.42	chắc#3	hoàn toàn đúng như thế, khó có thể sai hay t
 a	921	0.37	0.37	chắc#4	có nhiều khả năng, rất có thể;chắc anh ta không đến ~ việc này chắc là khó	
 a	922	0.47	0.24	chắc_ăn#1	rất chắc chắn, hoàn toàn đảm bảo được kết quả;bắn phát nào chắc ăn phát đó ~ có chắc ăn mới làm	
 a	923	0.47	0.26	chắc_chân#1	có được sự đảm bảo chắc chắn về địa vị hoặc hoàn cảnh sinh sống;tìm được một chỗ làm chắc chân	
-a	924	0.43	0.28	chắc_chắn#1	rất vững chắc, rất bảo đảm, khó có thể phá huỷ, lay chuyển hoặc làm cho thay đổi được;cất giấu tại một nơi chắc chắn ~ nhà xây rất chắc chắn	
-a	925	0.48	0.26	chắc_chắn#2	có tính chất khẳng định dứt khoát, có thể tin chắc là đúng như thế;hứa chắc chắn ~ chưa có gì chắc chắn cả	
-a	926	0.42	0.31	chắc_chắn#3	có thể khẳng định dứt khoát là như thế;anh ta chắc chắn biết việc ấy ~ chắc chắn cuối tuần này sẽ xong	
-a	927	0.43	0.28	chắc_chắn#5	"đáng tin cậy trong hoạt động hoặc hiệu ứng; ""một biện pháp khắc phục nhanh chóng và chắc chắn"", ""một cách chắc chắn để phân biệt hai"", ""bụi gỗ là một dấu hiệu chắc chắn của mối"""	
+a	924	0.43	0.11	chắc_chắn#1	rất vững chắc, rất bảo đảm, khó có thể phá huỷ, lay chuyển hoặc làm cho thay đổi được;cất giấu tại một nơi chắc chắn ~ nhà xây rất chắc chắn	
+a	925	0.48	0.16	chắc_chắn#2	có tính chất khẳng định dứt khoát, có thể tin chắc là đúng như thế;hứa chắc chắn ~ chưa có gì chắc chắn cả	
+a	926	0.42	0.11	chắc_chắn#3	có thể khẳng định dứt khoát là như thế;anh ta chắc chắn biết việc ấy ~ chắc chắn cuối tuần này sẽ xong	
+a	927	0.43	0.128	chắc_chắn#5	"đáng tin cậy trong hoạt động hoặc hiệu ứng; ""một biện pháp khắc phục nhanh chóng và chắc chắn"", ""một cách chắc chắn để phân biệt hai"", ""bụi gỗ là một dấu hiệu chắc chắn của mối"""	
 a	928	0.41	0.38	chắc_dạ#1	no bụng, no được lâu;ăn cơm cho chắc dạ	
 a	929	0.24	0.48	chắc_dạ#2	vững tâm, không còn phải lo lắng;đã chuẩn bị kĩ càng trước khi thi nên cũng thấy chắc dạ	
 a	930	0.4	0.31	chắc_lép#1	có tính so đo, tính toán để cầm chắc phần hơn, không bị thiệt trong quan hệ với người khác;tính hay chắc lép	
-a	931	0.42	0.29	chắc_nịch#1	rắn chắc đến mức như được dồn nén chặt;cánh tay chắc nịch	
+a	931	0.42	0.19	chắc_nịch#1	rắn chắc đến mức như được dồn nén chặt;cánh tay chắc nịch	
 a	933	0.54	0.22	chắc nình_nịch#1	null;thân hình chắc nình nịch ~ câu trả lời chắc nình nịch	
-a	934	0.43	0.27	chắc_tay#1	vững vàng về tay nghề, về công việc;lái xe chưa thật chắc tay ~ cày đã chắc tay	
+a	934	0.43	0.17	chắc_tay#1	vững vàng về tay nghề, về công việc;lái xe chưa thật chắc tay ~ cày đã chắc tay	
 a	935	0.27	0.42	chắc_xanh#1	[hạt lúa] ở trạng thái nhân đã đặc và cứng, nhưng vỏ còn xanh;những bông lúa chắc xanh	
 a	936	0.5	0.25	chắc#8	"sở hữu sự rắn chắc và khả năng phục hồi tốt của các mô, ""cơ bắp săn chắc"""	
 a	940	0.44	0.29	chải_chuốt#1	"[hình thức bên ngoài của con người] được sửa sang, tô điểm công phu, có phần cầu kì;ăn mặc chải chuốt ~ ""Một chàng vừa trạc thanh xuân, Hình dung chải chuốt, áo khăn dịu dàng."" (TKiều)"	
-a	942	0.23	0.45	chai_lì#1	dày dạn và trơ lì do tiếp xúc nhiều, đến mức như không còn tình cảm, cảm xúc;vẻ mặt chai lì, vô cảm	
+a	942	0.13	0.45	chai_lì#1	dày dạn và trơ lì do tiếp xúc nhiều, đến mức như không còn tình cảm, cảm xúc;vẻ mặt chai lì, vô cảm	
 a	943	0.26	0.42	chai_sạn#1	dày dạn, quen chịu đựng gian khổ;một con người chai sạn	
 a	945	0.42	0.27	chàm#1	có màu lam sẫm [giữa màu tím và màu lam];áo chàm ~ tay đã nhúng chàm (b; dính líu vào việc xấu)	
 a	946	0.4	0.3	chăm#1	có sự chú ý thường xuyên làm công việc gì đó [thường là việc có ích] một cách đều đặn;học rất chăm ~ chăm làm	
@@ -876,7 +873,7 @@ a	958	0.28	0.44	chằm_chặp#1	null;mắt nhìn chằm chặp
 a	959	0.32	0.42	chậm_chạp#1	chậm [nói khái quát];lê từng bước chậm chạp ~ tiến độ thi công chậm chạp ~ tác phong chậm chạp	
 a	960	0.25	0.36	chậm_chạp#2	"có tốc độ, nhịp độ dưới mức bình thường; ""một thị trường chậm chạp"""	
 a	961	0.48	0.24	chăm_chỉ#1	chăm [nói khái quát];học hành chăm chỉ ~ chăm chỉ luyện tập ~ làm ăn rất chăm chỉ	
-a	962	0.31	0.42	châm_chọc#1	"nói xói móc nhằm trêu chọc, làm cho người ta bực tức, khó chịu ; ""giọng nói mỉa mai , châm chọc"""	
+a	962	0.31	0.42	châm_chọc#1 trêu#1	"nói xói móc nhằm trêu chọc, làm cho người ta bực tức, khó chịu ; ""giọng nói mỉa mai , châm chọc"""	
 a	963	0.48	0.27	chăm_chú#1	[làm việc gì] có sự tập trung tâm trí;học sinh chăm chú nghe giảng ~ nhìn một cách chăm chú	
 a	964	0.49	0.26	chăm_chút#1	"trông nom, săn sóc tỉ mỉ, chu đáo; ""nó rất biết chăm chút sắc đẹp"""	
 a	965	0.26	0.44	chậm_rãi#1	[động tác] chầm chậm, không vội vàng;bước đi chậm rãi ~ nói chậm rãi	
@@ -887,15 +884,15 @@ a	969	0.24	0.45	chậm_trễ#1	chậm so với yêu cầu hoặc với thời h�
 a	970	0.43	0.28	chầm_vập#1	null;cử chỉ chầm vập ~ chầm vập mời chào	
 a	971	0.38	0.31	chăm#1	"có sự chú ý thường xuyên làm công việc gì đó (thường là việc có ích) một cách đều đặn ; ""đó là cô bé chăm học , chăm làm"""	
 a	972	0.27	0.47	chậm#1	"không phải là đến nay cùng như bình thường trong phát triển; ""kinh tế phát triển chậm"""	
-a	973	0.24	0.42	chán#1	có tác dụng làm cho người ta chán;vở kịch xem quá chán	
+a	973	0.14	0.42	chán#1	có tác dụng làm cho người ta chán;vở kịch xem quá chán	
 a	974	0.28	0.33	chán#2	đạt đến mức độ, số lượng mà người nói cho là nhiều;còn chán người giỏi ~ vẫn sớm chán ~ còn chán việc để làm	
 a	980	0.2	0.44	chan_chát#1	[giọng nói] to, mạnh và xẵng, liên tiếp, gây cảm giác khó chịu cho người nghe;giọng chan chát ~ mắng chan chát vào mặt	
 a	982	0.55	0.21	chân chất#1	bộc lộ bản chất tốt đẹp đúng nguyên như tính chất tự nhiên vốn có, không che đậy, giả dối;người nông dân chân chất ~ một vẻ đẹp chân chất	
-a	983	0.22	0.48	chán_chê#1	[làm việc gì] rất nhiều, rất lâu, đến mức chán, không thiết nữa;ăn một bữa chán chê ~ chờ chán chê mà chẳng thấy ai đến	
+a	983	0.12	0.48	chán_chê#1	[làm việc gì] rất nhiều, rất lâu, đến mức chán, không thiết nữa;ăn một bữa chán chê ~ chờ chán chê mà chẳng thấy ai đến	
 a	984	0.51	0.18	chân_chính#1	hoàn toàn xứng với tên gọi [tốt đẹp];một nhà giáo chân chính ~ người nghệ sĩ chân chính	
 a	986	0.42	0.29	chấn_chỉnh và chấm_dứt#1	"cải thiện công việc nào đó;""tệ nạn này cần được chấn chỉnh và chấm dứt"""	
-a	987	0.28	0.42	chần_chừ#1	"do dự, chưa có quyết tâm để làm ngay việc gì ; ""hắn có thái độ chần chừ"""	
-a	988	0.28	0.44	chan_chứa#1	null;bài thơ chứa chan tình quê hương, đất nước	
+a	987	0.18	0.42	chần_chừ#1	"do dự, chưa có quyết tâm để làm ngay việc gì ; ""hắn có thái độ chần chừ"""	
+a	988	0.18	0.44	chan_chứa#1	null;bài thơ chứa chan tình quê hương, đất nước	
 a	989	0.15	0.53	chán_chường#1	chán đến mức không còn thiết tha, thích thú gì nữa vì đã quá thất vọng;vẻ mặt chán chường	
 a	990	0.1	0.52	chán_nản#1	cảm thấy rất chán và nản lòng, không còn muốn tiếp tục nữa, không còn thiết gì nữa;chán nản công việc ~ thất bại nhiều nên cũng thấy chán nản	
 a	992	0.19	0.54	chán_ngắt#1	hết sức buồn tẻ, nhạt nhẽo, không một chút gì hấp dẫn;câu chuyện chán ngắt	
@@ -930,7 +927,7 @@ a	1023	0.27	0.46	chập_chờn#1	"ở trạng thái khi ẩn khi hiện, khi t�
 a	1024	0.28	0.42	chập_chững#1	có những bước chưa vững vì mới tập đi;em bé chập chững tập đi ~ mới chập chững bước vào nghề (b)	
 a	1025	0.45	0.29	chấp_nhận được#1	"xứng đáng với sự chấp nhận hoặc thỏa đáng; ""mức chấp nhận được của bức xạ"", ""biểu diễn đa dạng từ chấp nhận tuyệt vời"""	
 a	1026	0.38	0.29	chấp_nhận#1	"đồng ý nhận (điều người khác yêu cầu hoặc đề ra) ; ""mức bức xạ chấp nhận được"""	
-a	1027	0.27	0.42	chắp_vá#1	[các phần] không khớp với nhau, không làm thành hệ thống do không được đồng bộ;một mớ kiến thức chắp vá ~ lối làm ăn chắp vá	
+a	1027	0.17	0.42	chắp_vá#1	[các phần] không khớp với nhau, không làm thành hệ thống do không được đồng bộ;một mớ kiến thức chắp vá ~ lối làm ăn chắp vá	
 a	1028	0.28	0.4	chát#1	"có vị như vị của chuối xanh;chuối còn xanh nên chát ~ ""Con cò đậu cọc bờ ao, Ăn sung sung chát, ăn đào đào chua."" (Cdao)"	
 a	1032	0.1	0.33	chật#1	có kích thước nhỏ so với vật cần bọc hoặc cần chứa bên trong;nhà chật người đông ~ áo may chật	
 a	1034	0.2	0.42	chặt#1	hết sức sát sao, không lúc nào rời hay buông lỏng;chỉ đạo rất chặt ~ kiểm soát chặt mọi nguồn hàng	
@@ -1486,12 +1483,12 @@ a	1824	0.28	0.42	đáng_ghét#3	"xứng đáng là một lời nguyền; ""hắn
 a	1825	0.32	0.32	đáng_giá#1	có giá trị, được đánh giá cao;trong nhà không có gì đáng giá ~ đáng giá nghìn vàng	
 a	1826	0.51	0.22	đàng_hoàng#1	có đời sống vật chất đầy đủ, theo mức yêu cầu chung của xã hội;nhà cửa đàng hoàng ~ cuộc sống đàng hoàng	
 a	1830	0.24	0.45	đáng_kể#1	có số lượng hoặc giá trị ở mức đáng, cần được chú ý đến;kiếm được một khoản tiền đáng kể ~ thiệt hại không đáng kể	
-a	1831	0.41	0.29	đáng_khen_ngợi#1#1 rất đáng mừng#1 đáng hoan_nghênh#1	"xứng đáng với lời khen ngợi cao; ""nỗ lực đáng khen ngợi để cứu lấy môi trường"", ""một ý thức đáng khen ngợi về mục đích"", ""đáng khen ngợi động cơ của việc cải thiện điều kiện nhà ở "","" một sự gia tăng đáng kể và đáng mừng trong tình báo máy tính """	
+a	1831	0.41	0.09	đáng_khen_ngợi#1#1 rất đáng mừng#1 đáng hoan_nghênh#1	"xứng đáng với lời khen ngợi cao; ""nỗ lực đáng khen ngợi để cứu lấy môi trường"", ""một ý thức đáng khen ngợi về mục đích"", ""đáng khen ngợi động cơ của việc cải thiện điều kiện nhà ở "","" một sự gia tăng đáng kể và đáng mừng trong tình báo máy tính """	
 a	1832	0.18	0.55	đáng_kiếp#1	null;đáng kiếp quân gian ác	
 a	1833	0.43	0.25	đẳng_lập#1	gồm những yếu tố ngang bằng nhau, không phụ thuộc nhau về quan hệ ngữ pháp;từ ghép đẳng lập ~ câu ghép đẳng lập ~ quan hệ đẳng lập	
-a	1834	0.27	0.45	đáng_lo_ngại#2 nhiễu_loạn#1 đau#1 buồn_phiền#1 làm buồn_rầu#1	"gây đau khổ hay bồn chồn hoặc lo lắng, ""tin tức đau buồn (hay đáng lo ngại)"", ""sống trong anh hùng nếu bị một cái gì đó làm buồn rầu cô lập "","" một số lượng tội phạm đáng lo ngại"","" một ý nghĩ mới và gây phiền hà "","" trong một tình cảnh đáng lo ngại "","" một tình trạng đáng lo lắng"","" một thời gian lo lắng"""	
-a	1835	0.28	0.44	đắng_ngắt#1	đắng đến mức cảm thấy vị đắng còn đọng mãi ở miệng;miệng đắng ngắt ~ mẩu khoai hà đắng ngắt	
-a	1836	0.28	0.43	đắng_nghét#1	null;mồm miệng đắng nghét	
+a	1834	0.1	0.45	đáng_lo_ngại#2 nhiễu_loạn#1 đau#1 buồn_phiền#1 làm buồn_rầu#1	"gây đau khổ hay bồn chồn hoặc lo lắng, ""tin tức đau buồn (hay đáng lo ngại)"", ""sống trong anh hùng nếu bị một cái gì đó làm buồn rầu cô lập "","" một số lượng tội phạm đáng lo ngại"","" một ý nghĩ mới và gây phiền hà "","" trong một tình cảnh đáng lo ngại "","" một tình trạng đáng lo lắng"","" một thời gian lo lắng"""	
+a	1835	0.18	0.44	đắng_ngắt#1	đắng đến mức cảm thấy vị đắng còn đọng mãi ở miệng;miệng đắng ngắt ~ mẩu khoai hà đắng ngắt	
+a	1836	0.08	0.43	đắng_nghét#1	null;mồm miệng đắng nghét	
 a	1837	0.51	0.22	đáng ngưỡng_mộ#2	"truyền cảm giác ngưỡng mộ hoặc phê duyệt; ""hai trong số rất nhiều phẩm chất đáng ngưỡng mộ của cô là sự rộng lượng và vẻ đẹp thanh lịch"""	
 a	1843	0.42	0.32	đáng_tin_cậy#3	"xuất hiện để xứng đáng niềm tin hoặc chấp nhận, ""một nhân chứng đáng tin cậy"""	
 a	1846	0.19	0.54	đanh#1	có vẻ cứng rắn, lạnh lùng, không thể hiện một chút cảm xúc nào;mặt đanh lại	
@@ -1527,8 +1524,8 @@ a	1883	0.42	0.25	đắt_giá#1	có giá trị cao hơn hẳn;cầu thủ đắt 
 a	1884	0.47	0.26	đắt#1	"cao giá hoặc sạc giá cao; ""quần áo đắt tiền"", ""một cửa hàng đắt tiền"""	
 a	1885	0.23	0.42	dàu#1	héo úa, không còn tươi;lá úa hoa dàu ~ dưa đã dàu	
 a	1887	0.2	0.55	đau#1	có cảm giác khó chịu ở bộ phận nào đó của cơ thể do bị tổn thương;đau nhói ở tim ~ đau dạ dày ~ đau chân do bị ngã	
-a	1891	0.28	0.46	đau_đáu#1	"ở trạng thái không yên lòng do đang có điều phải quan tâm, lo lắng;lo đau đáu ~ ""Trời thăm thẳm xa vời khôn thấu, Nỗi nhớ chàng đau đáu nào xong."" (CPN)"	
-a	1893	0.25	0.47	đau_đầu#1	cảm thấy hết sức căng thẳng và khó nghĩ trước một vấn đề nào đó do không biết phải nên xử lí hay giải quyết như thế nào;đau đầu về công việc ~ đau đầu vì con	
+a	1891	0.18	0.46	đau_đáu#1	"ở trạng thái không yên lòng do đang có điều phải quan tâm, lo lắng;lo đau đáu ~ ""Trời thăm thẳm xa vời khôn thấu, Nỗi nhớ chàng đau đáu nào xong."" (CPN)"	
+a	1893	0.15	0.47	đau_đầu#1	cảm thấy hết sức căng thẳng và khó nghĩ trước một vấn đề nào đó do không biết phải nên xử lí hay giải quyết như thế nào;đau đầu về công việc ~ đau đầu vì con	
 a	1894	0.1	0.54	đau_điếng#1	đau đến mức lặng đi, mất cảm giác toàn thân trong giây phút do bị tổn thương mạnh và đột ngột;bị cốc một cái đau điếng	
 a	1895	0.1	0.54	đau_đớn#1	"đau nhiều và kéo dài [nói khái quát];bệnh gây đau đớn kéo dài ~ ""Làm cho cho mệt, cho mê, Làm cho đau đớn, ê chề, cho coi!"" (TKiều)"	
 a	1898	0.18	0.49	đau_khổ#1	đau và khổ về tinh thần;gương mặt đau khổ, rầu rĩ ~ vượt lên mọi đau khổ	
@@ -1588,7 +1585,7 @@ a	1980	0.5	0.25	dễ_tính#1	có tính dễ dãi, không đòi hỏi nhiều đ�
 a	1981	0.48	0.25	dễ_tính#2	"có tính dễ dãi, không đòi hỏi nhiều để có thể hài lòng ; ""một giáo viên dễ tính"""	
 a	1989	0.29	0.49	đen#1	[nốt nhạc] có độ dài bằng nửa nốt trắng hay bằng một phần tư nốt tròn;	
 a	1994	0.26	0.29	đen_đúa#1	đen và có vẻ xấu xí, nhem nhuốc;quần áo đen đúa, bẩn thỉu ~ nước da đen đúa	
-a	1995	0.4	0.25	đen_đủi#1	không gặp điều tốt lành, may mắn;một ngày đen đủi ~ thật là đen đủi!	
+a	1995	0.1	0.45	đen_đủi#1	không gặp điều tốt lành, may mắn;một ngày đen đủi ~ thật là đen đủi!	
 a	2002	0.21	0.42	đen_ngòm#1	tối đen đến mức như thấy sâu hun hút, gây cảm giác ghê sợ;vực sâu đen ngòm ~ trời đất đen ngòm	
 a	2003	0.26	0.23	đen_nhánh#1	đen và bóng đến mức có thể phản chiếu được ánh sáng;hàm răng đen nhánh	
 a	2004	0.28	0.27	đen_nháy#1	null;cô bé có đôi mắt đen nháy	
@@ -1649,17 +1646,17 @@ a	2095	0.26	0.46	điềm_tĩnh#1	hoàn toàn bình tĩnh, tỏ ra tự nhiên nh
 a	2096	0.41	0.28	diện#1	có tác dụng làm cho con người có được một vẻ bên ngoài đẹp và sang trọng;ăn mặc diện ~ đi đâu mà diện thế?	
 a	2097	0.29	0.4	điên#1	ở tình trạng bệnh lí về tâm thần, mất năng lực tự chủ và năng lực kiềm chế hành vi, thường có những hoạt động quá khích;bệnh điên ~ phát điên ~ tức điên lên	
 a	2099	0.55	0.21	diễn_cảm#1	có tác dụng biểu đạt tình cảm một cách rõ nét;giọng đọc rất diễn cảm	
-a	2100	0.22	0.51	điên_cuồng#1	có hành động, trạng thái như bị mất trí, không tự kiềm chế được, do bị kích thích quá mạnh;giặc bắn phá điên cuồng	
-a	2101	0.23	0.51	điên_dại#1	ở trạng thái gần như mất hết cảm giác và lí trí của người bình thường;đau đớn đến điên dại ~ cười như điên dại	
-a	2102	0.21	0.54	điên_đảo#1	null;thời buổi điên đảo	
-a	2103	0.21	0.54	điên_đầu#1	[đầu óc] ở trạng thái căng thẳng, rối bời do bị ức chế hoặc do phải suy nghĩ, tính toán mà vẫn không tìm ra lối thoát;điên đầu vì nợ nần	
+a	2100	0.12	0.51	điên_cuồng#1	có hành động, trạng thái như bị mất trí, không tự kiềm chế được, do bị kích thích quá mạnh;giặc bắn phá điên cuồng	
+a	2101	0.13	0.51	điên_dại#1	ở trạng thái gần như mất hết cảm giác và lí trí của người bình thường;đau đớn đến điên dại ~ cười như điên dại	
+a	2102	0.11	0.54	điên_đảo#1	null;thời buổi điên đảo	
+a	2103	0.11	0.54	điên_đầu#1	[đầu óc] ở trạng thái căng thẳng, rối bời do bị ức chế hoặc do phải suy nghĩ, tính toán mà vẫn không tìm ra lối thoát;điên đầu vì nợ nần	
 a	2104	0.42	0.26	điển_hình#1	có tính tiêu biểu nhất, biểu hiện tập trung và rõ nhất về bản chất của một nhóm hiện tượng, đối tượng;trường hợp điển hình ~ chọn thí dụ điển hình	
-a	2105	0.23	0.49	điên_khùng#1	tỏ ra như không còn kiểm soát được hành động, lời nói của mình hoặc có những hành động phá phách như người điên, do quá tức giận;hành động điên khùng	
+a	2105	0.13	0.49	điên_khùng#1	tỏ ra như không còn kiểm soát được hành động, lời nói của mình hoặc có những hành động phá phách như người điên, do quá tức giận;hành động điên khùng	
 a	2106	0.14	0.46	điên_loạn#1	có những biểu hiện, hành động hoàn toàn mất trí như đã hoá điên;gào lên như điên loạn ~ cơn điên loạn	
-a	2108	0.2	0.54	điên_rồ#1	ở trạng thái như hoàn toàn mất hết trí khôn, đến mức không kiềm chế được hành vi của mình;hành động điên rồ ~ ý nghĩ điên rồ	
-a	2109	0.28	0.39	điên_tiết#1	tức giận đến cao độ, thường có những cử chỉ, hành động thô bạo do không kiềm chế nổi;điên tiết, tát cho một phát ~ chỉ nghe cái giọng của nó đã thấy điên tiết	
+a	2108	0.1	0.54	điên_rồ#1	ở trạng thái như hoàn toàn mất hết trí khôn, đến mức không kiềm chế được hành vi của mình;hành động điên rồ ~ ý nghĩ điên rồ	
+a	2109	0.12	0.39	điên_tiết#1	tức giận đến cao độ, thường có những cử chỉ, hành động thô bạo do không kiềm chế nổi;điên tiết, tát cho một phát ~ chỉ nghe cái giọng của nó đã thấy điên tiết	
 a	2110	0.42	0.28	điển_trai#1	null;một anh chàng khá điển trai	
-a	2112	0.28	0.44	điên#3	"sở hữu bởi sự phấn khích quá mức; ""đám đông điên"""	
+a	2112	0.12	0.44	điên#3	"sở hữu bởi sự phấn khích quá mức; ""đám đông điên"""	
 a	2113	0.28	0.44	điếng#1	ở vào trạng thái mất cảm giác toàn thân trong một thời gian ngắn do phải chịu một tác động rất mạnh và đột ngột;bị một cái tát đau điếng ~ điếng người đi vì tin dữ	
 a	2114	0.42	0.28	điệp_trùng#1	null;rừng núi điệp trùng	
 a	2116	0.26	0.49	điêu#1	gian dối, man trá;cân điêu cho khách hàng	
@@ -1683,9 +1680,9 @@ a	2137	0.3	0.42	định_kì#1	theo định kì;kiểm tra sức khoẻ định k
 a	2138	0.29	0.42	định_kiến#1	"bất lợi bởi định kiến; ""Cô ấy cố gắng vượt qua định kiến để sống tốt"	
 a	2139	0.39	0.28	định_lượng được#1	"có khả năng được định lượng; ""Số dữ liệu này có thể định lượng được"""	
 a	2140	0.32	0.31	định_mệnh#3	"số mệnh của con người, do một lực lượng huyền bí định sẵn, không thể cưỡng lại được, theo quan niệm duy tâm ; ""cưỡng lại định mệnh"""	
-a	2141	0.26	0.49	đinh tai#1	có cảm giác thính giác bị rối loạn, do tác động của âm thanh có cường độ quá mạnh;tiếng nổ đinh tai nhức óc	
-a	2142	0.27	0.48	đinh tai nhức_óc#4	"có cảm giác thính giác bị rối loạn, do tác động của âm thanh có cường độ quá mạnh; ""tiếng búa đinh tai nhức óc"""	
-a	2143	0.27	0.48	đinh_tai#4	"có cảm giác thính giác bị rối loạn, do tác động của âm thanh có cường độ quá mạnh; ""tiếng búa đinh tai nhức óc"""	
+a	2141	0.126	0.49	đinh tai#1	có cảm giác thính giác bị rối loạn, do tác động của âm thanh có cường độ quá mạnh;tiếng nổ đinh tai nhức óc	
+a	2142	0.127	0.48	đinh tai nhức_óc#4	"có cảm giác thính giác bị rối loạn, do tác động của âm thanh có cường độ quá mạnh; ""tiếng búa đinh tai nhức óc"""	
+a	2143	0.127	0.48	đinh_tai#4	"có cảm giác thính giác bị rối loạn, do tác động của âm thanh có cường độ quá mạnh; ""tiếng búa đinh tai nhức óc"""	
 a	2144	0.4	0.28	định_xứ#1	chỉ có trong một số khu vực nhất định;năng lượng định xứ ~ vùng định xứ	
 a	2146	0.45	0.26	dịu#1	có tính chất gây cảm giác dễ chịu, tác động êm nhẹ đến các giác quan hoặc đến tinh thần;ánh sáng dịu ~ hương hoa bưởi rất dịu	
 a	2148	0.42	0.3	dịu_dàng#1	tỏ ra dịu, có tác dụng gây cảm giác dễ chịu, tác động êm nhẹ đến các giác quan hoặc đến tinh thần;ăn nói dịu dàng ~ tính tình dịu dàng, thuỳ mị	
@@ -1706,7 +1703,7 @@ a	2167	0.16	0.59	đờ#1	cứng ra như không còn cảm giác, không còn c�
 a	2169	0.17	0.63	dơ_bẩn#1	null;bộ mặt dơ bẩn	
 a	2170	0.14	0.61	dơ_bẩn#2	"bẩn thỉu, xấu xa đến mức đáng ghê tởm ; ""bộ mặt xấu xa , dơ bẩn"""	
 a	2171	0.33	0.31	đỏ_bừng#1	[da mặt] đỏ lên nhanh trong chốc lát, thường có cảm giác nóng rực do ngượng, thẹn, hoặc do ngồi gần lửa;xấu hổ, hai má đỏ bừng ~ mặt đỏ bừng	
-a	2178	0.29	0.42	đờ_đẫn#1	ở trạng thái như mất hết khả năng phản ứng với các kích thích bên ngoài;tiếc của đờ đẫn cả người	
+a	2178	0.129	0.42	đờ_đẫn#1	ở trạng thái như mất hết khả năng phản ứng với các kích thích bên ngoài;tiếc của đờ đẫn cả người	
 a	2179	0.24	0.45	dở_dang#1	đang còn chưa xong, chưa trọn [nhưng phải dừng, phải bỏ];học hành dở dang ~ câu chuyện bỏ dở dang	
 a	2180	0.52	0.26	dơ_dáy#1	null;quần áo dơ dáy	
 a	2181	0.4	0.24	đỏ_đen#1	may và rủi; thường dùng để chỉ cờ bạc;nướng tiền vào cuộc đỏ đen ~ ham mê đỏ đen	
@@ -1723,15 +1720,15 @@ a	2200	0.29	0.42	đỏ_loét#1	đỏ quá đậm và loang lổ không đều, t
 a	2201	0.27	0.45	đỏ_lòm#1	đỏ màu của máu, gây cảm giác ghê sợ hoặc khó chịu;bàn tay đỏ lòm những máu	
 a	2202	0.47	0.29	đỏ_lừ#1	đỏ sẫm và đều khắp;hoàng hôn, mặt trời đỏ lừ	
 a	2204	0.35	0.27	độ_lượng#1	có đức tính dễ cảm thông, sẵn sàng tha thứ, bỏ qua những lỗi lầm của người khác;sống rất độ lượng ~ nghiêm khắc với mình, độ lượng với người	
-a	2205	0.28	0.46	đổ_nát#1	sụp đổ và tan nát;căn nhà đổ nát	
-a	2206	0.28	0.42	đổ_nát#3	"đưa đến hủy hoại; ""sau cuộc cách mạng quý tộc đã đổ nát"""	
+a	2205	0.128	0.46	đổ_nát#1	sụp đổ và tan nát;căn nhà đổ nát	
+a	2206	0.128	0.42	đổ_nát#3	"đưa đến hủy hoại; ""sau cuộc cách mạng quý tộc đã đổ nát"""	
 a	2208	0.4	0.3	đỏ_ngầu#1	" (của một mắt) đỏ như là kết quả của các mạch máu bị tắc nghẽn tại địa phương; viêm, ""đôi mắt đỏ ngầu"""	
-a	2209	0.3	0.4	dở_người#1	có tính khí, tâm thần không được bình thường, biểu hiện bằng những hành vi ngớ ngẩn;tính lẩm cẩm dở người	
+a	2209	0.13	0.4	dở_người#1	có tính khí, tâm thần không được bình thường, biểu hiện bằng những hành vi ngớ ngẩn;tính lẩm cẩm dở người	
 a	2210	0.31	0.38	đỏ_nhừ#1	[mặt, tai] đỏ lên khắp, thường vì xấu hổ, ngượng nghịu;đi nắng, mặt đỏ nhừ như quả gấc chín	
 a	2211	0.51	0.24	đỏ_ối#1	đỏ đều và khắp cả [thường nói về hoa quả nở rộ, chín rộ];cam chín đỏ ối cả vườn ~ vừng đông đỏ ối	
 a	2214	0.42	0.25	đồ_sộ#1	to lớn hơn mức bình thường rất nhiều;thân hình đồ sộ ~ được thừa hưởng cả một gia tài đồ sộ	
 a	2216	0.18	0.55	dơ#12	"bẩn ;""chiếc áo bị dơ"""	
-a	2218	0.45	0.23	đoản_mệnh#1	có tuổi thọ ngắn;tướng người đoản mệnh	
+a	2218	0.145	0.43	đoản_mệnh#1	có tuổi thọ ngắn;tướng người đoản mệnh	
 a	2219	0.53	0.22	đoan_trang#1	đứng đắn và nghiêm trang [chỉ nói về phụ nữ];tính tình đoan trang, thuỳ mị	
 a	2221	0.23	0.51	đoảng#1	chẳng được việc gì cả, do quá vụng về, lơ đễnh;con bé đến là đoảng!	
 a	2222	0.22	0.54	đoảng_vị#1	đoảng quá, không được việc gì;con gái con đứa mà đoảng vị thật	
@@ -1741,19 +1738,19 @@ a	2231	0.24	0.46	độc_ác#1	rất ác, thâm hiểm, thậm chí có phần th
 a	2233	0.41	0.28	độc_đắc#1	[giải xổ số] đặc biệt, cao nhất;giải độc đắc ~ trúng số độc đắc	
 a	2234	0.29	0.41	độc_đáo#1	có tính chất riêng của mình, không phỏng theo những gì đã có xưa nay, không giống, không lẫn với những gì có ở người khác;một ý tưởng hết sức độc đáo ~ ngôi nhà có kiến trúc độc đáo	
 a	2235	0.28	0.39	độc_đạo#1	chỉ có một con đường, một lối đi dẫn tới đích mà thôi [không còn đường đi, lối đi nào khác];con đường độc đạo	
-a	2237	0.24	0.47	độc_địa#1	rất độc, chỉ muốn tai hoạ, đau khổ xảy đến cho người khác;lời nguyền rủa độc địa ~ mồm miệng độc địa	
-a	2239	0.29	0.4	độc_đoán#1	[lối làm việc, xử sự] dùng quyền của mình mà định đoạt công việc theo ý riêng, bất chấp ý kiến của những người khác;quyết định độc đoán ~ chuyên quyền, độc đoán	
-a	2241	0.32	0.41	độc_hại#1	có khả năng làm hại sức khoẻ hoặc tinh thần;hoá chất độc hại ~ ảnh hưởng độc hại của văn hoá phẩm đồi truỵ	
+a	2237	0.124	0.47	độc_địa#1	rất độc, chỉ muốn tai hoạ, đau khổ xảy đến cho người khác;lời nguyền rủa độc địa ~ mồm miệng độc địa	
+a	2239	0.129	0.4	độc_đoán#1	[lối làm việc, xử sự] dùng quyền của mình mà định đoạt công việc theo ý riêng, bất chấp ý kiến của những người khác;quyết định độc đoán ~ chuyên quyền, độc đoán	
+a	2241	0.12	0.41	độc_hại#1	có khả năng làm hại sức khoẻ hoặc tinh thần;hoá chất độc hại ~ ảnh hưởng độc hại của văn hoá phẩm đồi truỵ	
 a	2243	0.28	0.42	độc_lập#1	[nước hoặc dân tộc] có chủ quyền, không phụ thuộc vào nước khác hoặc dân tộc khác;một đất nước độc lập, tự do	
 a	2244	0.27	0.48	độc_mồm#1	hay nói những lời gở, không lành;	
 a	2245	0.29	0.38	độc_nhất#1	chỉ có một, không có người hoặc cái thứ hai;đứa con độc nhất ~ niềm hi vọng độc nhất	
 a	2247	0.29	0.38	độc_quyền#1 duy_nhất#1	"không chia, chia sẻ với người khác, ""họ đã sử dụng độc quyền máy tính"", ""quyền duy nhất của ấn phẩm"""	
-a	2248	0.32	0.39	độc_tài#1	[chế độ chính trị] chỉ do một người hay một nhóm người nắm tất cả quyền hành, tự mình quyết định mọi việc, dựa trên bạo lực;chế độ độc tài ~ kẻ độc tài	
+a	2248	0.12	0.39	độc_tài#1	[chế độ chính trị] chỉ do một người hay một nhóm người nắm tất cả quyền hành, tự mình quyết định mọi việc, dựa trên bạo lực;chế độ độc tài ~ kẻ độc tài	
 a	2249	0.21	0.45	độc_thân#1	chỉ sống một mình, không lập gia đình;sống độc thân ~ gần bốn mươi tuổi rồi mà còn độc thân	
-a	2251	0.42	0.29	độc_tôn#1	chỉ riêng một mình được tôn sùng;chiếm vị trí độc tôn	
+a	2251	0.12	0.39	độc_tôn#1	chỉ riêng một mình được tôn sùng;chiếm vị trí độc tôn	
 a	2252	0.28	0.39	độc_vận#1	[văn vần] chỉ dùng một vần trong cả bài;thơ độc vận	
-a	2255	0.22	0.42	dối#1	[làm việc gì] không được kĩ, chưa thật đạt yêu cầu mà cũng đã coi như xong;gạo giã dối nên còn nhiều trấu	
-a	2257	0.28	0.41	đồi_bại#1	xấu xa, hư hỏng đến mức tồi tệ [về mặt đạo đức, tinh thần];tư tưởng đồi bại ~ lối sống đồi bại	
+a	2255	0.12	0.42	dối#1	[làm việc gì] không được kĩ, chưa thật đạt yêu cầu mà cũng đã coi như xong;gạo giã dối nên còn nhiều trấu	
+a	2257	0.18	0.41	đồi_bại#1	xấu xa, hư hỏng đến mức tồi tệ [về mặt đạo đức, tinh thần];tư tưởng đồi bại ~ lối sống đồi bại	
 a	2258	0.19	0.51	dối_dá#1	[làm việc gì] tỏ ra dối, không kĩ;làm dối dá cho xong	
 a	2259	0.42	0.28	dồi_dào#1	rất nhiều, đến mức cần bao nhiêu cũng có đủ;sức khoẻ dồi dào ~ tiền bạc dồi dào	
 a	2261	0.28	0.42	đối_đầu#1	"đặc trưng bởi sự phản đối trực tiếp, ""một cuộc đối đầu"""	
@@ -1761,40 +1758,40 @@ a	2262	0.36	0.29	dôi_dư#1	thừa ra, không dùng đến [nói khái quát];gi
 a	2263	0.19	0.52	đói_kém#1	khan hiếm lương thực đến mức có thể gây ra nạn đói;mất mùa nên xảy ra đói kém	
 a	2264	0.29	0.39	đối_kháng#5	"đối lập sâu sắc, một mất một còn, không thể dung hoà được với nhau; ""mâu thuẩn đối kháng"""	
 a	2265	0.28	0.43	đói_khát#1	"nghèo đói, thiếu ăn và khổ cực;dân tình đói khát ~ ""Sinh con cơ khổ thương thay, Để cho đói khát đêm ngày xót xa!"" (PCCH)"	
-a	2266	0.28	0.48	đói_khổ#1	nghèo đói và khổ cực;cuộc sống đói khổ	
+a	2266	0.18	0.48	đói_khổ#1	nghèo đói và khổ cực;cuộc sống đói khổ	
 a	2267	0.17	0.55	đói_meo#1	đói quá, đến mức cảm thấy như không có chút gì trong bụng cả;bụng đói meo	
-a	2269	0.25	0.46	đói_nghèo#1	null;sống trong cảnh đói nghèo	
-a	2270	0.22	0.45	đối_nghịch#1	trái ngược lại, chống đối lại nhau;hai quan điểm đối nghịch	
-a	2271	0.39	0.37	đói_rách#1	ở trong cảnh phải ăn đói, mặc rách [nói khái quát];thà đói rách chứ không chịu luỵ người	
+a	2269	0.15	0.46	đói_nghèo#1	null;sống trong cảnh đói nghèo	
+a	2270	0.12	0.45	đối_nghịch#1	trái ngược lại, chống đối lại nhau;hai quan điểm đối nghịch	
+a	2271	0.19	0.37	đói_rách#1	ở trong cảnh phải ăn đói, mặc rách [nói khái quát];thà đói rách chứ không chịu luỵ người	
 a	2272	0.26	0.42	dôi_thừa#1	null;thanh lí số thiết bị dôi thừa	
 a	2273	0.28	0.31	đời_thường#1	thuộc về cuộc sống hằng ngày, bình thường, không có gì khác thường hoặc phi thường;sinh hoạt đời thường ~ chuyện đời thường	
 a	2274	0.2	0.51	dối_trá#1	giả dối, có ý lừa lọc;làm ăn dối trá ~ quen thói dối trá	
-a	2275	0.42	0.29	đồi_truỵ#1	truỵ lạc và suy đồi;văn hoá phẩm đồi truỵ ~ lối sống đồi truỵ	
-a	2276	0.39	0.29	đói_veo#1	đói rất nhanh, vừa ăn xong đã thấy đói;ăn ba bát cơm mà vẫn thấy đói veo	
+a	2275	0.12	0.29	đồi_truỵ#1	truỵ lạc và suy đồi;văn hoá phẩm đồi truỵ ~ lối sống đồi truỵ	
+a	2276	0.19	0.49	đói_veo#1	đói rất nhanh, vừa ăn xong đã thấy đói;ăn ba bát cơm mà vẫn thấy đói veo	
 a	2277	0.44	0.27	đối_xứng#1	có tính chất trùng với chính nó qua một trục, một điểm hoặc một mặt phẳng;	
-a	2279	0.44	0.21	dỏm#1	null;hàng dỏm	
+a	2279	0.14	0.31	dỏm#1	null;hàng dỏm	
 a	2285	0.24	0.47	dọn#1	[hạt đậu] rắn, không thể nấu cho nhừ được;hạt đậu dọn	
 a	2287	0.38	0.29	đơn#1	chỉ có một thành phần;giường đơn (giường cho một người nằm) ~ chăn đơn gối chiếc	
 a	2289	0.28	0.42	đớn#1	[thóc, gạo] bị gãy, vỡ nhiều khi giã hoặc xay;gạo đớn ~ thóc xay bị đớn	
 a	2290	0.26	0.51	độn#1	chậm chạp về nhận thức, thiếu trí khôn;ngồi độn mặt ra ~ người trông thế mà độn	
-a	2295	0.28	0.4	đơn_chiếc#1	[cảnh gia đình] có rất ít người, không có ai để nương tựa, giúp đỡ nhau;cảnh nhà đơn chiếc	
-a	2296	0.3	0.4	đơn_côi#1	chỉ có một mình, không có người để nương tựa, bầu bạn;chú bé đơn côi	
+a	2295	0.18	0.4	đơn_chiếc#1	[cảnh gia đình] có rất ít người, không có ai để nương tựa, giúp đỡ nhau;cảnh nhà đơn chiếc	
+a	2296	0.1	0.4	đơn_côi#1	chỉ có một mình, không có người để nương tựa, bầu bạn;chú bé đơn côi	
 a	2298	0.28	0.42	dồn_dập#1	liên tiếp rất nhiều lần trong thời gian tương đối ngắn;trống ngực đập dồn dập ~ tiến công dồn dập	
 a	2299	0.18	0.61	đớn_đau#1	null;những thất bại đớn đau	
 a	2300	0.32	0.31	đơn_điệu#1	[âm thanh] chỉ có một điệu, một giọng lặp đi lặp lại, gây cảm giác nhàm chán;giọng văn đơn điệu ~ bản nhạc đơn điệu	
-a	2303	0.42	0.3	đơn_độc#3	"chỉ riêng một mình, tách khỏi quan hệ với đồng loại ; ""sống đơn độc một mình"""	
+a	2303	0.12	0.42	đơn_độc#3	"chỉ riêng một mình, tách khỏi quan hệ với đồng loại ; ""sống đơn độc một mình"""	
 a	2305	0.22	0.51	đơn_giản#1	không có nhiều thành phần hoặc nhiều mặt, không rắc rối;suy nghĩ đơn giản ~ phép tính đơn giản	
 a	2306	0.42	0.42	đôn_hậu#1	hiền từ và nhân hậu;nụ cười đôn hậu ~ vẻ mặt đôn hậu	
-a	2307	0.25	0.46	đớn_hèn#1	hèn đến mức không còn giữ được tư cách, phẩm giá, rất đáng khinh;kẻ đớn hèn	
+a	2307	0.15	0.46	đớn_hèn#1	hèn đến mức không còn giữ được tư cách, phẩm giá, rất đáng khinh;kẻ đớn hèn	
 a	2308	0.18	0.57	đốn_kiếp#1	null;đốn kiếp bẻ gian ác ~ kẻ đốn kiếp	
 a	2309	0.4	0.29	đơn_lập#1	[loại hình ngôn ngữ] có quan hệ giữa các từ được biểu thị bằng những phương tiện nằm ngoài từ, như trật tự từ, hư từ;ngôn ngữ đơn lập ~ tiếng Việt là một ngôn ngữ thuộc loại hình đơn lập	
-a	2310	0.28	0.32	đơn_lẻ#1	riêng lẻ, không phổ biến;chỉ có một vài hiện tượng đơn lẻ ~ hoạt động đơn lẻ	
-a	2312	0.23	0.52	đốn_mạt#1	hư hỏng, tồi tệ đến mức đáng nguyền rủa;kẻ đốn mạt ~ làm trò đốn mạt	
+a	2310	0.18	0.32	đơn_lẻ#1	riêng lẻ, không phổ biến;chỉ có một vài hiện tượng đơn lẻ ~ hoạt động đơn lẻ	
+a	2312	0.13	0.52	đốn_mạt#1	hư hỏng, tồi tệ đến mức đáng nguyền rủa;kẻ đốn mạt ~ làm trò đốn mạt	
 a	2313	0.41	0.29	đơn_nhất#1	có tính chất riêng lẻ, xác định trong không gian và thời gian;quan hệ giữa cái đơn nhất và cái phổ biến	
-a	2314	0.41	0.28	đơn_phương#1	riêng một bên, không có sự thoả thuận hoặc sự tham gia của bên kia; phân biệt với đa phương, song phương;tình yêu đơn phương ~ đơn phương chấm dứt hợp đồng	
+a	2314	0.11	0.28	đơn_phương#1	riêng một bên, không có sự thoả thuận hoặc sự tham gia của bên kia; phân biệt với đa phương, song phương;tình yêu đơn phương ~ đơn phương chấm dứt hợp đồng	
 a	2315	0.53	0.19	đơn_sắc#1	[ánh sáng hoặc bức xạ] chỉ có một màu xác định;ánh sáng đơn sắc	
 a	2316	0.28	0.4	đơn_sơ#1	đơn giản đến mức sơ sài;nhà cửa đơn sơ ~ đám cưới được tổ chức rất đơn sơ	
-a	2317	0.29	0.31	đơn_thân#1	chỉ sống một mình, không lập gia đình;sống đơn thân	
+a	2317	0.19	0.31	đơn_thân#1	chỉ sống một mình, không lập gia đình;sống đơn thân	
 a	2318	0.37	0.29	đơn_thuần#1	hoàn toàn chỉ có một mặt nào đó;quan hệ mua bán đơn thuần ~ món quà không chỉ mang ý nghĩa vật chất đơn thuần	
 a	2319	0.37	0.31	đơn_tiết#1	"[từ] chỉ có một âm tiết;""hoa"", ""chạy"", ""đau"" là những từ đơn tiết"	
 a	2323	0.35	0.33	đông#1	có rất nhiều người tụ tập lại cùng một lúc, một nơi;người xe rất đông ~ đất chật người đông ~ của không ngon, nhà đông con cũng hết (tng)	
@@ -1814,7 +1811,7 @@ a	2355	0.28	0.27	đông_nghẹt#1	null;người xem đông nghẹt
 a	2358	0.28	0.21	đông_nghìn_nghịt#1	null;người xem đông nghìn nghịt	
 a	2359	0.28	0.29	đông_nghịt#1	đông đến mức làm chật kín cả một khoảng rộng;người xem đông nghịt	
 a	2360	0.58	0.23	đồng_ngũ#1	cùng chung một đội ngũ, một đơn vị trong quân đội;bạn đồng ngũ	
-a	2370	0.5	0.25	đồng_tính#1	chỉ có ham muốn nhục dục với người cùng giới tính;anh ta là người đồng tính	
+a	2370	0.5	0.25	đồng_tính	chỉ có ham muốn nhục dục với người cùng giới tính;anh ta là người đồng tính	
 a	2371	0.42	0.29	đồng_tình#1 cảm_thông#1	cùng có một ý, một lòng như nhau;gật đầu, tỏ ý đồng tình ~ không đồng tình với quyết định của trưởng phòng	
 a	2373	0.38	0.28	động_trời#1	có khả năng gây tác động rất lớn;làm chuyện động trời	
 a	2374	0.39	0.32	đồng_ý#1	"cùng quan điểm hoặc suy nghĩ với ai đó; ""anh ấy đồng ý với tôi"""	
@@ -1879,7 +1876,7 @@ a	2457	0.21	0.55	dung_tục#1	tầm thường và thô thiển, không tinh tế
 a	2458	0.21	0.47	đứng_tuổi#1	ở tuổi không còn là trẻ nữa, nhưng chưa phải đã là già;đã đứng tuổi mà chưa lập gia đình	
 a	2459	0.23	0.47	đứng_yên#1	"không hành động hoặc làm bất cứ điều gì, ""Ông chỉ đứng yên khi cảnh sát đánh đập những người biểu tình"""	
 a	2460	0.28	0.42	đứng#3	" (chất lỏng) không di chuyển hoặc chảy; ""muỗi sinh sản trong nước đứng"""	
-a	2461	0.41	0.25	được#1	đạt tiêu chuẩn, đạt yêu cầu, làm cho có thể hài lòng, có thể đồng ý;được cả người lẫn nết ~ bán được giá ~ cô gái ấy trông cũng được	
+a	2461	0.41	0.25	được	đạt tiêu chuẩn, đạt yêu cầu, làm cho có thể hài lòng, có thể đồng ý;được cả người lẫn nết ~ bán được giá ~ cô gái ấy trông cũng được	
 a	2462	0.39	0.37	được bảo_vệ#1	"được giữ an toàn hoặc bảo vệ khỏi nguy hiểm hay thương tích hay thiệt hại; ""tại chỗ được bảo vệ tốt nhất mà tôi có thể tìm thấy"""	
 a	2463	0.4	0.32	được chấp_nhận#1	"xứng đáng được thừa nhận, ""bằng chứng  được chấp nhận"""	
 a	2464	0.53	0.25	được chứng_nhận#2	"có khả năng được bảo lãnh, xác nhận, ""một thực tế được chứng nhận"""	
@@ -2352,7 +2349,7 @@ a	3010	0.53	0.28	hiểm_sâu	null;lòng dạ hiểm sâu
 a	3011	0.37	0.31	hiểm_trở#1	có địa hình không thuận lợi cho việc đi lại, dễ xảy ra tai nạn;đường đi hiểm trở	
 a	3012	0.39	0.35	hiểm_yếu#1	ở vị trí hết sức quan trọng, có tầm ảnh hưởng, chi phối đối với toàn bộ, toàn cục;trục giao thông hiểm yếu	
 a	3013	0.29	0.3	hiếm#3	"rất ít có, rất ít xảy ra; ""hiếm các loại thảo mộc"", ""hiếm bản vá lỗi của màu xanh lá cây trong sa mạc"""	
-a	3014	0.27	0.45	hiền#1	không dữ, không có những hành động, những tác động gây hại cho người khác, gây cảm giác dễ chịu, không phải ngại, phải sợ khi tiếp xúc;tính chị ấy rất hiền ~ hiền như bụt ~ ở hiền gặp lành (tng)	
+a	3014	0.1	0.4	hiền#1	không dữ, không có những hành động, những tác động gây hại cho người khác, gây cảm giác dễ chịu, không phải ngại, phải sợ khi tiếp xúc;tính chị ấy rất hiền ~ hiền như bụt ~ ở hiền gặp lành (tng)	
 a	3015	0.41	0.3	hiền	tốt, ăn ở phải đạo, hết lòng làm tròn bổn phận của mình đối với người khác;dâu hiền ~ bạn hiền	
 a	3016	0.45	0.23	hiện_đại#1	thuộc về thời đại ngày nay;nền văn học hiện đại ~ giai đoạn cận hiện đại và hiện đại	
 a	3017	0.42	0.26	hiện_đại	có áp dụng những phát minh, những thành tựu mới nhất của khoa học, kĩ thuật; đối lập với cổ điển;máy móc hiện đại ~ toà nhà sang trọng và hiện đại	
@@ -3035,7 +3032,7 @@ a	3704	0.2	0.48	khốn_quẫn#1	nghèo khổ đến mức quẫn bách;bị sa v
 a	3705	0.42	0.29	khôn_thiêng	null;hồn anh có khôn thiêng, xin về chứng giám cho chúng tôi	
 a	3706	0.45	0.29	khôn#1	"cấp tính sâu sắc và khôn ngoan; ""quan sát và suy nghĩ, ông đã được trao cho những câu hỏi khôn ngoan "","" một nguồn hiểu biết sâu sắc giá trị và những lời khuyên khôn ngoan để các nhà giáo dục """	
 a	3708	0.15	0.57	không	ở trạng thái hoàn toàn rỗi rãi, không có việc gì làm hoặc không chịu làm việc gì;chỉ độc ngồi không ~ ăn không ngồi rồi (tng)	
-a	3709	0.2	0.53	không	"ở trạng thái hoàn toàn không có thêm những gì khác như thường thấy hoặc như đáng lẽ phải có;ăn cơm không ~ làm công không ~ ""Nước lã mà vã nên hồ, Tay không mà nổi cơ đồ mới ngoan."" (Cdao)"	
+a	3709	0.2	0.53	không#1	"ở trạng thái hoàn toàn không có thêm những gì khác như thường thấy hoặc như đáng lẽ phải có;ăn cơm không ~ làm công không ~ ""Nước lã mà vã nên hồ, Tay không mà nổi cơ đồ mới ngoan."" (Cdao)"	
 a	3710	0.21	0.53	không	ở trạng thái hoàn toàn không kèm theo một điều kiện gì;cho không ~ tự nhiên mất không một khoản	
 a	3711	0.22	0.52	không	ở mức độ gây cảm giác như là không có gì cả;cái thùng nhẹ không ~ việc dễ không	
 a	3712	0.29	0.3	khống	không có trong thực tế, nhưng được tính, được xem như có thật;khai khống ~ lập chứng từ khống	
@@ -3253,8 +3250,8 @@ a	3923	0.28	0.43	kinh_niên#1	[bệnh hoặc tình trạng xấu] kéo dài nhi�
 a	3924	0.3	0.37	kinh_tế	có tác dụng mang lại hiệu quả tương đối lớn so với sức người, sức của và thời gian bỏ ra tương đối không nhiều;cách làm ăn kinh tế	
 a	3925	0.36	0.31	kinh_viện	có tính chất của chủ nghĩa kinh viện, dựa trên những biện luận trừu tượng, tách rời thực tế;lối suy nghĩ và lập luận hết sức kinh viện	
 a	3926	0.64	0.2	kính#2 đáng_kính_trọng#2	"sâu sắc tôn vinh, ""thánh đàn ông tôn kính"""	
-a	3927	0.24	0.49	kịp#1	có đủ thì giờ để làm một việc gì trước khi không còn điều kiện để làm hoặc hết thời hạn làm;không kịp giờ tàu ~ may mà về kịp	
-a	3928	0.22	0.45	kịp#2	đạt đến mức, đến trình độ ngang hàng hoặc tương ứng với yêu cầu, không còn để bị thua kém, lạc hậu;đuổi kịp chiếc xe trước ~ tiến kịp các nước phát triển	
+a	3927	0.24	0.39	kịp#1	có đủ thì giờ để làm một việc gì trước khi không còn điều kiện để làm hoặc hết thời hạn làm;không kịp giờ tàu ~ may mà về kịp	
+a	3928	0.22	0.35	kịp#2	đạt đến mức, đến trình độ ngang hàng hoặc tương ứng với yêu cầu, không còn để bị thua kém, lạc hậu;đuổi kịp chiếc xe trước ~ tiến kịp các nước phát triển	
 a	3929	0.3	0.4	kịp_thời#1	đúng lúc, không để chậm trễ;người bệnh được cấp cứu kịp thời ~ yêu cầu phải giải quyết kịp thời	
 a	3930	0.23	0.43	kịt	rất kín, đến mức như hoàn toàn không thể chen thêm gì vào được nữa;người ngồi đông kịt ~ bóng đêm đặc kịt	
 a	3931	0.19	0.49	kĩu_kịt	từ mô phỏng tiếng trầm bổng nhịp nhàng như tiếng đôi quang cọ vào đòn gánh khi gánh nặng;quảy gánh kĩu kịt	
@@ -4199,7 +4196,7 @@ a	4877	0.25	0.51	mệt#1	có cảm giác sức lực bị tiêu hao quá mức, 
 a	4878	0.28	0.38	mệt#2	ốm, không được khoẻ [lối nói kiêng tránh];bà cụ mệt đã mấy hôm rồi	
 a	4879	0.26	0.44	mệt#3	không phải đơn giản, dễ dàng, mà còn phải bỏ nhiều sức lực, thời gian hơn nữa;còn mệt mới xong! ~ có thành công thì cũng còn mệt!	
 a	4880	0.24	0.45	mệt_lử#1	mệt đến mức người như rã rời, không còn hơi sức nào nữa;người mệt lử vì đi nắng ~ mệt lử cả người	
-a	4881	0.21	0.49	mệt_mỏi#1	mệt đến mức không còn muốn làm gì nữa, thường do kiệt sức;tay chân mệt mỏi ~ đấu tranh không mệt mỏi	
+a	4881	0.1	0.49	mệt_mỏi#1	mệt đến mức không còn muốn làm gì nữa, thường do kiệt sức;tay chân mệt mỏi ~ đấu tranh không mệt mỏi	
 a	4882	0.29	0.43	mệt_nghỉ#1	[làm, tiếp nhận cái gì] liên tục, thả sức, đến lúc nào mệt thì nghỉ vì còn hoặc có rất nhiều chứ không hạn chế;thịt gà thì ăn mệt nghỉ ~ phải uống một trận mệt nghỉ mới thôi!	
 a	4883	0.28	0.42	mệt_nhoài#1	mệt đến mức như chỉ muốn được nằm dài ra;người mệt nhoài vì phải cuốc bộ cả buổi	
 a	4884	0.41	0.29	mệt_nhọc#1	mệt vì phải bỏ nhiều sức lực [nói khái quát];một ngày lao động mệt nhọc	
@@ -4470,7 +4467,7 @@ a	5148	0.47	0.22	ngà	có màu trắng hơi ngả màu vàng như màu ngà voi;
 a	5149	0.28	0.42	ngà_ngà	có cảm giác hơi say do uống rượu, bia;ngà ngà say	
 a	5150	0.25	0.42	ngả_ngốn	[nằm] không ngay ngắn, không nghiêm chỉnh, mỗi người một kiểu không theo một trật tự nào;mấy người say rượu nằm ngả ngốn giữa nhà	
 a	5151	0.3	0.38	ngả_ngớn	có dáng điệu, cử chỉ không nghiêm chỉnh, không đứng đắn;cười đùa ngả ngớn	
-a	5152	0.29	0.42	ngạc_nhiên#1	"lấy làm lạ, cảm thấy hoàn toàn bất ngờ với mình; ""ai cũng ngạc nhiên trước khả năng của anh ta"""	
+a	5152	0.19	0.42	ngạc_nhiên#1	"lấy làm lạ, cảm thấy hoàn toàn bất ngờ với mình; ""ai cũng ngạc nhiên trước khả năng của anh ta"""	
 a	5153	0.22	0.54	ngái	có mùi vị là lạ, không dịu, gây cảm giác khó ngửi;quả còn xanh nên ăn hơi ngái	
 a	5154	0.33	0.35	ngái	"xa;""Gặp nhau giữa quãng đường này, Xóm làng thì ngái, mẹ thầy thì xa."" (Cdao)"	
 a	5155	0.28	0.49	ngai_ngái	có mùi hơi ngái;mùi cỏ ngai ngái	
@@ -4832,7 +4829,7 @@ a	5510	0.29	0.42	nham_nhảm	[nói, cãi] nhiều và không ngớt miệng;cãi
 a	5511	0.42	0.29	nhấm_nhẳn	null;ăn nói nhấm nhẳn	
 a	5512	0.22	0.5	nham_nháp	null;mặt gỗ hơi nham nháp	
 a	5513	0.25	0.45	nham_nháp	có cảm giác dấp dính ướt và nhớp;tay dính nham nháp	
-a	5514	0.42	0.29	nhảm_nhí	nhảm [nói khái quát];trò nhảm nhí ~ tuyên truyền nhảm nhí ~ tin vào những điều nhảm nhí	
+a	5514	0.2	0.4	nhảm_nhí#1	nhảm [nói khái quát];trò nhảm nhí ~ tuyên truyền nhảm nhí ~ tin vào những điều nhảm nhí	
 a	5515	0.25	0.48	nham_nhở#1	có nhiều chỗ, nhiều vết không đều, không gọn đẹp, thường do làm dở dang, cẩu thả;bờ ao bị đào bới nham nhở ~ chiếc chiếu rách nham nhở	
 a	5516	0.42	0.29	nhám_sì	rất ráp;mặt bàn nhám sì ~ bàn tay nhám sì	
 a	5517	0.2	0.53	nhàm tai	chán không muốn nghe nữa, hoặc không có phản ứng gì nữa, vì đã phải nghe nhiều lần;nghe mãi hoá nhàm tai	
@@ -5019,7 +5016,7 @@ a	5697	0.28	0.42	nhiệt_đới#4	"của thời tiết hoặc khí hậu nóng �
 a	5698	0.51	0.2	nhiệt_thành	nhiệt tình, sốt sắng với tình cảm chân thành;lòng nhiệt thành cách mạng ~ nhiệt thành giúp đỡ bạn bè	
 a	5699	0.42	0.28	nhiệt_tình#1	có nhiệt tình;cổ vũ nhiệt tình ~ nhiệt tình ủng hộ ~ giúp đỡ rất nhiệt tình	
 a	5700	0.49	0.23	nhiệt_tình#2	"có hay thấy hứng thú và quan tâm rất lớn; ""đám đông đầy nhiệt tình đường phố"", ""một phản ứng nhiệt tình"""	
-a	5701	0.41	0.27	nhiều#1	có số lượng lớn hoặc ở mức cao;lắm tiền nhiều của ~ được đi nhiều nơi ~ nhiều năm đã trôi qua ~ có tật nói nhiều	
+a	5701	0.41	0.27	nhiều	có số lượng lớn hoặc ở mức cao;lắm tiền nhiều của ~ được đi nhiều nơi ~ nhiều năm đã trôi qua ~ có tật nói nhiều	
 a	5702	0.55	0.21	nhiều điều_tốt_đẹp#1	"mọi thứ đều thuận lợi,tiến triển; ""lễ bế mạc đã thành công với nhiều điều tốt đẹp"""	
 a	5703	0.26	0.42	nhiêu_khê	lôi thôi, phức tạp một cách không cần thiết;thủ tục nhiêu khê	
 a	5704	0.52	0.21	nhiều_nhặn	nhiều [nói khái quát];có hơn chục nghìn đồng chứ nhiều nhặn gì!	
@@ -6218,7 +6215,7 @@ a	6899	0.23	0.46	sờ_sờ	quá rõ ràng, như bày ra trước mắt;sờ sờ
 a	6900	0.42	0.28	sở_tại	thuộc nơi đang ở hoặc thuộc nơi xảy ra sự việc đang nói tới;chính quyền sở tại ~ nước sở tại	
 a	6901	0.49	0.23	sở_thuộc	phạm trù ngữ pháp biểu thị mối quan hệ giữa chủ thể và cái thuộc về chủ thể đó;quan hệ sở thuộc ~ định ngữ sở thuộc	
 a	6902	0.51	0.22	sô_vanh	thuộc về chủ nghĩa sô vanh, có tính chất của chủ nghĩa sô vanh;tư tưởng sô vanh nước lớn	
-a	6903	0	0.42	sợ#1 đáng_sợ#1	"lo lắng về cái gì đó; ""cô ấy rất sợ ma"""	
+a	6903	0	0.42	sợ#1 đáng_sợ#1 lo_sợ#1	"lo lắng về cái gì đó; ""cô ấy rất sợ ma"""	
 a	6904	0.28	0.55	soàn_soạt	null;tiếng cắt lúa soàn soạt	
 a	6905	0.28	0.43	soạt	từ mô phỏng tiếng như tiếng của một vật cứng chuyển động mạnh và đột ngột, cọ xát với vật khác;tiếng giở giấy đánh soạt ~ rút soạt thanh kiếm ra khỏi bao	
 a	6906	0.42	0.26	sói	hói;sói trán	
@@ -6783,7 +6780,7 @@ a	7464	0.52	0.22	thích_dụng	thích hợp để dùng vào việc gì;quyển 
 a	7465	0.49	0.22	thích_hợp	hợp với yêu cầu và đáp ứng tốt các đòi hỏi;các điều kiện thích hợp ~ không thích hợp với cuộc sống xô bồ	
 a	7466	0.56	0.15	thích_hợp#1	"hợp với yêu cầu và đáp ứng tốt các đòi hỏi; ""các điều kiện thích hợp"""	
 a	7467	0.43	0.27	thích_thú#1	"có cảm giác bằng lòng, cảm thấy một đòi hỏi nào đó được thoả mãn ; ""nó lắng nghe một cách thích thứ"""	
-a	7468	0.49	0.25	thích#1	"như tốt đẹp hơn; giá trị cao hơn, ""Một số người thích cắm trại hơn là ở trong khách sạn"", ""Chúng tôi thích ngủ bên ngoài"""	
+a	7468	0.49	0.05	thích#1	"như tốt đẹp hơn; giá trị cao hơn, ""Một số người thích cắm trại hơn là ở trong khách sạn"", ""Chúng tôi thích ngủ bên ngoài"""	
 a	7469	0.45	0.29	thiện	[phẩm chất, hành vi của con người] tốt, lành, hợp với đạo đức [nói khái quát];làm điều thiện ~ nhàn cư vi bất thiện (tng)	
 a	7470	0.27	0.46	thiển_cận#1	[cách nghĩ, cách nhìn] nông cạn, hời hợt, chỉ nhìn thấy cái gần, cái trước mắt, không biết nhìn xa trông rộng;đầu óc thiển cận ~ lối suy nghĩ thiển cận	
 a	7471	0.27	0.47	thiển_cận#2	"ông cạn, hời hợt, chỉ nhìn thấy cái gần, cái trước mắt, không biết nhìn xa trông rộng ;""đầu óc thiển cận"""	
@@ -6940,7 +6937,7 @@ a	7622	0.26	0.44	thủ_cựu	rất bảo thủ, chỉ biết khư khư giữ l�
 a	7623	0.28	0.46	thù_địch#3	"không thể đưa vào hiệp định thân thiện, ""các phe phái thù địch"""	
 a	7624	0.29	0.29	thủ_đoạn#1	có nhiều thủ đoạn;con người thủ đoạn	
 a	7625	0.24	0.45	thủ_đoạn#2	"thủ thuật hoặc lừa dối; ""ông ta là một con người thủ đoạn và độc ác"""	
-a	7626	0.28	0.43	thụ_động#1	ở trạng thái chỉ chịu sự chi phối, tác động của bên ngoài mà không hề có phản ứng tích cực nào trở lại;tiếp thu kiến thức một cách thụ động	
+a	7626	0.18	0.43	thụ_động#1	ở trạng thái chỉ chịu sự chi phối, tác động của bên ngoài mà không hề có phản ứng tích cực nào trở lại;tiếp thu kiến thức một cách thụ động	
 a	7627	0.28	0.42	thu_lu	từ gợi tả dáng thu tròn lại thật nhỏ, gọn;ngồi thu lu trên giường	
 a	7628	0.36	0.31	thù_lù#1	từ gợi tả hình khối có kích thước to lớn như trồi hẳn lên, đập vào mắt và làm vướng mắt;một đống cát thù lù ở giữa đường ~ ngồi thù lù giữa cửa	
 a	7629	0.42	0.29	thù_lù	từ gợi tả vẻ rất béo, mập và căng tròn ra;mập thù lù	
@@ -8147,9 +8144,9 @@ a	8829	0.17	0.54	vô_độ	không có chừng mực, mức độ;lòng tham vô 
 a	8830	0.3	0.38	võ_đoán	chỉ dựa vào ý chủ quan, không có căn cứ nào cả;kết luận một cách võ đoán ~ một nhận xét võ đoán	
 a	8831	0.42	0.29	võ_đoán	không có lí do, có tính chất tuỳ tiện;tính chất võ đoán của kí hiệu ngôn ngữ	
 a	8832	0.19	0.57	vô_dụng	không dùng được vào việc gì cả;kẻ vô dụng ~ đồ vô dụng	
-a	8833	0.35	0.37	vô_dụng#1	"không có sử dụng có lợi hoặc không có khả năng hoạt động hữu ích, ""một nhà bếp đầy đủ các tiện ích vô dụng"", ""cô ấy là vô ích trong trường hợp khẩn cấp"""	
-a	8834	0.28	0.41	vô_duyên#1	không có duyên, thiếu những gì tế nhị, đáng yêu, làm cho không có gì hấp dẫn, vừa lòng;câu nói vô duyên ~ vô duyên chưa nói đã cười	
-a	8835	0.29	0.41	vô_duyên	"không có duyên số tốt, bị số phận dành cho toàn những chuyện không may;""Trông chồng mà chẳng thấy chồng, Đã đành một nỗi má hồng vô duyên."" (LVT)"	
+a	8833	0.05	0.37	vô_dụng#1	"không có sử dụng có lợi hoặc không có khả năng hoạt động hữu ích, ""một nhà bếp đầy đủ các tiện ích vô dụng"", ""cô ấy là vô ích trong trường hợp khẩn cấp"""	
+a	8834	0.18	0.41	vô_duyên#1	không có duyên, thiếu những gì tế nhị, đáng yêu, làm cho không có gì hấp dẫn, vừa lòng;câu nói vô duyên ~ vô duyên chưa nói đã cười	
+a	8835	0.19	0.41	vô_duyên	"không có duyên số tốt, bị số phận dành cho toàn những chuyện không may;""Trông chồng mà chẳng thấy chồng, Đã đành một nỗi má hồng vô duyên."" (LVT)"	
 a	8836	0.31	0.32	vô_giá#1	rất quý, rất có giá trị, đến mức không thể định được một giá nào cho xứng đáng;tài sản vô giá ~ một tác phẩm hội hoạ vô giá	
 a	8837	0.27	0.47	vô_giá_trị	không có giá trị;một cuốn sách vô giá trị ~ toàn những đồ lặt vặt, vô giá trị	
 a	8838	0.35	0.4	vô_giá_trị#1	"thiếu tính hữu dụng hoặc giá trị; ""một người lười biếng vô giá trị"""	
@@ -8220,8 +8217,8 @@ a	8902	0.21	0.49	vô_tội#1	không có tội;người dân vô tội ~ vô tộ
 a	8903	0.27	0.44	vô_tội_vạ#1	[việc làm] bừa bãi, tuỳ tiện, bất chấp nguyên tắc, luật lệ;nói năng vô tội vạ ~ ra lệnh bắt người vô tội vạ	
 a	8904	0.28	0.43	vô_tội_vạ#2	"thẳng thắn trực tiếp và thẳng thắn nhưng, tốt bụng; ""làm một cách vô tội vạ"""	
 a	8905	0.23	0.45	vô_tội#3 không_có gì chê_trách được#1	"không phạm tội; ""người dân vô tội"""	
-a	8906	0.26	0.44	vô_trách_nhiệm	không có tinh thần trách nhiệm;vô trách nhiệm với con cái ~ một con người vô trách nhiệm	
-a	8907	0.28	0.42	vô_trách_nhiệm#1	"thể hiện sự thiếu quan tâm về hậu quả, ""cư xử như một thằng ngốc vô trách nhiệm"", ""hành động vội vàng và thiếu trách nhiệm"""	
+a	8906	0.16	0.44	vô_trách_nhiệm	không có tinh thần trách nhiệm;vô trách nhiệm với con cái ~ một con người vô trách nhiệm	
+a	8907	0.18	0.42	vô_trách_nhiệm#1	"thể hiện sự thiếu quan tâm về hậu quả, ""cư xử như một thằng ngốc vô trách nhiệm"", ""hành động vội vàng và thiếu trách nhiệm"""	
 a	8908	0.28	0.45	vô_tri#1	"không có khả năng nhận biết;vật vô tri ~ ""Hoài lời nói kẻ vô tri, Một trăm gánh chì đúc chẳng nên chuông."" (Cdao)"	
 a	8909	0.19	0.51	vô_trùng	không có hoặc đã được làm cho không còn vi trùng;bông băng vô trùng	
 a	8910	0.42	0.29	vô_trùng#1	"miễn phí từ các vi trùng hoặc sinh vật gây bệnh, vô trùng, ""một môi trường vô trùng"""	
@@ -8382,7 +8379,7 @@ a	9064	0.31	0.38	xác	ở trạng thái như chỉ còn trơ trụi cái vỏ, c
 a	9065	0.23	0.47	xấc	thiếu lễ độ, khinh thường người khác;thái độ rất xấc	
 a	9066	0.42	0.29	xác_đáng	đúng đắn và có sức thuyết phục;lí lẽ xác đáng ~ đề nghị xác đáng ~ lời khuyên xác đáng	
 a	9067	0.4	0.29	xác_định	đã được biết hoặc được định trước một cách hoàn toàn rõ ràng, chính xác;toạ độ xác định ~ vị trí xác định	
-a	9068	0.42	0.27	xác_định#1	"chính xác, rõ ràng và xác định rõ ràng; ""Tôi muốn có một câu trả lời rõ ràng"", ""một tuyên bố xác định của các điều khoản của sẽ"""	
+a	9068	0.42	0.37	xác_định#1	"chính xác, rõ ràng và xác định rõ ràng; ""Tôi muốn có một câu trả lời rõ ràng"", ""một tuyên bố xác định của các điều khoản của sẽ"""	
 a	9069	0.14	0.59	xấc_láo#1	tỏ ra vô lễ, không còn coi người khác ra gì;đứa trẻ xấc láo	
 a	9070	0.27	0.41	xác_thực	đúng với sự thật, không sai chút nào;chứng cứ xác thực ~ bài viết thiếu căn cứ xác thực	
 a	9071	0.48	0.23	xác_tín	đúng đắn, đáng tin cậy;tin tức xác tín	
@@ -8471,7 +8468,6 @@ a	9153	0.28	0.42	xê_xích	chênh lệch, hơn kém nhau chút ít, không đán
 a	9154	0.21	0.5	xếch	không ngay ngắn, có một bên như bị kéo ngược lên;mắt xếch ~ đôi lông mày xếch ngược	
 a	9155	0.21	0.5	xệch	lệch hẳn đi đến mức biến dạng;mặt xệch đi vì đau đớn	
 a	9156	0.42	0.29	xệch_xạc#1	lệch, biến dạng đi [nói khái quát];hàng quán xệch xạc ~ miệng mếu đến xệch xạc	
-a	9157	0.43	0.25	xem#17	"xem và hiểu, có một con mắt tốt, ""Các nghệ sĩ đầu tiên phải học cách để xem"""	
 a	9158	0.51	0.23	xẻn_lẻn	null;cười xẻn lẻn	
 a	9159	0.25	0.51	xèn_xẹt	từ mô phỏng những tiếng động kéo dài và liên tiếp như tiếng rít của vật gì bay nhanh và mạnh trong không khí hoặc tiếng kim loại cọ xát vào vật cứng;tiếng mảnh đạn xé không khí xèn xẹt	
 a	9160	0.25	0.5	xềnh_xệch#1	từ gợi tả dáng điệu lôi, kéo lết mạnh trên mặt đất một cách không thương tiếc, không giữ gìn;lôi bao gạo xềnh xệch ~ nắm tay kéo đi xềnh xệch	
@@ -8633,8 +8629,8 @@ a	9315	0.28	0.4	yên_lành#1	yên ổn, không xảy ra điều gì chẳng làn
 a	9316	0.28	0.42	yên_lòng#1	[đang có điều có thể làm cho lo lắng, áy náy] có trạng thái tâm lí yên ổn, không có điều gì phải lo lắng;làm yên lòng người ra trận ~ yên lòng nhắm mắt	
 a	9317	0.25	0.47	yên_lòng#2	"có trạng thái tâm lí yên ổn, không có điều gì phải lo lắng; ""yên lòng nhắm mắt"""	
 a	9318	0.21	0.5	yên_ổn	bình yên, ổn định, không có rối loạn trật tự, không có gì đe doạ;đời sống yên ổn ~ yên ổn làm ăn	
-a	9319	0.28	0.42	yên_tâm#1	ở trạng thái tâm lí yên ổn, không có gì phải băn khoăn, lo lắng;yên tâm công tác ~ cứ yên tâm, rồi mọi việc sẽ ổn	
-a	9320	0.42	0.3	yên_tâm#2	"có niềm tin phục hồi, giải thoát khỏi sự lo lắng, ""anh cứ yên tâm mà nghỉ ngơi"""	
+a	9319	0.3	0.2	yên_tâm#1	ở trạng thái tâm lí yên ổn, không có gì phải băn khoăn, lo lắng;yên tâm công tác ~ cứ yên tâm, rồi mọi việc sẽ ổn	
+a	9320	0.42	0.1	yên_tâm#2	"có niềm tin phục hồi, giải thoát khỏi sự lo lắng, ""anh cứ yên tâm mà nghỉ ngơi"""	
 a	9321	0.28	0.32	yên_thân#1	[đời sống riêng thường bị quấy rầy, nhũng nhiễu] có được sự yên ổn;tìm được chốn yên thân ~ chỉ muốn được yên thân	
 a	9322	0.2	0.53	yên_tĩnh#1	ở trạng thái không có tiếng ồn, tiếng động hoặc không bị xáo động;trưa hè yên tĩnh ~ mặt hồ yên tĩnh ~ tìm nơi yên tĩnh ngồi học	
 a	9323	0.5	0.23	yên_vui#1	yên ổn và vui vẻ [nói khái quát];cuộc sống yên vui ~ tinh thần chẳng được yên vui	
@@ -8657,7 +8653,7 @@ a	9339	0.48	0.24	yểu_tướng	có tướng chết yểu;anh ta trông yểu t�
 a	9340	0.26	0.5	yếu_xìu#1	rất yếu, khó có thể làm việc gì được;người yếu xìu	
 a	9341	0.45	0	yêu#1	"có tình cảm thắm thiết dành riêng cho một người khác giới nào đó, muốn chung sống và cùng nhau gắn bó cuộc đời ; ""họ yêu nhau suốt 4 năm rồi chia tay"""	
 a	9342	0.24	0.42	yếu#12	"có sức lực kém dưới mức bình thường hoặc có mức độ, năng lực hoặc tác dụng ít, kém so với bình thường; ""cơn bão yếu dần"""	
-a	9343	0	0.5	khóc_lóc#1	khóc lóc, than thở	
+a	9343	0	0.5	khóc_lóc#1 khóc#1	khóc lóc, than thở	
 v	9344	0.5	0	nháy_mắt#1	vui vẻ nháy mắt	
 v	9345	0	0.75	nhăn_nhó#1	nhăn nhó, tỏ vẻ khó chịu	
 v	9346	0.5	0	cười#1 haha#1 hehe#1 kaka#1	mỉm cười vui vẻ	

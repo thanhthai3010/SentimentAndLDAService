@@ -147,7 +147,11 @@ public class ShortestPathFinder {
 				Edge e = iterator.next();
 				// insert into the queue only better edges
 				if (weights[vv] + e.getWeight() < weights[e.getV()])
-					queue.add(e);
+					try {
+						queue.add(e);
+					} catch (Exception e2) {
+						System.out.println("special character " + graph.getNumberOfEdges());
+					}
 			}
 		}
 	}

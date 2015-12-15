@@ -8,12 +8,8 @@ import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.io.Writer;
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
-
-import org.apache.commons.lang3.StringEscapeUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -52,7 +48,7 @@ public class SentimentProcess {
 	private VietTokenizer tokenizer;
 
 	public SentimentProcess() {
-		tokenizer = new VietTokenizer("tokenizer.properties");
+		tokenizer = new VietTokenizer();
 	}
 
 	private double runAnalyzeSentiment(String inputText) {
@@ -104,9 +100,11 @@ public class SentimentProcess {
 	 * @return sentence after correct spell and emoticons
 	 */
 	private String correctSpellAndEmoticons(String inputText) {
-		String spellCorrect = Checker.correctSpell(inputText);
-		String emoticonsCorrect = Checker.correctEmoticons(spellCorrect);
-		return emoticonsCorrect;
+
+		String emoticonsCorrect = Checker.correctEmoticons(inputText);
+		String specialEmoticonsCorrect = Checker.correctSpecialEmoticons(emoticonsCorrect);
+		String spellCorrect = Checker.correctSpell(specialEmoticonsCorrect);
+		return spellCorrect;
 	}
 
 	/**
@@ -128,8 +126,10 @@ public class SentimentProcess {
 			ListReportData lstRP = new ListReportData();
 
 			// get sentiScore of status
-			double sentiStatus = runAnalyzeSentiment(status);
-			totalScore += sentiStatus;
+			double sentiStatus = runAnalyzeSentiment(status.toLowerCase());
+			// TODO
+			// increase scores of status
+			totalScore += (sentiStatus * 1.5);
 
 			// create ReportData stored data for status
 			ReportData statusReport = new ReportData(
@@ -142,7 +142,7 @@ public class SentimentProcess {
 			// loop for all comment
 			for (String comments : lstInputForSenti.get(status)) {
 				// sentiment value of comment
-				double sentiComment = runAnalyzeSentiment(comments);
+				double sentiComment = runAnalyzeSentiment(comments.toLowerCase());
 				// sum of total
 				totalScore += sentiComment;
 
@@ -171,23 +171,20 @@ public class SentimentProcess {
 	 * @param sentiScore
 	 * @return POSITIVE, NEGATIVE or NEUTRAL
 	 */
+	// TODO separates pie
 	private int getTypeOfColor(double sentiScore) {
-		if (sentiScore > 0) {
+		if (sentiScore >= 0.02) {
 			return POSITIVE;
-		} else if (sentiScore < 0) {
+		} else if (sentiScore <= -0.02) {
 			return NEGATIVE;
-		} else if (sentiScore == 0) {
+		} else if (sentiScore > -0.02 && sentiScore < 0.02) {
 			return NEUTRAL;
 		}
 		return NEUTRAL;
 	}
 
 	private static String replaceURLFromText(String input) {
-		input = input.replaceAll("[0-9]", "");
-		input = input
-				.replaceAll(
-						"(https?|http):((//)|(\\\\))+[\\w\\d:#@%/;$()~_?\\+-=\\\\\\.&]*",
-						" ");
+		input = input.replaceAll("(https?|http):((//)|(\\\\))+[\\w\\d:#@%/;$()~_?\\+-=\\\\\\.&]*", " ");
 		return input;
 	}
 
@@ -221,35 +218,34 @@ public class SentimentProcess {
 		int count1 = 0;
 		int count0 = 0;
 		for (String inputText : listComment) {
-			/*
-			 * if(inputText.contains("gvcn năm 12 là người tôi sợ hơn phụ huynh")
-			 * ){ String a = "pause"; a.toCharArray(); }
-			 */
 
-			// .replaceAll("[0-9\\<\\>\\|\\”\\“\\/\\?\\\"\\:\\!\\.\\#\\,\\)\\(\\%\\+\\\\]",
-			// "").replaceAll("\\-", " ").replaceAll("\\s+", " ")
-
-			inputText = replaceURLFromText(inputText);
+			inputText = replaceURLFromText(inputText.toLowerCase());
+			// TODO always correctEmoticons before correctSpecialEmoticons
 			inputText = Checker.correctEmoticons(inputText);
-			inputText = inputText.replaceAll(
-					"[0-9\\<\\>\\|\\”\\“\\/\\?\\\"\\:\\!\\#\\)\\(\\%\\+]", "")
-					.replaceAll("\\-", " ");
+			inputText = Checker.correctSpell(inputText);
+			inputText = Checker.correctSpecialEmoticons(inputText);
+			
 			if (inputText.length() > 4) {
-				String[] rsCheckedAndToken = tokenizer.tokenize(inputText);
+				String[] rsCheckedAndToken = new String[2];
+				try {
+					rsCheckedAndToken = tokenizer.tokenize(inputText);
+				} catch (Exception e) {
+					System.out.println("can not tokenizer " + inputText);
+				}
 				double sentiScore = runAnalyzeSentiment(rsCheckedAndToken);
-				if (sentiScore >= 0.15) {
+				if (sentiScore >= 0.1) {
 					count2++;
-					if (count2 < 1500) {
+					if (count2 < 1000) {
 						lstPositive.add(new ReportData(2, rsCheckedAndToken[0]));
 					}
-				} else if (sentiScore <= -0.15) {
+				} else if (sentiScore <= -0.1) {
 					count0++;
-					if (count0 < 3500) {
+					if (count0 < 1000) {
 						lstPositive.add(new ReportData(0, rsCheckedAndToken[0]));
 					}
-				} else if (sentiScore > -0.15 && sentiScore < 0.15) {
+				} else if (sentiScore > -0.1 && sentiScore < 0.1) {
 					count1++;
-					if (count1 < 2000) {
+					if (count1 < 1000) {
 						lstPositive.add(new ReportData(1, rsCheckedAndToken[0]));
 					}
 				}
@@ -259,9 +255,7 @@ public class SentimentProcess {
 					count = 0;// reset
 					WriteTimes++;
 					// write
-					System.out
-							.println("Writing data to file for 1000 records in times: "
-									+ WriteTimes);
+					System.out.println("Writing data to file for 1000 records in times: "+ WriteTimes);
 					try {
 						for (ReportData item : lstPositive) {
 							writerPos.write(item.getTypeColor() + "\t" + item.getContentData());
