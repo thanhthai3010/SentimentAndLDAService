@@ -235,17 +235,17 @@ public class SentimentProcess {
 				double sentiScore = runAnalyzeSentiment(rsCheckedAndToken);
 				if (sentiScore >= 0.1) {
 					count2++;
-					if (count2 < 1000) {
+					if (count2 < 2000) {
 						lstPositive.add(new ReportData(2, rsCheckedAndToken[0]));
 					}
 				} else if (sentiScore <= -0.1) {
 					count0++;
-					if (count0 < 1000) {
+					if (count0 < 3500) {
 						lstPositive.add(new ReportData(0, rsCheckedAndToken[0]));
 					}
 				} else if (sentiScore > -0.1 && sentiScore < 0.1) {
 					count1++;
-					if (count1 < 1000) {
+					if (count1 < 3500) {
 						lstPositive.add(new ReportData(1, rsCheckedAndToken[0]));
 					}
 				}
