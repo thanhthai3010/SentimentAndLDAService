@@ -3,23 +3,27 @@ package app.process.sentiment;
 import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.Serializable;
 import java.io.UnsupportedEncodingException;
 import java.io.Writer;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
+import org.apache.commons.math3.util.Precision;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.Function;
 import org.apache.spark.api.java.function.VoidFunction;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import vn.hus.nlp.tokenizer.VietTokenizer;
 import app.process.spellcheker.Checker;
-import app.utils.dto.ReportData;
 import app.utils.spark.SparkUtil;
 
 /**
@@ -30,6 +34,9 @@ import app.utils.spark.SparkUtil;
  */
 public class VietSentiData implements Serializable {
 
+	private static final Logger logger = LoggerFactory
+			.getLogger(VietSentiData.class);
+	
 	private static final int GLOSS_IDX_5 = 5;
 
 	private static final int SYNSET_TERMS_IDX_4 = 4;
@@ -67,7 +74,7 @@ public class VietSentiData implements Serializable {
 	/**
 	 * store value dictionary of VSWN
 	 */
-	private static HashMap<String, Double> dictVSWN = new HashMap<String, Double>();
+	private static Map<String, Double> dictVSWN = new LinkedHashMap<String, Double>();
 
 	/**
 	 * store value dictionary of negative_words
@@ -75,7 +82,7 @@ public class VietSentiData implements Serializable {
 	private static List<String> dictNegative = new ArrayList<String>();
 
 	// From String to list of doubles.
-	static HashMap<String, HashMap<Integer, Double>> tempDictionary = new HashMap<String, HashMap<Integer, Double>>();
+	static Map<String, LinkedHashMap<Integer, Double>> tempDictionary = new LinkedHashMap<String, LinkedHashMap<Integer, Double>>();
 
 	/**
 	 * initial data
@@ -99,11 +106,18 @@ public class VietSentiData implements Serializable {
 			public RowData call(String line) throws Exception {
 				String[] fields = line.split("\t");
 
-				RowData rowDT = new RowData(fields[POS_IDX_0],
-						fields[ID_IDX_1], Double
-								.valueOf(fields[POS_SCORE_IDX_2]), Double
-								.valueOf(fields[NEG_SCORE_IDX_3]),
-						fields[SYNSET_TERMS_IDX_4], fields[GLOSS_IDX_5]);
+				RowData rowDT = null;
+				try {
+
+					rowDT = new RowData(fields[POS_IDX_0],
+							fields[ID_IDX_1], Double
+									.valueOf(fields[POS_SCORE_IDX_2]), Double
+									.valueOf(fields[NEG_SCORE_IDX_3]),
+							fields[SYNSET_TERMS_IDX_4], fields[GLOSS_IDX_5]);
+				} catch (Exception e) {
+					// TODO: handle exception
+					logger.info("Can not convert Double");
+				}
 				
 				return rowDT;
 			}
@@ -115,7 +129,7 @@ public class VietSentiData implements Serializable {
 
 			@Override
 			public void call(RowData rowdt) throws Exception {
-
+				
 				String wordTypeMarker = rowdt.getPos();
 				// Calculate synset score as score = PosS - NegS
 				Double synsetScore = rowdt.getPosScore() - rowdt.getNegScore();
@@ -140,7 +154,7 @@ public class VietSentiData implements Serializable {
 							synTermRank = Integer.parseInt(synTermAndRank[1]);
 						} catch (Exception e) {
 							// TODO: handle exception
-							System.out.println("sdasd");
+							logger.info("Can not convert Integer");
 						}
 						// What we get here is a map of the type:
 						// term -> {score of synset#1, score of synset#2...}
@@ -148,7 +162,7 @@ public class VietSentiData implements Serializable {
 						// Add map to term if it doesn't have one
 						if (!tempDictionary.containsKey(synTerm)) {
 							tempDictionary.put(synTerm,
-									new HashMap<Integer, Double>());
+									new LinkedHashMap<Integer, Double>());
 						}
 
 						// Add synset link to synterm
@@ -163,7 +177,7 @@ public class VietSentiData implements Serializable {
 		});
 
 		// Go through all the terms.
-		for (Map.Entry<String, HashMap<Integer, Double>> entry : tempDictionary
+		for (Entry<String, LinkedHashMap<Integer, Double>> entry : tempDictionary
 				.entrySet()) {
 			String word = entry.getKey();
 			Map<Integer, Double> synSetScoreMap = entry.getValue();
@@ -218,8 +232,8 @@ public class VietSentiData implements Serializable {
 	 */
 	public static double scoreTokens(String[] words) {
 
-		int numOfPos = 0;
-		int numOfNeg = 0;
+		int num = 0;
+		//int numOfNeg = 0;
 		double posScore = 0.0;
 		double negScore = 0.0;
 
@@ -229,7 +243,7 @@ public class VietSentiData implements Serializable {
 		boolean isNegativeBefore = false;
 		for (String word : words) {
 			
-			double senti = extract(word);
+			double senti = Precision.round(extract(word), 2);
 
 			if (dictNegative.contains(word)) {
 				isNegativeBefore = true;
@@ -245,22 +259,20 @@ public class VietSentiData implements Serializable {
 			// increment
 			if (senti > 0) {
 				posScore += senti;
-				numOfPos++;
+				num++;
+				System.out.println(word +" pos: "+ senti);
 			} else if (senti < 0) {
 				negScore += senti;
-				numOfNeg++;
+				num++;
+				System.out.println(word +" neg:"+ senti);
 			}
 		}
-
-		// convert to 1
-		if (numOfPos == 0) {
-			numOfPos = 1;
-		}
-		if (numOfNeg == 0) {
-			numOfNeg = 1;
-		}
 		
-		totalScore = (posScore / numOfPos) + (negScore / numOfNeg);
+		if (num == 0) {
+			num = 1;
+		}
+
+		totalScore = Precision.round((posScore + negScore) / num, 2);
 		
 
 		return totalScore;
@@ -281,33 +293,43 @@ public class VietSentiData implements Serializable {
 		VietSentiData.init();
 		
 		VietTokenizer tk = new VietTokenizer();
-		String ip = "Mọi người ơi cho mình ý kiến đi ạ. Mình là nam năm 1 học KHTN và mình đã lỡ thích 1 chị bên IU. Chị ấy hơn mình tận 2 tuổi. "
-				+ "Trước giờ mình chưa từng thích người lớn tuổi hơn mình nhưng giờ lỡ rồi, mình không biết làm sao hết. "
-				+ "Chị ấy đẹp lắm nhìn thích lắm. Nhưng hình như chị chưa thích mình. Giờ mình phải làm sao ạ. "
-				+ "Mọi người giúp mình với. :(";
-		String[] rs = tk.tokenize(Checker.correctEmoticons(ip));
+		String ip = "nguyễn hoàng nam : bạn này lớp mình hay sao ý nhề khoái trá".toLowerCase();
+		ip = Checker.correctEmoticons(ip);
+		ip = Checker.correctSpell(ip);
+		ip = Checker.correctSpecialEmoticons(ip);
+		
+		String[] rs = tk.tokenize(ip);
 		
 		double score = VietSentiData.scoreTokens(rs[0].split(" "));
 		System.out.println("Score " + score);
 		
-		Writer writerCorpus = null;
-		try {
-			writerCorpus = new BufferedWriter(new OutputStreamWriter(
-					new FileOutputStream("corpus.txt"), "utf-8"));
-
-		} catch (UnsupportedEncodingException e1) {
-			e1.printStackTrace();
-		} catch (FileNotFoundException e1) {
-			e1.printStackTrace();
-		}
+//		Writer writerCorpus = null;
+//		try {
+//			writerCorpus = new BufferedWriter(new OutputStreamWriter(
+//					new FileOutputStream("corpus.txt"), "utf-8"));
+//
+//		} catch (UnsupportedEncodingException e1) {
+//			e1.printStackTrace();
+//		} catch (FileNotFoundException e1) {
+//			e1.printStackTrace();
+//		}
+//		
+//		try {
+//			for (String item : VietSentiData.lstCorpus) {
+//				writerCorpus.write(item + "\n");
+//			}
+//		} catch (Exception e) {
+//		} finally{
+//			try {
+//				writerCorpus.flush();
+//				writerCorpus.close();
+//			} catch (IOException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//		}
 		
-		try {
-			for (String item : VietSentiData.lstCorpus) {
-				writerCorpus.write(item + "\n");
-			}
-		} catch (Exception e) {
-		}
 		
-		System.out.println("done save");
+		System.out.println("done save 5005");
 	}
 }
