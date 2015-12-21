@@ -218,8 +218,8 @@ public class FBDatabaseProcess {
 				// Convert character to Unicode before insert into database
 				// TODO: need to remove checker here
 				String commentData = Checker.correctUnicodeCharacters(cmData.getCommentContent());
-				commentData = Checker.correctSpell(commentData);
-				commentData = Checker.correctSpecialEmoticons(commentData);
+				//commentData = Checker.correctSpell(commentData);
+				//commentData = Checker.correctSpecialEmoticons(commentData);
 				preparedStatement.setString(4, commentData);
 
 				// execute insert SQL stetement
@@ -420,7 +420,7 @@ public class FBDatabaseProcess {
 		PreparedStatement preparedStatement = null;
 
 		String getTableSQL = "SELECT COMMENT_CONTENT" + " FROM COMMENT_DATA "
-				+ " WHERE COMMENT_ID BETWEEN 0 AND 9000";
+				+ " WHERE PAGE_ID = 541752015846507";
 		preparedStatement = JdbcMySQLDriver.getPrepareStm(getTableSQL);
 		ResultSet rs;
 		try {

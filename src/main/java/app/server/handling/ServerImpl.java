@@ -15,6 +15,7 @@ import java.util.concurrent.TimeUnit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import app.process.sentiment.ClassifySentiment;
 import app.process.sentiment.SentimentProcess;
 import app.process.sentiment.VietSentiData;
 import app.process.spellcheker.Checker;
@@ -83,7 +84,10 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 			// Init VietSentidata
 			VietSentiData.init();
 			// facebook database process
-			fbDatabase = new FBDatabaseProcess();
+			this.fbDatabase = new FBDatabaseProcess();
+
+			// init data for classify sentiment
+			ClassifySentiment.createClassify();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

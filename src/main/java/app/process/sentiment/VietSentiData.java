@@ -1,13 +1,6 @@
 package app.process.sentiment;
 
-import java.io.BufferedWriter;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
 import java.io.Serializable;
-import java.io.UnsupportedEncodingException;
-import java.io.Writer;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -260,11 +253,11 @@ public class VietSentiData implements Serializable {
 			if (senti > 0) {
 				posScore += senti;
 				num++;
-				System.out.println(word +" pos: "+ senti);
+//				System.out.println(word +" pos: "+ senti);
 			} else if (senti < 0) {
 				negScore += senti;
 				num++;
-				System.out.println(word +" neg:"+ senti);
+//				System.out.println(word +" neg:"+ senti);
 			}
 		}
 		
@@ -293,7 +286,7 @@ public class VietSentiData implements Serializable {
 		VietSentiData.init();
 		
 		VietTokenizer tk = new VietTokenizer();
-		String ip = "nguyễn hoàng nam : bạn này lớp mình hay sao ý nhề khoái trá".toLowerCase();
+		String ip = "sắp thi rồi mà bao giờ mới có lịch nộp học phí vậy các cậu :'( năm nay trường mình ko thèm thu học phí sao các cậu :((( hoặc có tăng giá thì cũng nói để sinh viên chuẩn bị trước tinh thần chứ, tiền có phải lá cây đâu mà nói một lúc là chuẩn bị được ngay. nghe đồn có rồi @@".toLowerCase();
 		ip = Checker.correctEmoticons(ip);
 		ip = Checker.correctSpell(ip);
 		ip = Checker.correctSpecialEmoticons(ip);
@@ -301,7 +294,7 @@ public class VietSentiData implements Serializable {
 		String[] rs = tk.tokenize(ip);
 		
 		double score = VietSentiData.scoreTokens(rs[0].split(" "));
-		System.out.println("Score " + score);
+		System.out.println("Score " + score + " " + rs[0]);
 		
 //		Writer writerCorpus = null;
 //		try {
