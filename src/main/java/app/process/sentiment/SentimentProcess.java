@@ -1,6 +1,7 @@
 package app.process.sentiment;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -10,6 +11,7 @@ import org.slf4j.LoggerFactory;
 import app.process.spellcheker.Checker;
 import app.utils.dto.ListReportData;
 import app.utils.dto.ReportData;
+import app.utils.spark.SparkUtil;
 import vn.hus.nlp.tokenizer.VietTokenizer;
 
 public class SentimentProcess {
@@ -167,13 +169,10 @@ public class SentimentProcess {
 	// TODO separates pie
 	private int getTypeOfColor(double sentiScore) {
 		if (sentiScore > 0.3) {
-			logger.info("POSITIVE score " + sentiScore);
 			return POSITIVE;
 		} else if (sentiScore < -0.3) {
-			logger.info("NEGATIVE score " + sentiScore);
 			return NEGATIVE;
 		} else if (sentiScore >= -0.3 && sentiScore <= 0.3) {
-			logger.info("NEUTRAL score " + sentiScore);
 			return NEUTRAL;
 		}
 		return NEUTRAL;
@@ -269,31 +268,31 @@ public class SentimentProcess {
 //		}
 //	}
 
-//	public static void main(String[] args) {
-//		SparkUtil.createJavaSparkContext();
-//		Checker.init();
-//		VietSentiData.init();
-//		ClassifySentiment.createClassify();
-//
-//		Map<String, List<String>> fbDataForSentiment = new LinkedHashMap<String, List<String>>();
-//		fbDataForSentiment.put("bực bội quá đi mất", new ArrayList<String>(){/**
-//			 * 
-//			 */
-//			private static final long serialVersionUID = 1L;
-//
-//		{
-//			add("làm đẹp :v");
-//		}});
-//		SentimentProcess sm = new SentimentProcess();
-//		List<ListReportData> result = sm.processSentiment(fbDataForSentiment);
-//		
-//		for (ListReportData listReportData : result) {
-//			System.out.println("key content " + listReportData.getStatusData().getContentData());
-//			System.out.println("key color " + listReportData.getStatusData().getTypeColor());
-//			for (ReportData com : listReportData.getListCommentData()) {
-//				System.out.println("comment content " + com.getContentData());
-//				System.out.println("comment color " + com.getTypeColor());
-//			}
-//		}
-//	}
+	public static void main(String[] args) {
+		SparkUtil.createJavaSparkContext();
+		Checker.init();
+		VietSentiData.init();
+		ClassifySentiment.createClassify();
+
+		Map<String, List<String>> fbDataForSentiment = new LinkedHashMap<String, List<String>>();
+		fbDataForSentiment.put("bực bội quá đi mất", new ArrayList<String>(){/**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+
+		{
+			add(" viết thế này chắc không ai hiểu nhưng vẫn muốn viết cho nhẹ lòng mình. đi hội trại khoa, cho tới lúc kết thúc thì cái người mình để ý mình vẫn chưa làm quen được!! ko chung xe. chập choạng tối thì thấy ấy đứng 1 mình chỗ lối vào trại cả tiếng đồng hồ mà dòm qua dòm lại rất muốn ra bắt chuyện mà ko biết làm sao. lát sau đi với đám bạn (trong đó có bạn của ấy) ra chỗ ấy đứng nói chuyện mới biết là đang canh an ninh (hình như vậy, ko nhớ lắm) gì đấy. xinh xinh mà đứng vậy coi chừng bị bắt mất tích luôn chứ canh gác cái gì. lúc quẩy nhảy rất sung, lúc đi với bạn cũng nhí nhảnh mà sao đứng 1 mình thì như tảng băng thế, không quan tâm cái gì khác. cố tình nhìn chằm chằm mỗi lần chạm mặt chắc cũng chả biết nhỉ. lạnh lùng quá. buồn. lại buồn hơn khi thấy xung quanh ấy có rất nhiều bạn nam, gần như lúc nào nhìn thấy cũng là vậy. bạn nói phải làm sao đây?? mà tóm lại bạn có người yêu chưa? --Cừu--");
+		}});
+		SentimentProcess sm = new SentimentProcess();
+		List<ListReportData> result = sm.processSentiment(fbDataForSentiment);
+		
+		for (ListReportData listReportData : result) {
+			System.out.println("key content " + listReportData.getStatusData().getContentData());
+			System.out.println("key color " + listReportData.getStatusData().getTypeColor());
+			for (ReportData com : listReportData.getListCommentData()) {
+				System.out.println("comment content " + com.getContentData());
+				System.out.println("comment color " + com.getTypeColor());
+			}
+		}
+	}
 }

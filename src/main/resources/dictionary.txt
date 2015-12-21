@@ -39,8 +39,6 @@ chài	trời
 troy	trời
 mềnh	mình
 bi h	bây giờ
-e	em
-a	anh
 aj	ai
 bj	bi
 đj	đi
@@ -690,9 +688,7 @@ vọg	vọng
 chuộg	chuộng
 ràg	ràng
 lặg	lặng
-vug	vung
 y	yêu
-r	rồi
 ny	người yêu
 nt	nhắn tin
 c	chị
