@@ -6,7 +6,7 @@
 :p	 pha_trò 
 o:)	 dễ thương 
 3:)	 nguy hiểm 
-o.o	 khó hiểu 
+o.o	 bấn loạn 
 ;)	 nháy mắt 
 :o	 giận dữ 
 -_-	 ngang ngược 
@@ -23,7 +23,7 @@ o.o	 khó hiểu
 :|]	 vô vị 
 >:(	 nhăn nhó 
 :v	 khoái trá 
-:/	 không chắc chắn 
+:/	 lưỡng lự 
 :\	 băn khoăn 
 :3	 ngại ngùng 
 (y)	 thích thú 
@@ -32,7 +32,7 @@ o.o	 khó hiểu
 :)))	 bật cười 
 ^^	 thẹn thùng 
 :?	 thắc mắc 
-@@	 ngạc nhiên 
+@@	 ngơ ngẩn 
 :((	 đau 
 :s	 gian dối 
 =d	 vui vẻ 

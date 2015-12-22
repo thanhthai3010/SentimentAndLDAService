@@ -3,6 +3,7 @@ package app.process.sentiment;
 import java.io.Serializable;
 import java.util.Arrays;
 import java.util.List;
+
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
@@ -76,8 +77,10 @@ public class ClassifySentiment implements Serializable {
 			 */
 			private static final long serialVersionUID = 1L;
 
-			public Iterable<String> call(String content) throws Exception {
-				return Arrays.asList(content.split(" "));
+			public Iterable<String> call(String contents) throws Exception {
+				String[] values = contents.split("\t");
+				String filter = values[1].replaceAll("[0-9]", "");
+				return Arrays.asList(filter.split(" "));
 			}
 		}).mapToPair(new PairFunction<String, String, Long>() {
 
@@ -109,7 +112,7 @@ public class ClassifySentiment implements Serializable {
 			private static final long serialVersionUID = 1L;
 
 			public Boolean call(Tuple2<String, Long> itemWordCount) throws Exception {
-				if (itemWordCount._2 >= 5 && !Stopwords.isStopword(itemWordCount._1)) {
+				if (!Stopwords.isStopword(itemWordCount._1)) {
 					return true;
 				} else {
 					return false;
@@ -126,7 +129,8 @@ public class ClassifySentiment implements Serializable {
         ClassifySentiment.hashingTF = new HashingTF(sizeOfVocabulary);
         JavaRDD<LabeledPoint> tupleData = dataFull.map(content -> {
                 String[] datas = content.split("\t");
-                List<String> myList = Arrays.asList(Stopwords.removeStopWords(datas[1]).split(" "));
+                String filter = datas[1].replaceAll("[0-9]", "");
+                List<String> myList = Arrays.asList(Stopwords.removeStopWords(filter).split(" "));
                 return new LabeledPoint(Double.parseDouble(datas[0]), hashingTF.transform(myList));
         }); 
         // 3.) Create a flat RDD with all vectors
