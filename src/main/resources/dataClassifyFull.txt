@@ -5,7 +5,7 @@
 0	dữ_dội 
 0	wtf  ngang_ngược
 0	dám thì đi tù thôi , dễ_sợ
-0	ngạc_nhiên sợ quá
+0	ngơ_ngẩn sợ quá ngơ_ngẩn
 0	thất_vọng thật
 0	lừa người người_làm bừa đây mà
 0	zậy cho anh xin_lỗi  đau anh sai rồi  anh sai rồi  xin em một lần hãy nói em yêu anh  anh như gục ngã chìm cmn đắm trong tô bò ziên  xin em một lần tha_thứ quay về bên anh 
@@ -24,29 +24,29 @@
 1	bạn nói_chuyện dễ_thương thế bật_cười
 0	cảm thấy buồn_bã
 1	ồi ồi , gặp phải tri_kỷ  20 năm chưa mảnh tình vắt vai  cậu à , thôi , cố thêm 2nam nữa đi ạ , biết_đâu lúc đó chúng_mình lại gặp nhau  yêu làm_gì sớm cười
-1	bình_thường thì chỉ có an bk tn là sang cfs của nhân_văn thôi ngại_ngùng mà t cũng không hiểu sao lại không phải dân tự_nhiên mà_lại học tự_nhiên là như_thế_nào  vui_vẻ
+1	bình_thường thì chỉ có an bk tn là sang cfs của nhân_văn thôi ngại_ngùng mà t cũng không hiểu sao lại không phải dân  mà_lại học  là như_thế_nào  vui_vẻ
 1	thế_là học sư_phạm à hay_là yêu dược 
 1	 bảo_vệ gái làng sẵn_sàng đổ_máu 
 1	khônggggggggggggg :  > bật_cười   
-1	ý bạn là tiêu_chuẩn của gái nhân_văn  không đủ  cao như tự_nhiên ngại_ngùng
+1	ý bạn là tiêu_chuẩn của gái nhân_văn  không đủ  cao như  ngại_ngùng
 1	vũ ngọc linh thúy của m tất_bật cười 
-1	gái uit được không thread khoái_trá
+1	gái uit được tích_cực
 1	ạ lắm thế cậu bật_cười * phải mạnh_mẽ lên mới có người_yêu chứ bật_cười  *
 1	1 k60 nhân học đang chưa nghĩ ra k 59 nhân học nào có ánh mắt đặc_biệt hài_hước hài_hước hài_hước hài_hước hài_hước
 0	buồn_bã quá trời
-1	k58 nhân học ngồi ngóng khoái_trá
+1	k58 nhân học ngồi ngóng tích_cực
 1	nguyễn hương thớt stt yêu mày i love you bộp bộp cệch cệch tức_cười
-1	khoái_trá m tag t vào vì mđích j khoái_trá hả ngoan từ bé
+1	khoái_trá m tag t vào vì mđích j tích_cực hả ngoan từ bé
 1	nguyễn hương thế thỳ hình_như t được đề_cao quá rồi bật_cười
 1	ui cha  lớp mình có chế nào yêu trai kỹ_thuật thế 
-1	nguyễn hươngý là bị lé khoái_trá
+1	nguyễn hương tích_cực tích_cực ý là bị lé khoái_trá
 1	nguyễn hương đặc_biệt ý là không bình_thường đó khoái_trá
 1	m lại xỏ_xiên ý của chủ thớt thế á bật_cười  huyền mai
 1	xác_định hehe
 1	nếu 2 môn mà em chưa làm bài ktra bù giữa kì thì cuối kì em không được thi  vậy nên nếu_không xin được thi bù thì cố_gắng điểm tổng_kết trên 12 nhé 
 1	chúc bạn sinh_nhật vui_vẻ nháy_mắt
 1	công_nhận là rất tuyệt
-1	chúc bạn làm liều vui_vẻ khoái_trá đủ tuổi rồi đó nha
+1	chúc bạn làm liều vui_vẻ tích_cực đủ tuổi rồi đó nha vui_vẻ tích_cực
 1	bật_cười  bị đăng muộn mất mấy ngày thu trang
 1	sổ_tay sinh_viên ghi hết vấn_đề này rồi nhé chủ thớt  tức_cười
 1	đây là nhân_văn hà_nội hay hcm thế * bus số 8 *
@@ -61,7 +61,7 @@
 1	trong sì gòn nóng bỏ_mẹ , chỉ có ngoài bắc thì noel lông cừu ms phát_huy tác_dụng bật_cười 
 0	chi yulee con bò ngang_ngược
 1	hẳn là hậu quá ngại_ngùng
-1	huhumay quáăn mất ngon ngủ mất yên từ trưa tới giờ  cảm_ơn bạn_gái tốt_bụng bên tự_nhiên nhiều nhé  em ngại cảm_ơn mọi người  sắp thi rồi may không bị mất 
+1	huhumay quáăn mất ngon ngủ mất yên từ trưa tới giờ  cảm_ơn bạn_gái tốt_bụng bên  nhiều nhé  em ngại cảm_ơn mọi người  sắp thi rồi may không bị mất 
 1	mình là thu hồng k 60 báo_chí đây bạn  cảm_ơn chị và anh phụ xe nhiều bật_cười 
 0	bạn gì ơi sao chưa có liên_lạc gì vậy đau 
 0	đâu cần gì đâu em , cứ học bình_thường thôi , ôn mấy chương giữa ấy
@@ -72,7 +72,7 @@
 1	môn nền_tảng mà bạn có vể không thiết_tha nhỉ  đề mở hay đóng cũng thua vấn_đáp hết  ôn 200 câu để bốc 3 câu thì để được điểm khá là 1 quá_trình đó bạn
 0	lên trung_tâm casa của trường để được tư_vấn tâm - sinh_lý em nhé , khoản mất niềm_tin là gay_go lắm !
 1	kết_quả nếu qua thì sẽ đạt cđr rồi  còn giá_trị đấy là giá tri xin việc sau khi ra trg thôi
-1	nguyễn hồng sơn đi cùng ngta đi kìa khoái_trá
+1	nguyễn hồng sơn đi cùng ngta đi kìa tích_cực tích_cực
 1	lần đầu nghe danh trường ute ngại_ngùng ngại_ngùng
 1	noen là cái gì tức_cười
 1	đi cùng có vui không 
@@ -85,7 +85,7 @@
 0	buồn dữ  hóa_ra là đăng cfs nhầm
 1	trời lạnh thế_này chủ cfs có muốn mua túi sưởi gấu bông không  rẻ mà_lại không tốn tiền nuôi bằng người thật ! khoái_trá
 1	cho đi chơi noel cùng được không bạn  ngại_ngùng
-1	ute hay uet 
+1	ute hay uet tích_cực tích_cực
 1	vãi thím tận trong sg bật_cười
 1	thanh_niên rảnh là đây tức_cười
 1	rảnh qúa ha
@@ -103,7 +103,7 @@
 0	chủ_yếu là tán gái chứ xin_lỗi gì ngang_ngược
 1	vừa đọc cfs này trên vnu cfs khoái_trá
 0	các bạn ussh này , đừng nghe uet nó lừa đấy , chỉ có hus là một_lòng_một_dạ bên ussh thôi
-0	uet là trường gì v  hỏi ngu tí ngạc_nhiên
+0	uet là trường gì v  hỏi ngu tí ngơ_ngẩn
 0	cũng muốn hỏi ngu uet là cái j buồn_bã nhưng_mà thấy nhiều người hỏi không được tl bất_hạnh nên thôi khoái_trá
 0	t đang học mtpt đây   thất_vọng hủy đi chị
 1	lý_do thực_sự là tại cô nv xinh quá , còn que kem chỉ là cái cớ để quay lại thôi 
@@ -127,10 +127,10 @@
 0	khổ bạn  bọn nó hách_dịch lắm 
 1	báo_chí cũng đang tình_trạng yêu hệt đau
 0	em tháy lớp ctxh với người khuyết_tật vẫn còn mà
-1	đừng chửi bọn nó khoái_trá nhiều môn t cũng đk cùng k 57 mà khoái_trá
+1	đừng chửi bọn nó khoái_trá nhiều môn t cũng đk cùng k 57 mà tích_cực tích_cực
 1	báo_chí cũng đang tình_trạng yêu hệt đau
 0	em tháy lớp ctxh với người khuyết_tật vẫn còn mà
-1	đừng chửi bọn nó khoái_trá nhiều môn t cũng đk cùng k 57 mà khoái_trá
+1	đừng chửi bọn nó khoái_trá nhiều môn t cũng đk cùng k 57 mà khoái_trá tích_cực
 1	thuở sinh_viên , không sợ thi_cử , không sợ học chỉ sợ mỗi đăng_kí môn_học  bật_cười  toàn phải mua mì_tôm sẵn để chờ vào hệ_thống  vui_vẻ
 0	tôi ốm rục xác luôn ý chứ !
 1	chuẩn không cần chỉnh
@@ -139,7 +139,7 @@
 1	trai nhân_văn viết văn hay ha , kiểu như_là tiểu_thuyết tình_cảm ấy nhỉ thảo vũ
 1	 yêu một cô_gái cùng trường nhân_văn thật khó    bạn đừng làm tớ nhụt chí khoái_trá khoái_trá
 0	vâng thông_điệp tự rút ra là hêt rồi thì_thôi khỏi níu  2 người chia_tay và sống đến tận bây_giờ
-1	ờ khó lắm siêu khó luôn khoái_trá
+1	tích_cực luôn khoái_trá
 0	không đùa chứ  khó gì đâu  sao lại quy_chụp là  gái nhân_văn  chứ khóc_lóc
 1	yêu làm_gì  để_dành tg lo cho bản_thân đê khoái_trá
 1	đừng chỉ yêu một người con_gái hãy yêu cả cuộc_sống này nữa mới gọi_là yêu  chưa qua logic hả em  mà đăng thế
@@ -172,7 +172,7 @@
 0	khiếp , ngày_xưa để quên 1 cái hộp trong có cái kính mới được 1 năm của mình mà chạy loăng quoăng cả tuần sau đó cũng không tìm thấy được  ơn giời thế !
 1	cho mình join với nào ngại_ngùng cùng đam_mê rồi
 1	triển ngay và luôn đê khoái_trá
-1	bật_cười bộ_môn phun nước_bọt này mình có tập cong cả lưỡi  ngại_ngùng được âm trống , b , t , không ngạc_nhiên bật_cười cơ_mà chỉ biết cơ_bản thế thôi
+1	bật_cười bộ_môn phun nước_bọt này mình có tập cong cả lưỡi  ngại_ngùng được âm trống , b , t , không ngơ_ngẩn bật_cười cơ_mà chỉ biết cơ_bản thế thôi
 1	clb mc ạ bật_cười 
 1	đùa ak  qh - 2015 - x làm_gì có  hk bằng kép ak
 1	sướng đời chưa
@@ -189,7 +189,7 @@
 0	trả tao 5 phút cuộc_đời ngang_ngược
 1	dự là thánh khoa văn nào_đó vừa trúng ngải của 1 em vùng_cao bật_cười 
 1	lạy thớt khoái_trá
-0	giời_ơi , đọc gần khóc thì đến cái dòng cuối  điên luôn
+0	giời_ơi , đọc gần khóc điên luôn
 0	cop của trang khác về ngang_ngược hẳn là không có việc bị rảnh
 1	nhưng nếu đây là chuyện có thật thì chàng_trai này tốt thật đấy
 1	mình đã bật khóc khi đọc đến dòng cuối , thật qua là cảm_động khoái_trá khoái_trá khoái_trá khoái_trá
@@ -213,7 +213,7 @@
 1	tự vạch ý ra học là tốt nhất , chứ bạn định học thuộc_lòng cả đống những mớ đề_cương ý á  
 1	vấn_đề khúc_mắc đây tức_cười
 1	nên đọc thêm giáo_trình em ơi  môi_trường có tài_liệu riêng chi_tiết lắm  xin các bạn trong lơp ý  chúc em thi tốt khoái_trá
-0	học thụ_động quá  trượt là chắc  chả nhớ gì đâu
+0	học thụ_động quá  trượt là chắc chả nhớ gì đâu
 1	csvh dễ lắm , đừng lo  lsvm thì học một_vài ý thôi  môi_trường có tài_liệu  tâm_lí thì hiểu đi , đừng thuộc 
 1	kinh_nghiệm ôn thi của mình từ năm nhất đến năm_3 là không mua đề_cương nhà g bật_cười
 1	toàn môn lý_thuyết là sao bật_cười  good luck
@@ -226,7 +226,7 @@
 1	đăng_kí được là may rồi 
 1	mỹ_nữ này ở lớp bóng_rổ của mình  ngại_ngùng hôm_nay bạn ấy để tóc xõa nhé !
 1	lớp mình học à  có mỹ_nhân thế sao không thấy nhể  thích thì cứ nhíc đi chủ thớt gái nv hiền lắm không thích cũng không bị ăn dép đâu  yên_tâm
-1	hầy hầy , em nó lại học thế dục chiều thứ 5 cơ ngại_ngùng
+1	hầy hầy , em nó lại học thế dục chiều thứ 5 cơ ngại_ngùng lịch_lãm
 1	nguyễn hoàng nam : bạn này lớp mình hay_sao ý nhề khoái_trá
 1	ngại_ngùng cứ tưởng nhân_văn gottalen mừng_hụt
 0	vụ này quá_ư là hoang_mang ấy ạ  nghe xong phải cảnh_giác khi thuê nhà rồi 
@@ -234,7 +234,7 @@
 1	tránh luôn nhà số 8 ngách 64/33 vũ trọng phụng nữa nhé ngang_ngược khu ấy toàn bảo  tao phục mấy đứa - ở được nhà bà thiều đến 3 năm  bật_cười      
 1	may thế mình ở 64/27 thoải_mái vô_cùng
 1	đọc xong tn thấy quý bà chủ nhà đồng_bóng chỗ mình hài_hước hài_hước hài_hước
-1	khoái_trá cố lên thớt bật_cười 
+1	lịch_lãm cố lên thớt bật_cười 
 1	sắp xong rồi haha
 0	mình cũng hc bằng kép đây  sắp thi áp_lực lắm chứ nhưng thôi  1 đống tiền bm cho ăn hc sao mà bê_tha n được
 1	k60 năm_2 em đăng_kí kép khoa_học quản_lý bật_cười khó mấy cũng chơi vì n là ước_mơ hoài_bão lâu_nay của em bật_cười phải có đam_mê mới học đk  chào các anh_chị bên khoa_học quản_lý trk bật_cười
@@ -243,15 +243,15 @@
 1	thấy tấm gg là sửu rồi đấy khoái_trá khoái_trá
 1	mạnh_mẽ lên em , cứ từ_từ rồi sẽ quen thôi ^ ^
 1	chào tạm_biệt ngại_ngùng
-1	chị nào đây nhỉ  khoái_trá
-1	nam bên tự_nhiên qua thăm ah  khoái_trá xinh thì tán lấy 1 em đi bật_cười  trường nhân_văn nhiều nữ thế kiếm đâu chả được hoa chưa có chậu
+1	chị nào đây nhỉ  khoái_trá lịch_lãm
+1	nam bên  qua thăm ah  khoái_trá xinh thì tán lấy 1 em đi bật_cười  trường nhân_văn nhiều nữ thế kiếm đâu chả được hoa chưa có chậu
 0	thế_mà giai nhân_văn chê gái nhân_văn xấu  không bằng gái ngoại_ngữ 
 1	thu hien nè bật_cười 
 0	nhảm_nhí  sang bê về mà dùng trai nhân_văn không luyến_tiếc 
 1	đậu_xanh  nam thanh_niên nào giống mình vậy ta  bật_cười 
 0	gái nhân_văn có chủ hết rồi đánh_bắt gần bờ không thích bằng xa bờ  
 1	lại nhá hàng rồi  tính tán giai nhân_văn chứ gi  biết thừa bật_cười  
-1	hôm bữa , thấy 3 anh con_trai đi đằng trước , rồi vòng sang tự_nhiên thu trang , quả_là trai tự_nhiên nhỉ bật_cười
+1	hôm bữa , thấy 3 anh con_trai đi đằng trước , rồi vòng sang  thu trang , quả_là trai  nhỉ bật_cười
 1	bò_sữa bật_cười    làm_quen vs bạn đi kìa
 0	chắc nó trừ mình ra ngang_ngược
 0	đồng_cảm với em  còn trẻ vậy_mà đã lảng tai hoặc có vấn êề đầu_óc thì cũng tội mấy em đó thật buồn_bã
@@ -275,10 +275,10 @@
 0	đm ngu  tỏ luôn không nó nghĩ chơi_đùa vs nó
 1	tặng cái này cho bạn ý sẽ đồng_ý luôn nè em
 0	có cảm_giác máu phim hàn đang lên , lớ_ngớ là dính phốt giờ
-1	đéo tin bật_cười 
-1	anh ơi , tỏ_tình lãng_mạn đê * * ,
+1	đéo tin bật_cười
+1	anh ơi , tỏ_tình lãng_mạn lịch_lãm đê * * ,
 0	Con_gái càng nặng_lòng càng khổ
-0	Pepero_Pepero nữa không khoái_trá
+1	Pepero_Pepero nữa khoái_trá
 0	Bỏ nguyên ngày làm_quà tới chiều , tối gây_lộn  Trưa ct đây  Và tới giờ vẫn FA khóc_lóc
 0	Mong dc như nó mà méo dc  Cơ_mà gió mát quá khóc_lóc
 0	Mai_mốt biết ăn hủ_tiếu hoành_thánh nước bún_bò ở đâu_đây khóc_lóc khóc_lóc khóc_lóc
@@ -294,7 +294,7 @@
 1	bạn_thân nháy_mắt chả tin bố_con thằng nào nhé meo mai minh chau cẩn_thận anh zai đấy châu
 1	không có bạn_thân khác giới đâu , mạnh_dạn lên , được ăn cả , ngã thì vẫn làm_bạn dk mà , nhanh còn kịp , bạn nhé
 0	friend cái beep nhích đi em thành_công 100% luôn đó , mệt người qá à , đèn_xanh bật lên còn không chạy đi ngang_ngược
-0	Ui tự_nhiên khóc nửa_đêm khóc_lóc
+0	Ui  khóc nửa_đêm khóc_lóc
 0	Nhớ nhà khóc_lóc khóc_lóc khóc_lóc
 0	Má  cfs vô_nghĩa  người phí khoảng s đọc cái cfs này , tốn thêm s chửi thầm  trung_bình khoảng người đọc vậy đã tốn tổng_cộng hết s của người khác rồi nha chủ cfs lác_mắt
 0	đi cùng đi bạn khóc_lóc giống mình
@@ -303,13 +303,13 @@
 0	Tớ hiểu cảm_giác của bạn mà   Nhưng_mà nay hơi quen_quen rồi bạn khóc_lóc khóc_lóc
 0	Liên_tưởng ngay đến Oil trong Tuổi nổi_loạn liền MÌ nh cũng vậy đó chế à khóc_lóc Thật co biết diễn_tả bằng từ nào
 0	mai đi lấy mật thôi , mật ông thiên_nhiên dạo giờ mắc lắm nhăn_nhó
-0	Nở hoa mất khoái_trá
+1	lịch_lãm 
 1	ngọc linh leu deu lenh khenh đi quảng tây rồi  về lấy thẻ atm sau nha  ban giữ hộ may ngay nua nhe 
 0	ước gì có ai đăng cfs  nhặt được ví màu nâu buồn_bã
 1	nguyễn mạnh hùng
 1	ồh  bài này rất hay  hẳn là bạn này đanf đi tìm ty 
 1	thích qúa 
-1	thôi xong minh_quân em êi khoái_trá
+1	thôi xong minh_quân em hồn_nhiên
 1	cuộc đánh_ghen thế_kỉ vui_tươi
 1	tốt , thích thì_phải cưa , không cưa thằng khác nó cưa mất thì mất hết gỗ 
 1	ai đoá khoái_trá
@@ -328,7 +328,7 @@
 1	môn này thì tuyệt_vời rồi
 1	wtf lên trường để làm_gì thế bật_cười   
 1	mà có lên trường , thầy_cô mà giải_quyết thì thầy_cô cũng bảo_vệ mình mà , yên_tâm đi em  mất tiền cọc vậy , xem như trả tiền mua một bài_học vậy  dọn đi , nhưng nhớ xem_xét kỹ chỗ ở mới nhé vui_vẻ
-1	đào mạnh long nghe giống chỗ long nhờ ngạc_nhiên
+1	đào mạnh long nghe giống chỗ long nhờ ngơ_ngẩn
 1	cái hà_nội này những người khôn_ngoan và nanh_nọc nhưng có_tình người như  bà hiền  đã hết từ lâu rồi , giờ còn toàn bà chằn khoái_trá
 0	khóc_lóc khóc_lóc khóc_lóc khóc_lóc
 0	cô ta cau mày khó chịu
@@ -336,7 +336,7 @@
 0	chuyến tàu băng giá
 0	đang thắc_mắc giống bạn khóc_lóc
 0	cảm gíac bất an
-1	mời bà ấy lên trường đi em khoái_trá
+1	mời bà ấy lên trường đi em hồn_nhiên hồn_nhiên
 0	cho lên  sợ gì 
 1	đạt nguyễn có thấy_bà chủ quen 2 không em bật_cười
 0	đành bỏ tiền cọc cho ngta ăn thôi buồn_bã trước mình cũng mất 500 tiền ngu
@@ -345,7 +345,7 @@
 1	lên trường doạ ai bật_cười phá hợp_đồng mất tiền cọc hết chuyện chứ định làm_gì nữa bật_cười
 1	xanh lala thấy quen_quen khoái_trá
 1	họ coi người đối_diện là cả thế_giới rồi  những ánh mắt còn lại không còn là gì nữa đâu mà ngượng ngại_ngùng
-1	thì đừng nhìn nữa khoái_trá
+1	thì đừng nhìn nữa hồn_nhiên
 1	chung cảnh_ngộ vs thớt bật_cười 
 1	có gấu là dc rồi  mình không có gấu còn akay hơn khoái_trá
 0	người_ta có gấu người_ta có quyền và không làm j lố quá là ok hết ngại_ngùng
@@ -357,7 +357,7 @@
 0	thớt ích_kỷ , xấu_tính
 1	gái nhân_văn vjet hay lam
 1	học tất_cả những gì thầy_cô dạy em nhé , đảm_bảo không trúng gì vui_vẻ tặng em cái ảnh
-1	sắp thi rồi mà chưa biết ôn thế_nào , thì học lại cho điểm_cao em ạ khoái_trá
+1	sắp thi rồi mà chưa biết ôn thế_nào , thì học lại cho điểm_cao em ạ lí_tưởng
 1	tự làm đề_cương rồi học theo nhé vui_vẻ trong quá_trình làm đề_cương cũng đã vào đầu được 50% rồi nháy_mắt
 1	chị 4 năm rồi vẫn không có kinh_nghiệm đây ngại_ngùng
 1	 chỉ với 5000đ bạn đã có_thể qua môn với số điểm tốt nhất  mua đề_cương đê , mua đê , mua đê  mại zô , mại zô ! 
@@ -366,14 +366,14 @@
 1	hae van duyên kyu  chiều nay vừa gặp thầy ở bến_xe bus yêu yêu
 1	anh vân đinh linh pham hằng ham học trang vũ ahihiiii  các chị ơi tức_cười
 1	k60 ngôn_ngữ cũng hâm_mộ thầy lắm thân_yêu  thân_yêu
-1	thầy_cô khoa mình đa tềnh quá khoái_trá
+1	thầy_cô khoa mình đa tềnh quá khoái_trá lí_tưởng
 1	yeahhoo  đã lên được cfs  quý thầy 
 1	thầy tiếnn cmay ơiii đồng_ý giang bùi hương chi thiên trang
 1	kính trrongj và hâm_mộ th quá ak  th giảng rất hay
 1	có em nào k 60 quốc_tế không , chị nhờ tí ngại_ngùng
-1	bên tự_nhiên mình thì lúc_nào cũng mong đến tiết của thầy , thầy quá tuyệt vui_vẻ
+1	bên  mình thì lúc_nào cũng mong đến tiết của thầy , thầy quá tuyệt vui_vẻ
 1	ai học thầy thì cũng hâm_mộ thầy thôi  quý thầy nhất tức_cười
-1	minh thanh lê minh khuê thần_tượng của tôi khoái_trá
+1	minh thanh lê minh khuê thần_tượng lí_tưởng của tôi khoái_trá
 1	thầy chém gió hay vãi chưởng
 1	my idol ahihi bật_cười  
 1	nguyễn thu hà soái ca xe bus ngại_ngùng
@@ -386,7 +386,7 @@
 0	đi chơi về muộn , đi bộ ngang qua ao chùa gần chợ phùng khoang thấy 2 đôi cầm ô che mưa rồi cứ đứng giữa trời mưa ôm nhau  chẳng hiểu sao họ không tìm chỗ trú đi  trời rét rồi ngang_ngược
 1	nói mạnh_mồm vậy chứ có ai đấy ôm cho phát xem bật_cười 
 0	quá lạnh luôn buồn_bã muốn gấu
-1	không care thì đừng up khoái_trá
+1	không care lí_tưởng thì đừng up khoái_trá
 0	ca này khó
 1	cảm_ơn ad đã đăng bài hộ em luôn ạ tức_cười
 1	ôi trời , đáng yêu tn mà bị mất cũng tiếc ,  tiến đồ nan chia_sẻ  pha _ trò
@@ -419,11 +419,11 @@
 1	trần đức tài hiếu mạnh vũ
 0	sợ quá , ra làm vài xiên cho đỡ sợ
 1	bụng mình tốt  ăn suốt chả s , chỉ thấy tốn tiền
-1	thế_mà có bạn nam tự_nhiên hôm đứng ăn thấy thanh_toán hơn 70k  chú bán bảo hầu_như ngày nào nó cũng ăn từng đấy tiền bật_cười   không biết đã phải chuyền dịch chai nào chưa ngại_ngùng
+1	thế_mà có bạn nam  hôm đứng ăn thấy thanh_toán hơn 70k  chú bán bảo hầu_như ngày nào nó cũng ăn từng đấy tiền bật_cười   không biết đã phải chuyền dịch chai nào chưa ngại_ngùng
 1	ngại_ngùng ly kyuubi
 1	tại không ăn thường_xuyên đấy bật_cười
 1	đoàn công_minh thanh ngại_ngùng dư lày là dư lào ngại_ngùng
-1	tú alex khoái_trá
+1	tú alex lí_tưởng khoái_trá
 1	yên lê nguyễn anh à ra là đuỹ yên bị tả kiết_lị các kiểu chứ không phải sốt virus khoái_trá
 1	lưu_ly này hôm nào mát trời đi !
 1	món ăn yêu_thích của mình sau mỗi giờ giải_lao khoái_trá ăn cả năm trời mà chả bị sao khoái_trá  chắc bạn không có số được hưởng khoái_trá
@@ -432,7 +432,7 @@
 1	bánh đậu_đỏ m nổi hơn chủ_tịch nước rồi bật_cười
 1	trai nhân_văn chỉ yêu trai an_ninh thôi khoái_trá
 1	điện nước đầy_đủ hơn cả mình vui_vẻ
-1	hoá_ra là vậy khoái_trá
+1	hoá_ra lí_tưởng là vậy khoái_trá
 1	k57 - anthropology - university of social sciences and humannities bật_cười 
 1	bánh đậu_đỏ cần em cho chút gió không  vui_vẻ vui_vẻ vui_vẻ ảnh này xúc tích hơn cả truyện ma lúc nửa_đêm !
 0	lạy hồn , kinh_dị , trông như quỷ băn_khoăn
@@ -444,7 +444,7 @@
 1	nguyễn vân kiều bật_cười
 1	giờ em đã là vợ người_ta hôn giai khoa nào điện nước đầy_đủ vậy để chụy em còn phấn_đấu bật_cười     
 1	cho nó sang vs bọn bk ý bật_cười 
-0	zai tự_nhiên đây thì_sao ạ  ngang_ngược
+0	zai  đây thì_sao ạ  ngang_ngược
 1	sau mà có gặp t ở trường thì đừng bảo là bạn t nha m bánh đậu_đỏ khoái_trá khoái_trá
 0	trước mỗi thì thi sinh_viên : thầy ơi có giới_hạn không ạ  gv : có  tất_cả quyển giáo_trình  sinh_viên : * khóc thét * thầy bớt cho bọn em 1 ít đi ạaaaaaaaaa gv : bớt cho 2 cái bầy nhé
 1	ui mình thi mới học mà vẫn ra trường đúng hẹn hehe
@@ -454,9 +454,9 @@
 0	nghe sợ ế hiuhiu
 1	bình_thường thui  quen rồi  1 kỳ 11 mon đều ngon_lành cành đào cả  có kỳ học cả mấy môn kinh_điển như tâm_lý , môi_trường , nhà nói_chuyện  điểm ok luôn
 1	chăm học thì điểm không thấp nhưng muốn cao thì_phải may nữa nhé ngại_ngùng
-1	thảo key thấy các bạn bình_luận hoành_tráng quá khoái_trá
+1	thảo key thấy các bạn bình_luận hoành_tráng quá lí_tưởng
 1	phải có ảnh mọi người mới biết đk chứ ngại_ngùng
-1	thớt cũng không phải dạng vừa đâu bật_cười cách xử_lý cũng không được khôn_ngoan cho lắm không chắc_chắn
+1	thớt cũng không phải dạng vừa đâu bật_cười cách xử_lý cũng không được khôn_ngoan cho lắm thiệt_thòi
 1	cô thấy sao   cái bạn viết cfs hôm trc chê trg đây bật_cười kiêm thanh
 1	vẫn dài thớt ah   lần này đọc không hết , nhưng vẫn ủng_hộ cái stt kia
 1	chả hiểu sao không có cảm_tình với bạn viết conf này lắm bật_cười 
@@ -470,11 +470,11 @@
 1	ở nhà xem đá bóng còn thích hơn hài_hước hài_hước
 1	2 mùa đp mà vẫn f  anh thì_phải tức_cười
 1	thân_yêu
-1	sướng thế khoái_trá
+1	lí_tưởng thế khoái_trá
 1	có_lẽ_nào đây là bí_quyết chăng tức_cười
 1	đến bao_giờ mới thoát kiếp pha đây hài_hước
 1	bạn muốn phá các khu 332 , 330 , 328 hả  thế phá nhà t vs nhà người_thân t thì đi đâu dc hài_hước hài_hước hài_hước
-1	đợi tự_nhiên dọn lên hòa lạc bật_cười mình sẽ xúc luôn bên ấy   khi ấy trg ta rộng lắm rồi
+1	đợi  dọn lên hòa lạc bật_cười mình sẽ xúc luôn bên ấy   khi ấy trg ta rộng lắm rồi
 1	nó muốn 2 trường thông nhao nga ngố kiêm nari hành_tây bật_cười 
 1	chờ mình , mình sắp làm hiệu_trưởng rồi khoái_trá mơ_ước của 1 sinh_viên ra trường muộn khoái_trá
 1	em còn thích sập trường cho được nghỉ cơ ! hehe  
@@ -484,11 +484,11 @@
 1	các thím sắp được lên trường mới_rồi tha_hồ rộng khoái_trá pha _ trò cơ_mà bao_giờ được lên thế ngại_ngùng
 0	mỗi ngành có đặc_thù riêng  không ai giống ai cả  nếu giống nhau thì chả còn cái xã_hội nào hết khoái_trá
 1	tại chị  anh  không hay đi học muộn thôi , chứ cứ ngày nào cũng muộn như em thì trường mình cũng nhanh_nhẹn , hoạt_bát lắm khoái_trá
-1	team hay troll , hay đùa điểm_danh ! khoái_trá
+1	team hay troll , hay đùa điểm_danh ! khoái_trá lí_tưởng lí_tưởng
 1	thích thế ngại_ngùng
 1	bạn chưa gặp mình thôi hihi
 1	làm như mình đẹp_trai lắm không bằng  hão
-1	thế_nào cũng đk mà ngại_ngùng em đòi_hỏi j đâu khoái_trá khoái_trá
+1	thế_nào cũng đk mà ngại_ngùng em đòi_hỏi j đâu khoái_trá lí_tưởng lí_tưởng
 1	để t chống cằm ngồi xem chúng m hạnh_phúc được bao_lâu bật_cười
 1	thế_thì công_khai đi , khẳng_định cô ấy_là của bạn với bọn con_trai kia và bạn là của cô ấy với mấy bạn_gái xinh đó
 0	đợi 100 ngày rồi làm to bất_hạnh
@@ -650,7 +650,7 @@
 1	đọc xong tí xỉu ngại_ngùng
 1	ngoan bé lớp mình hài_hước hài_hước hài_hước
 0	các cậu ạ vụ quà_cáp này , căng lắm đóng từ 5-10k mỗi người  đây là tấm_lòng của sinh_viên  các chị có gì góp_ý thẳng mặt nhau đăng lên cfs này thầy_cô đọc dc , thầy_cô buồn !
-0	ad làm_ơn gỡ hộ cfs này xuống đi ! cảm_thấy xấu hồ quá  không chắc_chắn
+0	ad làm_ơn gỡ hộ cfs này xuống đi ! cảm_thấy xấu hồ quá lưỡng_lự
 1	nguyễn thanh_minh bật_cười
 1	kinh_nghiệm nữa_là 1 khi đã đi thì không_bao_giờ trở_lại  chân_thành khuyên hai b đừng ảo_tưởng nữa bật_cười 
 1	kém thế , xem em ý chơi gì lao vào làm mấy tơn khoái_trá
@@ -692,7 +692,7 @@
 1	trần thái uyên bà à bật_cười
 1	nguyễn minh trí mẹ nó ơi seg lên báo bật_cười
 1	vũ đức anh lên sóng rồi khoái_trá
-1	gửi bạn conf tức_cười sếp ấy đã có 1 chồng và hai con  suynh viên năm cuối khoa chính_trị và năm sau sẽ thành công_nhân , ý nhầm cử_nhân ngạc_nhiên
+1	gửi bạn conf tức_cười sếp ấy đã có 1 chồng và hai con  suynh viên năm cuối khoa chính_trị và năm sau sẽ thành công_nhân , ý nhầm cử_nhân ngơ_ngẩn
 1	vũ đức ối dồi ôi nam thần của chúng_ta ơiiiiiii bật_cười 
 1	anh đức không_chỉ truyền_thông đâu còn tuyên_truyền nữa nhé bạn khoái_trá
 1	toàn những em ngây_thơ nhẹ_dạ í bật_cười           
@@ -757,10 +757,10 @@
 1	tuyết nhi thanh hải trần tú châu bật_cười 
 1	châu minh huyền axit thao pham hồ đức việt nhìn kìa bật_cười  
 1	tuyết nhi tháng nì đào_hoa ghê bật_cười
-1	trai tự_nhiên cũng dc mà bật_cười  
+1	trai  cũng dc mà bật_cười  
 1	em đồng_ý đồng_ý đồng_ý đồng_ý đồng_ý
-1	gái nhân_văn chỉ yêu trai tự_nhiên thôi vui_vẻ , bk về đi các anh xd đang đợi đấy 
-1	t thích trai tự_nhiên bật_cười
+1	gái nhân_văn chỉ yêu trai  thôi vui_vẻ , bk về đi các anh xd đang đợi đấy 
+1	t thích trai  bật_cười
 1	vũ dzung chị à bật_cười            
 1	bị đuổi kìa  ngại_ngùng
 1	ừ  trai bk gái trường tớ cơ_bản là duyệt  vui_nhộn vui_nhộn vui_nhộn
@@ -800,7 +800,7 @@
 0	đang thi giữa kì , học phọt cơm ra , yêu_đương gì  học đi ngang_ngược ngại_ngùng
 1	đùa à  ai viết bài này mà đúng vậy 
 1	mk quan_ngại về vấn_đề này  chẳng_qua chưa ra_tay thôi chứ em viết thì_có mà thôi rồi ngại_ngùng
-0	ở bk là troll mà không chắc_chắn
+0	ở bk là troll mà lưỡng_lự
 0	hỏi ngu    flu là trg j vậy  ftu hay hlu thì biết
 1	này thì ty ngại_ngùng
 1	chắc nó trừ mình ra bật_cười
@@ -866,22 +866,22 @@
 1	bị hách nôi à mà mặc_cảm thế khoái_trá
 1	mình gửi xe mình thấy nhà_xe cổng phụ nhân_văn hiền mà !
 1	chú thì hiền mà cô thì có_vẻ ác ngại_ngùng
-1	ngạc_nhiên sao t học bên nhân_văn mà_sao không thấy gái xinh nhỉ
-0	tự_nhiên nhà bạn cả ấy  khóc_lóc khóc_lóc khóc_lóc
+1	ngơ_ngẩn sao t học bên nhân_văn mà_sao không thấy gái xinh nhỉ
+0	 nhà bạn cả ấy  khóc_lóc khóc_lóc khóc_lóc
 1	trông xe là bên tn nhé  còn bên nv ở cổng sau nhé nháy_mắt 
 1	bạn thật dễ_thương quá đi à nháy_mắt nháy_mắt nháy_mắt nháy_mắt
 1	túm cái váy lại là cái tuts của thớt viết nhằm mục_đích gì hài_hước
 1	mấy cô chứ cổng sau nhân_văn cũng hiền mang
 1	gái xinh và người trông giữ xe có liên_quan gì đến nhau vậy   
 1	nghe b nói câu trước mà ấm cả ruột em ngại
-0	oh , khen gái nhân_văn xinh thì khen làm_gì , toàn gái thôi lại chả xinh , với_lại gửi xe là của tự_nhiên ấy , nhiều lúc mình cũng khó_chịu nhưng cũng phải hiểu cho người_ta
+0	oh , khen gái nhân_văn xinh thì khen làm_gì , toàn gái thôi lại chả xinh , với_lại gửi xe là của  ấy , nhiều lúc mình cũng khó_chịu nhưng cũng phải hiểu cho người_ta
 1	vấn_đề ở đây là gái nhân_văn xinh thật
 1	mình cũng sợ lắm nhưng người_nhà bạn cả mà bật_cười nhà mình chỗ phía sau xa tiết mù_khơi cơ bật_cười
 0	vl muốn chửi nhưng sợ bị đánh ! !
 1	ngại_ngùng cũng thích anh pháp  cơ_mà thích đội xk của anh hơn bật_cười      
 1	chủ_nhân cfs này là zai chính_hiệu nhá mọi người khoái_trá
 1	chít hiền đồng cảnh_ngộ hài_hước hài_hước
-1	cảm_giác thớt giống mình   chắc là em yêu người khác rồi ngạc_nhiên
+1	cảm_giác thớt giống mình   chắc là em yêu người khác rồi ngơ_ngẩn
 1	liên_tục đọc những cfs bạo_loạn như này , tiến tới chắc phải tự viết 1 cái về mình ẩn_danh mất hài_hước hài_hước hài_hước hài_hước hài_hước
 0	thất_vọng ghê_gớm
 1	mèo hoang của chị à ngại_ngùng
@@ -895,7 +895,7 @@
 1	anh ơi tiến lên inbox đi anh , nếu là chị gôm k 60 tâm_lý clc thì tuyệt luôn anh ei nháy_mắt
 0	duy tuân giận_dữ lầy nữa
 1	k60 triết clc á  truy_lùng nào ae ngại_ngùng nguyễn anh chung nguyễn hồng sơn nguyễn việt phương thuyết đăng nguyễn bật_cười
-1	vậy_là học cùng nhau môn ls văn_minh đó e_ngại
+1	vậy_là học cùng nhau môn ls văn_minh đó
 1	chờ hoài , chờ mãi   cuối_cùng thì gái tâm_lý cũng được lên sóng ! bật_cười 
 1	vângxúc động quá  cuối_cùng thì tâm_lí khóa mình cũng được lên rồi  yêu_cầu bạn nam_khoa triết kia báo danh_tính đầy_đủ để cả lớp còn xét_duyệt xem nào 
 0	thớt đừng buồn nữa , phong_độ chỉ là nhất_thời thôi  tự mình làm_nên chiến_thắng là điều tự_hào nhất rồi  chúc đội ý luôn tự_tin nhé 
@@ -907,7 +907,7 @@
 1	klq tiện cho mình hỏi luôn các b đi bản lác mai châu có nhiều điều thú_vị không ạ , vì bọn mình cũng đang định đi hài_lòng ai đi rồi thì review cho em / mình với
 0	thu cam tại mày lúc_nào cũng dính lấy tao nên tao mới không gặp được trai đấy khóc_lóc khóc_lóc khóc_lóc
 1	không miêu_tả ngoại_hình làm_sao mà biết được châm chít nhỉ bật_cười     
-1	mình cũng muốn có bạn nam tìm quá ha thẹn_thùng
+1	mình cũng muốn có bạn nam tìm quá ha khoái_trá
 1	nhiều vô_tình thế kia thỳ bật_cười
 1	dương lăng lan anh lily vũ liệu có phải các má không vậy bật_cười  thật vậy_thì vui đấy bật_cười  
 1	xọa l  bật_cười 
@@ -915,10 +915,10 @@
 1	nhờ không được thì vả khoái_trá
 0	mình chỉ biết phá máy thôi không biết có gíup được không ngại_ngùng
 0	uầycó cảm_giác đồng_minh ghê  cx mù tin hả bợn 
-1	inbox bằng niềm_tin khoái_trá 
-1	inbox kiểu gì vậy thẹn_thùng
+1	inbox bằng niềm_tin khoái_trá
+1	inbox kiểu gì vậy khoái_trá
 1	bạn trẻ vui_tính khoái_trá đã cfs còn đòi inb bật_cười  
-1	thích_thú quả_là sử_dụng máy_tính không tốt thậc thẹn_thùng
+1	thích_thú quả_là sử_dụng máy_tính không tốt thậc 
 1	dương khang mày vào giải_quyết xem , ib bằng cách nào thế , dò ip hả khoái_trá
 0	lành trịnh xem đi
 1	jet black của phó này bật_cười
@@ -937,7 +937,7 @@
 1	ọach  cái này theo truyền_thông được gọi_là dư_luận xã_hội và chưa được kiểm_chứng  thế nên nó chưa thành thông_tin vì_vậy add đừng có đăng lm hoang_mang lòng dân ạ khoái_trá
 0	xin_lỗi chủ cfs   nhưng những bài như_thế_nào còn chưa biết rõ thực_hư làm_sao nhưng đã làm ảnh_hưởng đến danh_dự của nhiều người thì bạn không nên đăng làm_gì 
 1	ngại_ngùng
-1	b2 = 55 ielts = 750 toeic tức_cười  tầm đấy thẹn_thùng
+1	b2 = 55 ielts = 750 toeic tức_cười  tầm đấy
 1	học cô msngoc ulis này em ơi :  > chị học cô í và vừa thi qua b 2 hihi
 1	học anh manh ha ftu này cũng được chị ạ  t đamg học ielts ở đây  lớp nhỏ tầm 6 - 7 người 1 lớp  thầy  hiền  lắm , ở ngay quan nhân ý
 1	đá trước hay đá sau , đá cái đầu hay đá cái ấn_định chẳng_qua chỉ là sự sắp_xếp của số_phận  điều quan_trọng là sau khi bị đá bạn cảm_thấy thế_nào và rút ra bài_học gì để lần sau không bị đá khoái_trá
@@ -947,12 +947,12 @@
 1	Err:510
 1	điên_đảo bật_cười
 1	xin_phép cười vào mặt bé trai bật_cười  
-1	hahaha  vui ha thẹn_thùng thẹn_thùng
+1	hahaha   vui ha khoái_trá
 0	chúc_mừng thằng điên kia
 0	thế_thì phải xem_lại mình tại_sao hơn bạn nữ kia mọi thứ mà nó éo chọn , éo thấy xấu lại còn cười trên đau_khổ người khác  bây_giờ , t tin não phẳng là có thật ngang_ngược
 1	cfs cho ít đề thi có phải tốt không chứ up mấy cái ltinh
 1	thích ad  tl hay
-1	thớt thân_mến  anh_ấy không hề hối_hận và còn cảm_thấy rất may_mắn vì đã từ_chối thớt  ngạc_nhiên
+1	thớt thân_mến  anh_ấy không hề hối_hận và còn cảm_thấy rất may_mắn vì đã từ_chối thớt  ngơ_ngẩn
 1	làm_dâu_trăm_họ tức_cười
 1	một bạn trẻ thua nên cay_cú cho_biết khoái_trá
 1	ts , cứ có thói_quen nhét chữ  thân_ái  vào đít để thể_hiện hòa_nhã mà câu_cú đốp đốp , chát chát bật_cười        
@@ -967,7 +967,7 @@
 0	ib mình link fb bạn nam  ấy  đi ngang_ngược
 0	cả 2 đều có lỗi nên có trách thì trách chị đã chọn nhầm người
 0	cuộc tình dù đúng dù sai tổn_thương nhất vẫn là người con_gái
-1	vẫn share , nghĩa_là vẫn bận_tâm bật_cười  thẹn_thùng
+1	vẫn share , nghĩa_là vẫn bận_tâm bật_cười     
 1	mạnh_mẽ thật vui_vẻ
 1	thím đăng cfs này ý chỉ muốn nói , giờ chụy có gấu mới_rồi , tiếc không bé ngại_ngùng
 1	lúc sướng thì còn biết gì nữa hả các thanh_niên vô_trách_nhiệm   
@@ -982,7 +982,7 @@
 1	hẳn là ass  tươi_cười
 0	thiếu_sót thế_nào mà em gửi 3 cái cf rồi mà chả thấy cái nào được đăng buồn_bã
 1	khoái_trá sinh_viên năm nhất đầu yêu lúc mới lên đh và giờ 2 vạch  đắng !
-0	đắng ! đắng quá
+0	đắng !
 1	vấn_đề là anh kia phản_ứng với chuyện này như_thế_nào ngại_ngùng theo mình thì nên để phá rồi ám_ảnh mà chưa chắc sau_này có_thể tiếp_tục sinh_sản ở nhà sinh con rồi đi học tiếp cũng được bật_cười 
 1	giống kiểu làm màu hoặc troll nhau hơn là một chuyện có thật  tức_cười
 0	dại_dột quá vậy em !
@@ -1015,7 +1015,7 @@
 1	biết_đâu khoái_trá nguyễn ngọc linh
 1	lê lê thùy linh bật_cười 
 1	linh lohan ôi linh ơi khoái_trá khoái_trá nhưng_mà năm cuối ngại_ngùng
-1	mới đọc lại tưởng em linh nàyyyyy ngạc_nhiên vui_vẻ nguyên thảo nguyễn nguyễn tuấn lờ thái hà đặng
+1	mới đọc lại tưởng em linh nàyyyyy ngơ_ngẩn vui_vẻ nguyên thảo nguyễn nguyễn tuấn lờ thái hà đặng
 1	đọc đến năm cuối không phải mình chả đọc nữa khoái_trá
 1	đơn_giản là  cứ điên và hồn_nhiên lên 1 chút  khoái_trá ômô sợ j vết bẩn bật_cười     
 1	năm_ngoái chị cũng_như em bật_cười   nhưng giờ chị thay_đổi rất nhiều rồi bật_cười  nếu_không ngại , hãy ib cho chị , ít nhâts , em sẽ có thêm 1 người bạn bật_cười 
@@ -1175,16 +1175,16 @@
 1	tăm tặc bật_cười 
 1	đã từ_chối bật_cười   
 1	mai phuong pham ngại_ngùng đừng lên cầu_vượt hóng gió_mùa về nữa nhé
-0	hơi lầy nhưng t mua 2 gói tăm không chắc_chắn
-1	đắng lòn zai tự_nhiên khoái_trá
+0	hơi lầy nhưng t mua 2 gói tăm lưỡng_lự
+1	đắng lòn zai  khoái_trá
 1	bật_cười   
 0	mất tim mà vẫn ngồi viết cfs được  thớt là người_ngoài hành_tinh à  hay_là zombie  ngang_ngược
 1	buồn_cười quá bật_cười  khổ_thân cậu  đi tìm thiên_thần khác đi nhé
 1	bật_cười  về vs hành_tinh của bạn đi  không tim vẫn sống được à
-1	ngạc_nhiên đến như tay chớp vậy thôi mà reo trận bão kinh người trong anh bật_cười  
+1	ngơ_ngẩn đến như tay chớp vậy thôi mà reo trận bão kinh người trong anh bật_cười  
 1	mất tim phải truy_lùng tim chứ thớt bật_cười
 0	cần lắm 1 đường link
-0	mấy thằng tự_nhiên sang tán gái nhân_văn kìa , tỉ_lệ chọi của nhân_văn đã thấp lại còn ăn ngoại binh nữa    lượn đuê ngang_ngược
+0	mấy thằng  sang tán gái nhân_văn kìa , tỉ_lệ chọi của nhân_văn đã thấp lại còn ăn ngoại binh nữa    lượn đuê ngang_ngược
 1	liên hồng nguyễn hài_hước hài_hước hài_hước hài_hước đi đến đâu đổ đình đổ chùa đến đấy
 1	vâng  lại 1 thanh_niên say tình vì nắng nhân_văn khoái_trá bật_cười  
 1	gái nhân_văn của zai nhân_văn rồi bạn ei  kiếm trường khác đuê khoái_trá
@@ -1201,7 +1201,7 @@
 1	yêu phải ghen  ghen mới là yêu  có mức_độ là được  tức_cười
 0	cảm_ơn bạn đã nói điều mà thằng đàn_ông nào cũng nghĩ như_vậy ngang_ngược
 1	nhân_văn đây khoái_trá
-0	girl tự_nhiên cũng nữ_tính mà khóc_lóc khóc_lóc khóc_lóc
+0	girl  cũng nữ_tính mà khóc_lóc khóc_lóc khóc_lóc
 1	gái nhân_văn của trai nhân_văn rồi nhé khoái_trá hết vé
 1	nhân_văn nữ_tính khoái_trá khoái_trá
 1	girl nhân_văn nhưng không nữ_tính thì_sao ạ khoái_trá
@@ -1311,7 +1311,7 @@
 0	sốg cố đk 20năm rồicố thêm ti nưa chả chêt đk  chỉ ngu ngươj thêm chút thôi
 1	cám_ơn đồng_chí nhiều nhiều nhé bật_cười
 0	hix , mới được trải qua cái cảm_giác mất ô , nhưng t làm mất ở phòng g 303 khóc_lóc
-0	đọc xong thấy hoang_mang ngạc_nhiên mình đang đọc cái gì thế_này ngang_ngược
+0	đọc xong thấy hoang_mang ngơ_ngẩn mình đang đọc cái gì thế_này ngang_ngược
 1	thơm lê m có_học phòng này không   
 0	ờ tớ tự_xưng t là chủ thớt đây  tớ chỉ đùa_vui tí cho đỡ căng_thẳng thôi  thật_tình t nhặt được_cái ô rất là huyện dù nó hơi cũ ! xin_lỗi các bạn nếu tớ hơi bị lạm_dụng ngôn_ngữ thô_thiển một_tí
 1	cái gì vậy ngại_ngùng đứa nào troll t đấy ngại_ngùng
@@ -1384,10 +1384,10 @@
 1	đọc câu_đầu tưởng họ chửi mình  khoái_trá cảm_ơn thớt nói làm em mát_lòng quá chứ hồi nào tới giờ em chơi đàn họ toàn bảo em nam_tính  : b
 1	m chơi vĩ_cầm và cũng thích guitar tức_cười
 0	ghét là việc của bạn ! ! ! guitar thì seo    liên_quan ! xì xì
-0	ghét thì kệ anh ạ , chúng_em thích thì mới học thôi mà không chắc_chắn
+0	ghét thì kệ anh ạ , chúng_em thích thì mới học thôi mà lưỡng_lự
 0	trời_ơi cơm ơi khóc_lóc khóc_lóc
 1	cơm nó có gấu rồi nhé  hay_là m tự viết đấy  khoái_trá
-0	ở đâu ra vậy  lương cúc ánh ngọc không chắc_chắn
+0	ở đâu ra vậy  lương cúc ánh ngọc lưỡng_lự
 1	quá nhọ cho đội xe bus khoái_trá
 1	ngay xưa mình đăng_ký thi khối b tâm_lý_học và không thi nữa khoái_trá
 1	mình cũng rất thích huế , cảm_giác như nợ nơi đó 1 điều gì đó tức_cười
@@ -1402,9 +1402,9 @@
 1	thớt tả thế_thì em ấy còn chả biết em ấy_là ai nữa_là người khác ngại_ngùng
 1	tuoi nguyen hehe em trang đây à hay anh nhể , hehe
 1	trai khql lên sóng bật_cười
-1	ếch cốm nge giong m qua yêu yêu yêu nháy_mắt nháy_mắt
+1	ếch cốm nge giong m qua yêu yêu yêu nháy_mắt nháy_mắt bực_bội :
 1	thớt vui_tính quá luôn bật_cười
-0	sao lq dữ z trời bực_bội
+0	sao lq dữ z trời
 1	cho đi ăn mí ngại_ngùng
 1	bún cả chỉ 20k cổng sau nv  cũng ngon lắm thớt
 1	sáng hay sủa khoái_trá
@@ -1423,7 +1423,7 @@
 1	em cứ học chính_trị đầu khóa đi bật_cười
 1	đừngnên nghe theo số đông mà quyết bật_cười hiểu được bản_chất ngành_nghề thì sẽ biết được vai_trò của nó trong chị  s khoái_trá
 1	chỉ muốn nói là ngành này nó linh_động , vậy nên em không thiệt
-0	em chỉ bực_bội
+0	em chỉ muốn hỏi có phải mai được nghỉ cả ngày không khoái_trá
 1	thủ_tướng nguyễn tấn dũng và sự pr của vtv chắc là trung_tâm của buổi lễ , vs lại 70 truyền_thống nhà_trường nghe cái này lạ nhẩy ngại_ngùng , hội_trường 3500 chỗ chứ không có hơn ợ khoái_trá
 0	dòng tin mang tính thời_sự nhưng văn_phong chưa ổn , chấm_phẩy còn sai , chính_tả còn thiếu và đảng phải viết hoa nhé bạn hôn
 1	chắc không phải con_gái viết đâu khoái_trá
@@ -1441,9 +1441,9 @@
 1	hài_hước hài_hước hài_hước hài_hước
 1	đùa chứ không thấy tôi ở đây à ngại_ngùng
 1	rửa bát nốt được không ngại_ngùng bật_cười 
-1	anh này đỡ hơn anh tự_nhiên lúc nãy , có mùi đảm_đang 66
+1	anh này đỡ hơn anh  lúc nãy , có mùi đảm_đang 66
 1	klq nhưng hình_như bạn nam này mình biết khoái_trá
-0	hức , nhưng gơn bắc đanh_đá lắm bạn ơi bất_hạnh bực_bội
+0	hức , nhưng gơn bắc đanh_đá lắm bạn ơi bất_hạnh
 1	chao xìn  rất vui được làm_quen vs b ^ 0 ^
 1	bạn nổi hơn bèo_tây rồi đấy bạn nam_khoa triết bật_cười
 1	m biết bạn này nha bật_cười chung vài cái hội từ lúc ôn thi
@@ -1460,8 +1460,8 @@
 1	chắc ế quá sinh_ra atsm hài_hước mong sao mình không bị như_vậy bật_cười 
 1	720 hd rồi thớt ơi  nv tự_tin hết á  chuẩn_bị xây vách để bảo_vệ trai trường khoái_trá
 1	bật_cười chắc thằng bé này chưa tìm được người đàn_ông của đời nó  nói kiểu to còi vcl mà không biết có vẹo gì không  tự_tin đ phải lối
-0	dài_dòng bực_bội bực_bội
-1	nháy_mắt     thế b nghĩ bình_thường trai không tự_nhiên à     chắc b khác người , dị cmn dạng rồi nháy_mắt   
+0	dài_dòng
+1	nháy_mắt     thế b nghĩ bình_thường trai không  à     chắc b khác người , dị cmn dạng rồi nháy_mắt   
 1	cho em xin cái nick fb khoái_trá khoái_trá khoái_trá
 1	chúc bạn sớm tìm được người đàn_ông của đời mình tức_cười
 1	bay vào hốt thớt zề nhà vui_tươi
@@ -1473,7 +1473,7 @@
 1	thái_bình tức_cười
 1	yêu thôi bạn
 1	minh_quân á đù bật_cười trước khi đọc câu khql thì bố còn tưởng là m bật_cười 
-0	pica chu em nghe có bực_bội 
+0	pica chu em nghe có quen_quen không bật_cười  
 1	không được bật_cười  
 0	thảo ly nguyễn em phải không bật_cười
 1	@ li lém_lỉnh lém lý doc nua dau cfs cu ngi la m
@@ -1487,18 +1487,18 @@
 1	không sang tâm_sự nhưng trưa nào cũng sang ăn cơm trưa hài_hước
 1	thớt phát hờn lên được hài_hước hài_hước hài_hước hài_hước
 0	tưởng bk nhát_gái chứ  s lại chém gió tơi_bời nhở  băn_khoăn
-0	tôi thấy bực_bội
-1	chưa sang tự_nhiên bao_giờ  thớt nói v hôm nào phải mò sang ms yên_tâm
+0	tôi thấy điêu thuyền ở chốn đây em ngại
+1	chưa sang  bao_giờ  thớt nói v hôm nào phải mò sang ms yên_tâm
 1	lại động đả đến bk ngại_ngùng lúc_nào cũng kêu bk đi khắp_nơi cưa gái khoái_trá
 1	gái thì công_đoàn cx nhiều gái xinh  tại_sao lại cứ phải là gái nv 
 1	tối thấy bk không chém gió lắm đâu khoái_trá ế chổng mông ý khoái_trá
-1	ơ tưởn thớt cũng là đọng vật quý_hiếm của gái tự_nhiên , mà đã là quý_hiếm thì_có khi nào ế được cơ chứ khoái_trá
+1	ơ tưởn thớt cũng là đọng vật quý_hiếm của gái  , mà đã là quý_hiếm thì_có khi nào ế được cơ chứ khoái_trá
 1	có thích giai không bợn 
 1	chi ǒ i triệu phiên tức_cười
 0	tầm này tán gái mà_còn lm thơ à  sau_này ct thì thơ đấy lm văn_tế à mà cần buồn
 0	làm thơ tán gái ngang_ngược nói thật_là không hiệu_quả đâu
 1	storm summer kìa giúp bạn ấy hài_hước hài_hước hài_hước
-0	chẳng thơm cũng thể hoa nhài , em như bãi cứt có gài bông hoa ! bực_bội
+0	chẳng thơm cũng thể hoa nhài , em như bãi cứt có gài bông hoa !
 0	nôn_nao chờ_đợi bóng hình em như hoa vẫn đợi như cây vẫn chờ cái nhớ ơi  sao vẫn xa_vời_vợi thờ_ơ chờ_đợi bóng hình em
 0	tháng mười lại đến rồi đó em gió chưa se nhưng cũng gợn chút sầu dạo bước trên đường em có thấy trong mình đang thiếu thứ gì không cục tiền đó ngang_ngược
 1	ôi nàng nắng sớm của bình_minh chỉ lóe qua thôi đã giật_mình phút_chốc tim này ôi loạn nhip say rồi hỡi bóng_dáng kiều xinh
@@ -1510,7 +1510,7 @@
 1	sến thế_này con_gái n không thích đâu b ơi bật_cười  
 1	ôiiiiiiiiiii , không phải mình bật_cười
 1	nhà i hay nhà l thế bật_cười  
-0	đọc văn tả mà đếch thể mường_tượng nổi   có thứ gì đó pha_trộn giữa triết và văn   chủ thớt có_ăn gì lạ không bực_bội
+0	đọc văn tả mà đếch thể mường_tượng nổi   có thứ gì đó pha_trộn giữa triết và văn   chủ thớt có_ăn gì lạ không
 1	thuỷ_tiên lê bật_cười   nàng ơi
 1	nguyễn hạ đoạn gẩy light tưởg m khoái_trá
 1	đọc đến đâu da_gà da_cóc nổi đến đấy  khoái_trá
@@ -1524,11 +1524,11 @@
 1	chị thấy giống 2 ce mình đấy  ngồi cạnh chị xinh gái  hahanhìn em cũng giống người tq đấy vui_vẻ phạm xuân phạm xuân thắng
 1	khoái_trá khoái_trá khoái_trá
 1	không có duyên rồi bật_cười
-0	chia buồn vs thớt bực_bội buồn_bã
+0	chia buồn vs thớt tức_cười
 0	tâm trí bấn_loạn
-1	Bạn có hát khi tắm khoái_trá
-0	việc bất_bình bực_bội
-0	làm việc ẩu_tả bực_bội
+1	Bạn có hát khi tắm không khoái_trá
+0	việc bất_bình
+0	làm việc ẩu_tả
 1	cô ta cưỡi xe cho bạn đuổi theo mệt_nghỉ đó mà bật_cười
 1	sẽ có người tốt hơn đến bên bạn ! !
 1	chàng_trai đấy là xe_ôm đấy cha_nội vui_vẻ cố mà theo_đuổi cô_gái đó nhé ngại_ngùng chúc bạn thành_công vui_vẻ
@@ -1538,32 +1538,32 @@
 1	hãy bình_tâm  có_thể đó chỉ là chị_em_gái của cô ấy thôi mà bật_cười    
 1	sẽ có người đàn_ông khác tốt hơn thay_thế cô ấy yêu bạn
 1	anh xl , nhưng cô ấy thích anh rồi  kkkk
-0	buồn hẹ bực_bội
+0	buồn hẹ
 1	tôi thấy hoa vàng trên cỏ xanh bật_cười 
 0	đập chậu cướp hoa  thế mới thú chứ thớt
 1	chúc thớt có ngày cuối tuần vui_vẻ và tràn_đầy hạnh_phúc bên ussh
 0	trai bách_khoa với cả an_ninh sang bê trại trường nhân_văn về mà pha _ trò
 1	bên nhiều trai bên nhiều gái cơ_mà vẫn pha dài_dài hài_hước
-1	2 đường_thẳng song_song khoái_trá nào có thấy mấy bạn tự_nhiên yêu nhân_văn đâu  ế nhiều mà tức_cười
+1	2 đường_thẳng song_song khoái_trá nào có thấy mấy bạn  yêu nhân_văn đâu  ế nhiều mà tức_cười
 1	đây đây bật_cười
 1	trai chúng_nó êu nhau hết rồi ạ hài_hước hài_hước hài_hước
 0	thế trai nhân_văn bọn t không được cành nào à ngang_ngược
 1	giả_vờ sang tán gái nv thôi  thực_ra là lườm rau gắp thiệt để_ý trai tn ấy mà  các bạn cứ suy_nghĩ linh_tinh vui_vẻ vui_vẻ vui_vẻ
-0	trai tự_nhiên mà nhiều  có_lẽ_nào nhầm vô_cảm vô_cảm vô_cảm bên canh bk có 1 cơ_sở j đấy of nhân_văn mà , bk ms nhiều zai
+0	trai  mà nhiều  có_lẽ_nào nhầm vô_cảm vô_cảm vô_cảm bên canh bk có 1 cơ_sở j đấy of nhân_văn mà , bk ms nhiều zai
 1	chưa thấy quen được troai tn nào ngại_ngùng
-0	trai an_ninh không chắc_chắn hờ bực_bội
-1	tự_nhiên nhiều gái rồi tức_cười không như ngày_xưa nữa đâu
+0	trai an_ninh lưỡng_lự hờ
+1	 nhiều gái rồi tức_cười không như ngày_xưa nữa đâu
 1	trong đất của bk vẫn có nhân_văn mà  1 khoa nào_đó thầy áchhiếu bảo thế từ đó suy ra  nhân_văn gần bk hơn hài_hước hài_hước
-1	ủa vậy à  học tự_nhiên 4 năm sao không biết trường mình nhiều zai nhỉ khoái_trá
+1	ủa vậy à  học  4 năm sao không biết trường mình nhiều zai nhỉ khoái_trá
 1	giờ mói biết tựn nhiên có trai khoái_trá
 0	khổ_nỗi nhân_văn nhà t không thích gái đâu
-0	trai tự_nhiên thik trai nhân_văn mất zùi  buồn !
+0	trai  thik trai nhân_văn mất zùi  buồn !
 1	không biết xoắn ai đây nháy_mắt  
 1	trường thì clb đếm bằng đầu ngón_tay  chế muốn nói clb nào  rất tò_mò ngại_ngùng
 0	ám_chỉ clb nào nhỉ  đau
 0	mình thấy clb của tr mình chỉ dk cái bề nổi , đi_sâu vào thì  nhạt 
 1	mình là sinh_viên hoạt_động với nhau nên làm_sao cho mọi người hoạt_động cảm_thấy vui_vẻ , thoải_mái là được b đòi_hỏi nhiều sao
-0	chắc nó chừa mình ra ngang_ngược bực_bội
+0	chắc nó chừa mình ra ngang_ngược
 1	clb dưa_hấu bật_cười   nguyên thảo nguyễn nguyễn diệu hương thái hà đặng : watermelon : : watermelon : : tomato :
 1	chắc chủ thớt đi pv bị loại hài_hước hài_hước hài_hước hài_hước
 1	cũng có cái đúng n cũng 1 chiều quá , clb cũng là 1 trường_đời đấy chế yêu ạ ngại_ngùng
@@ -1578,7 +1578,7 @@
 0	đi nộp hồ_sơ vào cty là tự bạn phải làm cv và đi nộp , hình_thức thường là qua mail hoặc nộp tại đơn_vị cty đó chứ lên cty và đi đặt_cọc tiền coi đó là phí làm hồ_sơ thì chỉ có đa_cấp lừa_đảo thôi nhé
 0	làm_gì có công_việc nào 95k/ca em ơi  dại quá mấy đứa
 1	150k/bài học là quá rẻ đấy  thoải_mái lên bạn , họ bán kinh_nghiệm cho bạn với giá hời thôi  vui_vẻ
-0	lừa rồi bực_bội
+0	lừa rồi
 0	 chột_dạ  * ngó ngó *
 1	không phải mình rồi khoái_trá
 0	thất_vọng lắm rồi
@@ -1611,7 +1611,7 @@
 1	thích thật bật_cười
 1	haizz  chế gato với 2 đứa cưng hết_sức , để t chống mắt lên coi 2 đứa bây hp được bao_lâu khoái_trá
 1	tạ tiến bật_cười  vl chưa mày
-0	xóa nhanh vậy bợn trung bực_bội
+0	xóa nhanh vậy bợn trung
 0	xấu_hổ
 0	nói_thẳng đi mất_lòng thì mất_lòng chứ đăng lên đây cũng không giải_quyết được gì
 1	vui_vẻ bạn ơi , mình có bán tai_nghe steelseries seberia 150 giá rẻ nè  bạn chỉ cần đeo vào là không nghe gì cả  ngoài_ra mình còn bán loa soundmax a 906 , bạn mua về mở max volume chơi lại nha 
@@ -1626,7 +1626,7 @@
 1	ngại_ngùng mấy thằng thích thể_hiện mình , người_ta có_thể nhờ người khác bẻ hết cả tay và chân của chú , không thích gì thì cứ nói , ém ém làm quái gì thế
 1	thích nhất được kêu mập or nhẹ hơn là múp tươi_cười tươi_cười tươi_cười mà toàn bị kêu mập không hà  nghe được vui lắm  vì bnhiu bạn muốn mập như mình mà chả được
 1	chắc gọi thôi , không động gì đến tình_cảm  hahahaha  cho mình cười cái nha bạn cứ thử đặt trường_hợp ngược_lại , khi người_yêu bạn cũng gọi cho ex nha
-0	mập thì chấp_nhận thôi , ráng tập_thể_dục cho giảm cân , chứ có j đâu bực_bội
+0	mập thì chấp_nhận thôi , ráng tập_thể_dục cho giảm cân , chứ có j đâu
 1	that love is still lingering because we still have hope tức_cười
 1	say vô thế_nào cũng đt lầy bật_cười
 1	xin_lỗi anh  em yêu mu hơn cả anh khoái_trá
@@ -1646,7 +1646,7 @@
 1	đắng   không biết những người trên  ke ke  nhưng cũng cm cho vui nhà vui cửa   khưạ khưạ  tức_cười tức_cười
 1	khi nào anh giàu cỡ bill gates thì nói_chuyện , còn không thì dẹp  ngại_ngùng
 1	toàn mấy cái tên mình không biết bật_cười
-1	có mấy chú bảo_vệ cũng dễ_thương lắm mà , riêng khoảng chú giữ xe thì mình không biết , tại không có gửi xe bao_giờ bực_bội
+1	có mấy chú bảo_vệ cũng dễ_thương lắm mà , riêng khoảng chú giữ xe thì mình không biết , tại không có gửi xe bao_giờ
 1	thoi buoi nay may anh chi ma co mat can bo toan la vay thoi
 1	thớt thật may_mắn vì có eny như_vậy , con_gái thời nay như_vậy thuộc vào hàng hiếm đó thích_thú chúc 2 bạn sẽ hạnh_phúc
 0	cuối_cùng cũng có người khen gái buh rồi , cảm_động hết_sức bất_hạnh
@@ -1670,7 +1670,7 @@
 1	tôi hiểu được  giống tôi ngày_xưa  ngày_xưa tôi còn mong cho nó đừng có thích mình khoái_trá  bạn cứ có bồ ngại ngại dần sẽ bớt ngại   bớt dần từ_từ
 1	như bạn phải gặp thằng nào mặt_dày tí , không ngại mà bắt_chuyện cùng bạn + dẫn_dắt bạn theo ý nó thì ms được bật_cười
 0	mình cũng yêu vậy_mà mình kệ mẹ ngang_ngược
-1	cứ tự_nhiên thích thì bật_đèn_xanh đi chế
+1	cứ  thích thì bật_đèn_xanh đi chế
 1	khoái_trá thương nhau để đó 
 1	dễ_thương
 1	khoái_trá hk có gì đâu
@@ -1775,7 +1775,7 @@
 1	nàng này viết văn hay bõ mẹ ra , thích nàng này bỏ_mẹ rồi nàng ơi = ^ ~ ^ =
 1	dễ_thương tóa nàng ơi ngại_ngùng nghiêm kiểu gì mà yêu như rứa thì con nào mà sợ ngại_ngùng
 0	chuyển phòng liền  ở_vậy coi_chừng bệnh á 
-0	phòng mình cũng v , nó mở vòi_nước không tắt luôn kìa chứ nói chi quạt đèn  sáng nó dậy cái nó mở nhạc không cho ai ngủ hết , tùm_lum chệt mắc mệt không chắc_chắn
+0	phòng mình cũng v , nó mở vòi_nước không tắt luôn kìa chứ nói chi quạt đèn  sáng nó dậy cái nó mở nhạc không cho ai ngủ hết , tùm_lum chệt mắc mệt lưỡng_lự
 0	đọc mà cứ như_là nó đang chửi mình  xl bạn ngại_ngùng
 1	: like : cách nói_chuyện   vui_tươi ] ]
 1	lý_luận chặt_chẽ , lời_văn đanh_thép không thô_bỉ , hay thích_thú
@@ -1804,7 +1804,7 @@
 1	thớt nói rất đúng , chả chê chổ nào cả , nên mình đến giờ cũng không uống rượu ngại_ngùng
 0	đậu_xanh đăng mấy cái này đi chổ khác mà chơi  pha không nói_chuyện vớ_vẩn
 0	chữ_nghĩa gì đọc thấy mệt , thể_hiện luôn con_người bạn trong đó
-0	sữa_đậu_nành fami  không lạnh  a2 : 35k , a12 : 5k  tan biến luôn nha mấy gái ngạc_nhiên
+0	sữa_đậu_nành fami  không lạnh  a2 : 35k , a12 : 5k  tan biến luôn nha mấy gái ngơ_ngẩn
 1	ủa chỗ đó vẫn còn tồn_tại à bật_cười
 0	mua cổng chui là ổn nhất , đừng lười !
 1	a12 vẫn mất dại như năm nao à khoái_trá
@@ -1834,7 +1834,7 @@
 0	a9 xuống_cấp  đang sửa_chữa ak 
 1	vẫn có người nhưng đếm trên đầu ngón_tay khoái_trá
 1	ủa mình vẫn thấy đầy người_ở đó thôi    bạn có nhìn nhầm không  đêm nào cũng đàn hát các thứ mà
-1	nhà a 9 huyền_thoại một thời của tui ngại_ngùng ngạc_nhiên ~
+1	nhà a 9 huyền_thoại một thời của tui ngại_ngùng ngơ_ngẩn ~
 1	đích_thị pồ nhà người_ta hài_hước chứ pồ nhà mình không kêu bức tóc thôi chứ cột khỉ gì hài_hước
 1	quả_là phát hờn ngại_ngùng
 1	hồi nảy gặp 1 bạn nam buộc tóc cho 1 bạn nam khác  khoái_trá có vẽ hp
@@ -1865,7 +1865,7 @@
 1	tức_cười mạnh_mẽ lên bạn
 1	một ổ_khóa đã được mở từ nhiều chìa_khóa vui_vẻ
 0	con_gái thật_là khó hiểu  bất_hạnh
-0	kệ thằng bạn đi , xem người_yêu bạn thế_nào chứ không chắc_chắn léng_phéng là dứt luôn haaaa
+0	kệ thằng bạn đi , xem người_yêu bạn thế_nào chứ lưỡng_lự léng_phéng là dứt luôn haaaa
 0	đồng_cảm vs bạn  khóc_lóc khóc_lóc khóc_lóc
 1	vô_ích thôi ! nó đi yêu thằng khác rồi ngại_ngùng
 0	cái * beep *
@@ -1879,7 +1879,7 @@
 1	nghe_nói phòng nhỏ bạn che dù đi vệ_sinh luôn  ngại_ngùng xuất_sắc
 1	mai thi thuy diem tức_cười
 1	cuộc_sống lắm nghịch_cảnh , cảm_động suy_nghĩ của bạn  mọi chuyển sẽ ổn thôi
-0	không chắc_chắn
+0	lưỡng_lự lưỡng_lự lắm
 0	mẹ sao không lo thương đi , lại đi thương và tán 1 đứa con_gái bị đối_xử giống mẹ  giờ như_vậy , có phải mẹ càng thêm khổ không 
 1	đọc vui_vẻ
 1	hóng phần kế ngại_ngùng bài văn thật_là lôi_cuốn ngộp thở bật_cười  thật xuất_sắc bật_cười
@@ -1905,7 +1905,7 @@
 1	mình cũng từng mua trái_cây ở chỗ cổng chui  ăn thấy_bà luôn ngại_ngùng
 1	có mỗi 2 cái ti cu 8ngx muốn cắt à ngại_ngùng
 1	ủa thế chế không biết máy sạp trái_cây ở chợ đêm là do anh_em bà_con dòng_họ nó bán chung ah  cung là hinhh thức độc quyềnvthooi ăn dc ăn_không dc biến nha
-0	what ' s the  su chơ  không chắc_chắn
+0	what ' s the  su chơ  lưỡng_lự
 1	trái su chơ hay còn gọi_là su cơ  tên tiếng thái của nó đọc là  sơ cu  pít hk 
 0	chổ nào mà không nhúng hóa_chất trước khi bán , khổ cho mấy mem
 0	trái su chơ là trái gì vại    thất_vọng thất_vọng
@@ -1975,7 +1975,7 @@
 1	cơ_mà cũng vui , ở sg này mình chưa có ai thân là con_gái cả , thích thì thớt ib làm_quen   pha _ trò
 1	hello 2 bạn  nếu thích thỳ làm_bạn nhé  
 1	vote stop tức_cười  ổng tính bắt cá nhưng sợ nhiều người biết nên v đó bạn  giữ khoảng_cách , chỉ khi nào có bạn mới dám nói thích chứ cũng đâu công_khai ra  bạn_bè dc rồi 
-1	có_thể anh đó nghĩ  thích  không phải là tình_cảm nam_nữ không chắc_chắn mà là thích nói_chuyện với bạn , ý thích_thú , thú_vị ấy không chắc_chắn
+1	có_thể anh đó nghĩ  thích  không phải là tình_cảm nam_nữ lưỡng_lự mà là thích nói_chuyện với bạn , ý thích_thú , thú_vị ấy lưỡng_lự
 1	công_khai thì yêu  không thì next
 1	lý tri lên đi cô hay vui choi và trò chuyen voi ban be  hay tap song không co anh_ta di  chua sau dam ma da vậy thi vao cuộc đua chạy sao nôi
 1	thích bạn như kiểu bạn_bè thôi chứ chưa quên được người_yêu cũ
@@ -1999,7 +1999,7 @@
 1	tui vừa nhìn vô , teencode chói mù cmn mắt tui rồi , thành_thật là không đủ kiên_nhẫn đọc hết dòng thứ 3 nữa
 0	đăng bài phải dẫn nguồn , bảo nó đưa cái tin nhắn ra rồi 2 đứa ngồi vừa đọc vừa vả nhau chừng nào hết giận thì_thôi ngang_ngược
 1	klq mà đọc xong khát nước ghê  thích_thú
-1	mấy cái mk , ms , ct  là cái j vậy mấy bạn ngạc_nhiên ! hổng hiểu khoái_trá
+1	mấy cái mk , ms , ct  là cái j vậy mấy bạn ngơ_ngẩn ! hổng hiểu khoái_trá
 1	thím không thấy ngồi_xổm tốt hơn ngồi_bệt à  khoa_học chứng_minh rồi  nhưng_mà cho cả giày_dép lên chắc là loại người này hay tung_tóe 
 1	scarlett nguyen ê phòng mình có lần như này nè bật_cười  
 0	mình rất ghét kiểu này , rõ_ràng mấy cô lao_công dọn rất sạch , xong con mie nào nó làm_vậy khiến mình điên_tiết lên được nhăn_nhó
@@ -2010,7 +2010,7 @@
 0	từng xem mấy ảnh về tai_nạn vỡ bồn_cầu do ngồi như_thế , rơi xuống bị thành bồn_cầu cắt sâu đến xương  máu_me be_bét 
 0	mình 5 năm ra_đi cái một buồn_bã
 1	cuộc_sống này vốn không công_bằng  nhưng , nó vẫn rất công_bằng   hãy đánh_cược bằng tất_cả sự chân_thành vào một cô_gái có  nội_tâm  tốt hơn
-0	không chắc_chắn
+0	lưỡng_lự
 1	that là người con_trai tốt qua di , đọc vai dòng mak yêu bn ý luon roy em ngại cho mik hỏi bn có thật không vay
 1	tức_cười nếu phượt sg bằng xe_buýt thì thớt thấy s nhỉ  ! vui mà   sg ~ 109 tuyến xe_buýt   m đi được hơn nửa số đó rồi   có hứng_thú thì cùng đi z m nửa còn lại đi   ~ em ngại ~
 1	t cũng thích đi giữa sg , t đi bằng buýt tức_cười
@@ -2156,7 +2156,7 @@
 1	sự chân_thành   mình đã thử và thành_công    3 năm mấy đó    tươi_cười   chúc bạn may_mắn  
 1	ngại_ngùng   từ_từ đi bạn 
 1	đầu_tiên cho mình hỏi bạn là nam hay nữ   nếu là nam thì mình bó cmn tay khoái_trá
-0	sr chứ thấy ad rep nhảm sao ấy không chắc_chắn
+0	sr chứ thấy ad rep nhảm sao ấy lưỡng_lự
 1	ad khoái_trá
 1	sao không chụp hình nhỉ , pha hay có bồ thì nhìn cũng ngứa_mắt  chắc mới yêu sau chục năm pha , và đang lên_cơn động  bật_cười 
 1	pha gato kìa ngại_ngùng
@@ -2291,7 +2291,7 @@
 1	qua nhân_văn thớt sẽ thấy khác liền ngại_ngùng
 0	chẳng phải lo , đóng tiền ngu coi_bộ cũng rẻ  theo thời_gian tự_khắc sẽ khôn
 0	thì_có ngu mới có khôn bạn nhé 
-0	không chắc_chắn thấy có bạn còn bị kêu điện_thoại về nhà xin tiền bố meh nữa mà đau thấy thương thương 
+0	lưỡng_lự thấy có bạn còn bị kêu điện_thoại về nhà xin tiền bố meh nữa mà đau thấy thương thương 
 0	không hiểu s đa_cấp có bùa gì không nhỉ , báo_chí , facebook các kiểu mà vẫn có người bị lừa   
 1	cho xjn địa_chỉ qán đi hôm nào tới xem thử bọn hắn nói cái chj khoái_trá
 0	không sáng_suốt được đâu   chắc luôn 
@@ -2368,7 +2368,7 @@
 1	khoái_trá
 1	tui báo công_an bật_cười
 1	anh  con_heo kìa ngại_ngùng
-1	m không giống t , bố t hiền lắm , mỗi_tội ổng mất rồi ngạc_nhiên
+1	m không giống t , bố t hiền lắm , mỗi_tội ổng mất rồi ngơ_ngẩn
 1	hy_vọng sau_này bạn sẽ trả lại công_ơn mà mẹ bạn đã dành cho bạn và gd , mẹ là điều tuyệt_vời nhất trên thế_gian bạn nhỉ thân_yêu
 1	cố_gắng học_tập bù_đắp cho mẹ nhé theard thân_yêu
 0	ai hà_nội không ngại_ngùng
@@ -2472,7 +2472,7 @@
 0	đúng rồi  sợ nhất_là ai thương_hại  phái có lòng tự_trọng chứ 
 0	bộ phải hò_hét nhảy tưng_tưng thì mới gọi_là xem live show hả bạn 
 0	em đã chứng_kiến bạn nữ kia quên lấy nón bảo_hiểm lên phòng mà bị chửi như này : sinh_viên gì mà ngu như lợn_lòi ngang_ngược
-0	là do bạn tự_cảm thấy như_thế không chắc_chắn bạn cứ mãi 1 mình vì nghĩ chẳng có ai quan_tâm mình  cơ_bản là vì bạn chưa chịu kết_thân với người khác thôi 
+0	là do bạn tự_cảm thấy như_thế lưỡng_lự bạn cứ mãi 1 mình vì nghĩ chẳng có ai quan_tâm mình  cơ_bản là vì bạn chưa chịu kết_thân với người khác thôi 
 0	buồn_bã
 0	hôm_nay mới đi gần hết sg mệt đứ_đừ
 0	ngang_ngược đàn_ông mặc váy
@@ -2494,10 +2494,10 @@
 0	, kiểu như mọi người bấm đợi tháng mình đều cảm_ơn , nhưng éo có ai trả_lời , rồi mình chờ họ mọi người , mọi người cũng éo có cảm_ơn , cảm_thấy cs này quá chi là buồn một_tẹo hu_hu
 0	2 lần mình đi net nhặt được điện_thoại của người chơi trước , cái thứ 2 mình còn phải chạy theo xe vài m nữa , vậy_mà họ chỉ chìa tay ra lấy_rồi đi luôn ngang_ngược
 0	chữ id đâu  thiếu id trong cái link  tính lừa hả
-0	vãi ad , làm ảo_tưởng ghê_gớm  tự_nhiên buồn , tự_nhiên tủi_thân ghê_gớm / _ \
+0	vãi ad , làm ảo_tưởng ghê_gớm   buồn ,  tủi_thân ghê_gớm / _ \
 0	dầu ăn đâu thằng ở dưới  ! ! !  ngang_ngược
 0	chế cắn lưỡi tự_tử đây khóc_lóc khóc_lóc
-0	thằng nào chơi gớm v ngạc_nhiên
+0	thằng nào chơi gớm v ngơ_ngẩn
 0	có cái mubahi thôi mà cưng làm lố quá nha ngang_ngược
 0	tóm_tắt cho bạn lười đọc : bạn ấy bị mất của 
 0	có dù là có người_yêu nhăn_nhó chắc phải mua 1 cái quá
@@ -2555,7 +2555,7 @@
 0	càng trãi qua nhiều cay_đắng con người_ta mới biết quý_trọng cái gọi_là tình_cảm  rất tiếc có mấy_ai biết được
 0	có được học địa không vậy   trái_đất hình geoid nhé  buồn_bã mà đùa đấy
 0	cô_chú hủ_tiếu a 11 dọn đi rồi bất_hạnh
-0	không thích người_ta cũng không cho người_ta được quyền quan_tâm mình không chắc_chắn thấy bạn  cậu  ích_kỉ
+0	không thích người_ta cũng không cho người_ta được quyền quan_tâm mình lưỡng_lự thấy bạn  cậu  ích_kỉ
 0	haiz   con_gái luc nào cũng bảo là người_yêu cũ đối_xử không tốt vậy có_khi nào con_gái thừa_nhận có qtam đối xữ với người_yêu ra_sao   và ai là người ctay           
 0	đau 
 0	giong gay z troi
@@ -2570,7 +2570,7 @@
 0	trai vn nhiều đứa cũng vậy thôi ngang_ngược riêng gì trai tq
 0	đi theo qua trung quốc nó bán luôn thì hối_hận cũng không kịp   không nói tất_cả người tq xấu , chứ 70% là vậy rồi 
 0	ngang_ngược how about  ch * ch  
-0	thớt hiền quá ngạc_nhiên , tui là cho nó rụng hàm rồi ngang_ngược
+0	thớt hiền quá ngơ_ngẩn , tui là cho nó rụng hàm rồi ngang_ngược
 0	lê thành_nhân chú cháu hôn nhau , thấy nó taboo sao ấy buồn_bã
 0	ngay từ đầu rồi mà , đi chỗ tối phải nghi_ngờ ngay chứ
 0	không thích thì_thôi , chia_tay , chứ múa múa gì đây , chỉ đọc thôi là chịu không nổi hà , lời tâm_tình của pha
@@ -2617,7 +2617,7 @@
 0	quá_đáng   hjc   nói xau chị  gái z  
 0	có khj nào người_yêu bạn_đọc xong cái này rôi     abc quát quát  ngang_ngược
 0	không cho ngta nói , nhưng ngta không nói lại gjận lại buồn  đúng là con_gái
-0	nhớ là đã out cái group nhảm nhít này rồi mà nhỉ , tự_nhiên hiện bài lại là thế_nào 
+0	nhớ là đã out cái group nhảm nhít này rồi mà nhỉ ,  hiện bài lại là thế_nào 
 0	chia_tay đi  đừng có hối_tiếc gì cái thằng đó !
 0	ghét cái thể_loại này
 0	cái gì chưa có thì tưởng nó ghê_gớm , có rồi thì lại thấy nó bình_thường buồn_bã  chia_sẻ từ 1 sinh_viên đã   à mà thôi
@@ -2625,7 +2625,7 @@
 0	ms có năm_2 mà đã than    ế có chết ai đâu mà lo dữ vậy chời   hai za  
 0	năm nào cũng có , bác an rồi các trưởng nhà có buổi nói_chuyện với sinh_viên , rồi sau đó vẫn không có gì thay_đổi - _ _ -
 0	trớt quớt ngang_ngược khảo_sát j kì quá
-0	chất_lượng wifi quá kém không chắc_chắn
+0	chất_lượng wifi quá kém buồn_bã
 0	chỉ cần thay_đổi chất_lượng wifi ngang_ngược
 0	bán ít đồ_ăn quá vs mình thấy chất_lượng wifi quá kém mình mong kí_túc_xá sẽ sớm cải_thiện tình_trạng này
 0	nếu kí_túc_xá có thay_đổi sau những buổi đánh_giá thì làm , chứ bao_nhiêu năm nay có phản_ảnh thì đâu cũng vào đó thì đánh_giá chi tốn thời_gian , công_sức
@@ -2640,7 +2640,7 @@
 0	loại có bạn_trai rồi mà_còn lăng_nhăng  dẹp
 0	có chắc là tán_tỉnh không ngại_ngùng
 0	ghi_âm lại đưa cho bạn của thớt coi anh ý làm_sao , nghĩ cái quái gì cho mệt óc vậy
-0	ngta sẽ quay về khi chẳng còn chỗ nào để đi không chắc_chắn
+0	ngta sẽ quay về khi chẳng còn chỗ nào để đi méo_mặt
 0	nếu_không phải vì lí_do  theo trai bỏ bồ  thì đi hỏi thẳng người_yêu bạn á  còn theo trai thì khỏi lăn_tăn
 0	không , tất_nhiên , ngu gì không
 0	xh thì được , hôn thì không khoái_trá
@@ -2649,9 +2649,9 @@
 0	không thích thì không làm
 0	không_chỉ là ainh viên không_đâu 
 0	đúng rồi bạn , mỗi lần đi ngang thấy ngập rác mà thấy buồn buồn_bã
-0	thành nữ dancer mang áo 69 cũng bị kéo xuống sờ_mó , 4 bảo_vệ mới can_thiệp nổi không chắc_chắn không chắc_chắn
+0	thành nữ dancer mang áo 69 cũng bị kéo xuống sờ_mó , 4 bảo_vệ mới can_thiệp nổi méo_mặt méo_mặt
 0	500k được rồi không phải lăn_tăn đâu 
-0	đưa thẻ sinh_viên ra người_ta giảm_giá nhé bạn xe bus 6k - > 2k thì 1tr - > 333k nhé ngại_ngùng , 500k ít quá buồn_bã tự_nhiên thấy mình thuộc tầng_lớp vô_sản
+0	đưa thẻ sinh_viên ra người_ta giảm_giá nhé bạn xe bus 6k - > 2k thì 1tr - > 333k nhé ngại_ngùng , 500k ít quá buồn_bã  thấy mình thuộc tầng_lớp vô_sản
 0	quyết_định không quen_biết ai để khỏi bị mời 500k mà_còn ít và thấy kì kì thì ở nhà cho lành 1/4 tháng ăn của tui chứ ít 
 0	nhà_hàng mà 500k út quá buồn_bã buồn_bã buồn_bã
 0	có ai thấy phát tởm với cái kiểu viết conf xưng_hô ở ngôi_thứ ba này không bật_cười
@@ -2662,7 +2662,7 @@
 0	hãy cứ tiếp_tục làm điều mình cần phải làm trước khi làm điều mình muốn 
 0	học nghành không thích  vấn_đề của tôi
 0	nếu niềm_vui và niềm đau đều chỉ đến từ một người  thì_sao buồn_bã
-0	bạn làm như_vậy hơi qá đáng không chắc_chắn nếu xđ im thì hãy im luôn , làm như_vậy ngta càng hối_hận hơn không chắc_chắn
+0	bạn làm như_vậy hơi qá đáng thiệt_thòi nếu xđ im thì hãy im luôn , làm như_vậy ngta càng hối_hận hơn méo_mặt
 0	cứ như phim nhỉ buồn_bã
 0	huỳnh thiện hưng  bất_hạnh
 0	một lựa chon khác - nếu cung nhau đi het đoạn đường ' ngắn ' âyđau đấy , nhưng se không để lai nôi đau cho ngươi ơ lai 
@@ -2719,14 +2719,14 @@
 0	đắng lòng mờ ; v
 0	xin nhỏ bạn chia ngày cho băn_khoăn
 0	ủa rồi cuối_cùng bị hấp chưa ngại_ngùng
-0	chậc , buồn quá bạn nhỉ không chắc_chắn , thôi cái hạng đó chẳng đáng bận_tâm
+0	chậc , buồn quá bạn nhỉ méo_mặt , thôi cái hạng đó chẳng đáng bận_tâm
 0	tởm ngang_ngược
-0	việt nam không chắc_chắn
+0	việt nam méo_mặt
 0	đúng rằng bạn nữ đó có hành_động như v là không đúng , nhưng những lời bạn nói thì_có hơi quá_đáng rồi đó
-0	thò tay vứt cái bụp ra đấy mà không ngại nhỉ không chắc_chắn
+0	thò tay vứt cái bụp ra đấy mà không ngại nhỉ méo_mặt
 0	trg nào cũng cần ý_thức như nhau thui   gét nhất cái câu sinh_viên nhân_văn là phải như_thế_nào như_thế kia  
-0	tự_nhiên xuất_hiện một con xàm hết_biết  khi nói một điều quá bình_thường ở cái thế_giới này  tưởng nó là đồ khốn_nạn , sở khanh gì  ngang_ngược \
-0	phat roger tin hot cần đưa vào đề_tài không 
+0	 xuất_hiện một con xàm hết_biết  khi nói một điều quá bình_thường ở cái thế_giới này  tưởng nó là đồ khốn_nạn , sở khanh gì  ngang_ngược \
+0	vô_cảm vô_cảm với buồn
 0	1 từ thôi : nhục
 0	chữ duyên nó cứ là_lạ  mà_sao cảm_giác hơi nhột nhột ngố ngọc
 0	nhột với  duyên 
@@ -2737,12 +2737,12 @@
 0	vô_ý_thức vãi
 0	còn thớt thì đang làm tổn_thương dạ_dày mình bất_hạnh
 0	một chuyện tình buồn
-0	minh thư không chắc_chắn
+0	minh thư méo_mặt
 0	có cần mình đấm bạn vài phát không ! có không biết giữ mất đừng tìm   chuyện tình của bạn như tiểu_thuyết  xem nó là bài_học cho đời nhé
 0	doremon lười
 0	đó là cái giá của sự phản_bội lời hứa , phản_bội nguời đã tin_tưởng mình
 0	thật_sự buồn 
-0	buồn , tự_nhiên đọc xong nhớ đến chuyện  từng có người_yêu tôi như sinh_mệnh 
+0	buồn ,  đọc xong nhớ đến chuyện  từng có người_yêu tôi như sinh_mệnh 
 0	một cái giá quá đắt buồn_bã
 0	ngang_ngược viết xong có nhẹ lòng đi không 
 0	không rung chân , không mùi thuốc_lá , không có mùi lạ thì được hết  nhưng_mà mình nghĩ con_gái sẽ em ngại trước những thứ vụt qua kiểu như xe_buýt ấy  đấy là snghĩ của mình 
@@ -2752,7 +2752,7 @@
 0	ghét mấy thể_loại vơ đũa  cứ vơ đi rồi ăn bốc cả đời nhé cưng
 0	gái không chảnh mấy ảnh không thương , thương gái chảnh chi cho khổ
 0	chỉ cần nhét xương vô bánh_đúc là được mà
-0	do mình cả thôi  không vận_động sẽ bị xã_hội bỏ_rơi không chắc_chắn
+0	do mình cả thôi  không vận_động sẽ bị xã_hội bỏ_rơi méo_mặt
 0	thảo ban linh trần thị hoài làm cái không vui_tươi ] ] ] ] ]
 0	cùng tâm_trạng vs mình rồi bạn ơi bất_hạnh
 0	em mứ học sơ_cấp  bất_hạnh
@@ -2765,17 +2765,17 @@
 0	ai tóm_tắt  vài câu  trên hộ phát sợ_hãi sợ_hãi
 0	tóm_tắt : không được chơi với máy người lạ mà nói nhiều
 0	không phải công_ty đa_cấp nào cũng lừa_đảo nha thớt  nên đọc sách  marketing mới cho thời_đại mới  của philip kotler 
-0	ghét cái kiểu cứ im_lìm mà biến chẳng lý_do như_thế không chắc_chắn
-0	 em cũng thật lòng coi anh là anh  thấy vậy_mà đau đó người à
-0	chúa ghét mấy đứa im im rồi unfr ngại_ngùng có gì thì nói , không thì đập nhau 1 trận , hà_cớ chi mần vậy  em ngại ^ 
-0	gặp nó ngoài đường thì hãy tát nó 1 cái rồi hẵng đi , cho nó biết đau như_thế_nào
+0	ghét cái kiểu cứ im_lìm mà biến chẳng lý_do như_thế méo_mặt
+0	đau đó người à
+0	chúa ghét mấy đứa im im rồi unfr ngại_ngùng có gì thì nói , không thì đập nhau 1 trận , hà_cớ chi bướng_bỉnh bướng_bỉnh
+0	gặp nó ngoài đường thì hãy tát nó 1 cái rồi hẵng đi , cho nó biết đau như_thế_nào bướng_bỉnh
 0	tiếng bấm chuột nó bự như cái chuông báo cháy í ngang_ngược
 0	ad đăng trễ qúa 4h50 rồi kìa ad ơi ngang_ngược
-0	đừng dại_dột vì 1 thằng không ra_gì mà kết_liễu đời mình z nha 
+0	đừng dại_dột vì 1 thằng không ra_gì mà kết_liễu đời mình z nha bướng_bỉnh
 0	cô_gái dại_dột ah , cho thằng kia vào nhà_đá bóc_lịch chứ cô chết thì ngta cũng chả thương_xót gì cô đâu  cô nghĩ tới ba_mẹ cô chưa  khó hiểu
-0	ad đăng trễ v sao thằng kia tới kịp ngạc_nhiên
-0	khi lầy trần , có mấy người đưa 
-0	đồ vô_duyên
+0	ad đăng trễ v sao thằng kia tới kịp ngơ_ngẩn
+0	khi lầy trần , có mấy người đưa bướng_bỉnh
+0	đồ vô_duyên bướng_bỉnh
 0	sau đây em xin tóm_tắt câu_chuyện là 1 bạn nam đi học trể xún bàn cuối ngồi tí 1 bạn nữ cũng đi trễ xún dưới ngồi xong ngồi đó 90p xong đi_về  hết
 0	giờ mới biết tại_sao con_trai ngồi mà cứ dạng chân ra rồi ha   tại vì khó ngồi chứ sao  ai suy nghỉ bậy tẩy_não đi nha
 0	được 1 gái như này nhờ thất_vọng
@@ -2854,7 +2854,7 @@
 0	hết yêu thì dứt_khoát đi bạn à  đừng nói sợ làm khổ ngta mà không dám ct  như bạn mới làm ngta khổ hơn thì_có 
 0	quá rồi thì cho_qua luôn , níu_kéo không hạnh_phúc đâu bạn
 0	nhưng_mà chồng anh nó ghen lắm em ; ;
-0	làm nữa_là làm_gì không chắc_chắn
+0	làm nữa_là làm_gì vớ_vẩn
 0	mong dc như nó mà méo dc  cơ_mà gió mát quá bất_hạnh
 0	đểu , khốn
 0	tội_nghiệp thanh_niên không có j làm tự ngồi chế cfs
@@ -2882,11 +2882,11 @@
 0	hỏi ngu xí chứ thớt là gì zạ  mấy bạn
 0	không phải quơ đũa_cả nắm  nhưng hình_ảnh  anh bảo_vệ  trong mắt tui đã có phần bị xấu đi qua vụ này buồn_bã
 0	bảo_vệ áo xanh chứ áo nâu thì   1 số người quá_đáng 
-0	hồi chưa lắp mạng mấy đứa trong phòng chẳng biết đến nhật bản là nước nào  từ hồi có mạng cả thợ sửa ống nước hay cô_giáo gì cũng biết haiz không chắc_chắn
+0	hồi chưa lắp mạng mấy đứa trong phòng chẳng biết đến nhật bản là nước nào  từ hồi có mạng cả thợ sửa ống nước hay cô_giáo gì cũng biết haiz vớ_vẩn
 0	nấu đi anh ăn cho  đi làm về mệt không muốn nấu 
 0	 công_nghệ đang dần cướp mất tình_cảm con_người  , like !
 0	chị ý nói muốn làm_bạn ý là : bố hết yêu m dồi , nhưng mờ bố muốn nhìn m yêu bố trong đau_khổ đó chế
-0	lạy chúa vô_tội_vạ ngạc_nhiên !
+0	lạy chúa vô_tội_vạ ngơ_ngẩn !
 0	và bạn đừng đem chúa_trời vào cầu_nguyện bừa_bãi có được không  người có đạp rất kiêng việc này
 0	cho chừa cái tội cứ thấy gái là  tình êu  vs chả  sét đánh   ngang_ngược
 0	ưng _ đau _ thương
@@ -2899,14 +2899,14 @@
 0	vậy_là có nhiều phòng_bị giống phòng mình bất_hạnh
 0	4 kết_bạn nói nha bạn mình cũng team nhân_văn tết này không về quê nên cũng muốn tìm cảm_giác lạ , mà mình cũng định dự_tính đi điền_dã các dân_tộc ở trường sơn tây nguyê
 0	bảo_vệ g 4 có_vẻ  hot  toàn là tai_tiếng  bối_rối mong là bác an dạy lại !
-0	bảo_vệ ag 4 và giữ xe ah 1  ghét méo tả được ngạc_nhiên
+0	bảo_vệ ag 4 và giữ xe ah 1  ghét méo tả được ngơ_ngẩn
 0	cái này m  n rút kinh_nghiệm v : '   lần sau nhặt được  giữ lại rồi thế_nào chủ_nhân cũng sẽ liên_lạc : '   bảo_vệ ag 4 , ghét = = 
 0	tóm_tắt cho mấy bác lười đọc :  ngủ   bạn  
 0	thường thì ở hiện_tại cô_đơn người_ta mới hay nghĩ về quá_khứ thì_phải
 0	lần đầu_tiên đọc hết 1 cái cfs dài như_thế_nào  klq chứ mầm_non của em là học 1 tiéng xong đi bộ về nhà  chơi chán ở nhà lại đi bộ ra lớp 
 0	có người đơn_phương bạn tận 7 năm trời s  
 0	1 khi da het yeu thi dung hoi tai sao ngang_ngược
-0	6năm   không chắc_chắn
+0	6năm   vớ_vẩn
 0	mưu_sinh đất sài gòn khổ lắm
 0	bạn này ở miền trung phải không  đang mùa mưa nè , nhớ kinh_khủng , mình quảng ngãi , những mùa như_thế_này mới thấm được khổ_cực của cha_mẹ
 0	chết choa  pữa vô đập phá lung_tung , còn đánh ma nữa chớ  có pị chửi_rủa gì không nữa  hè
@@ -2928,7 +2928,7 @@
 0	thất_vọng
 0	bất_hạnh
 0	cha_mẹ mình cũng vậy , khổ_cực như_thế_nào cũng dành tất_cả cho mình suy_nghĩ
-0	ui tự_nhiên khóc nửa_đêm bất_hạnh
+0	ui  khóc nửa_đêm bất_hạnh
 0	nhớ nhà khóc_lóc khóc_lóc khóc_lóc
 0	má  1 cfs vô_nghĩa  1 người phí khoảng 20s đọc cái cfs này , tốn thêm 5s chửi thầm  trung_bình khoảng 200 người đọc vậy đã tốn tổng_cộng hết 500s của người khác rồi nha chủ cfs ngang_ngược
 0	đọc dòng đầu_vào thẳng xem bình_luận
@@ -3015,7 +3015,7 @@
 0	là do thớt chứ ai  suy_nghĩ xem có làm j để gấu buồn chưa đi
 0	nó vô_tâm thì_phải qtằm nó nhiều lần hơn nữaa , nó không hiểu thì nói , đừng có bóg gió , đừng có hờn_giận nó , tội nó buồn_bã
 0	nó muốn chia_tay mà sợ thớt buồn nên không dám nói đó , nó lạnh để thớt chán chủ_động chia_tay nó ngại_ngùng đừng hỏi vì_sao em biết ngại_ngùng
-0	bạn quan_tâm bạn ấy nhiều hơn_nữa đi có_lẽ bạn ấy cũng thay_đổi mà  còn nếu vẫn vậy_thì mình không biết ngạc_nhiên
+0	bạn quan_tâm bạn ấy nhiều hơn_nữa đi có_lẽ bạn ấy cũng thay_đổi mà  còn nếu vẫn vậy_thì mình không biết ngơ_ngẩn
 0	klq nhưng có ai bán guitar cũ không ngại_ngùng
 0	tội_nghiệp anh uit buồn_bã
 0	duyên lúc cần thì sẽ tự đến , ép không được mà muốn cũng không xong  năm_4 rồi còn nghĩ đến yêu_đương được sao  haiz  
@@ -3030,7 +3030,7 @@
 0	chia_tay đi
 0	ớt lúc này đắt lắm bạn à , như vàng ấy
 0	mấy người bán cơm bên ba 4 hách_dịch lắm , cái kiểu_cách đã không thích rồi , có đến đó ăn 3-4 lần rồi không đến nữa , chỉ ăn b 3 thôi
-0	bị ức_chế quán cơm ba 4 nhiều lần rồi  không chắc_chắn
+0	bị ức_chế quán cơm ba 4 nhiều lần rồi  vớ_vẩn
 0	minh thu hên mà hồi trk mìh hog bị chửi 
 0	đề nghj adm đưng đăng mấy thứ nay lên nữa nó nhảm nhảm s ak
 0	buồn_bã
@@ -3050,7 +3050,7 @@
 0	đồng_cảm - một nữ_sinh từng ở nhà a 5 cho_biết khóc_lóc
 0	sao giống mình zậy bạn  trong phòng cũng bị mất nữa chứ , hết_biết buồn_bã
 0	ai fan chelsea giơ tay lập hội ~ ~ quẫy ! ! ! ngang_ngược
-0	chườm đá lạnh mới đúng chứ không chắc_chắn
+0	chườm đá lạnh mới đúng chứ vớ_vẩn
 0	viet tan ho đừng có xài mùi thuốc_bắc đi xe nữa hiểu chưaaa
 0	hôm_nay mới gặp một bạn xài nước_hoa kiểu như mình bị dị_ứng
 0	chuẩn luôn , bữa nọ đau_đầu chóng_mặt , về kí_túc_xá nằm dài , 50 luôn
@@ -3072,7 +3072,7 @@
 0	đứa nào nó biết ý thì nó dọn thôi  đứa không biết có nói cũng vậy  ngang_ngược ghét cực mấy đứa bê_bối
 0	ở kí_túc_xá nhiều khi khổ lắm , nói_thẳng ra nhiều người còn bật lại , lúc đó tình_hình còn tồi_tệ hơn  hay bạn kiếm 1 nhóm đông đông năm sau xin ở cùng nhau thì dễ nói hơn
 0	dự là sắp có người bị ghẻ giống như mấy người ỏ bẩn đó , tội_nghiệp tội_nghiệp
-0	cho hỏi việc bức_xúc là việc_gì không  ! ngạc_nhiên
+0	cho hỏi việc bức_xúc là việc_gì không  ! ngơ_ngẩn
 0	biết đau mấy đứa trước bấm thang_máy sao  t cũng bị vậy rồi  không biết những người bước vào có nghĩ là tôi không  trá_hình
 0	haiz    thanh_niên không biết bấm 2 lần là hủy tầng đó sao  chịu_khó mày_mò đi chứ  gà vl
 0	có thời_gian viết cfs mà không có thời_gian đi mua quà à ngang_ngược
@@ -3091,7 +3091,7 @@
 0	ôi thèm bất_hạnh
 0	nhớ mẹ bất_hạnh
 0	mình đã đọc lại 2 lần để thấm và nhớ cơm nhà mấy tháng rồi  huhu
-0	sai rồi , nên áp_dụng vế đầu định_luật_bảo_toàn nhá ! không có gì tự_nhiên sinh_ra và mất đi  ở một phòng mà bị 7 đứa tẩy_chay thì xem_lại !
+0	sai rồi , nên áp_dụng vế đầu định_luật_bảo_toàn nhá ! không có gì  sinh_ra và mất đi  ở một phòng mà bị 7 đứa tẩy_chay thì xem_lại !
 0	mình phải làm_sao ngta mới ghét chứ
 0	bạn có cần nói_chuyện không , mình rất sẵn_lòng nghe , đã từng là một người như_thế
 0	buồn dễ_sợ   dô trong phòng đãthấy 6 đứa làm qen trước đó rồi , còn mình thì cô_đơn bất_hạnh
@@ -3100,19 +3100,19 @@
 0	sống hãy mở lòng , mọi thứ xấu_xa sẽ không tồn_tại 
 0	vầy nè , làm nguyên 1 cái sào đi , mưa là tự múc hết cả sào vô à , không rảnh lựa từng bộ đâu 
 0	hôn mà mở_mắt kinh_dị vãi
-0	không chắc_chắn
+0	vớ_vẩn vớ_vẩn
 0	buồn_bã
 0	em cũng nhớ nhà nhớ ba_mẹ quá thớt ơi ~ chỉ ước là tan buổi học đi vài bước là đến nhà ngay và lập_tức luôn
 0	bất_hạnh
 0	buồn_bã
 0	liên_hệ mình mình mở cho nghe làm j mà nhờ_vả khổ zz :  
 0	xl thớt trước vì mình biết mình vô_duyên ngại_ngùng cái bài này nó xàm xí đú lắm luôn ! thật không hiểu nỗi mấy bạn trẻ bây_giờ buồn_bã loạn ! loạn cả rồi ! haizzz
-0	tình_yêu là 1 thứ xa_xỉ ngạc_nhiên
+0	tình_yêu là 1 thứ xa_xỉ nghiệt_ngã
 0	hầu_như ngày nào t củng ở a 6 mà không thấy ai ngày nào củng đi hết ngại_ngùng mà chắc bạn là nữ mới để_ý z ; v
-0	ngang_ngược anh nào thì cũng tự dọn nghe ngang_ngược hèn_gì ăn a 6 cứ thấy dĩa cơm thừa nó đầy ra bàn không chắc_chắn thì_ra là nhờ bạn không chắc_chắn
+0	ngang_ngược anh nào thì cũng tự dọn nghe ngang_ngược hèn_gì ăn a 6 cứ thấy dĩa cơm thừa nó đầy ra bàn vớ_vẩn thì_ra là nhờ bạn vớ_vẩn
 0	minh sao thi cứ vậy tự_ti chi phát mệt v không hài_lòng
 0	chịu_khó , rủ cả phòng mở nhạc mà nó ghét max volum   1 tuần  coi khá hơn không
-0	vẹt bố đời  sao nghe lạ vậy không chắc_chắn
+0	vẹt bố đời  sao nghe lạ vậy vớ_vẩn
 0	nói_thẳng chứ sợ mất_lòng gì trời  quyền_lợi của mình chứ của ai  mình năm_1 cũng sợ nên toàn nói  sau lưng  thấy ái náy quá nên từ đó nói_thẳng mặt luôn cho nó gọn 
 0	sợ mất_lòng thì xác_định đi b  nên lo cho bản_thân mình trước thôi  góp_ý rồi vẫn vậy_thì nói_thẳng ra luôn
 0	khu b cũng vậy nek bạn nào xách hộp xốp mà chú bảo_vệ thấy thì 1 là ra ngoài bỏ vô 3 lô 2 là ngồi bàn bv ăn hết khoái_trá , vậy_mà bữa có đứa xách đi vào ngay camera luôn mà chú không để_ý
@@ -3169,7 +3169,7 @@
 0	khoe khoe cái lồng ngang_ngược
 0	không có chuyện gay hóa đau nhé  trừ khi pạn là gay thật ùi 
 0	kêu mẹ bạn vào trường thăm mỗi ngày đi , xem mẹ bạn có gay hóa không
-0	6 lần thôi sao không chắc_chắn
+0	6 lần thôi sao vớ_vẩn
 0	thanh binh nguyen ui em sợ qá gấu ui , help meee  bảo quệ em đi  bất_hạnh
 0	trần kiều my coi_chừng kìa  dạo này biến_thái lên_ngôi dữ lắm đó nha 
 0	ở đó riết như trạm của biến_thái chứ không phải trạm xe bus , cũng đã từng gặp rồi và bị ám_ảnh khóc_lóc
@@ -3187,7 +3187,7 @@
 0	ít có thâm thúi lắm ngại_ngùng
 0	anh_ấy có bạn_trai rồi , chia buồn bạn
 0	đang ngồi 1 mìh 1 phòng với 1 con mèo và 1 cái lap , hà_nội cũng cô_đơn , đi đâu cũng thế thôi bạn
-0	ủa mà trai_gái chung phòng là dư lào   không chắc_chắn
+0	ủa mà trai_gái chung phòng là dư lào   vớ_vẩn
 0	đọc truyện xong xem phim thấy cảm_xúc của mình max lộn_xộn , không thành 1 dòng như khi đọc truyện  bất_hạnh
 0	theo mình thì thằng em  tên gì quên  phải chết , hoặc chí_ít phải liệt nửa người , thì phim mới hay , nội_dung mới có tính răng đe được 
 0	mình lùn buồn ghê
@@ -3208,7 +3208,7 @@
 0	chủ thớt hãy xem cách người nhật cùng nhau khắc_phục hậu_quả sau cơn sóng_thần dữ_dội cách đây 4 năm nha
 0	mấy cái tào_lao trên mạg thì post trên tườg nhà mìh rồi để chế_độ  chỉ mình tôi  là được rồi nhé thớt băn_khoăn
 0	: - s ăn như_vậy sẽ bị đau bao_tử , bệnh về đường tiêu_hoá đó chứ  hơn_nữa , mì_ăn_liền độc_hại , ăn vào khó tiêu , thậm_chí không có 1 tí chất dinh_dưỡng nào đâu : - sss
-0	ăn vậy rồi ị chắc khó_khăn đây  ! không chắc_chắn
+0	ăn vậy rồi ị chắc khó_khăn đây  ! thiệt_thòi
 0	vậy bạn thấy cái đứa 1 tháng chỉ có bắp_cải và cà_chua chưa bật_cười 
 0	nghe mà nhức nách quá , nói không được 7 đứa cứ đè nó ra hiếp  à lộn   quánh nó là xong , bức_xúc chi
 0	biết là dài thì vô thẳng vấn_đề luôn ở đó còn mở bài gián_tiếp nữa !
@@ -3222,7 +3222,7 @@
 0	khổ_thân bạn quá  toàn bị ăn gạch chắc lần sau không dám ddag cfs mất 
 0	như_vậy thì nên ở trọ đi , ở kí_túc_xá mấy nghìn người nói vậy coi ra đường bị người_ta đập bầm dập ! !
 0	đọc câu_đầu là thấy không khoái rồi ngại_ngùng
-0	ăn gì viết cfs dốt thế ngạc_nhiên 
+0	ăn gì viết cfs dốt thế ngơ_ngẩn 
 0	khó tánh quá à  ở với t chắc thớt còn ức cmn chế hơn vậy luôn quá
 0	t đéo ở kí_túc_xá cũng bị quy_chụp à ngang_ngược
 0	đkm   có thì nói_thẳng   cần đéo j phải lên đây nói vậy   chẳng khác j mấy con đàn_bà  
@@ -3240,7 +3240,7 @@
 0	vấn_đề muôn_thuở , đúng là ở đây thì lời_nói của sinh_viên mình chẳng có tí giá_trị nào , có nói bao_nhiêu lần cũng vậy thôi  nếu thay_đổi được thì đã thay_đổi lâu rồi 
 0	 có chút không liên_quan lắm , nhưng_mà em có_thể trang_bị mấy kiến_thức anh / chị nói ở đâu vậy ạ  [ em mù công_nghệ  t  t ]
 0	ít_ra nó còn tắm ! phòng mình có 1 đứa 2 tuần không tắm  thậm_chí không đánh răng , mỗi sáng thức_dậy ngậm ngụm nước là xong không hài_lòng không hài_lòng
-0	chọn_lọc_tự_nhiên thôi , dc cảnh_báo quá_trời rồi
+0	chọn_lọc_ thôi , dc cảnh_báo quá_trời rồi
 0	em cũng muốn gặp đa_cấp mà chả bao_giờ thấy ngang_ngược ngang_ngược
 0	ngu thì chết , tham thì thâm
 0	số mình xuôi quá không được gặp đa_cấp  đang mong_mỏi được diện_kiến tụi nó đây 
@@ -3307,7 +3307,7 @@
 0	tội bạn thật buồn_bã nhưng_mà lần sau ráng viết đúng chính_tả với ráng bỏ dấu nha buồn_bã
 0	30 thi không còn gì để nói nữa ngang_ngược
 0	xe 30 là xe dành cho con_nhà giàu : quốc_tế  vác xác vô chi bị chửi , , gặp hoài à , , hum bữa đi không làm_gì cũng bị chửi  phận nghèo nhịn cho_xong
-0	bạn bức_xúc quá nên gõ phím hơi loạn à ngạc_nhiên
+0	bạn bức_xúc quá nên gõ phím hơi loạn à ngơ_ngẩn
 0	nhìn mặt mới dám chửi á , hiền_hiền mới chửi chứ dữ dữ bà dám chửi mới sợ , kẻ yếu_thế luôn bị chèn_ép ngại_ngùng
 1	thật là xuất_chúng vui_vẻ
 0	sao lại tăng thêm độ cận được nhỉ phải là mắt sáng hơn chứ
@@ -3333,7 +3333,7 @@
 0	lần thứ n thấy cái cfs loại này  đứa nào ghét thì cạch mặt nó đi , đứa nào chữi thì đục vào mặt nó còn bản_thân tự_ti thì về nhà đập đầu_vào gối là vừa
 0	em ngại tự_ti , chính do cách nhìn của bạn , chính bạn tự phân_biệt , tự suy_nghĩ không tốt về trường_thành ra bạn sẽ nghĩ ngkhac có thành_kiến   
 0	mem ' s nông_lâm đây  sống thật vs bản_chất dc rồi  ai khinh kệ người_ta  sống_chết có số mà bạn 
-0	cân đó sai bét hà ngạc_nhiên đừng tin nó , nó khống kí lên đó bạn
+0	cân đó sai bét hà ngơ_ngẩn đừng tin nó , nó khống kí lên đó bạn
 0	ở kí_túc_xá đã không chịu dc thì ra_đời sao mà sống mà thích_nghi nổi bạn ơi  đâu phải lúc_nào đời cũng màu hồng đâu bạn
 0	lịt pẹ ! ! khó tíh vl 
 0	tui là tui khó ăn , khó_ở lắm đó ân ngô trần công_danh
@@ -3389,7 +3389,7 @@
 0	bán thuốc j mà md thế ngang_ngược
 0	xin chia buồn với bạn , xã_hội bây_giờ nhiều người trở_nên vô_cảm lắm bạn ạ
 0	sg lắm lúc vô_tâm vậy đó  tự mình thôi bạn toii ơi , cố lên
-0	ai_bảo người sg vô_tâm không chắc_chắn bây_giờ tòan dân tỉnh khác ùa về chợ_búa thế chứ người sg gốc mà vô_tâm sao không chắc_chắn
+0	ai_bảo người sg vô_tâm thiệt_thòi bây_giờ tòan dân tỉnh khác ùa về chợ_búa thế chứ người sg gốc mà vô_tâm sao thiệt_thòi
 0	chia buồn , mà_sao cô bán thuốc kì vậy ta
 0	ba3 làm_gì có ai khó_tính như_vậy  nói b 3 còn có_thể
 0	thường thì dv trong kí_túc_xá hơi bị khó ưa
@@ -3398,7 +3398,7 @@
 0	màng hình 4s mình ms thay 600k nói_chuyện mắt ròng khóc_lóc khóc_lóc
 0	1 lần 2 lần thì có_thể nói là lầm_lỡ quâtd lần 7 lần thì còn lầm cmj nữa chuẩn_bị thành thằng thứ 8 đê là vừa
 0	người_ta nói nên bỏ_qua sai_lầm trong quá_khứ     bỏ_qua cái cc  1 2 thằng thì còn gọi_là sai_lầm cmn 7 thằng thì_là đĩ rồi bạn nhé thể_loại này next nhanh 
-0	đã tỏ_tình rồi thì sẽ mất tình_bạn  dễ gì mà bạn tỏ_tình rồi mà_còn được sự tự_nhiên giữa 2 người  liệu rằng lúc người_ta đi với người khác , nắm tay người khác  bạn có ghen  có buồn kô 
+0	đã tỏ_tình rồi thì sẽ mất tình_bạn  dễ gì mà bạn tỏ_tình rồi mà_còn được sự  giữa 2 người  liệu rằng lúc người_ta đi với người khác , nắm tay người khác  bạn có ghen  có buồn kô 
 0	năm nhất wifi yếu mới ra đường chơi_bời được em  chứ mỗi đứa 1 cái máy_tính thì uổng năm_1 lắm
 0	vào rank đang chọn tướng bị văng rớt cmn chuỗi   buồn_bã
 0	cũng chịu điên lắm -   
