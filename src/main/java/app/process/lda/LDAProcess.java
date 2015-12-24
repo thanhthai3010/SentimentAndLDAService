@@ -1,10 +1,6 @@
 package app.process.lda;
 
-import java.io.BufferedWriter;
-import java.io.FileOutputStream;
-import java.io.OutputStreamWriter;
 import java.io.Serializable;
-import java.io.Writer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -12,8 +8,6 @@ import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
-
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
@@ -273,25 +267,25 @@ public class LDAProcess implements Serializable {
 		/**
 		 * writing data Topic- List of Documents
 		 */
-		try (Writer writer = new BufferedWriter(new OutputStreamWriter(
-				new FileOutputStream("TOPIC-DOCUMENT.txt"), "utf-8"))) {
-
-			for (int key : topicDoc.keySet()) {
-				writer.write("TOPIC: ");
-
-				// write key
-				writer.write(key + "\n");
-				LinkedHashMap<Long, Double> value = topicDoc.get(key);
-				for (Entry<Long, Double> entry : value.entrySet()) {
-					writer.write(entry.getKey() + ":\t" + entry.getValue()
-							+ "\n");
-				}
-
-			}
-			writer.write("\n");
-		} catch (Exception e) {
-			logger.info(e.getMessage());
-		}
+//		try (Writer writer = new BufferedWriter(new OutputStreamWriter(
+//				new FileOutputStream("TOPIC-DOCUMENT.txt"), "utf-8"))) {
+//
+//			for (int key : topicDoc.keySet()) {
+//				writer.write("TOPIC: ");
+//
+//				// write key
+//				writer.write(key + "\n");
+//				LinkedHashMap<Long, Double> value = topicDoc.get(key);
+//				for (Entry<Long, Double> entry : value.entrySet()) {
+//					writer.write(entry.getKey() + ":\t" + entry.getValue()
+//							+ "\n");
+//				}
+//
+//			}
+//			writer.write("\n");
+//		} catch (Exception e) {
+//			logger.info(e.getMessage());
+//		}
 		
 		int idxOfTopic = 1;
 		for (Tuple2<int[], double[]> topic : topicIndices) {
@@ -312,23 +306,23 @@ public class LDAProcess implements Serializable {
 		/**
 		 *  Write describe of Topics, in this case is terms(words) and it's probability
 		 */
-		try (Writer writer = new BufferedWriter(new OutputStreamWriter(
-				new FileOutputStream("DescribeOfTopics.txt"), "utf-8"))) {
-			
-			
-			for (int key : describeTopic.keySet()) {
-				writer.write("TOPIC: " + key + "\n");
-
-				// write key
-				LinkedHashMap<String, Double> value = describeTopic.get(key);
-				for (Entry<String, Double> entry : value.entrySet()) {
-					writer.write(entry.getKey() + ":\t" + entry.getValue() + "\n");
-				}
-			}
-			
-		} catch (Exception e) {
-			logger.info(e.getMessage());
-		}
+//		try (Writer writer = new BufferedWriter(new OutputStreamWriter(
+//				new FileOutputStream("DescribeOfTopics.txt"), "utf-8"))) {
+//			
+//			
+//			for (int key : describeTopic.keySet()) {
+//				writer.write("TOPIC: " + key + "\n");
+//
+//				// write key
+//				LinkedHashMap<String, Double> value = describeTopic.get(key);
+//				for (Entry<String, Double> entry : value.entrySet()) {
+//					writer.write(entry.getKey() + ":\t" + entry.getValue() + "\n");
+//				}
+//			}
+//			
+//		} catch (Exception e) {
+//			logger.info(e.getMessage());
+//		}
 		
 		logger.info("Done LDA processing");
 	}
