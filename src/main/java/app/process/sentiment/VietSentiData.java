@@ -57,7 +57,7 @@ public class VietSentiData implements Serializable {
 	/**
 	 * path to VietSentiWordNet file
 	 */
-	private static String PATH_TO_VSWN = "./src/main/resources/VietSentiWordNetopen1.1.txt";
+	private static String PATH_TO_VSWN = "./src/main/resources/VietSentiWordNetopen1.1.csv";
 
 	/**
 	 * path to negative_words file
