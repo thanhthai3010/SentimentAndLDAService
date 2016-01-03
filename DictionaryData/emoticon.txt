@@ -40,3 +40,4 @@ o.o	 bấn loạn
 b|	 sành điệu 
 >.<	 nhăn nhó 
 =]]	 vui tươi 
+^^	 vui tươi 
