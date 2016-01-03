@@ -68,7 +68,7 @@ public class ClassifySentiment implements Serializable {
 		
 		sc = SparkUtil.getJavaSparkContext();
         // 1.) Load the documents
-        JavaRDD<String> dataFull = sc.textFile(DATA_FOR_CLASSIFY);
+        JavaRDD<String> dataFull = sc.textFile(DATA_FOR_CLASSIFY).cache();
 	    
 	    JavaPairRDD<String, Long>  termCounts = dataFull.flatMap(new FlatMapFunction<String, String>() {
 
@@ -156,7 +156,7 @@ public class ClassifySentiment implements Serializable {
 	    lrLearner.optimizer().setNumIterations(100);
 	    ClassifySentiment.logisticRegressionModel = lrLearner.setNumClasses(2).run(training.rdd());
 	    
-	    JavaRDD<String> corpusSentiment = sc.textFile(CORPUS_PATH);
+	    JavaRDD<String> corpusSentiment = sc.textFile(CORPUS_PATH).cache();
 	    
 		/**
 		 * Create a list of Vocabulary and set ID increment from 0 for each word.

@@ -90,7 +90,7 @@ public class VietSentiData implements Serializable {
 	 * read data from VSWN file
 	 */
 	public static void readSentiData() {
-		JavaRDD<String> vSMN = sc.textFile(PATH_TO_VSWN);
+		JavaRDD<String> vSMN = sc.textFile(PATH_TO_VSWN).cache();
 
 		// map data input into RowData
 		JavaRDD<RowData> rdd_VSMN = vSMN.map(new Function<String, RowData>() {
@@ -275,7 +275,7 @@ public class VietSentiData implements Serializable {
 	 * read data from negative_words file
 	 */
 	public static void readNegativeWord() {
-		JavaRDD<String> negativeWord = sc.textFile(PATH_TO_NEGATIVE_WORD);
+		JavaRDD<String> negativeWord = sc.textFile(PATH_TO_NEGATIVE_WORD).cache();
 		dictNegative = negativeWord.collect();
 	}
 	

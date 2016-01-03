@@ -140,7 +140,7 @@ public class LDAProcess implements Serializable {
 		// get JavaSparkContext from SparkUtil
 		sc = SparkUtil.getJavaSparkContext();
 
-		JavaRDD<String> data = sc.parallelize(checkSpell);
+		JavaRDD<String> data = sc.parallelize(checkSpell).cache();
 
 		/**
 		 * Transform data input into a List of VietNamese Words
@@ -157,7 +157,7 @@ public class LDAProcess implements Serializable {
 		afterFilterStopword = filterOutStopWord(corpus);
 
 
-		JavaRDD<List<String>> corpuss = sc.parallelize(afterFilterStopword);
+		JavaRDD<List<String>> corpuss = sc.parallelize(afterFilterStopword).cache();
 		
 		/**
 		 * termCounts using word-count
@@ -214,7 +214,7 @@ public class LDAProcess implements Serializable {
 		 * Create a list of Vocabulary and set ID increment from 0 for each word.
 		 */
 		final Map<String, Long> wordAndIndexOfWord = new LinkedHashMap<String, Long>();
-		for (Tuple2<String, Long> item : sc.parallelize(vocabularys)
+		for (Tuple2<String, Long> item : sc.parallelize(vocabularys).cache()
 				.zipWithIndex().collect()) {
 			wordAndIndexOfWord.put(item._1, item._2);
 		}
@@ -370,7 +370,7 @@ public class LDAProcess implements Serializable {
 		List<List<String>> result = new ArrayList<List<String>>();
 		
 		for (List<String> item : inputSentences.collect()) {
-			List<String> tmp = sc.parallelize(item)
+			List<String> tmp = sc.parallelize(item).cache()
 					.filter(new Function<String, Boolean>() {
 						private static final long serialVersionUID = 1L;
 

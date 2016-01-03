@@ -75,7 +75,7 @@ public class Dictionary {
 	 * @param filePath String
 	 */ 
 	private static void readDictionaryFromFile(String filePath) {
-		JavaRDD<String> dictionaryFile = sc.textFile(filePath);
+		JavaRDD<String> dictionaryFile = sc.textFile(filePath).cache();
 
 		dictCheckSpells = dictionaryFile
 				.mapToPair(new PairFunction<String, String, String>() {
@@ -99,7 +99,7 @@ public class Dictionary {
 	 * @param filePath
 	 */
 	private static void readEmoticonsFromFile(String filePath) {
-		JavaRDD<String> emoticonsFile = sc.textFile(filePath);
+		JavaRDD<String> emoticonsFile = sc.textFile(filePath).cache();
 
 		dictEmoticons = emoticonsFile
 				.mapToPair(new PairFunction<String, String, String>() {
@@ -123,7 +123,7 @@ public class Dictionary {
 	 * @param filePath
 	 */
 	private static void readSpecialEmoticonsFromFile(String filePath) {
-		JavaRDD<String> emoticonsFile = sc.textFile(filePath);
+		JavaRDD<String> emoticonsFile = sc.textFile(filePath).cache();
 
 		dictSpecialEmoticons = emoticonsFile
 				.mapToPair(new PairFunction<String, String, String>() {
@@ -147,7 +147,7 @@ public class Dictionary {
 	 * @param filePath
 	 */
 	private static void readComposite2UnicodeFromFile(String filePath) {
-		JavaRDD<String> unicodesFile = sc.textFile(filePath);
+		JavaRDD<String> unicodesFile = sc.textFile(filePath).cache();
 
 		dictUnicodes = unicodesFile
 				.mapToPair(new PairFunction<String, String, String>() {
