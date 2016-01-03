@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.util.Arrays;
 import java.util.List;
 
+import main.ExtractOpinion;
+
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
@@ -35,9 +37,9 @@ public class ClassifySentiment implements Serializable {
 	/**
 	 * dictionay path
 	 */
-	private final static String DATA_FOR_CLASSIFY = "./src/main/resources/dataClassifyFull.txt";
+	private final static String DATA_FOR_CLASSIFY = ExtractOpinion.RESOURCE_PATH + "dataClassifyFull.txt";
 	
-	private final static String CORPUS_PATH = "./src/main/resources/corpus.txt";
+	private final static String CORPUS_PATH = ExtractOpinion.RESOURCE_PATH + "corpus.txt";
 	
 	private static final Logger logger = LoggerFactory
 			.getLogger(ClassifySentiment.class);

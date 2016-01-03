@@ -1,5 +1,7 @@
 package app.process.spellcheker;
 
+import main.ExtractOpinion;
+
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
@@ -17,22 +19,22 @@ public class Dictionary {
 	/**
 	 * dictionay path
 	 */
-	private final static String DICTIONARY_PATH = "./src/main/resources/dictionary.txt";
+	private final static String DICTIONARY_PATH = ExtractOpinion.RESOURCE_PATH + "dictionary.txt";
 	
 	/**
 	 * Facebook emoticons path
 	 */
-	private final static String EMOTICONS_PATH = "./src/main/resources/emoticon.txt";
+	private final static String EMOTICONS_PATH = ExtractOpinion.RESOURCE_PATH + "emoticon.txt";
 	
 	/**
 	 * Facebook special emoticons path
 	 */
-	private final static String SPECIAL_EMOTICONS_PATH = "./src/main/resources/specialEmoticons.txt";
+	private final static String SPECIAL_EMOTICONS_PATH = ExtractOpinion.RESOURCE_PATH + "specialEmoticons.txt";
 	
 	/**
 	 * Convert error character to Unicode
 	 */
-	private final static String COMPOSITE2UNICODE_PATH = "./src/main/resources/Composite2Unicode.txt";
+	private final static String COMPOSITE2UNICODE_PATH = ExtractOpinion.RESOURCE_PATH + "Composite2Unicode.txt";
 	
 	/**
 	 * store dictionary for check spell

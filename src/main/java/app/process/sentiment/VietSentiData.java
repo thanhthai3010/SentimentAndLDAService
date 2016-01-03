@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import main.ExtractOpinion;
+
 import org.apache.commons.math3.util.Precision;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
@@ -57,12 +59,12 @@ public class VietSentiData implements Serializable {
 	/**
 	 * path to VietSentiWordNet file
 	 */
-	private static String PATH_TO_VSWN = "./src/main/resources/VietSentiWordNetopen1.1.csv";
+	private static String PATH_TO_VSWN = ExtractOpinion.RESOURCE_PATH + "VietSentiWordNetopen1.1.csv";
 
 	/**
 	 * path to negative_words file
 	 */
-	private static String PATH_TO_NEGATIVE_WORD = "./src/main/resources/negative.txt";
+	private static String PATH_TO_NEGATIVE_WORD = ExtractOpinion.RESOURCE_PATH + "negative.txt";
 
 	/**
 	 * store value dictionary of VSWN
