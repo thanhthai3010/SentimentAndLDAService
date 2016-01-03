@@ -45,24 +45,86 @@ public class SentimentProcess {
 		tokenizer = new VietTokenizer();
 	}
 
-//	private double runAnalyzeSentiment(String[] rsCheckedAndToken) {
-//
-//		double rs = 0.0;
-//		try {
-//			// Token each word in this sentence
-//			if (rsCheckedAndToken.length > 0) {
-//				// Calculate score of this sentence
-//				rs = VietSentiData.scoreTokens(rsCheckedAndToken[0]
-//						.split(REGEX_SPACE));
-//			}
-//
-//		} catch (Exception ex) {
-//			logger.info(ex.getMessage());
-//			return rs;
-//		}
-//
-//		return rs;
-//	}
+	public List<ListReportData> processLexiconSentiment(
+			Map<String, List<String>> lstInputForSenti) {
+
+		List<ListReportData> listPieData = new ArrayList<ListReportData>();
+
+		// loop all of String input
+		for (String status : lstInputForSenti.keySet()) {
+			double totalScore = 0.0;
+			// create pieData stored status
+			ListReportData lstRP = new ListReportData();
+
+			// get sentiScore of status
+			double sentiStatus = 0;//runLexiconSentiment(status.toLowerCase());
+			// TODO
+			// increase scores of status
+			totalScore += (sentiStatus * 1.5);
+
+			// create ReportData stored data for status
+			ReportData statusReport = new ReportData(
+					getTypeOfColor(sentiStatus), status);
+
+			// set status data to List return object
+			lstRP.setStatusData(statusReport);
+
+			List<ReportData> listCommentReport = new ArrayList<ReportData>();
+			// loop for all comment
+			for (String comments : lstInputForSenti.get(status)) {
+				// sentiment value of comment
+				double sentiComment = runLexiconSentiment(comments.toLowerCase());
+				// sum of total
+//				totalScore += sentiComment;
+
+				// create comment report object
+				ReportData commentReport = new ReportData(
+						getTypeOfColor(sentiComment), comments);
+				listCommentReport.add(commentReport);
+			}
+
+			// set list comment
+			lstRP.setListCommentData(listCommentReport);
+
+			// set total score
+//			totalScore = totalScore / (lstInputForSenti.get(status).size() + 1);
+			lstRP.setSentimentType(getTypeOfColor(totalScore));
+
+			listPieData.add(lstRP);
+		}
+
+		return listPieData;
+	}
+	
+	private double runLexiconSentiment(String inputText) {
+		
+		
+		inputText = inputText.replaceAll(
+				"[0-9\\<\\>\\|\\”\\“\\/\\\"\\:\\#\\)\\(\\%\\+]", "")
+				.replaceAll("\\-", " ");
+		System.out.println(inputText);
+		double rs = 0.0;
+		try {
+			// First, we need to correct spelling and covert emoticons
+			String correctSentence = correctSpellAndEmoticons(inputText);
+			//correctSentence = correctSentence.replaceAll("[0-9]", REGEX_SPACE);
+			String removeURL = replaceURLFromText(correctSentence);
+			// Token each word in this sentence
+			String[] rsCheckedAndToken = tokenizer.tokenize(removeURL);
+			
+			// Token each word in this sentence
+			if (rsCheckedAndToken.length > 0) {
+				// Calculate score of this sentence
+				rs = VietSentiData.scoreTokens(rsCheckedAndToken[0]);
+			}
+
+		} catch (Exception ex) {
+			logger.info(ex.getMessage());
+			return rs;
+		}
+
+		return rs;
+	}
 
 	/**
 	 * In this step, we need correct spelling and correct emoticons

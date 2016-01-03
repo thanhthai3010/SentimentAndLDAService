@@ -700,3 +700,26 @@ thks	thanks
 chuc	chúc
 man	mắn
 face	facebook
+fb	facebook
+dth	dễ thương
+ct	chia tay
+ib	nhắn tin
+zin	rin
+bik	biết
+atsm	ảo tưởng sức mạnh
+cmnr	chuẩn
+đm	chửi thề
+dm	chửi thề
+đkm	chửi thề
+dkm	chửi thề
+giog	giống
+like	thích
+gd	gia đình
+gđ	gia đình
+qd	quyết định
+vs	với
+cc	chửi thề
+vk	vợ
+ck	chồng
+vl	vãi
+vcl	vãi

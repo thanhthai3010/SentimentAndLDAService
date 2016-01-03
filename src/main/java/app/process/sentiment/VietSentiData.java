@@ -1,6 +1,11 @@
 package app.process.sentiment;
 
+import java.io.BufferedWriter;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.io.Serializable;
+import java.io.Writer;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -195,7 +200,30 @@ public class VietSentiData implements Serializable {
 			//TODO
 			lstCorpus.add(word);
 		}
+		//qtran - write corpus to file
+		writeCopusToFile();
+	}
+	
 
+	private static void writeCopusToFile() {
+		Writer writerCorpus = null;
+		try {
+			writerCorpus = new BufferedWriter(new OutputStreamWriter(
+					new FileOutputStream("corpus.txt"), "utf-8"));
+			for (String item : VietSentiData.lstCorpus) {
+				writerCorpus.write(item + "\n");
+			}
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		} finally {
+			try {
+				writerCorpus.flush();
+				writerCorpus.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		
 	}
 
 	/**
@@ -225,8 +253,10 @@ public class VietSentiData implements Serializable {
 	 *            String[]
 	 * @return score double
 	 */
-	public static double scoreTokens(String[] words) {
+	public static double scoreTokens(String input) {
 
+		String[] words = input.split(" ");
+		
 		int num = 0;
 		//int numOfNeg = 0;
 		double posScore = 0.0;
@@ -295,36 +325,8 @@ public class VietSentiData implements Serializable {
 		
 		String[] rs = tk.tokenize(ip);
 		
-		double score = VietSentiData.scoreTokens(rs[0].split(" "));
+		double score = VietSentiData.scoreTokens(rs[0]);
 		System.out.println("Score " + score + " " + rs[0]);
 		
-//		Writer writerCorpus = null;
-//		try {
-//			writerCorpus = new BufferedWriter(new OutputStreamWriter(
-//					new FileOutputStream("corpus.txt"), "utf-8"));
-//
-//		} catch (UnsupportedEncodingException e1) {
-//			e1.printStackTrace();
-//		} catch (FileNotFoundException e1) {
-//			e1.printStackTrace();
-//		}
-//		
-//		try {
-//			for (String item : VietSentiData.lstCorpus) {
-//				writerCorpus.write(item + "\n");
-//			}
-//		} catch (Exception e) {
-//		} finally{
-//			try {
-//				writerCorpus.flush();
-//				writerCorpus.close();
-//			} catch (IOException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
-//		}
-		
-		
-		System.out.println("done save 5005");
 	}
 }
