@@ -131,7 +131,7 @@ public class ClassifySentiment implements Serializable {
         ClassifySentiment.hashingTF = new HashingTF(sizeOfVocabulary);
         JavaRDD<LabeledPoint> tupleData = dataFull.map(content -> {
                 String[] datas = content.split("\t");
-                String filter = datas[1].replaceAll("[0-9]", "");
+                String filter = datas[1].replaceAll("[0-9]", " ");
                 List<String> myList = Arrays.asList(Stopwords.removeStopWords(filter).split(" "));
                 return new LabeledPoint(Double.parseDouble(datas[0]), hashingTF.transform(myList));
         }); 
@@ -197,7 +197,7 @@ public class ClassifySentiment implements Serializable {
 		double rs = 0.0;
 		
 		boolean needToClassify = false;
-		String removeStopWord = Stopwords.removeStopWords(sentiment);
+		String removeStopWord = Stopwords.removeStopWords(sentiment.toLowerCase());
 		
 		for (String item : removeStopWord.split(" ")) {
 			if (listOfCorpus.contains(item)) {

@@ -189,6 +189,7 @@ public class SentimentProcess {
 			// set list comment
 			lstRP.setListCommentData(listCommentReport);
 
+			//TODO need to verify score
 			// set total score
 //			totalScore = totalScore / (lstInputForSenti.get(status).size() + 1);
 			lstRP.setSentimentType(getTypeOfColor(totalScore));
@@ -199,6 +200,11 @@ public class SentimentProcess {
 		return listPieData;
 	}
 	
+	/**
+	 * Get type of sentiment 0: neutral, 1: positive and -1: negative
+	 * @param inputText
+	 * @return
+	 */
 	private double runAnalyzeSentiment(String inputText) {
 
 		double rs = 0.0;
