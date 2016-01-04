@@ -66,3 +66,4 @@
 :wave:	 ầm ầm 
 :information_desk_person:	 nồng ấm 
 :broken_heart:	 vỡ mộng 
+:like:	 thích thú 
