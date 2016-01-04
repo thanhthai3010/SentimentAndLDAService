@@ -806,7 +806,6 @@ a	1490	0.2	0.45	cù_rù#1	có dáng co ro, thiếu linh lợi, thiếu hoạt b�
 a	1491	0	0.29	củ_rủ#1	null;ngồi củ rủ một xó
 a	1496	0.28	0.42	cứa_cổ#1	null;bán với giá cứa cổ
 a	1497	0.21	0.4	cửa_quyền#1	có thái độ trịch thượng, hách dịch trong khi giải quyết công việc vì tự cho rằng mình đang nắm quyền hành trong tay nên người khác phải cần đến mình;thói cửa quyền ~ thái độ cửa quyền
-a	1499	0.12	0.48	cực#1	phải chịu đựng điều vất vả, khổ nhục;cuộc sống đỡ cực ~ cực lòng
 a	1502	0	0.4	cục_cằn#1	dễ cáu bẳn và có những phản ứng bằng lời nói, cử chỉ thô bạo [nói khái quát];tính khí cục cằn ~ ăn nói cục cằn
 a	1505	0.28	0.4	cực_đoan#1	được đẩy tới mức quá đáng, tới cực độ [thường nói về xu hướng, chủ trương, thái độ];nhìn nhận vấn đề một cách quá cực đoan ~ thái độ cực đoan
 a	1507	0.13	0.8	cực_khổ#1	cực và khổ [nói khái quát];cuộc sống hết sức cực khổ ~ chịu vô vàn cực khổ
@@ -2482,7 +2481,7 @@ a	5183	0.28	0.33	ngắn_ngủn#1	quá ngắn, trông giống như bị hụt, b�
 a	5184	0.28	0.39	ngắn_tun_hủn#1	quá ngắn, đến mức không bình thường [hàm ý chê];ngón tay mập và ngắn tun hủn ~ cái váy ngắn tun hủn
 a	5194	0.2	0.52	ngang_bướng#1	bướng, nhất định không chịu nghe theo ai cả mà cứ theo ý mình, dù có biết là sai trái đi nữa;đứa trẻ ngang bướng, không chịu nghe lời ~ sai rành rành mà vẫn còn ngang bướng
 a	5197	0.27	0.44	ngang_ngạnh#1	rất ngang bướng, đã không chịu nghe theo mà nhiều khi còn cố ý làm khác đi;tính ương bướng, ngang ngạnh
-a	5201	0.12	0.69	ngang_ngược#1	ngang ngạnh, bất chấp lẽ phải, tỏ ra không kể gì đến bất cứ ai;ăn nói ngang ngược
+a	5201	0.12	0.45	ngang_ngược#1	ngang ngạnh, bất chấp lẽ phải, tỏ ra không kể gì đến bất cứ ai;ăn nói ngang ngược
 a	5202	0.26	0.47	ngang_nhiên#1	tỏ ra bất chấp mọi quyền lực, mọi sự chống đối, cứ thản nhiên làm theo ý mình mà không chút e sợ;tên tội phạm sống ngang nhiên ngoài vòng pháp luật
 a	5204	0.19	0.56	ngang_tàng#1	"tỏ ra bất chấp, không sợ gì, không chịu khuất phục ai;khí phách ngang tàng ~ ""Năm năm trời bể ngang tàng, Đem mình đi bỏ chiến trường như không."" (TKiều)"
 a	5205	0.1	0.42	ngang_trái#1	trái với đạo lí, với lẽ thường;hành vi ngang trái
@@ -4082,7 +4081,6 @@ v	9344	0.5	0	nháy_mắt#1	vui vẻ nháy mắt
 v	9345	0	0.75	nhăn_nhó#1	nhăn nhó, tỏ vẻ khó chịu
 v	9346	0.5	0	cười#1 haha#1 hehe#1 kaka#1 hihi#1	mỉm cười vui vẻ
 v	9347	0.7	0	bật_cười#1	cười lớn thành tiếng, vui vẻ, náo động
-a	9348	0.8	0	khoái_trá#1	cười đểu, cười khoái trá
 a	9349	0	0.4	băn_khoăn#1	không vui, cảm thấy bối rối
 a	9350	0.33	0	ngại_ngùng#1	bĩu môi, ngại ngùng trước sự việc. Cảm thấy thích thú với việc này lắm
 a	9351	0.2	0	nụ_hôn#1	trao nhau nụ hôn. Anh ấy đã hôn cô ấy. Một nụ hôn thật nồng nhiệt

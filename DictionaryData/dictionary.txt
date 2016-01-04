@@ -723,3 +723,6 @@ vk	vợ
 ck	chồng
 vl	vãi
 vcl	vãi
+e	em
+cfs	lời thú nhận
+

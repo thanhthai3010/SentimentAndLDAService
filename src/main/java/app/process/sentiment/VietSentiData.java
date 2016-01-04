@@ -268,6 +268,8 @@ public class VietSentiData implements Serializable {
 		boolean isNegativeBefore = false;
 		for (String word : words) {
 			
+			
+			
 			double senti = Precision.round(extract(word), 2);
 
 			if (dictNegative.contains(word)) {
