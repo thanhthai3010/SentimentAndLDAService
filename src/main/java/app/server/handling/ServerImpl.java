@@ -185,4 +185,9 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 	public List<Page_Info> getListPageInfo() throws RemoteException {
 		return fbDatabase.getListPageInfo();
 	}
+
+	@Override
+	public Page_Info getPageInfoByPageID(String pageID) throws RemoteException {
+		return fbDatabase.getPageInfoByPageID(pageID);
+	}
 }

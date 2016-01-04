@@ -65,6 +65,14 @@ public interface ServerInterf extends Remote {
 	 */
 	public void savePageInfo(List<Page_Info> listFanPage) throws RemoteException;
 	
+	
+	/**
+	 * get facebook page info by pageID
+	 * @param pageID
+	 * @throws RemoteException
+	 */
+	public Page_Info getPageInfoByPageID(String pageID) throws RemoteException;
+	
 	/**
 	 * get all of facebook page info
 	 * @param listFanPage

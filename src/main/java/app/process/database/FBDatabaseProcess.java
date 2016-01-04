@@ -44,6 +44,7 @@ public class FBDatabaseProcess {
 
 	/**
 	 * Constructor with data
+	 * 
 	 * @param fbDataToInsertDB
 	 */
 	public FBDatabaseProcess(FacebookDataToInsertDB fbDataToInsertDB) {
@@ -143,6 +144,7 @@ public class FBDatabaseProcess {
 
 		logger.info("Done delete PAGE_INFO with PageID");
 	}
+
 	/**
 	 * Save post data into table POST_DATA
 	 * 
@@ -170,8 +172,9 @@ public class FBDatabaseProcess {
 				preparedStatement.setInt(2, post_Data.getPostID());
 
 				// Convert character to Unicode before insert into database
-				preparedStatement.setString(3, Checker.correctUnicodeCharacters(post_Data.getPostContent()));
-				
+				preparedStatement.setString(3, Checker
+						.correctUnicodeCharacters(post_Data.getPostContent()));
+
 				preparedStatement.setString(4, post_Data.getDateTime());
 				// execute insert SQL stetement
 				preparedStatement.executeUpdate();
@@ -208,18 +211,19 @@ public class FBDatabaseProcess {
 			try {
 				preparedStatement = JdbcMySQLDriver
 						.getPrepareStm(insertTableSQL);
-				
+
 				preparedStatement.setLong(1, cmData.getPageID());
-				
+
 				preparedStatement.setInt(2, cmData.getPostID());
-				
+
 				preparedStatement.setInt(3, cmData.getCommentID());
-				
+
 				// Convert character to Unicode before insert into database
 				// TODO: need to remove checker here
-				String commentData = Checker.correctUnicodeCharacters(cmData.getCommentContent());
-				//commentData = Checker.correctSpell(commentData);
-				//commentData = Checker.correctSpecialEmoticons(commentData);
+				String commentData = Checker.correctUnicodeCharacters(cmData
+						.getCommentContent());
+				// commentData = Checker.correctSpell(commentData);
+				// commentData = Checker.correctSpecialEmoticons(commentData);
 				preparedStatement.setString(4, commentData);
 
 				// execute insert SQL stetement
@@ -250,14 +254,19 @@ public class FBDatabaseProcess {
 	}
 
 	/**
-	 * This function provide a way to get facebook data from database using pageID and date.
-	 * @param lstPageID List of page
-	 * @param startDate String date
-	 * @param endDate String date
+	 * This function provide a way to get facebook data from database using
+	 * pageID and date.
+	 * 
+	 * @param lstPageID
+	 *            List of page
+	 * @param startDate
+	 *            String date
+	 * @param endDate
+	 *            String date
 	 * @return
 	 */
-	public FacebookData getFBDataByPageIDAndDate(List<String> lstPageID, String startDate,
-			String endDate) {
+	public FacebookData getFBDataByPageIDAndDate(List<String> lstPageID,
+			String startDate, String endDate) {
 
 		// return data
 		FacebookData fbDataFromDB = new FacebookData();
@@ -278,7 +287,8 @@ public class FBDatabaseProcess {
 					+ " ON B.PAGE_ID = A.PAGE_ID "
 					+ " AND B.POST_ID = A.POST_ID "
 					+ " WHERE "
-					+ " A.PAGE_ID = ?" + " AND A.DATE_TIME BETWEEN ? and ?"
+					+ " A.PAGE_ID = ?"
+					+ " AND A.DATE_TIME BETWEEN ? and ?"
 					+ " ORDER BY A.POST_ID";
 
 			try {
@@ -299,7 +309,8 @@ public class FBDatabaseProcess {
 				String postContent = "";
 				// loop for all records
 				while (rs.next()) {
-					if (postID.equals("") || postID.equals(rs.getString("POST_ID"))) {
+					if (postID.equals("")
+							|| postID.equals(rs.getString("POST_ID"))) {
 						postContent = rs.getString("POST_CONTENT");
 						String cmContent = rs.getString("COMMENT_CONTENT");
 						if (cmContent != null) {
@@ -337,23 +348,25 @@ public class FBDatabaseProcess {
 		fbDataFromDB.setFbDataForService(fbDataForService);
 		return fbDataFromDB;
 	}
-	
+
 	/**
 	 * Save facebook page info
+	 * 
 	 * @param listFanPage
 	 * @throws RemoteException
 	 */
 	public void savePageInfo(List<Page_Info> listFanPage) {
-		
+
 		// PreparedStatement
 		PreparedStatement preparedStatement = null;
 		for (Page_Info pageInfo : listFanPage) {
-			
+
 			// delete PAGE_INFO
 			deletePageInfo(pageInfo.getPageID());
-			
+
 			String insertTableSQL = "INSERT INTO PAGE_INFO"
-					+ " (PAGE_ID, PAGE_NAME) VALUES" + " (?, ?)";
+					+ " (PAGE_ID, PAGE_NAME, IMAGE, ABOUT, DESCRIPTION, WEBSITE) VALUES"
+					+ " (?, ?, ?, ?, ?, ?)";
 
 			try {
 				preparedStatement = JdbcMySQLDriver
@@ -364,6 +377,18 @@ public class FBDatabaseProcess {
 
 				// Set page name
 				preparedStatement.setString(2, pageInfo.getPageName());
+				
+				// Set page image
+				preparedStatement.setString(3, pageInfo.getUrlImage());
+				
+				// Set page about
+				preparedStatement.setString(4, pageInfo.getAbout());
+				
+				// Set page description
+				preparedStatement.setString(5, pageInfo.getDescription());
+				
+				// Set page website
+				preparedStatement.setString(6, pageInfo.getWebsite());
 				// execute insert SQL stetement
 				preparedStatement.executeUpdate();
 			} catch (SQLException e) {
@@ -378,26 +403,29 @@ public class FBDatabaseProcess {
 			}
 		}
 	}
-	
+
 	/**
 	 * get all of pageInfo in database to display web
+	 * 
 	 * @return
 	 */
 	public List<Page_Info> getListPageInfo() {
 
 		List<Page_Info> listAllPageInfo = new ArrayList<Page_Info>();
- 		// PreparedStatement
+		// PreparedStatement
 		PreparedStatement preparedStatement = null;
-		
-		String getTableSQL = "SELECT PAGE_ID, PAGE_NAME"
-				+ " FROM PAGE_INFO";
-		
+
+		String getTableSQL = "SELECT PAGE_ID, PAGE_NAME, IMAGE, ABOUT, DESCRIPTION, WEBSITE" + " FROM PAGE_INFO";
+
 		try {
 			preparedStatement = JdbcMySQLDriver.getPrepareStm(getTableSQL);
-			
+
 			ResultSet rs = preparedStatement.executeQuery();
 			while (rs.next()) {
-				Page_Info pageInfo = new Page_Info(rs.getLong("PAGE_ID"), rs.getString("PAGE_NAME"));
+				Page_Info pageInfo = new Page_Info(rs.getLong("PAGE_ID"),
+						rs.getString("PAGE_NAME"), rs.getString("IMAGE"),
+						rs.getString("ABOUT"), rs.getString("DESCRIPTION"),
+						rs.getString("WEBSITE"));
 				listAllPageInfo.add(pageInfo);
 			}
 		} catch (SQLException e) {
@@ -410,10 +438,49 @@ public class FBDatabaseProcess {
 				} catch (SQLException logOrIgnore) {
 				}
 		}
-		
+
 		return listAllPageInfo;
 	}
 	
+	/**
+	 * get pageInfo in database using pageID
+	 * 
+	 * @return Page_Info
+	 */
+	public Page_Info getPageInfoByPageID(String pageID) {
+
+		Page_Info pageInfo = new Page_Info();
+		// PreparedStatement
+		PreparedStatement preparedStatement = null;
+
+		String getTableSQL = "SELECT PAGE_ID, PAGE_NAME, IMAGE, ABOUT, DESCRIPTION, WEBSITE" + " FROM PAGE_INFO "
+				+ " WHERE PAGE_ID = ?";
+
+		try {
+			preparedStatement = JdbcMySQLDriver.getPrepareStm(getTableSQL);
+			preparedStatement.setLong(1, Long.parseLong(pageID));
+			
+			ResultSet rs = preparedStatement.executeQuery();
+			while (rs.next()) {
+				pageInfo = new Page_Info(rs.getLong("PAGE_ID"),
+						rs.getString("PAGE_NAME"), rs.getString("IMAGE"),
+						rs.getString("ABOUT"), rs.getString("DESCRIPTION"),
+						rs.getString("WEBSITE"));
+			}
+		} catch (SQLException e) {
+			logger.info(e.getMessage());
+		} finally {
+			if (preparedStatement != null)
+				try {
+					preparedStatement.close();
+					JdbcMySQLDriver.closeConn();
+				} catch (SQLException logOrIgnore) {
+				}
+		}
+
+		return pageInfo;
+	}
+
 	public List<String> getCommentData() {
 		List<String> listComment = new ArrayList<String>();
 
@@ -436,15 +503,15 @@ public class FBDatabaseProcess {
 		logger.info("Done get COMMENT_DATA");
 		return listComment;
 	}
-	
-//	public static void main(String[] args) {
-//		JdbcMySQLDriver.getConnetion();
-//		FBDatabaseProcess fbd = new FBDatabaseProcess();
-//		List<String> a = new ArrayList<String>();
-//		a.add("2311");
-//		List<Page_Info> fbdx = fbd.getListPageInfo();
-//		for (Page_Info page_Info : fbdx) {
-//			logger.info(page_Info.getPageID().toString());
-//		}
-//	}
+
+	// public static void main(String[] args) {
+	// JdbcMySQLDriver.getConnetion();
+	// FBDatabaseProcess fbd = new FBDatabaseProcess();
+	// List<String> a = new ArrayList<String>();
+	// a.add("2311");
+	// List<Page_Info> fbdx = fbd.getListPageInfo();
+	// for (Page_Info page_Info : fbdx) {
+	// logger.info(page_Info.getPageID().toString());
+	// }
+	// }
 }
