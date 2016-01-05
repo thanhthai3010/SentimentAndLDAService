@@ -688,10 +688,8 @@ vọg	vọng
 chuộg	chuộng
 ràg	ràng
 lặg	lặng
-y	yêu
 ny	người yêu
 nt	nhắn tin
-c	chị
 cmt	bình luận
 sv	sinh viên
 cgai	con gái
@@ -725,4 +723,3 @@ vl	vãi
 vcl	vãi
 e	em
 cfs	lời thú nhận
-
