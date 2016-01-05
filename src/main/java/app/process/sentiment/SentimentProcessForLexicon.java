@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Executors;
@@ -25,6 +26,7 @@ import app.process.spellcheker.Checker;
 import app.utils.dto.FacebookData;
 import app.utils.dto.ListReportData;
 import app.utils.dto.ReportData;
+import app.utils.dto.StatusAndListComment;
 import app.utils.spark.SparkUtil;
 
 /**
@@ -56,7 +58,7 @@ public class SentimentProcessForLexicon {
 	 */
 	private static final String REGEX_SPACE = " ";
 	
-	private List<ListReportData> listPieData = new ArrayList<ListReportData>();
+	private List<ListReportData> listPieData =  Collections.synchronizedList(new ArrayList<ListReportData>());
 
 	private VietTokenizer tokenizer;
 
@@ -64,7 +66,7 @@ public class SentimentProcessForLexicon {
 		tokenizer = new VietTokenizer();
 	}
 	
-	private synchronized void excuteForOneStatus(String status, Map<String, List<String>> lstInputForSenti){
+	private synchronized void excuteForOneStatus(int postID, Map<Integer, StatusAndListComment> lstInputForSenti){
 		
 		ListReportData lstRP;
 		List<ReportData> listCommentReport;
@@ -74,7 +76,7 @@ public class SentimentProcessForLexicon {
 		double sentiComment;
 		ReportData commentReport;
 		
-		for (String comment : lstInputForSenti.get(status)) {
+		for (String comment : lstInputForSenti.get(postID).getListComment()) {
 			
 			String correctSentence = correctSpellAndEmoticons(comment.toLowerCase());
 			correctSentence = correctSentence.replaceAll("[0-9]", REGEX_SPACE);
@@ -98,57 +100,25 @@ public class SentimentProcessForLexicon {
 	}
 
 	public List<ListReportData> processLexiconSentiment(
-			final Map<String, List<String>> lstInputForSenti) {
+			final Map<Integer, StatusAndListComment> lstInputForSenti) {
 		
 		int numCore = Runtime.getRuntime().availableProcessors();
         final ScheduledExecutorService sES = Executors.newScheduledThreadPool(numCore - 1);
-        
 		
-		/*ListReportData lstRP;
-		List<ReportData> listCommentReport;
-		double sentiComment;
-		ReportData commentReport;*/
-		
-		for (final String status : lstInputForSenti.keySet()) {
+		for (final int postID : lstInputForSenti.keySet()) {
 			
 			Runnable excuteOneStatus = new Runnable() {
                 @Override
                 public void run() {
-                	excuteForOneStatus(status, lstInputForSenti);
+                	excuteForOneStatus(postID, lstInputForSenti);
                 }
             };
             sES.execute(excuteOneStatus);
 		}
+		
 		sES.shutdown();
         while (!sES.isTerminated()) {
         }
-		
-		// loop all of String input
-		/*for (List<String> listCmt : lstInputForSenti.values()) {
-			lstRP = new ListReportData();
-			listCommentReport = new ArrayList<ReportData>();
-			// loop for all comment
-			for (String comment : listCmt) {
-				
-				comment = comment.toLowerCase().replaceAll(
-						"[\\<\\>\\|\\/\\:\\#\\)\\(\\%\\+]", "");
-				String correctSentence = correctSpellAndEmoticons(comment);
-				correctSentence = correctSentence.replaceAll("[0-9]", REGEX_SPACE);
-				String removeURL = replaceURLFromText(correctSentence);
-				if(removeURL.length() > 7){
-					// sentiment value of comment
-					sentiComment = runLexiconSentiment(removeURL);
-					// create comment report object
-					commentReport = new ReportData(
-							getTypeOfColor(sentiComment), comment);
-					listCommentReport.add(commentReport);
-				}
-			}
-
-			// set list comment
-			lstRP.setListCommentData(listCommentReport);
-			listPieData.add(lstRP);
-		}*/
 
 		return listPieData;
 	}
@@ -295,91 +265,6 @@ public class SentimentProcessForLexicon {
 		input = input.replaceAll("(https?|http):((//)|(\\\\))+[\\w\\d:#@%/;$()~_?\\+-=\\\\\\.&]*", " ");
 		return input;
 	}
-
-//	private void writeData(List<String> listComment) {
-//
-//		List<ReportData> lstPositive = new ArrayList<ReportData>();
-//		System.out.println("Lexicon classify comment...");
-//		int count = 0;
-//		int WriteTimes = 0;
-//
-//		Writer writerPos = null;
-//		try {
-//			writerPos = new BufferedWriter(new OutputStreamWriter(
-//					new FileOutputStream("DATA_Test.txt"), "utf-8"));
-//
-//		} catch (UnsupportedEncodingException e1) {
-//			e1.printStackTrace();
-//		} catch (FileNotFoundException e1) {
-//			e1.printStackTrace();
-//		}
-//
-//		int count2 = 0;
-//		int count0 = 0;
-//		for (String inputText : listComment) {
-//
-//			inputText = replaceURLFromText(inputText.toLowerCase());
-//			// TODO always correctEmoticons before correctSpecialEmoticons
-//			inputText = Checker.correctEmoticons(inputText);
-//			inputText = Checker.correctSpell(inputText);
-//			inputText = Checker.correctSpecialEmoticons(inputText);
-//			
-//			// TODO
-//			inputText = inputText.replace("\\", " ");
-//			inputText = inputText.replace("/", " ");
-//			inputText = inputText.replace("~", " ");
-//			inputText = inputText.replace("`", " ");
-//			inputText = inputText.replace("^", " ");
-//			inputText = inputText.replace("$", " ");
-//			inputText = inputText.replace("!", " ");
-//			
-//			if (inputText.length() > 4) {
-//				String[] rsCheckedAndToken = new String[2];
-//				try {
-//					rsCheckedAndToken = tokenizer.tokenize(inputText);
-//				} catch (Exception e) {
-//					System.out.println("can not tokenizer " + inputText);
-//				}
-//				double sentiScore = runAnalyzeSentiment(rsCheckedAndToken);
-//				if (sentiScore >= 0.1) {
-//					count2++;
-//					if (count2 < 1000) {
-//						lstPositive.add(new ReportData(1, rsCheckedAndToken[0]));
-//					}
-//				} else if (sentiScore <= -0.1) {
-//					count0++;
-//					if (count0 < 3500) {
-//						lstPositive.add(new ReportData(0, rsCheckedAndToken[0]));
-//					}
-//				}
-//
-//				count++;
-//				if (count > 1000) {
-//					count = 0;// reset
-//					WriteTimes++;
-//					// write
-//					System.out.println("Writing data to file for 1000 records in times: "+ WriteTimes);
-//					try {
-//						for (ReportData item : lstPositive) {
-//							writerPos.write(item.getTypeColor() + "\t" + item.getContentData());
-//							writerPos.write("\n");
-//						}
-//					} catch (Exception e) {
-//						logger.info(e.getMessage());
-//					}
-//					
-//					lstPositive.clear();
-//				}
-//			}
-//		}
-//
-//		try {
-//			writerPos.flush();
-//			writerPos.close();
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
-//	}
 	
 	private static void writeData(List<ListReportData> reportData) {
 
@@ -440,27 +325,6 @@ public class SentimentProcessForLexicon {
 		Checker.init();
 		VietSentiData.init();
 		ClassifySentiment.createClassify();
-
-		/*Map<String, List<String>> fbDataForSentiment = new LinkedHashMap<String, List<String>>();
-		fbDataForSentiment.put("bực bội quá đi mất", new ArrayList<String>(){*//**
-			 * 
-			 *//*
-			private static final long serialVersionUID = 1L;
-
-		{
-			add(" viết thế này chắc không ai hiểu nhưng vẫn muốn viết cho nhẹ lòng mình. đi hội trại khoa, cho tới lúc kết thúc thì cái người mình để ý mình vẫn chưa làm quen được!! ko chung xe. chập choạng tối thì thấy ấy đứng 1 mình chỗ lối vào trại cả tiếng đồng hồ mà dòm qua dòm lại rất muốn ra bắt chuyện mà ko biết làm sao. lát sau đi với đám bạn (trong đó có bạn của ấy) ra chỗ ấy đứng nói chuyện mới biết là đang canh an ninh (hình như vậy, ko nhớ lắm) gì đấy. xinh xinh mà đứng vậy coi chừng bị bắt mất tích luôn chứ canh gác cái gì. lúc quẩy nhảy rất sung, lúc đi với bạn cũng nhí nhảnh mà sao đứng 1 mình thì như tảng băng thế, không quan tâm cái gì khác. cố tình nhìn chằm chằm mỗi lần chạm mặt chắc cũng chả biết nhỉ. lạnh lùng quá. buồn. lại buồn hơn khi thấy xung quanh ấy có rất nhiều bạn nam, gần như lúc nào nhìn thấy cũng là vậy. bạn nói phải làm sao đây?? mà tóm lại bạn có người yêu chưa? --Cừu--");
-		}});
-		SentimentProcess sm = new SentimentProcess();
-		List<ListReportData> result = sm.processSentiment(fbDataForSentiment);
-		
-		for (ListReportData listReportData : result) {
-			System.out.println("key content " + listReportData.getStatusData().getContentData());
-			System.out.println("key color " + listReportData.getStatusData().getTypeColor());
-			for (ReportData com : listReportData.getListCommentData()) {
-				System.out.println("comment content " + com.getContentData());
-				System.out.println("comment color " + com.getTypeColor());
-			}
-		}*/
 		
 		FBDatabaseProcess fbDB = new FBDatabaseProcess();
 		FacebookData fbData = fbDB.getFBDataByPageIDAndDate(new ArrayList<String>(){
@@ -473,7 +337,7 @@ public class SentimentProcessForLexicon {
 		System.out.println("data size: " + fbData.getFbDataForService().size());
 		
 		SentimentProcessForLexicon sm = new SentimentProcessForLexicon();
-//		List<ListReportData> result = sm.processLexiconSentiment(fbData.getFbDataForService());
-//		writeData(result);
+		List<ListReportData> result = sm.processLexiconSentiment(fbData.getFbDataForService());
+		writeData(result);
 	}
 }
