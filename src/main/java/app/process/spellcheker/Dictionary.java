@@ -77,7 +77,7 @@ public class Dictionary {
 	 * @param filePath String
 	 */ 
 	private static void readDictionaryFromFile(String filePath) {
-		JavaRDD<String> dictionaryFile = sc.textFile(filePath).cache();
+		JavaRDD<String> dictionaryFile = sc.textFile(filePath);
 
 		dictCheckSpells = dictionaryFile
 				.mapToPair(new PairFunction<String, String, String>() {
@@ -93,7 +93,7 @@ public class Dictionary {
 							return new Tuple2<String, String>("","");
 						}
 					}
-				});
+				}).cache();
 	}
 	
 	/**
@@ -101,7 +101,7 @@ public class Dictionary {
 	 * @param filePath
 	 */
 	private static void readEmoticonsFromFile(String filePath) {
-		JavaRDD<String> emoticonsFile = sc.textFile(filePath).cache();
+		JavaRDD<String> emoticonsFile = sc.textFile(filePath);
 
 		dictEmoticons = emoticonsFile
 				.mapToPair(new PairFunction<String, String, String>() {
@@ -117,7 +117,7 @@ public class Dictionary {
 							return new Tuple2<String, String>("","");
 						}
 					}
-				});
+				}).cache();
 	}
 	
 	/**
@@ -125,7 +125,7 @@ public class Dictionary {
 	 * @param filePath
 	 */
 	private static void readSpecialEmoticonsFromFile(String filePath) {
-		JavaRDD<String> emoticonsFile = sc.textFile(filePath).cache();
+		JavaRDD<String> emoticonsFile = sc.textFile(filePath);
 
 		dictSpecialEmoticons = emoticonsFile
 				.mapToPair(new PairFunction<String, String, String>() {
@@ -141,7 +141,7 @@ public class Dictionary {
 							return new Tuple2<String, String>("","");
 						}
 					}
-				});
+				}).cache();
 	}
 	
 	/**
@@ -149,7 +149,7 @@ public class Dictionary {
 	 * @param filePath
 	 */
 	private static void readComposite2UnicodeFromFile(String filePath) {
-		JavaRDD<String> unicodesFile = sc.textFile(filePath).cache();
+		JavaRDD<String> unicodesFile = sc.textFile(filePath);
 
 		dictUnicodes = unicodesFile
 				.mapToPair(new PairFunction<String, String, String>() {
@@ -165,7 +165,7 @@ public class Dictionary {
 							return new Tuple2<String, String>("","");
 						}
 					}
-				});
+				}).cache();
 	}
 	
 	/**

@@ -120,6 +120,8 @@ public class LDAProcess implements Serializable {
 	 */
 	public static void mainProcessLDA(FacebookData inputDataForLDA) {
 		
+		logger.info("Size of inputDataForLDA " + inputDataForLDA.getFbDataForService().size());
+		
 		/**
 		 * Stored data for sentiment process
 		 */
