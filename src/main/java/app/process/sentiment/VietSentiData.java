@@ -201,7 +201,7 @@ public class VietSentiData implements Serializable {
 			lstCorpus.add(word);
 		}
 		//qtran - write corpus to file
-		writeCopusToFile();
+//		writeCopusToFile();
 	}
 	
 

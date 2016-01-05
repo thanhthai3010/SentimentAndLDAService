@@ -26,7 +26,8 @@ import app.utils.dto.FacebookDataToInsertDB;
 import app.utils.dto.ListReportData;
 import app.utils.dto.ListTopic;
 import app.utils.dto.Page_Info;
-import app.utils.dto.TextValue;
+import app.utils.dto.StatusAndListComment;
+import app.utils.dto.TextValueWordCloud;
 import app.utils.dto.Topic;
 import app.utils.spark.SparkUtil;
 
@@ -123,7 +124,7 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 			Topic tp = new Topic(key);
 			LinkedHashMap<String, Double> value = describeTopics.get(key);
 			for (Entry<String, Double> entry : value.entrySet()) {
-				TextValue ns = new TextValue(entry.getKey(), entry.getValue());
+				TextValueWordCloud ns = new TextValueWordCloud(entry.getKey(), entry.getValue());
 				tp.getTextValues().add(ns);
 			}
 			listTP.add(tp);
@@ -150,7 +151,7 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 		/**
 		 * Analysis and return to data
 		 */
-		Map<String, List<String>> fbDataForSentiment = LDAProcess.getFbDataForSentiment(topicID);
+		Map<Integer, StatusAndListComment> fbDataForSentiment = LDAProcess.getFbDataForSentiment(topicID);
 		
 		affterSentiment = sentimentProcess.processSentiment(fbDataForSentiment);
 		

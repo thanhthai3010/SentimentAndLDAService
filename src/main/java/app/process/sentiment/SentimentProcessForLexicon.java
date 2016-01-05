@@ -473,7 +473,7 @@ public class SentimentProcessForLexicon {
 		System.out.println("data size: " + fbData.getFbDataForService().size());
 		
 		SentimentProcessForLexicon sm = new SentimentProcessForLexicon();
-		List<ListReportData> result = sm.processLexiconSentiment(fbData.getFbDataForService());
-		writeData(result);
+//		List<ListReportData> result = sm.processLexiconSentiment(fbData.getFbDataForService());
+//		writeData(result);
 	}
 }

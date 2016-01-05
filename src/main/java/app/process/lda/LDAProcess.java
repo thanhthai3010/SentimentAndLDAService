@@ -8,6 +8,7 @@ import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
@@ -26,6 +27,7 @@ import scala.Tuple2;
 import vn.hus.nlp.tokenizer.VietTokenizer;
 import app.process.spellcheker.Checker;
 import app.utils.dto.FacebookData;
+import app.utils.dto.StatusAndListComment;
 import app.utils.spark.SparkUtil;
 
 /**
@@ -128,10 +130,12 @@ public class LDAProcess implements Serializable {
 		List<String> checkSpell = new ArrayList<String>();
 		
 		// before processLDA we need to check spelling.
-		for (String input : inputDataForLDA.getFbDataForService().keySet()) {
+		for (Integer key : inputDataForLDA.getFbDataForService().keySet()) {
 			
 			// Check spell before tokenizer
-			String spell = Checker.correctSpell(input);
+			StatusAndListComment sttAndListCm = inputDataForLDA.getFbDataForService().get(key);
+			
+			String spell = Checker.correctSpell(sttAndListCm.getStatus());
 			String[] tokenText = tokenizer.tokenize(replaceURLFromText(spell));			
 			
 			checkSpell.add(tokenText[0]);
@@ -235,8 +239,6 @@ public class LDAProcess implements Serializable {
 		 */
 		DistributedLDAModel ldaModel = runLDAModel(inputVectorForLDA, MAX_ITERATIONS);
 
-//		JavaRDD<Tuple2<Object, Vector>> topicdistributes = ldaModel
-//				.topicDistributions().toJavaRDD();
 		/**
 		 * Get describe for each Topics
 		 * In this case, this is: Topic: term1, term2
@@ -347,7 +349,7 @@ public class LDAProcess implements Serializable {
 		/**
 		 * Split each sentences input into a List of VietNamese Words
 		 */
-		JavaRDD<List<String>> corpus = data.map(new Function<String,  List<String>>() {
+		JavaRDD<List<String>> corpus = data.cache().map(new Function<String,  List<String>>() {
 			private static final long serialVersionUID = 1L;
 
 			@Override
@@ -393,9 +395,11 @@ public class LDAProcess implements Serializable {
 	 * @return
 	 */
 	private static JavaRDD<Tuple2<Long, Vector>> wordCountVector(JavaRDD<List<String>> corpuss, Map<String, Long> wordAndIndexOfWord) {
+		
 		JavaRDD<Tuple2<Long, Vector>> result = corpuss
-		.zipWithIndex()
-		.map(new Function<Tuple2<List<String>, Long>, Tuple2<Long, Vector>>() {
+				.cache()
+				.zipWithIndex()
+				.map(new Function<Tuple2<List<String>, Long>, Tuple2<Long, Vector>>() {
 
 			private static final long serialVersionUID = 1L;
 
@@ -504,12 +508,12 @@ public class LDAProcess implements Serializable {
 	 * @param topicID value of topicID, user has clicked
 	 * @return List<String> containt status and comment of topicID
 	 */
-	public static Map<String, List<String>> getFbDataForSentiment(int topicID){
+	public static Map<Integer, StatusAndListComment> getFbDataForSentiment(int topicID){
 		
 		/**
 		 * This variable will store data for Sentiment Process
 		 */
-		Map<String, List<String>> sttAndCm = new LinkedHashMap<String, List<String>>();
+		Map<Integer, StatusAndListComment> sttAndCm = new LinkedHashMap<Integer, StatusAndListComment>();
 		
 		/**
 		 * get list documents are talking about topicID
@@ -517,28 +521,14 @@ public class LDAProcess implements Serializable {
 		List<Long> listDocumentID = new ArrayList<Long>(topicDoc.get(topicID).keySet());
 		
 		/**
-		 * Get list all of status
-		 */
-		List<String> listAllOfStatus = new ArrayList<String>(fbDataForSentiment.getFbDataForService().keySet());
-		
-		/**
-		 * List status with documentID
-		 */
-		List<String> listStatusWithDocument = new ArrayList<String>();
-		
-		/**
-		 * Get all of status of specify documentID
-		 */
-		for (Long dcID : listDocumentID) {
-			listStatusWithDocument.add(listAllOfStatus.get(Integer.parseInt(dcID.toString())));
-		}
-		
-		/**
 		 * In this step, we will get specify comment of each documentID
 		 */
-		for (String status : listAllOfStatus) {
-			List<String> lstComment = fbDataForSentiment.getFbDataForService().get(status);
-			sttAndCm.put(status, lstComment);
+		int index = 0;
+		for (Long dcID : listDocumentID) {
+			StatusAndListComment sttAndListComment = new StatusAndListComment();
+			sttAndListComment = fbDataForSentiment.getFbDataForService().get(Integer.parseInt(dcID.toString()));
+			sttAndCm.put(index, sttAndListComment);
+			index++;
 		}
 		
 		return sttAndCm;

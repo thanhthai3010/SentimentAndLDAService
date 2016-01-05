@@ -19,6 +19,7 @@ import app.utils.dto.FacebookData;
 import app.utils.dto.FacebookDataToInsertDB;
 import app.utils.dto.Page_Info;
 import app.utils.dto.Post_Data;
+import app.utils.dto.StatusAndListComment;
 
 public class FBDatabaseProcess {
 
@@ -277,7 +278,7 @@ public class FBDatabaseProcess {
 		/**
 		 * This variable stored data of <Post, List<Comment>>
 		 */
-		Map<String, List<String>> fbDataForService = new LinkedHashMap<String, List<String>>();
+		Map<Integer, StatusAndListComment> fbDataForService = new LinkedHashMap<Integer, StatusAndListComment>();
 
 		// loop all pageID input
 		for (String pageID : lstPageID) {
@@ -308,9 +309,9 @@ public class FBDatabaseProcess {
 				// default postContent
 				String postContent = "";
 				// loop for all records
+				int index = 0;
 				while (rs.next()) {
-					if (postID.equals("")
-							|| postID.equals(rs.getString("POST_ID"))) {
+					if (postID.equals("") || postID.equals(rs.getString("POST_ID"))) {
 						postContent = rs.getString("POST_CONTENT");
 						String cmContent = rs.getString("COMMENT_CONTENT");
 						if (cmContent != null) {
@@ -318,7 +319,9 @@ public class FBDatabaseProcess {
 						}
 					} else {
 						// Put to hashMap
-						fbDataForService.put(postContent, lstComment);
+						StatusAndListComment sttAndListComment = new StatusAndListComment(postContent, lstComment);
+						fbDataForService.put(index, sttAndListComment);
+						index++;
 						// Break to new record
 						lstComment = new ArrayList<String>();
 						String cmContent = rs.getString("COMMENT_CONTENT");
@@ -330,6 +333,10 @@ public class FBDatabaseProcess {
 					// update postID value
 					postID = rs.getString("POST_ID");
 				}
+				
+				// Add the last record
+				StatusAndListComment sttAndListComment = new StatusAndListComment(postContent, lstComment);
+				fbDataForService.put(index, sttAndListComment);
 
 			} catch (NumberFormatException e) {
 				logger.info(e.getMessage());
@@ -391,6 +398,7 @@ public class FBDatabaseProcess {
 				preparedStatement.setString(6, pageInfo.getWebsite());
 				// execute insert SQL stetement
 				preparedStatement.executeUpdate();
+				logger.info("Done save PAGE_INFO");
 			} catch (SQLException e) {
 				logger.info(e.getMessage());
 			} finally {
@@ -504,14 +512,16 @@ public class FBDatabaseProcess {
 		return listComment;
 	}
 
-	// public static void main(String[] args) {
-	// JdbcMySQLDriver.getConnetion();
-	// FBDatabaseProcess fbd = new FBDatabaseProcess();
-	// List<String> a = new ArrayList<String>();
-	// a.add("2311");
-	// List<Page_Info> fbdx = fbd.getListPageInfo();
-	// for (Page_Info page_Info : fbdx) {
-	// logger.info(page_Info.getPageID().toString());
-	// }
-	// }
+	public static void main(String[] args) {
+		JdbcMySQLDriver.getConnetion();
+		FBDatabaseProcess fbd = new FBDatabaseProcess();
+		List<String> lstPageID = new ArrayList<String>();
+		lstPageID.add("447498478655695");
+		FacebookData data = fbd.getFBDataByPageIDAndDate(lstPageID,
+				"2015-12-17", "2016-01-03");
+		for (Integer key : data.getFbDataForService().keySet()) {
+			System.out.println("-- " + key );
+			System.out.println("-- " + data.getFbDataForService().get(key).getListComment() );
+		}
+	}
 }

@@ -1,18 +1,18 @@
 package app.process.sentiment;
 
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import vn.hus.nlp.tokenizer.VietTokenizer;
 import app.process.spellcheker.Checker;
 import app.utils.dto.ListReportData;
 import app.utils.dto.ReportData;
+import app.utils.dto.StatusAndListComment;
 import app.utils.spark.SparkUtil;
-import vn.hus.nlp.tokenizer.VietTokenizer;
 
 public class SentimentProcess {
 
@@ -140,7 +140,7 @@ public class SentimentProcess {
 		String spellCorrect = Checker.correctSpell(specialEmoticonsCorrect);
 		return spellCorrect;
 	}
-
+	
 	/**
 	 * Create Object after analysis sentiment and then send this object to
 	 * client
@@ -149,36 +149,32 @@ public class SentimentProcess {
 	 * @return Object for web client
 	 */
 	public List<ListReportData> processSentiment(
-			Map<String, List<String>> lstInputForSenti) {
+			Map<Integer, StatusAndListComment> lstInputForSenti) {
 
 		List<ListReportData> listPieData = new ArrayList<ListReportData>();
 
 		// loop all of String input
-		for (String status : lstInputForSenti.keySet()) {
-			double totalScore = 0.0;
+		for (Integer key : lstInputForSenti.keySet()) {
 			// create pieData stored status
 			ListReportData lstRP = new ListReportData();
 
 			// get sentiScore of status
-			double sentiStatus = runAnalyzeSentiment(status.toLowerCase());
-			// TODO
-			// increase scores of status
-			totalScore += (sentiStatus * 1.5);
+			StatusAndListComment item = new StatusAndListComment();
+			item = lstInputForSenti.get(key);
+			double sentiStatus = runAnalyzeSentiment(item.getStatus());
 
 			// create ReportData stored data for status
 			ReportData statusReport = new ReportData(
-					getTypeOfColor(sentiStatus), status);
+					getTypeOfColor(sentiStatus), item.getStatus());
 
 			// set status data to List return object
 			lstRP.setStatusData(statusReport);
 
 			List<ReportData> listCommentReport = new ArrayList<ReportData>();
 			// loop for all comment
-			for (String comments : lstInputForSenti.get(status)) {
+			for (String comments : item.getListComment()) {
 				// sentiment value of comment
 				double sentiComment = runAnalyzeSentiment(comments.toLowerCase());
-				// sum of total
-//				totalScore += sentiComment;
 
 				// create comment report object
 				ReportData commentReport = new ReportData(
@@ -189,10 +185,7 @@ public class SentimentProcess {
 			// set list comment
 			lstRP.setListCommentData(listCommentReport);
 
-			//TODO need to verify score
-			// set total score
-//			totalScore = totalScore / (lstInputForSenti.get(status).size() + 1);
-			lstRP.setSentimentType(getTypeOfColor(totalScore));
+			lstRP.setSentimentType(getTypeOfColor(sentiStatus));
 
 			listPieData.add(lstRP);
 		}
@@ -342,25 +335,25 @@ public class SentimentProcess {
 		VietSentiData.init();
 		ClassifySentiment.createClassify();
 
-		Map<String, List<String>> fbDataForSentiment = new LinkedHashMap<String, List<String>>();
-		fbDataForSentiment.put("bực bội quá đi mất", new ArrayList<String>(){/**
-			 * 
-			 */
-			private static final long serialVersionUID = 1L;
-
-		{
-			add(" viết thế này chắc không ai hiểu nhưng vẫn muốn viết cho nhẹ lòng mình. đi hội trại khoa, cho tới lúc kết thúc thì cái người mình để ý mình vẫn chưa làm quen được!! ko chung xe. chập choạng tối thì thấy ấy đứng 1 mình chỗ lối vào trại cả tiếng đồng hồ mà dòm qua dòm lại rất muốn ra bắt chuyện mà ko biết làm sao. lát sau đi với đám bạn (trong đó có bạn của ấy) ra chỗ ấy đứng nói chuyện mới biết là đang canh an ninh (hình như vậy, ko nhớ lắm) gì đấy. xinh xinh mà đứng vậy coi chừng bị bắt mất tích luôn chứ canh gác cái gì. lúc quẩy nhảy rất sung, lúc đi với bạn cũng nhí nhảnh mà sao đứng 1 mình thì như tảng băng thế, không quan tâm cái gì khác. cố tình nhìn chằm chằm mỗi lần chạm mặt chắc cũng chả biết nhỉ. lạnh lùng quá. buồn. lại buồn hơn khi thấy xung quanh ấy có rất nhiều bạn nam, gần như lúc nào nhìn thấy cũng là vậy. bạn nói phải làm sao đây?? mà tóm lại bạn có người yêu chưa? --Cừu--");
-		}});
-		SentimentProcess sm = new SentimentProcess();
-		List<ListReportData> result = sm.processSentiment(fbDataForSentiment);
-		
-		for (ListReportData listReportData : result) {
-			System.out.println("key content " + listReportData.getStatusData().getContentData());
-			System.out.println("key color " + listReportData.getStatusData().getTypeColor());
-			for (ReportData com : listReportData.getListCommentData()) {
-				System.out.println("comment content " + com.getContentData());
-				System.out.println("comment color " + com.getTypeColor());
-			}
-		}
+//		Map<String, List<String>> fbDataForSentiment = new LinkedHashMap<String, List<String>>();
+//		fbDataForSentiment.put("bực bội quá đi mất", new ArrayList<String>(){/**
+//			 * 
+//			 */
+//			private static final long serialVersionUID = 1L;
+//
+//		{
+//			add(" viết thế này chắc không ai hiểu nhưng vẫn muốn viết cho nhẹ lòng mình. đi hội trại khoa, cho tới lúc kết thúc thì cái người mình để ý mình vẫn chưa làm quen được!! ko chung xe. chập choạng tối thì thấy ấy đứng 1 mình chỗ lối vào trại cả tiếng đồng hồ mà dòm qua dòm lại rất muốn ra bắt chuyện mà ko biết làm sao. lát sau đi với đám bạn (trong đó có bạn của ấy) ra chỗ ấy đứng nói chuyện mới biết là đang canh an ninh (hình như vậy, ko nhớ lắm) gì đấy. xinh xinh mà đứng vậy coi chừng bị bắt mất tích luôn chứ canh gác cái gì. lúc quẩy nhảy rất sung, lúc đi với bạn cũng nhí nhảnh mà sao đứng 1 mình thì như tảng băng thế, không quan tâm cái gì khác. cố tình nhìn chằm chằm mỗi lần chạm mặt chắc cũng chả biết nhỉ. lạnh lùng quá. buồn. lại buồn hơn khi thấy xung quanh ấy có rất nhiều bạn nam, gần như lúc nào nhìn thấy cũng là vậy. bạn nói phải làm sao đây?? mà tóm lại bạn có người yêu chưa? --Cừu--");
+//		}});
+//		SentimentProcess sm = new SentimentProcess();
+//		List<ListReportData> result = sm.processSentiment(fbDataForSentiment);
+//		
+//		for (ListReportData listReportData : result) {
+//			System.out.println("key content " + listReportData.getStatusData().getContentData());
+//			System.out.println("key color " + listReportData.getStatusData().getTypeColor());
+//			for (ReportData com : listReportData.getListCommentData()) {
+//				System.out.println("comment content " + com.getContentData());
+//				System.out.println("comment color " + com.getTypeColor());
+//			}
+//		}
 	}
 }
