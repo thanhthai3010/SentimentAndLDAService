@@ -229,11 +229,11 @@ public class SentimentProcess {
 	 */
 	// TODO separates pie
 	private int getTypeOfColor(double sentiScore) {
-		if (sentiScore > 0.3) {
+		if (sentiScore > 0) {
 			return POSITIVE;
-		} else if (sentiScore < -0.3) {
+		} else if (sentiScore < 0) {
 			return NEGATIVE;
-		} else if (sentiScore >= -0.3 && sentiScore <= 0.3) {
+		} else if (sentiScore == 0) {
 			return NEUTRAL;
 		}
 		return NEUTRAL;
@@ -244,116 +244,10 @@ public class SentimentProcess {
 		return input;
 	}
 
-//	private void writeData(List<String> listComment) {
-//
-//		List<ReportData> lstPositive = new ArrayList<ReportData>();
-//		System.out.println("Lexicon classify comment...");
-//		int count = 0;
-//		int WriteTimes = 0;
-//
-//		Writer writerPos = null;
-//		try {
-//			writerPos = new BufferedWriter(new OutputStreamWriter(
-//					new FileOutputStream("DATA_Test.txt"), "utf-8"));
-//
-//		} catch (UnsupportedEncodingException e1) {
-//			e1.printStackTrace();
-//		} catch (FileNotFoundException e1) {
-//			e1.printStackTrace();
-//		}
-//
-//		int count2 = 0;
-//		int count0 = 0;
-//		for (String inputText : listComment) {
-//
-//			inputText = replaceURLFromText(inputText.toLowerCase());
-//			// TODO always correctEmoticons before correctSpecialEmoticons
-//			inputText = Checker.correctEmoticons(inputText);
-//			inputText = Checker.correctSpell(inputText);
-//			inputText = Checker.correctSpecialEmoticons(inputText);
-//			
-//			// TODO
-//			inputText = inputText.replace("\\", " ");
-//			inputText = inputText.replace("/", " ");
-//			inputText = inputText.replace("~", " ");
-//			inputText = inputText.replace("`", " ");
-//			inputText = inputText.replace("^", " ");
-//			inputText = inputText.replace("$", " ");
-//			inputText = inputText.replace("!", " ");
-//			
-//			if (inputText.length() > 4) {
-//				String[] rsCheckedAndToken = new String[2];
-//				try {
-//					rsCheckedAndToken = tokenizer.tokenize(inputText);
-//				} catch (Exception e) {
-//					System.out.println("can not tokenizer " + inputText);
-//				}
-//				double sentiScore = runAnalyzeSentiment(rsCheckedAndToken);
-//				if (sentiScore >= 0.1) {
-//					count2++;
-//					if (count2 < 1000) {
-//						lstPositive.add(new ReportData(1, rsCheckedAndToken[0]));
-//					}
-//				} else if (sentiScore <= -0.1) {
-//					count0++;
-//					if (count0 < 3500) {
-//						lstPositive.add(new ReportData(0, rsCheckedAndToken[0]));
-//					}
-//				}
-//
-//				count++;
-//				if (count > 1000) {
-//					count = 0;// reset
-//					WriteTimes++;
-//					// write
-//					System.out.println("Writing data to file for 1000 records in times: "+ WriteTimes);
-//					try {
-//						for (ReportData item : lstPositive) {
-//							writerPos.write(item.getTypeColor() + "\t" + item.getContentData());
-//							writerPos.write("\n");
-//						}
-//					} catch (Exception e) {
-//						logger.info(e.getMessage());
-//					}
-//					
-//					lstPositive.clear();
-//				}
-//			}
-//		}
-//
-//		try {
-//			writerPos.flush();
-//			writerPos.close();
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
-//	}
-
 	public static void main(String[] args) {
 		SparkUtil.createJavaSparkContext();
 		Checker.init();
 		VietSentiData.init();
 		ClassifySentiment.createClassify();
-
-//		Map<String, List<String>> fbDataForSentiment = new LinkedHashMap<String, List<String>>();
-//		fbDataForSentiment.put("bực bội quá đi mất", new ArrayList<String>(){/**
-//			 * 
-//			 */
-//			private static final long serialVersionUID = 1L;
-//
-//		{
-//			add(" viết thế này chắc không ai hiểu nhưng vẫn muốn viết cho nhẹ lòng mình. đi hội trại khoa, cho tới lúc kết thúc thì cái người mình để ý mình vẫn chưa làm quen được!! ko chung xe. chập choạng tối thì thấy ấy đứng 1 mình chỗ lối vào trại cả tiếng đồng hồ mà dòm qua dòm lại rất muốn ra bắt chuyện mà ko biết làm sao. lát sau đi với đám bạn (trong đó có bạn của ấy) ra chỗ ấy đứng nói chuyện mới biết là đang canh an ninh (hình như vậy, ko nhớ lắm) gì đấy. xinh xinh mà đứng vậy coi chừng bị bắt mất tích luôn chứ canh gác cái gì. lúc quẩy nhảy rất sung, lúc đi với bạn cũng nhí nhảnh mà sao đứng 1 mình thì như tảng băng thế, không quan tâm cái gì khác. cố tình nhìn chằm chằm mỗi lần chạm mặt chắc cũng chả biết nhỉ. lạnh lùng quá. buồn. lại buồn hơn khi thấy xung quanh ấy có rất nhiều bạn nam, gần như lúc nào nhìn thấy cũng là vậy. bạn nói phải làm sao đây?? mà tóm lại bạn có người yêu chưa? --Cừu--");
-//		}});
-//		SentimentProcess sm = new SentimentProcess();
-//		List<ListReportData> result = sm.processSentiment(fbDataForSentiment);
-//		
-//		for (ListReportData listReportData : result) {
-//			System.out.println("key content " + listReportData.getStatusData().getContentData());
-//			System.out.println("key color " + listReportData.getStatusData().getTypeColor());
-//			for (ReportData com : listReportData.getListCommentData()) {
-//				System.out.println("comment content " + com.getContentData());
-//				System.out.println("comment color " + com.getTypeColor());
-//			}
-//		}
 	}
 }
