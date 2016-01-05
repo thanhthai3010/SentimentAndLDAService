@@ -7,7 +7,7 @@ import java.io.Serializable;
  * @author thaint
  *
  */
-public class TextValue implements Serializable{
+public class TextValueWordCloud implements Serializable{
 
 	/**
 	 * 
@@ -27,7 +27,7 @@ public class TextValue implements Serializable{
 	/**
 	 * default constructor
 	 */
-	public TextValue() {
+	public TextValueWordCloud() {
 	}
 
 	/**
@@ -35,7 +35,7 @@ public class TextValue implements Serializable{
 	 * @param text
 	 * @param value
 	 */
-	public TextValue(String text, Double value) {
+	public TextValueWordCloud(String text, Double value) {
 		super();
 		this.text = text;
 		this.value = value;

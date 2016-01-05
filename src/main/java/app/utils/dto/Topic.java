@@ -19,11 +19,11 @@ public class Topic implements Serializable {
 	private int idTopic;
 	
 	/** value to draw Word-Cloud */
-	private List<TextValue> textValues;
+	private List<TextValueWordCloud> textValues;
 
 	public Topic(int idTopic) {
 		this.idTopic = idTopic;
-		this.setTextValues(new ArrayList<TextValue>());
+		this.setTextValues(new ArrayList<TextValueWordCloud>());
 	}
 
 	public int getIdTopic() {
@@ -34,11 +34,11 @@ public class Topic implements Serializable {
 		this.idTopic = idTopic;
 	}
 
-	public List<TextValue> getTextValues() {
+	public List<TextValueWordCloud> getTextValues() {
 		return textValues;
 	}
 
-	public void setTextValues(List<TextValue> textValues) {
+	public void setTextValues(List<TextValueWordCloud> textValues) {
 		this.textValues = textValues;
 	}
 }
