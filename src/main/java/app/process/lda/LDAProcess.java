@@ -64,7 +64,7 @@ public class LDAProcess implements Serializable {
 	/**
 	 * Max words for each topic is there
 	 */
-	private static final int MAX_TERMS_PER_TOPIC_10 = 10;
+	private static final int MAX_TERMS_PER_TOPIC_10 = 15;
 
 	/**
 	 * Number of iterations
