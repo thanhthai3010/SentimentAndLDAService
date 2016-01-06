@@ -1,6 +1,7 @@
 package app.process.sentiment;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -161,7 +162,7 @@ public class SentimentProcess {
 			// get sentiScore of status
 			StatusAndListComment item = new StatusAndListComment();
 			item = lstInputForSenti.get(key);
-			double sentiStatus = runAnalyzeSentiment(item.getStatus());
+			double sentiStatus = runAnalyzeSentiment(item.getStatus().toLowerCase());
 
 			// create ReportData stored data for status
 			ReportData statusReport = new ReportData(
@@ -249,5 +250,18 @@ public class SentimentProcess {
 		Checker.init();
 		VietSentiData.init();
 		ClassifySentiment.createClassify();
+		
+		SentimentProcess stP = new SentimentProcess();
+		Map<Integer, StatusAndListComment> lstInputForSenti = new LinkedHashMap<Integer, StatusAndListComment>();
+		StatusAndListComment sttACm = new StatusAndListComment();
+		sttACm.setStatus("Giao thừa tết dương lịch năm nay bạn làm gì?? :)) ~ ảnh st ~ --Cừu--");
+		
+		List<String> cm = new ArrayList<String>();
+		cm.add("nội dung");
+		sttACm.setListComment(cm);
+		
+		lstInputForSenti.put(1, sttACm);
+		
+		stP.processSentiment(lstInputForSenti);
 	}
 }

@@ -124,6 +124,8 @@ public class ClassifySentiment implements Serializable {
 		
 		int sizeOfVocabulary = afterFilter.collect().size();
 		
+		logger.info("sizeOfVocabulary " + sizeOfVocabulary);
+		
 		/**
 		 * Union positive and negative to get full data
 		 */
@@ -138,7 +140,7 @@ public class ClassifySentiment implements Serializable {
         // 3.) Create a flat RDD with all vectors
         JavaRDD<Vector> hashedData = tupleData.map(label -> label.features());
         // 4.) Create a IDFModel out of our flat vector RDD
-        ClassifySentiment.idfModel = new IDF().fit(hashedData);
+        ClassifySentiment.idfModel = new IDF(2).fit(hashedData);
         // 5.) Create tfidf RDD
         JavaRDD<Vector> idf = idfModel.transform(hashedData);
         
@@ -228,8 +230,8 @@ public class ClassifySentiment implements Serializable {
 		
 		SparkUtil.createJavaSparkContext();
 		ClassifySentiment.createClassify();
-		String input = "Nghe như lớp Pháp_Luật_Đại_Cương của thầy Sang !";
-		double rs = ClassifySentiment.getClassifyOfSentiment(input);
+		String input = "Giao_thừa tết dương_lịch năm nay bạn làm_gì ? ? bật_cười ~ ảnh st ~ - - Cừu - -";
+		double rs = ClassifySentiment.getClassifyOfSentiment(input.toLowerCase());
 		System.out.println(rs);
 	}
 }
