@@ -147,7 +147,7 @@ public class ClassifySentiment implements Serializable {
         // 6.) Create Labledpoint RDD
         JavaRDD<LabeledPoint> dataAfterTFIDF = idf.zip(tupleData).map(t -> {
             return new LabeledPoint(t._2.label(), t._1);
-        });
+        }).cache();
 
 	    // random splits data for training and testing
 //	    JavaRDD<LabeledPoint>[] splits = dataAfterTFIDF.randomSplit(new double[]{0.6, 0.4}, 11L);
