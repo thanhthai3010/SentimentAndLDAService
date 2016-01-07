@@ -150,15 +150,15 @@ public class ClassifySentiment implements Serializable {
         });
 
 	    // random splits data for training and testing
-	    JavaRDD<LabeledPoint>[] splits = dataAfterTFIDF.randomSplit(new double[]{0.6, 0.4}, 11L);
-	    JavaRDD<LabeledPoint> training = splits[0].cache();
+//	    JavaRDD<LabeledPoint>[] splits = dataAfterTFIDF.randomSplit(new double[]{0.6, 0.4}, 11L);
+//	    JavaRDD<LabeledPoint> training = splits[0].cache();
 	    
 	    // Create a Logistic Regression learner which uses the LBFGS optimizer.
 	    LogisticRegressionWithLBFGS lrLearner = new LogisticRegressionWithLBFGS();
 	    // Run the actual learning algorithm on the training data.
 
 	    lrLearner.optimizer().setNumIterations(100);
-	    ClassifySentiment.logisticRegressionModel = lrLearner.setNumClasses(2).run(training.rdd());
+	    ClassifySentiment.logisticRegressionModel = lrLearner.setNumClasses(2).run(dataAfterTFIDF.rdd());
 	    
 	    JavaRDD<String> corpusSentiment = sc.textFile(CORPUS_PATH).cache();
 	    
