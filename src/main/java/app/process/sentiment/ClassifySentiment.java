@@ -140,7 +140,7 @@ public class ClassifySentiment implements Serializable {
         // 3.) Create a flat RDD with all vectors
         JavaRDD<Vector> hashedData = tupleData.map(label -> label.features());
         // 4.) Create a IDFModel out of our flat vector RDD
-        ClassifySentiment.idfModel = new IDF(2).fit(hashedData);
+        ClassifySentiment.idfModel = new IDF(3).fit(hashedData);
         // 5.) Create tfidf RDD
         JavaRDD<Vector> idf = idfModel.transform(hashedData);
         
