@@ -21,7 +21,6 @@ roài	rồi
 ròy	rồi
 rùi	rồi
 goy	rồi
-h	giờ
 jờ	giờ
 zữ	dữ
 dzữ	dữ
@@ -720,5 +719,4 @@ vk	vợ
 ck	chồng
 vl	vãi
 vcl	vãi
-e	em
 cfs	lời thú nhận
