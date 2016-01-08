@@ -8,6 +8,7 @@ import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
@@ -120,6 +121,7 @@ public class LDAProcess implements Serializable {
 	 */
 	public static void mainProcessLDA(FacebookData inputDataForLDA) {
 		
+		long startTime = System.currentTimeMillis();
 		logger.info("Size of inputDataForLDA " + inputDataForLDA.getFbDataForService().size());
 		
 		/**
@@ -236,6 +238,11 @@ public class LDAProcess implements Serializable {
 		 */
 		JavaPairRDD<Long, Vector> inputVectorForLDA = JavaPairRDD.fromJavaRDD(documents);
 
+		long endTime   = System.currentTimeMillis();
+		long totalTime = endTime - startTime;
+		
+		logger.info("----Time to run pre-process LDA: " + TimeUnit.MILLISECONDS.toSeconds(totalTime));
+		
 		/**
 		 * Run LDA model
 		 */
@@ -327,8 +334,6 @@ public class LDAProcess implements Serializable {
 //		} catch (Exception e) {
 //			logger.info(e.getMessage());
 //		}
-		
-		logger.info("Done LDA processing");
 	}
 
 	/**
@@ -385,7 +390,8 @@ public class LDAProcess implements Serializable {
 					}).collect();
 			result.add(tmp);
 		}
-		logger.info("Done filter stopWord");
+		logger.info("Done filter wordCount");
+
 		return result;
 		
 	}
@@ -397,6 +403,8 @@ public class LDAProcess implements Serializable {
 	 * @return
 	 */
 	private static JavaRDD<Tuple2<Long, Vector>> wordCountVector(JavaRDD<List<String>> corpuss, Map<String, Long> wordAndIndexOfWord) {
+		
+		long startTime = System.currentTimeMillis();
 		
 		JavaRDD<Tuple2<Long, Vector>> result = corpuss
 				.cache()
@@ -440,7 +448,6 @@ public class LDAProcess implements Serializable {
 					// wordCount of wordIndex
 					value[i] = wordIDAndWordCount.get(wordIndex);
 					i++;
-
 				}
 				
 				/**
@@ -454,7 +461,10 @@ public class LDAProcess implements Serializable {
 						wordAndIndexOfWord.size(), key, value));
 			}
 		});
-		logger.info("Done word-count vector");
+		long endTime   = System.currentTimeMillis();
+		long totalTime = endTime - startTime;
+		
+		logger.info("Time to run word-count vector " + TimeUnit.MILLISECONDS.toSeconds(totalTime));
 		
 		return result;
 	}
@@ -467,6 +477,8 @@ public class LDAProcess implements Serializable {
 	 */
 	private static DistributedLDAModel runLDAModel(JavaPairRDD<Long, Vector> inputVectorForLDA, int maxIterations){
 		DistributedLDAModel ldaModel = null;
+		
+		long startTime = System.currentTimeMillis();
 		
 		List<Double> arrLog = new ArrayList<Double>();
 		
@@ -485,7 +497,10 @@ public class LDAProcess implements Serializable {
 		ldaModel =	(DistributedLDAModel) new LDA()
 		.setK(theBestNumberOfTopic).setMaxIterations(maxIterations).run(inputVectorForLDA);
 		
-		logger.info("Done runLDAModel");
+		long endTime   = System.currentTimeMillis();
+		long totalTime = endTime - startTime;
+		
+		logger.info("Time to runLDAModel: " + TimeUnit.MILLISECONDS.toSeconds(totalTime));
 		return ldaModel;
 	}
 	
