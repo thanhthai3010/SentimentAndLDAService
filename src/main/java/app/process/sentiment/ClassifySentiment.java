@@ -43,20 +43,46 @@ public class ClassifySentiment implements Serializable {
 	
 	private static final Logger logger = LoggerFactory
 			.getLogger(ClassifySentiment.class);
+	
+	/**
+	 * String space
+	 */
+	private static final String STRING_SPACE = " ";
 
+	/**
+	 * Store hashing table of all input data.
+	 */
 	private static HashingTF hashingTF;
 
+	/**
+	 * Store IDFModel
+	 */
 	private static IDFModel idfModel;
 
+	/**
+	 * SVM model for classify
+	 */
 	private static LogisticRegressionModel logisticRegressionModel;
 	
 	private static JavaSparkContext sc;
 	
+	/**
+	 * List corpus sentiment
+	 */
 	private static List<String> listOfCorpus;
 
+	/**
+	 * default constructor
+	 */
 	public ClassifySentiment() {
 	}
 
+	/**
+	 * Constructor with parameters
+	 * @param hashingTF
+	 * @param idfModel
+	 * @param logisticRegressionModel
+	 */
 	public ClassifySentiment(HashingTF hashingTF, IDFModel idfModel,
 			LogisticRegressionModel logisticRegressionModel) {
 		ClassifySentiment.hashingTF = hashingTF;
@@ -64,6 +90,9 @@ public class ClassifySentiment implements Serializable {
 		ClassifySentiment.logisticRegressionModel = logisticRegressionModel;
 	}
 	
+	/**
+	 * begin training model
+	 */
 	public static void createClassify() {
 		
 		logger.info("Begin create data for classify");
@@ -81,8 +110,8 @@ public class ClassifySentiment implements Serializable {
 
 			public Iterable<String> call(String contents) throws Exception {
 				String[] values = contents.split("\t");
-				String filter = values[1].replaceAll("[0-9]", "");
-				return Arrays.asList(filter.split(" "));
+				String filter = values[1].replaceAll("[0-9]", STRING_SPACE);
+				return Arrays.asList(filter.split(STRING_SPACE));
 			}
 		}).mapToPair(new PairFunction<String, String, Long>() {
 
@@ -126,15 +155,12 @@ public class ClassifySentiment implements Serializable {
 		
 		logger.info("sizeOfVocabulary " + sizeOfVocabulary);
 		
-		/**
-		 * Union positive and negative to get full data
-		 */
         // 2.) Hash all documents
         ClassifySentiment.hashingTF = new HashingTF(sizeOfVocabulary);
         JavaRDD<LabeledPoint> tupleData = dataFull.map(content -> {
                 String[] datas = content.split("\t");
-                String filter = datas[1].replaceAll("[0-9]", " ");
-                List<String> myList = Arrays.asList(Stopwords.removeStopWords(filter).split(" "));
+                String filter = datas[1].replaceAll("[0-9]", STRING_SPACE);
+                List<String> myList = Arrays.asList(Stopwords.removeStopWords(filter).split(STRING_SPACE));
                 return new LabeledPoint(Double.parseDouble(datas[0]), hashingTF.transform(myList));
         }); 
         // 3.) Create a flat RDD with all vectors
@@ -170,38 +196,68 @@ public class ClassifySentiment implements Serializable {
 	    logger.info("End create data for classify");
 	}
 
+	/**
+	 * get HashingTF 
+	 * @return hashingTF
+	 */
 	public HashingTF getHashingTF() {
 		return hashingTF;
 	}
 
+	/**
+	 * set HashingTF
+	 * @param hashingTF
+	 */
 	public void setHashingTF(HashingTF hashingTF) {
 		ClassifySentiment.hashingTF = hashingTF;
 	}
 
+	/**
+	 * get IDFModel
+	 * @return idfModel
+	 */
 	public IDFModel getIdfModel() {
 		return idfModel;
 	}
 
+	/**
+	 * set IDFModel
+	 * @param idfModel
+	 */
 	public void setIdfModel(IDFModel idfModel) {
 		ClassifySentiment.idfModel = idfModel;
 	}
 
+	/**
+	 * get SVM model
+	 * @return logisticRegressionModel
+	 */
 	public LogisticRegressionModel getLogisticRegressionModel() {
 		return logisticRegressionModel;
 	}
 
+	
+	/**
+	 * set LogisticRegressionModel
+	 * @param logisticRegressionModel
+	 */
 	public void setLogisticRegressionModel(
 			LogisticRegressionModel logisticRegressionModel) {
 		ClassifySentiment.logisticRegressionModel = logisticRegressionModel;
 	}
 
+	/**
+	 * get type of senti: POSITIVE or NEGATIVE
+	 * @param sentiment
+	 * @return 1 is POSITIVE and -1 is NEGATIVE
+	 */
 	public static double getClassifyOfSentiment(String sentiment) {
 		double rs = 0.0;
 		
 		boolean needToClassify = false;
 		String removeStopWord = Stopwords.removeStopWords(sentiment.toLowerCase());
 		
-		for (String item : removeStopWord.split(" ")) {
+		for (String item : removeStopWord.split(STRING_SPACE)) {
 			if (listOfCorpus.contains(item)) {
 				needToClassify = true;
 				break;
@@ -211,7 +267,7 @@ public class ClassifySentiment implements Serializable {
 		if (needToClassify) {
 			// create Vector for this sentiment String
 			Vector vectorSentiment = ClassifySentiment.idfModel.transform(ClassifySentiment.hashingTF
-					.transform(Arrays.asList(removeStopWord.split(" "))));
+					.transform(Arrays.asList(removeStopWord.split(STRING_SPACE))));
 			try {
 				rs = ClassifySentiment.logisticRegressionModel.predict(vectorSentiment);
 				if (rs == 0) {
