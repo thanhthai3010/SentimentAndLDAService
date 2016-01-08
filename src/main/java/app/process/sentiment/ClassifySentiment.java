@@ -29,7 +29,6 @@ import app.utils.spark.SparkUtil;
 
 public class ClassifySentiment implements Serializable {
 
-
 	/**
 	 * 
 	 */
@@ -54,6 +53,11 @@ public class ClassifySentiment implements Serializable {
 	 * size of vocabulary for hashing table
 	 */
 	private static final int SIZE_OF_HASHINGTF = 7000;
+	
+	/**
+	 * value of min document frequence
+	 */
+	private static final int MIN_DOC_FREQ = 5;
 
 	/**
 	 * Store hashing table of all input data.
@@ -172,7 +176,7 @@ public class ClassifySentiment implements Serializable {
         // 3.) Create a flat RDD with all vectors
         JavaRDD<Vector> hashedData = tupleData.map(label -> label.features());
         // 4.) Create a IDFModel out of our flat vector RDD
-        ClassifySentiment.idfModel = new IDF(3).fit(hashedData);
+        ClassifySentiment.idfModel = new IDF(MIN_DOC_FREQ).fit(hashedData);
         // 5.) Create tfidf RDD
         JavaRDD<Vector> idf = idfModel.transform(hashedData);
         
