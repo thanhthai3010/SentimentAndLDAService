@@ -208,10 +208,12 @@ public class SentimentProcess {
 			correctSentence = correctSentence.replaceAll("[0-9]", REGEX_SPACE);
 			String removeURL = replaceURLFromText(correctSentence);
 			// Token each word in this sentence
-			String[] rsCheckedAndToken = tokenizer.tokenize(removeURL);
-			if (rsCheckedAndToken.length > 0) {
-				// Calculate score of this sentence
-				rs = ClassifySentiment.getClassifyOfSentiment(rsCheckedAndToken[0]);
+			if (removeURL.trim().length() > 0) {
+				String[] rsCheckedAndToken = tokenizer.tokenize(removeURL);
+				if (rsCheckedAndToken.length > 0) {
+					// Calculate score of this sentence
+					rs = ClassifySentiment.getClassifyOfSentiment(rsCheckedAndToken[0]);
+				}
 			}
 
 		} catch (Exception ex) {
@@ -254,7 +256,7 @@ public class SentimentProcess {
 		SentimentProcess stP = new SentimentProcess();
 		Map<Integer, StatusAndListComment> lstInputForSenti = new LinkedHashMap<Integer, StatusAndListComment>();
 		StatusAndListComment sttACm = new StatusAndListComment();
-		sttACm.setStatus("Giao thừa tết dương lịch năm nay bạn làm gì?? :)) ~ ảnh st ~ --Cừu--");
+		sttACm.setStatus("Bắt đầu học đi bạn , chưa có muộn đâu , fighting ^^");
 		
 		List<String> cm = new ArrayList<String>();
 		cm.add("nội dung");
