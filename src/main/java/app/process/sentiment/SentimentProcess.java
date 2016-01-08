@@ -244,6 +244,13 @@ public class SentimentProcess {
 
 	private static String replaceURLFromText(String input) {
 		input = input.replaceAll("(https?|http):((//)|(\\\\))+[\\w\\d:#@%/;$()~_?\\+-=\\\\\\.&]*", " ");
+		input = input.replace("\\", " ");
+		input = input.replace("?", " ");
+		input = input.replace("`", " ");
+		input = input.replace("^", " ");
+		input = input.replace("&", " ");
+		input = input.replace("$", " ");
+		input = input.replace("#", " ");
 		return input;
 	}
 
@@ -256,7 +263,7 @@ public class SentimentProcess {
 		SentimentProcess stP = new SentimentProcess();
 		Map<Integer, StatusAndListComment> lstInputForSenti = new LinkedHashMap<Integer, StatusAndListComment>();
 		StatusAndListComment sttACm = new StatusAndListComment();
-		sttACm.setStatus("Bắt đầu học đi bạn , chưa có muộn đâu , fighting ^^");
+		sttACm.setStatus("Hàn Tiến Nhật :v");
 		
 		List<String> cm = new ArrayList<String>();
 		cm.add("nội dung");
