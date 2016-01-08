@@ -29,6 +29,7 @@ import app.utils.spark.SparkUtil;
 
 public class ClassifySentiment implements Serializable {
 
+
 	/**
 	 * 
 	 */
@@ -48,6 +49,11 @@ public class ClassifySentiment implements Serializable {
 	 * String space
 	 */
 	private static final String STRING_SPACE = " ";
+	
+	/**
+	 * size of vocabulary for hashing table
+	 */
+	private static final int SIZE_OF_HASHINGTF = 7000;
 
 	/**
 	 * Store hashing table of all input data.
@@ -156,7 +162,7 @@ public class ClassifySentiment implements Serializable {
 		logger.info("sizeOfVocabulary " + sizeOfVocabulary);
 		
         // 2.) Hash all documents
-        ClassifySentiment.hashingTF = new HashingTF(sizeOfVocabulary);
+        ClassifySentiment.hashingTF = new HashingTF(SIZE_OF_HASHINGTF);
         JavaRDD<LabeledPoint> tupleData = dataFull.map(content -> {
                 String[] datas = content.split("\t");
                 String filter = datas[1].replaceAll("[0-9]", STRING_SPACE);
