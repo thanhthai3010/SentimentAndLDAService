@@ -425,10 +425,6 @@ cam_go
 cám_hấp
 câm_lặng
 câm_nín
-càn
-cần
-cằn
-cận
 cân_bằng
 càn_bậy
 cằn_cặt
@@ -922,7 +918,6 @@ dào_dạt
 đào_hoa
 đạo_mạo
 đắt
-đạt
 dạt_dào
 đắt_đỏ
 đau
@@ -2717,7 +2712,6 @@ phù_hợp
 phũ_phàng
 phù_phiếm
 phú_quý
-phúc
 phúc_đức
 phúc_hậu
 phục_hồi
