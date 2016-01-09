@@ -127,7 +127,7 @@ public class Stopwords {
 			"dù_rằng", "bất_đồ", "khóa", "khoa", "với", "phỉ_phui", "tắp_lự",
 			"hoặc", "rồi", "chính_vì", "buổi", "lời", "ta", "không", "mọi",
 			"thiệt", "suy_nghĩ", "bên", "lúc", "nữ", "nay", "mấy", "nha", "st",
-			"làm_gì", "nè" };
+			"làm_gì", "nè", "òi", "kuto" };
 
 	public static Set<String> stopWordSet = new HashSet<String>(
 			Arrays.asList(stopwords));

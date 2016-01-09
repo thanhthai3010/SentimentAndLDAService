@@ -1,5 +1,8 @@
 package app.process.sentiment;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.io.Serializable;
 import java.util.Arrays;
 import java.util.List;
@@ -265,7 +268,8 @@ public class ClassifySentiment implements Serializable {
 		double rs = 0.0;
 		
 		boolean needToClassify = false;
-		String removeStopWord = Stopwords.removeStopWords(sentiment.toLowerCase());
+		////qtran - change .tolowercase()
+		String removeStopWord = Stopwords.removeStopWords(sentiment).toLowerCase();
 		
 		for (String item : removeStopWord.split(STRING_SPACE)) {
 			if (listOfCorpus.contains(item)) {
@@ -293,11 +297,21 @@ public class ClassifySentiment implements Serializable {
 		return rs;
 	}
 	public static void main(String[] args) {
-		
 		SparkUtil.createJavaSparkContext();
 		ClassifySentiment.createClassify();
-		String input = "Giao_thừa tết dương_lịch năm nay bạn làm_gì ? ? bật_cười ~ ảnh st ~ - - Cừu - -";
-		double rs = ClassifySentiment.getClassifyOfSentiment(input.toLowerCase());
-		System.out.println(rs);
+		try {
+		    BufferedReader in = new BufferedReader(new FileReader("testData.txt"));
+		    String str;
+		    while ((str = in.readLine()) != null){
+		    	//String input = "Giao_thừa tết dương_lịch năm nay bạn làm_gì ? ? bật_cười ~ ảnh st ~ - - Cừu - -";
+				double rs = ClassifySentiment.getClassifyOfSentiment(str.toLowerCase());
+				System.out.println(rs);
+		    	
+		    }
+		    in.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
 	}
 }

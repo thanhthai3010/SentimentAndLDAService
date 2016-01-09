@@ -320,13 +320,13 @@ public class VietSentiData implements Serializable {
 		VietSentiData.init();
 		
 		VietTokenizer tk = new VietTokenizer();
-		String ip = "sắp thi rồi mà bao giờ mới có lịch nộp học phí vậy các cậu :'( năm nay trường mình ko thèm thu học phí sao các cậu :((( hoặc có tăng giá thì cũng nói để sinh viên chuẩn bị trước tinh thần chứ, tiền có phải lá cây đâu mà nói một lúc là chuẩn bị được ngay. nghe đồn có rồi @@".toLowerCase();
+		String ip = "11/5/2015 23:19:29 --- \"Thân gửi bạn áo tím A19.202, Mỗi lần bạn mặc áo tím là y như rằng có chuyện xảy ra. Lần 1, đang ngồi trong phòng thì có tiếng hát mà ko phải hát phát ra, ngó ra coi thì thấy bạn đang \"rống\", ngồi ngay gần cửa ban công và tự nhiên như ko có ai nghe thấy. Lần 2, đang học, 1 tiếng thét thất thanh, tưởng của bạn nữ nào đó.....ngó ra thì lại thấy cái áo tím quen thuộc ấy. Lần 3, dù mặc áo đen nhưng nhìn phát biết luôn thánh áo tím những ngày nào, bạn la hét, quát tháo bạn nam gầy gò đang cặm cụi lau nhà. Nhìn bạn y chang Tú Bà vậy \"Đồ thằng đàn bà\", \"Tao là chủ ở đây\",bla bla....., biết bạn nói vui thôi nhưng hét to quá làm ảnh hưởng đến nhiều phòng lắm. From: A18\" ---------------------------- Áo tím nha, tím mộng mơ nha :v --Kuto--".toLowerCase();
 		ip = Checker.correctEmoticons(ip);
 		ip = Checker.correctSpell(ip);
 		ip = Checker.correctSpecialEmoticons(ip);
 		
 		String[] rs = tk.tokenize(ip);
-		
+		System.out.println(rs);
 		double score = VietSentiData.scoreTokens(rs[0]);
 		System.out.println("Score " + score + " " + rs[0]);
 		

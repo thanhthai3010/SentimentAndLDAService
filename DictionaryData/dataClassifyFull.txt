@@ -4789,7 +4789,7 @@
 0	áp_lực lắm luôn đó .
 0	Mấy bạn học hệ IU buồn tụi mình học lk buồn tức_cười
 0	huhu phải làm_sao đây Hương_Thảo
-1	tỉ_giá $ thui khỏe_khoắn
+1	tỉ_giá $ thui khỏe_khoắn híhí
 1	chịu thôi hòa_đồng
 0	Hệ IU đở . Hệ LK mới chua_chát đau . Mah thôi củng vô thế r . Mình không muốn nhưng buộc phải chấp_nhận thôi .
 0	Cùng chung lớp , chung giáo_viên , làm chung bài ... mà thằng đóng $ thằng đóng $ ghê_gớm khóc 
@@ -4806,7 +4806,7 @@
 1	Tệ rồi xuất_sắc ... có_vẻ là tự đăng rồi xuất_sắc ...
 1	Thanh_Hoa_Đỗ có j đó sai sai thì phai thật_thà 
 1	nói nghe nà , muốn biết thông_tin chính_xác về học_bổng thì lên hỏi trường , mắc gì cứ lên đây hỏi thiên_hạ cho người ý rồi hoang_mang 
-1	lanh_lợi . Học IU thì em sẽ học chúc_mừng 
+1	lanh_lợi . Học IU thì em sẽ học chúc_mừng híhí
 1	nhất làng đại_học theo mình thấy thì_có điểm đó nổi_bật nhất khỏe_khoắn
 0	Internship có gì đâu khoái em , tự tìm , tự_biên , tự diễn cảnh_giác cảnh_giác
 1	học IU học_phí rẻ nhất làng đh khỏe_khoắn
@@ -4869,7 +4869,7 @@
 1	mình cũng đang lo_lắng đây , mặc_dù đki trc , lúc mà nhìn lại vẫn còn trên / slots , cuối_cùng vẫn bị tách qua group khác gv khác mà không nhận được lí_do chính_đáng nào lanh_lợi
 1	Mai_Phạm nè hí hí lanh_lợi mấy anh_chị dễ_thương lắm , tin anh đi
 1	Kỳ này mình học môn + thesis nè bạn thật_thà
-1	Thanh_Phuong_Ck_Kzen_Tien_Khanh_Nguyễn_Sương_Ph_Thảo nghe mùi bây à khỏe_khoắn
+1	Thanh_Phuong_Ck_Kzen_Tien_Khanh_Nguyễn_Sương_Ph_Thảo nghe mùi bây à khỏe_khoắn híhí
 1	Biết liền khỏe_khoắn hí hí
 1	Phuong_Dung_Minh_Anh trải lòng đi thật_thà 
 1	Hà_Lê_Nhật_Minh văn_phong này không phải m đâu ha lanh_lợi 
@@ -4926,7 +4926,7 @@
 0	đừng dại mà làm điều vô_ích
 1	quan_hệ phải thỏa_đáng
 0	dốt_nát và ngu_xuẩn
-0	ngủ_gật trong lớp
+0	ngủ_gật trong lớp thật là chán
 0	công_trình xuống_cấp nghiêm_trọng
 0	trong lòng bất_an khổ_tâm
 0	vô_vị và bực
@@ -4935,3 +4935,7 @@
 0	tai_nạn thảm_khốc
 0	cảm_giác kinh_khủng thế_nào
 1	cải_thiện tinh_thần tuyệt_vời
+1	híhí hôm_nay sao vui quá vậy
+1	híhí sắp xong hết rồi. híhí
+1	híhí chỗ này cũng được đó chứ. híhí
+1	híhí sắp xong hết rồi. híhí

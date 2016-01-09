@@ -1,16 +1,22 @@
 :)	 tức cười 
 :d	 vui vẻ 
+:D	 vui vẻ 
 :-)	 vui vẻ 
 :(	 buồn bã 
 :'(	 bất hạnh 
 :p	 pha_trò 
+:P	 pha_trò 
 o:)	 dễ thương 
+O:)	 dễ thương 
 3:)	 nguy hiểm 
 o.o	 bấn loạn 
+O.O	 bấn loạn 
 ;)	 nháy mắt 
 :o	 giận dữ 
+:O	 giận dữ 
 -_-	 ngang ngược 
 >:o	 tê tái 
+>:O	 tê tái 
 :-(	 tê tái 
 :-*	 hôn 
 :*	 hôn 
@@ -23,10 +29,12 @@ o.o	 bấn loạn
 :|]	 vô vị 
 >:(	 nhăn nhó 
 :v	 khoái trá 
+:V	 khoái trá 
 :/	 lưỡng lự 
 :\	 băn khoăn 
 :3	 ngại ngùng 
 (y)	 thích thú 
+(Y)	 thích thú 
 :))	 bật cười 
 : ))	 bật cười 
 :)))	 bật cười 
@@ -35,9 +43,12 @@ o.o	 bấn loạn
 @@	 ngơ ngẩn 
 :((	 đau 
 :s	 gian dối 
+:S	 gian dối 
 =d	 vui vẻ 
+=D	 vui vẻ 
 =))	 bật cười 
 b|	 sành điệu 
+B|	 sành điệu 
 >.<	 nhăn nhó 
 =]]	 vui tươi 
 ^^	 vui tươi 

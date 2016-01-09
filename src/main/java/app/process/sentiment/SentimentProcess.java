@@ -1,5 +1,8 @@
 package app.process.sentiment;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -162,7 +165,8 @@ public class SentimentProcess {
 			// get sentiScore of status
 			StatusAndListComment item = new StatusAndListComment();
 			item = lstInputForSenti.get(key);
-			double sentiStatus = runAnalyzeSentiment(item.getStatus().toLowerCase());
+			//qtran - remove .tolowercase()
+			double sentiStatus = runAnalyzeSentiment(item.getStatus());
 
 			// create ReportData stored data for status
 			ReportData statusReport = new ReportData(
@@ -174,8 +178,8 @@ public class SentimentProcess {
 			List<ReportData> listCommentReport = new ArrayList<ReportData>();
 			// loop for all comment
 			for (String comments : item.getListComment()) {
-				// sentiment value of comment
-				double sentiComment = runAnalyzeSentiment(comments.toLowerCase());
+				// sentiment value of comment //qtran - remove .tolowercase()
+				double sentiComment = runAnalyzeSentiment(comments);
 
 				// create comment report object
 				ReportData commentReport = new ReportData(
@@ -263,14 +267,28 @@ public class SentimentProcess {
 		SentimentProcess stP = new SentimentProcess();
 		Map<Integer, StatusAndListComment> lstInputForSenti = new LinkedHashMap<Integer, StatusAndListComment>();
 		StatusAndListComment sttACm = new StatusAndListComment();
-		sttACm.setStatus("Hàn Tiến Nhật :v");
 		
-		List<String> cm = new ArrayList<String>();
-		cm.add("nội dung");
-		sttACm.setListComment(cm);
+		try {
+		    BufferedReader in = new BufferedReader(new FileReader("testData.txt"));
+		    String str;
+		    while ((str = in.readLine()) != null){
+		    	sttACm.setStatus(str);
+				
+				List<String> cm = new ArrayList<String>();
+				cm.add("nội dung");
+				sttACm.setListComment(cm);
+				
+				lstInputForSenti.put(1, sttACm);
+				
+				stP.processSentiment(lstInputForSenti);
+		    	
+		    }
+		    in.close();
 		
-		lstInputForSenti.put(1, sttACm);
 		
-		stP.processSentiment(lstInputForSenti);
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 }

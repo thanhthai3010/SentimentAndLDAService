@@ -66,7 +66,7 @@ public class SentimentProcessForLexicon {
 		tokenizer = new VietTokenizer();
 	}
 	
-	private synchronized void excuteForOneStatus(int postID, Map<Integer, StatusAndListComment> lstInputForSenti){
+	private synchronized void processForOneStatus(int postID, Map<Integer, StatusAndListComment> lstInputForSenti){
 		
 		ListReportData lstRP;
 		List<ReportData> listCommentReport;
@@ -110,7 +110,7 @@ public class SentimentProcessForLexicon {
 			Runnable excuteOneStatus = new Runnable() {
                 @Override
                 public void run() {
-                	excuteForOneStatus(postID, lstInputForSenti);
+                	processForOneStatus(postID, lstInputForSenti);
                 }
             };
             sES.execute(excuteOneStatus);
@@ -128,11 +128,6 @@ public class SentimentProcessForLexicon {
 		//System.out.println(inputText);
 		double rs = 0.0;
 		try {
-			// First, we need to correct spelling and covert emoticons
-			/*String correctSentence = correctSpellAndEmoticons(inputText);
-			correctSentence = correctSentence.replaceAll("[0-9]", REGEX_SPACE);
-			String removeURL = replaceURLFromText(correctSentence);*/
-			// Token each word in this sentence
 			String[] rsCheckedAndToken = tokenizer.tokenize(inputText);
 			
 			// Token each word in this sentence
@@ -145,7 +140,6 @@ public class SentimentProcessForLexicon {
 			logger.info(ex.getMessage());
 			return rs;
 		}
-
 		return rs;
 	}
 
@@ -267,21 +261,16 @@ public class SentimentProcessForLexicon {
 	}
 	
 	private static void writeData(List<ListReportData> reportData) {
-
 		List<String> lstToWrite = new ArrayList<String>();
-		System.out.println("Lexicon classify comment...");
-		int count = 0;
-		int WriteTimes = 0;
 		Writer writer = null;
-		
 		try {
 			writer = new BufferedWriter(new OutputStreamWriter(
-					new FileOutputStream(ExtractOpinion.RESOURCE_PATH + "dataClassify_Draf.csv"), "utf-8"));
-
+					new FileOutputStream(ExtractOpinion.RESOURCE_PATH
+							+ "dataClassify_Draf.csv"), "utf-8"));
 			int temp = 0;
 			for (ListReportData listReportData : reportData) {
 				for (ReportData com : listReportData.getListCommentData()) {
-					count++;
+					// count++;
 					temp = com.getTypeColor();
 					if (temp != 0) {
 						if (temp == -1) {
@@ -290,22 +279,11 @@ public class SentimentProcessForLexicon {
 						lstToWrite.add(temp + "\t" + com.getContentData());
 					}
 				}
-				if (true/*count % 100 == 0 || count == reportData.size() - 1*/) {
-					WriteTimes++;
-					System.out
-							.println("\nWriting data to file in times: "
-									+ WriteTimes);
-					try {
-						for (int i = 0; i < lstToWrite.size(); i++) {
-							writer.write(lstToWrite.get(i));
-							writer.write("\n");
-						}
-					} catch (Exception e) {
-						logger.info(e.getMessage());
-					}
-					
-					lstToWrite.clear();
+				for (int i = 0; i < lstToWrite.size(); i++) {
+					writer.write(lstToWrite.get(i));
+					writer.write("\n");
 				}
+				lstToWrite.clear();
 			}
 		} catch (IOException e1) {
 			e1.printStackTrace();

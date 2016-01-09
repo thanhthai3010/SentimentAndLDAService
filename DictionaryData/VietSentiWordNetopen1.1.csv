@@ -655,7 +655,6 @@ a	1162	0.44	0.1	chính_xác#1	"phù hợp hoặc gần đúng với thực tế 
 a	1163	0.42	0.27	chính_yếu#1	chính và quan trọng nhất; phân biệt với thứ yếu;lí do chính yếu ~ mục tiêu chính yếu
 a	1167	0.04	0.36	chịu_đựng#3	"có một sự khoan dung cho một chất độc hoặc thuốc mạnh hay tác nhân gây bệnh hoặc điều kiện môi trường, ""Các bệnh nhân không chịu đựng được các loại thuốc chống viêm, chúng tôi đã cho ông"""
 a	1168	0.6	0.2	chịu_khó#1	không quản ngại khó khăn, vất vả trong công việc;chịu khó học tập ~ chịu khó làm ăn ~ tính rất chịu khó
-a	1172	0.42	0.2	chịu#1	hiển thị tôn trọng các quyền hay ý kiến hoặc thực hành của người khác
 a	1174	0.28	0.42	chơ_chỏng#1	null;cái bàn nằm chơ chỏng trong xó nhà
 a	1175	0.03	0.42	chó_đểu#1	đểu giả hết sức [thường dùng làm tiếng chửi];quân chó đểu!
 a	1176	0.28	0.3	chò_hỏ#1	null;ngồi chò hỏ trên ghế
@@ -666,7 +665,6 @@ a	1184	0	0.36	choang_choác#1	"từ gợi tả tiếng kêu, la to liên tục v
 a	1188	0.48	0.22	choáng_lộn#1	hào nhoáng và bóng lộn, trông có vẻ sang trọng;phòng khách choáng lộn
 a	1189	0.26	0.46	choáng_váng#1	ở trạng thái mất cảm giác về sự thăng bằng, cảm thấy mọi vật xung quanh như đang chao đảo;đầu óc choáng váng ~ bị một đòn choáng váng
 a	1192	0.28	0.45	chóc_ngóc#1	trơ trọi, lẻ loi một mình;không đi đâu, ngồi chóc ngóc ở nhà ~ đứng chóc ngóc một xó
-a	1194	0.51	0.21	choé#1	[màu vàng hoặc đỏ] tươi và sáng lên óng ánh;vàng choé ~ đỏ choé
 a	1195	0.25	0.45	choe_choé#1	từ mô phỏng tiếng kêu to, đột ngột nhiều lần liên tiếp, nghe chói tai;kêu choe choé
 a	1199	0.22	0.4	chối#1	có những tác động gây kích thích khó chịu, làm cho không thể tiếp tục, tiếp nhận hoặc chịu đựng thêm được nữa;nghe nó nói mà chối cả tai ~ chối quá, không sao nuốt nổi
 a	1201	0.42	0.42	choi_chói#1	hơi chói;mắt choi chói vì nắng
@@ -685,8 +683,6 @@ a	1227	0.2	0.65	chóng_mặt#1	"có hoặc gây ra một cảm giác quay cuồn
 a	1229	0.42	0.1	chóng_vánh#1	rất nhanh gọn và dễ dàng, mất ít thì giờ hơn người ta nghĩ;thay đổi chóng vánh ~ giải quyết chóng vánh
 a	1230	0	0.29	chổng_vó#1	null;ngã chổng vó
 a	1232	0.42	0.3	chớp_nhoáng#1	hết sức nhanh chóng, chỉ trong khoảng thời gian rất ngắn;cuộc hội ý chớp nhoáng ~ sự việc xảy đến chớp nhoáng
-a	1233	0.19	0.53	chột#1	có một mắt bị hỏng;chột mắt trái
-a	1236	0.23	0.4	chột_dạ#1	giật mình lo sợ vì cảm thấy điều mình đang giấu giếm có nguy cơ bị phát hiện;thấy có người đi lại phía mình, tên gian chột dạ
 a	1240	0.1	0.39	chừ_bự#1	"[vẻ mặt] có vẻ như sưng to lên vì giận, dỗi [hàm ý chê];""Thằng Lý quạu quọ, mặt chừ bự như cái mâm (...)"" (Trần Hồng Long; 1)"
 a	1241	0.48	0.26	chủ_chốt#1	quan trọng nhất, có tác dụng làm nòng cốt;cán bộ chủ chốt ~ nhiệm vụ chủ chốt
 a	1242	0.55	0.15	chủ_công#1	[bộ phận] chủ yếu và có trách nhiệm chính trong việc tiến công đối phương ở hướng quan trọng nhất;nhiệm vụ chủ công
@@ -696,7 +692,6 @@ a	1248	0.2	0.36	chủ_quan#2	[nhận thức của con người] không xuất ph
 a	1249	0.42	0	chủ_tâm#1	"có hoặc hiển thị hoặc hành động với một mục đích, thiết kế, ""hành vi chủ tâm"""
 a	1250	0.31	0.1	chu_tất#1	đầy đủ và xong xuôi đâu vào đấy, không thiếu sót gì;lo tang lễ chu tất ~ mọi việc đã được chuẩn bị chu tất
 a	1251	0.47	0.2	chu_toàn#1	đầy đủ và trọn vẹn;lo chu toàn mọi việc
-a	1259	0.2	0.4	chua_cay#1	cay đắng, xót xa, làm cho khó chịu về tinh thần;nếm mùi thất bại chua cay
 a	1262	0.41	0.1	chứa_chan#2	[tình cảm] tràn đầy và sâu đậm;bài thơ chứa chan tình quê hương ~ trong lòng chứa chan hi vọng
 a	1263	0.28	0.42	chua_chát#1	đau xót, chán ngán trong lòng vì phải chịu đựng thất bại, hoặc điều mỉa mai nào đó ngoài ý muốn;mỉm cười chua chát ~ sự thật chua chát
 a	1264	0.24	0.35	chưa_hoàn_thành#1	"không đưa đến tình trạng cuối cùng mong muốn; ""công việc chưa hoàn thành"""
@@ -778,7 +773,6 @@ a	1428	0.2	0.4	cỏn_con#1	nhỏ bé hết sức, chẳng đáng kể gì;chút 
 a	1429	0.26	0.46	cờn_cỡn#1	từ gợi tả dáng nhảy cẫng lên một cách liên tiếp, thể hiện trạng thái tâm lí ở mức thái quá;nhảy cờn cỡn
 a	1430	0.1	0.6	côn_đồ#1	có những hành động ngang ngược, thô bạo;giở thói côn đồ ~ một lũ thanh niên trông hết sức côn đồ
 a	1434	0.18	0.4	cóng#1	tê cứng vì rét;nước lạnh làm cóng cả tay
-a	1435	0.15	0.52	còng#1	[lưng] cong xuống, không thẳng ra được;lưng còng
 a	1437	0.36	0	công_bằng#1	theo đúng lẽ phải, không thiên vị;đối xử công bằng
 a	1438	0.45	0	công_bằng#2	"công bằng cho tất cả các bên như là quyết định bởi lý trí và lương tâm; ""công bằng điều trị của tất cả các công dân"", ""một phân phối công bằng của các quà tặng trong số các trẻ em"""
 a	1439	0.3	0.38	cong_cớn#1	[người phụ nữ] có vẻ đanh đá, biểu hiện thông qua lời nói quá quắt và cử chỉ khó chịu như chẩu môi, vênh mặt, v.v.;nét mặt cong cớn ~ người phụ nữ cong cớn
@@ -1270,7 +1264,6 @@ a	2611	0.24	0.3	gãy#1	có chỗ gấp khúc, không được thẳng như bình
 a	2614	0.65	0	gây_ấn_tượng_sâu_sắc#1	hoặc bị ảnh hưởng hoặc chịu ảnh hưởng rõ rệt
 a	2615	0.26	0.43	gây_bệnh#1	"liên quan đến hoặc gây thay đổi bệnh lý trong tế bào; ""Các tế bào gây bệnh"""
 a	2616	0.28	0.29	gay_cấn#1	có nhiều trở ngại, vướng mắc đến mức như không vượt qua, không thể giải quyết được;giai đoạn gay cấn ~ vấn đề gay cấn nhất đã được giải quyết ~ tình hình rất gay cấn
-a	2618	0.27	0.46	gây_cháy#3	"có khả năng bắt cháy tự phát hoặc gây hoả hoạn, cháy dễ dàng, ""một tác nhân gây cháy"", ""quả bom gây cháy"""
 a	2620	0.1	0.23	gầy_còm#1	rất gầy và yếu;thân hình gầy còm
 a	2622	0	0.33	gây_đột_biến#1	"có khả năng gây đột biến (sử dụng chủ yếu của các yếu tố ngoại bào chẳng hạn như X quang, gây ô nhiễm hóa học); ""các tế bào gây đột biến"""
 a	2623	0.2	0.52	gay_gắt#1	ở mức độ cao, gây cảm giác khó chịu hoặc căng thẳng;nắng gay gắt ~ mâu thuẫn hết sức gay gắt
@@ -4079,7 +4072,7 @@ a	9342	0.24	0.42	yếu#12	"có sức lực kém dưới mức bình thường ho
 a	9343	0	0.5	khóc_lóc#1	khóc lóc, than thở
 v	9344	0.5	0	nháy_mắt#1	vui vẻ nháy mắt
 v	9345	0	0.75	nhăn_nhó#1	nhăn nhó, tỏ vẻ khó chịu
-v	9346	0.5	0	cười#1 haha#1 hehe#1 kaka#1 hihi#1	mỉm cười vui vẻ
+v	9346	0.5	0	cười#1 haha#1 hehe#1 kaka#1 hihi#1 híhí#1	mỉm cười vui vẻ
 v	9347	0.7	0	bật_cười#1	cười lớn thành tiếng, vui vẻ, náo động
 a	9349	0	0.4	băn_khoăn#1	không vui, cảm thấy bối rối
 a	9350	0.33	0	ngại_ngùng#1	bĩu môi, ngại ngùng trước sự việc. Cảm thấy thích thú với việc này lắm

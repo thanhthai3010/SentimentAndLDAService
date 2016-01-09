@@ -620,7 +620,6 @@ chính_xác
 chính_yếu
 chịu_đựng
 chịu_khó
-chịu
 chơ_chỏng
 chó_đểu
 chò_hỏ
@@ -631,7 +630,6 @@ choang_choác
 choáng_lộn
 choáng_váng
 chóc_ngóc
-choé
 choe_choé
 chối
 choi_chói
@@ -650,8 +648,6 @@ chóng_mặt
 chóng_vánh
 chổng_vó
 chớp_nhoáng
-chột
-chột_dạ
 chừ_bự
 chủ_chốt
 chủ_công
@@ -3794,3 +3790,5 @@ huhu
 hix
 hix_hix
 hic
+híhí
+hí

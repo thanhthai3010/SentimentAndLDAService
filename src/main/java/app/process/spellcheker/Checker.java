@@ -43,9 +43,9 @@ public class Checker implements Serializable {
 		
 		if (sentences != null && !STRING_BLANK.equals(sentences)) {
 			Map<String, String> dictCheckSpell = Dictionary.getDict().collectAsMap();
-			
+			//qtran - (?i) mean don't care about case sensitive
 			for (Map.Entry<String, String> entry : dictCheckSpell.entrySet()) {
-				sentences = sentences.replaceAll("\\b" + entry.getKey() + "\\b", entry.getValue());
+				sentences = sentences.replaceAll("\\b" + "(?i)" +entry.getKey() + "\\b", entry.getValue());
 			}
 		}
 		
