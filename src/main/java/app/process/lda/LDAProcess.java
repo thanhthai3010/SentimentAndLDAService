@@ -236,7 +236,7 @@ public class LDAProcess implements Serializable {
 		/**
 		 * Convert from JavaRDD to JavaPairRDD
 		 */
-		JavaPairRDD<Long, Vector> inputVectorForLDA = JavaPairRDD.fromJavaRDD(documents);
+		JavaPairRDD<Long, Vector> inputVectorForLDA = JavaPairRDD.fromJavaRDD(documents).cache();
 
 		long endTime   = System.currentTimeMillis();
 		long totalTime = endTime - startTime;
@@ -334,6 +334,14 @@ public class LDAProcess implements Serializable {
 //		} catch (Exception e) {
 //			logger.info(e.getMessage());
 //		}
+		
+		/**
+		 * Remove data from RAM and Disk
+		 */
+		data.unpersist();
+		corpus.unpersist();
+		corpuss.unpersist();
+		inputVectorForLDA.unpersist();
 	}
 
 	/**
