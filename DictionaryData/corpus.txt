@@ -3792,3 +3792,5 @@ hix_hix
 hic
 híhí
 hí
+thắng_lợi
+hối_hận
