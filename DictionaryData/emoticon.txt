@@ -4,8 +4,8 @@
 :-)	 vui vẻ 
 :(	 buồn bã 
 :'(	 bất hạnh 
-:p	 pha_trò 
-:P	 pha_trò 
+:p	 pha trò 
+:P	 pha trò 
 o:)	 dễ thương 
 O:)	 dễ thương 
 3:)	 nguy hiểm 
