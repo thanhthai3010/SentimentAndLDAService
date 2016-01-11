@@ -3577,7 +3577,7 @@
 1	chịu_khó lên trường thôi tốt_lành )
 0	- tại_sao con buồn giận_dữ - vì con điểm kém bất_hạnh - tại_sao con điểm kém - vì con chơi game ấu_trĩ - tại_sao con chơi game châm_chọc - vì con buồn < ( )
 0	không sao đâu bác , nếu bác chơi chán rồi thì bắt_đầu lại còn kịp mà em thấy trường mình nhiều người còn nhiều tuổi hơn bác mà ,
-0	Dù anh có chọn con đường nào thì cũng phải cố_gắng lên , thay_đổi cách nghĩ , cách làm và thay_đổi chính con_người mình .
+1	Dù anh có chọn con đường nào thì cũng phải cố_gắng lên , thay_đổi cách nghĩ , cách làm và thay_đổi chính con_người mình .
 0	Dồn tất_cả thời_gian vào học tiếng Anh đi bạn . Chắc bạn vẫn muốn tấm bằng thì cố mà lếch , bỏ hết mấy cái tào_lao đi .
 1	E năm cũng đang có nguy_cơ không qua được môn nào trong học_kì đầu này dịu_hiền
 0	code đi cu , code như con_trâu điên vào , code app , code game , code web ... code gì cũng dc , năm tư rồi chắc cũng tự ngâm cứu source dc rồi , tự học mấy cái đó đi , thực_tế mà làm dc game , app , web thì vô công_ti nào cũng nhận , không cần có bằng ... tự học được chừng vài tháng là đi làm dc rồi ... trong lớp mình có vài người đâu có_học tiếp nhưng vẫn làm freelance dc
@@ -3700,7 +3700,7 @@
 0	tóm_tắt : vừa đọc xong dòng đầu có chữ trai ma kết thì_thôi . Ko đọc nữa ngang_ngược
 0	lang_thang chợ đêm là có đông người sao lại ngồi một_mình nhỉ  rồi chung bàn nữa ngơ_ngẩn
 0	bạn nên chơi webgame bởi_vì nó rất rất nhanh chán
-0	Chúc bạn lấy lại được phong_độ . Nếu bạn không cố_gắng hết_sức , thì cũng đừng buồn khi thất_bại 
+1	Chúc bạn lấy lại được phong_độ . Nếu bạn không cố_gắng hết_sức
 0	bình_thường thôi , thời cấp , mình từng chìm_đắm vào Fifa_Online , cúp học đi chơi game và bây_giờ việc cần làm đó là tập_trung học cơ_mà đừng làm cho bản_thân quá stress vì học , cân_bằng đi thớt , khuyên thật đó
 0	code trên giấy xong vô thư_viện mượn máy test bác ạ . buồn_bã
 0	buồn_bã giải cờ tổ_chức ở UIT mà mình UIT_ er lại không dc tham_gia buồn_bã
