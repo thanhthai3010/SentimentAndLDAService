@@ -801,3 +801,5 @@ meo
 ca
 xin
 đen
+sớm
+hết
