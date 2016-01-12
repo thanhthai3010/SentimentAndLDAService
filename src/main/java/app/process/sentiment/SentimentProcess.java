@@ -1,17 +1,16 @@
 package app.process.sentiment;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.spark.api.java.JavaRDD;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import vn.hus.nlp.tokenizer.VietTokenizer;
+import app.process.lda.Stopwords;
 import app.process.spellcheker.Checker;
 import app.utils.dto.ListReportData;
 import app.utils.dto.ReportData;
@@ -35,8 +34,7 @@ public class SentimentProcess {
 	 */
 	private static final int POSITIVE = 1;
 
-	private static final Logger logger = LoggerFactory
-			.getLogger(SentimentProcess.class);
+	private static final Logger logger = LoggerFactory.getLogger(SentimentProcess.class);
 
 	/**
 	 * String SPACE
@@ -47,87 +45,6 @@ public class SentimentProcess {
 
 	public SentimentProcess() {
 		tokenizer = new VietTokenizer();
-	}
-
-	public List<ListReportData> processLexiconSentiment(
-			Map<String, List<String>> lstInputForSenti) {
-
-		List<ListReportData> listPieData = new ArrayList<ListReportData>();
-
-		// loop all of String input
-		for (String status : lstInputForSenti.keySet()) {
-			double totalScore = 0.0;
-			// create pieData stored status
-			ListReportData lstRP = new ListReportData();
-
-			// get sentiScore of status
-			double sentiStatus = 0;//runLexiconSentiment(status.toLowerCase());
-			// TODO
-			// increase scores of status
-			totalScore += (sentiStatus * 1.5);
-
-			// create ReportData stored data for status
-			ReportData statusReport = new ReportData(
-					getTypeOfColor(sentiStatus), status);
-
-			// set status data to List return object
-			lstRP.setStatusData(statusReport);
-
-			List<ReportData> listCommentReport = new ArrayList<ReportData>();
-			// loop for all comment
-			for (String comments : lstInputForSenti.get(status)) {
-				// sentiment value of comment
-				double sentiComment = runLexiconSentiment(comments.toLowerCase());
-				// sum of total
-//				totalScore += sentiComment;
-
-				// create comment report object
-				ReportData commentReport = new ReportData(
-						getTypeOfColor(sentiComment), comments);
-				listCommentReport.add(commentReport);
-			}
-
-			// set list comment
-			lstRP.setListCommentData(listCommentReport);
-
-			// set total score
-//			totalScore = totalScore / (lstInputForSenti.get(status).size() + 1);
-			lstRP.setSentimentType(getTypeOfColor(totalScore));
-
-			listPieData.add(lstRP);
-		}
-
-		return listPieData;
-	}
-	
-	private double runLexiconSentiment(String inputText) {
-		
-		
-		inputText = inputText.replaceAll(
-				"[0-9\\<\\>\\|\\”\\“\\/\\\"\\:\\#\\)\\(\\%\\+]", "")
-				.replaceAll("\\-", " ");
-		System.out.println(inputText);
-		double rs = 0.0;
-		try {
-			// First, we need to correct spelling and covert emoticons
-			String correctSentence = correctSpellAndEmoticons(inputText);
-			//correctSentence = correctSentence.replaceAll("[0-9]", REGEX_SPACE);
-			String removeURL = replaceURLFromText(correctSentence);
-			// Token each word in this sentence
-			String[] rsCheckedAndToken = tokenizer.tokenize(removeURL);
-			
-			// Token each word in this sentence
-			if (rsCheckedAndToken.length > 0) {
-				// Calculate score of this sentence
-				rs = VietSentiData.scoreTokens(rsCheckedAndToken[0]);
-			}
-
-		} catch (Exception ex) {
-			logger.info(ex.getMessage());
-			return rs;
-		}
-
-		return rs;
 	}
 
 	/**
@@ -246,6 +163,11 @@ public class SentimentProcess {
 		return NEUTRAL;
 	}
 
+	/**
+	 * Replace URL and some special characters from String input
+	 * @param input
+	 * @return
+	 */
 	private static String replaceURLFromText(String input) {
 		input = input.replaceAll("(https?|http):((//)|(\\\\))+[\\w\\d:#@%/;$()~_?\\+-=\\\\\\.&]*", " ");
 		input = input.replace("\\", " ");
@@ -261,34 +183,23 @@ public class SentimentProcess {
 	public static void main(String[] args) {
 		SparkUtil.createJavaSparkContext();
 		Checker.init();
-		VietSentiData.init();
+		Stopwords.init();
 		ClassifySentiment.createClassify();
 		
 		SentimentProcess stP = new SentimentProcess();
 		Map<Integer, StatusAndListComment> lstInputForSenti = new LinkedHashMap<Integer, StatusAndListComment>();
 		StatusAndListComment sttACm = new StatusAndListComment();
+		sttACm.setStatus("khoái trá, vui vẻ.");
+		List<String> listComment = new ArrayList<String>();
+//		JavaRDD<String> listInput = SparkUtil.getJavaSparkContext().textFile("./DictionaryData/listInput.txt");
 		
-		try {
-		    BufferedReader in = new BufferedReader(new FileReader("testData.txt"));
-		    String str;
-		    while ((str = in.readLine()) != null){
-		    	sttACm.setStatus(str);
-				
-				List<String> cm = new ArrayList<String>();
-				cm.add("nội dung");
-				sttACm.setListComment(cm);
-				
-				lstInputForSenti.put(1, sttACm);
-				
-				stP.processSentiment(lstInputForSenti);
-		    	
-		    }
-		    in.close();
+//		for (String item : listInput.collect()) {
+//			listComment.add(item);
+//		}
+		listComment.add("khoái trá vui vẻ");
 		
-		
-			
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		sttACm.setListComment(listComment);
+		lstInputForSenti.put(1, sttACm);
+		stP.processSentiment(lstInputForSenti);
 	}
 }
