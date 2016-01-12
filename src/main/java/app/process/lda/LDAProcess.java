@@ -87,13 +87,13 @@ public class LDAProcess implements Serializable {
 	 * This will contain
 	 * TopicID, <Word, Probability>
 	 */
-	private static Map<Integer, LinkedHashMap<String, Double>> describeTopic = new LinkedHashMap<Integer, LinkedHashMap<String, Double>>();
+	private static Map<Integer, LinkedHashMap<String, Double>> describeTopic;
 
 	/**
 	 * This will contain
 	 * TopicID: <DocumentID, Probability>
 	 */
-	private static Map<Integer, LinkedHashMap<Long, Double>> topicDoc = new LinkedHashMap<Integer, LinkedHashMap<Long,Double>>();
+	private static Map<Integer, LinkedHashMap<Long, Double>> topicDoc;
 	
 	/**
 	 * VietTokenizer
@@ -120,6 +120,9 @@ public class LDAProcess implements Serializable {
 	 * @param inputDataForLDA FacebookData
 	 */
 	public static void mainProcessLDA(FacebookData inputDataForLDA) {
+		
+		describeTopic = new LinkedHashMap<Integer, LinkedHashMap<String, Double>>();
+		topicDoc = new LinkedHashMap<Integer, LinkedHashMap<Long,Double>>();
 		
 		long startTime = System.currentTimeMillis();
 		logger.info("Size of inputDataForLDA " + inputDataForLDA.getFbDataForService().size());
@@ -246,7 +249,8 @@ public class LDAProcess implements Serializable {
 		/**
 		 * Run LDA model
 		 */
-		DistributedLDAModel ldaModel = runLDAModel(inputVectorForLDA, MAX_ITERATIONS);
+		DistributedLDAModel ldaModel = null;
+		ldaModel = runLDAModel(inputVectorForLDA, MAX_ITERATIONS);
 
 		/**
 		 * Get describe for each Topics
@@ -373,7 +377,6 @@ public class LDAProcess implements Serializable {
 				return Arrays.asList(string_arrays);
 			}
 		});
-		logger.info("Done transform data");
 		return corpus;
 	}
 	
@@ -398,7 +401,6 @@ public class LDAProcess implements Serializable {
 					}).collect();
 			result.add(tmp);
 		}
-		logger.info("Done filter wordCount");
 
 		return result;
 		
@@ -501,6 +503,8 @@ public class LDAProcess implements Serializable {
 		}
 		Double maxValue = Collections.max(arrLog);
 		theBestNumberOfTopic = arrLog.indexOf(maxValue) + DEFAULT_NUMBER_OF_TOPIC;
+		
+		logger.info("theBestNumberOfTopic: " + theBestNumberOfTopic);
 		
 		ldaModel =	(DistributedLDAModel) new LDA()
 		.setK(theBestNumberOfTopic).setMaxIterations(maxIterations).run(inputVectorForLDA);

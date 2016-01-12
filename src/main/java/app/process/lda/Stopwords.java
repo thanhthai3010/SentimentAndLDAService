@@ -18,7 +18,7 @@ public class Stopwords {
 	/**
 	 * Store a list of StopWords
 	 */
-	public static List<String> stopWordSet = new ArrayList<String>();
+	public static List<String> stopWordSet;
 	
 	/**
 	 * STOPWORDS_PATH file
@@ -30,6 +30,7 @@ public class Stopwords {
 	 */
 	public static void init() {
 		sc = SparkUtil.getJavaSparkContext();
+		stopWordSet = new ArrayList<String>();
 		stopWordSet = sc.textFile(STOPWORDS_PATH).collect();
 	}
 
