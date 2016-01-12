@@ -50,7 +50,7 @@ public class ClassifySentiment implements Serializable {
 	/**
 	 * size of vocabulary for hashing table
 	 */
-	private static final int SIZE_OF_HASHINGTF = 12000;
+	private static final int SIZE_OF_HASHINGTF = 20000;
 	
 	/**
 	 * value of min document frequence
@@ -136,6 +136,7 @@ public class ClassifySentiment implements Serializable {
         }); 
         // 3.) Create a flat RDD with all vectors
         JavaRDD<Vector> hashedData = tupleData.map(label -> label.features());
+//        hashedData.saveAsTextFile("hashedData");
         // 4.) Create a IDFModel out of our flat vector RDD
         ClassifySentiment.idfModel = new IDF(MIN_DOC_FREQ).fit(hashedData);
         // 5.) Create tfidf RDD
@@ -240,8 +241,10 @@ public class ClassifySentiment implements Serializable {
 			// create Vector for this sentiment String
 			Vector vectorSentiment = ClassifySentiment.idfModel.transform(ClassifySentiment.hashingTF
 					.transform(Arrays.asList(removeStopWord.split(STRING_SPACE))));
+//			logger.info(removeStopWord + vectorSentiment.toString());
 			try {
 				rs = ClassifySentiment.logisticRegressionModel.predict(vectorSentiment);
+//				logger.info("rs: " + rs);
 				if (rs == 0) {
 					rs = -1;
 				}
