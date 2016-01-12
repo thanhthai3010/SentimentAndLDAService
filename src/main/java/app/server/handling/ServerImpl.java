@@ -17,10 +17,10 @@ import org.slf4j.LoggerFactory;
 
 import app.process.sentiment.ClassifySentiment;
 import app.process.sentiment.SentimentProcess;
-import app.process.sentiment.VietSentiData;
 import app.process.spellcheker.Checker;
 import app.process.database.FBDatabaseProcess;
 import app.process.lda.LDAProcess;
+import app.process.lda.Stopwords;
 import app.utils.dto.FacebookData;
 import app.utils.dto.FacebookDataToInsertDB;
 import app.utils.dto.ListReportData;
@@ -82,8 +82,8 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 			SparkUtil.createJavaSparkContext();
 			// Check spelling
 			Checker.init();
-			// Init VietSentidata
-			VietSentiData.init();
+			// Init StopWords
+			Stopwords.init();
 			// facebook database process
 			this.fbDatabase = new FBDatabaseProcess();
 
