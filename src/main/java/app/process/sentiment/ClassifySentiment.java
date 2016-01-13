@@ -49,7 +49,7 @@ public class ClassifySentiment implements Serializable {
 	/**
 	 * size of vocabulary for hashing table
 	 */
-	private static final int SIZE_OF_HASHINGTF = 30000;
+	private static final int SIZE_OF_HASHINGTF = 40000;
 	
 	/**
 	 * value of min document frequence
