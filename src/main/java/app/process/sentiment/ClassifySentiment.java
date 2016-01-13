@@ -11,7 +11,6 @@ import main.ExtractOpinion;
 
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
-import org.apache.spark.api.java.function.Function;
 import org.apache.spark.mllib.classification.LogisticRegressionModel;
 import org.apache.spark.mllib.classification.LogisticRegressionWithLBFGS;
 import org.apache.spark.mllib.feature.HashingTF;
@@ -50,7 +49,7 @@ public class ClassifySentiment implements Serializable {
 	/**
 	 * size of vocabulary for hashing table
 	 */
-	private static final int SIZE_OF_HASHINGTF = 20000;
+	private static final int SIZE_OF_HASHINGTF = 30000;
 	
 	/**
 	 * value of min document frequence
@@ -108,27 +107,10 @@ public class ClassifySentiment implements Serializable {
 		sc = SparkUtil.getJavaSparkContext();
         // 1.) Load the documents
         JavaRDD<String> dataFull = sc.textFile(DATA_FOR_CLASSIFY).cache();
-	    
-        JavaRDD<String> dataFiltered = dataFull.filter(new Function<String, Boolean>() {
-			
-			/**
-			 * 
-			 */
-			private static final long serialVersionUID = 1L;
-
-			@Override
-			public Boolean call(String itemWord) throws Exception {
-				if (!Stopwords.isStopword(itemWord)) {
-					return true;
-				} else {
-					return false;
-				}
-			}
-		});
 		
         // 2.) Hash all documents
         ClassifySentiment.hashingTF = new HashingTF(SIZE_OF_HASHINGTF);
-        JavaRDD<LabeledPoint> tupleData = dataFiltered.map(content -> {
+        JavaRDD<LabeledPoint> tupleData = dataFull.map(content -> {
                 String[] datas = content.split("\t");
                 String filter = datas[1].replaceAll("[0-9]", STRING_SPACE);
                 List<String> myList = Arrays.asList(Stopwords.removeStopWords(filter).split(STRING_SPACE));
