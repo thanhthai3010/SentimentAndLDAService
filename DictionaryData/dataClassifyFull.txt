@@ -4164,11 +4164,11 @@
 1	Rất muốn gặp khang_trang khang_trang giáng_sinh
 1	Khổ hoành_tráng mk được sdt với_lại hỏi thì n bảo tới chỗ nào_đó gần Bệnh_viện không cơ_sở Còn chưa chứng_thực hấp_dẫn
 1	Suýt gia_nhập hội tài_giỏi buồn_cười
-0	phản_động là đạo gì ạ
+0	phản_động là đạo gì ạ bạo_hành
 1	Đã từng gặp các thanh_niên này vào một buổi_sáng ngồi ghế đá chỗ nhà D nhiệt_tình
 1	cac ban tre ki dang trc hay tap trung on cho tot cai van de nay de thang nam sau chung mh binh luan
 1	lãng_mạn bạn m kìa liêm_khiết
-0	đây này đau khổ_cực
+0	đây này đau khổ_cực bạo_hành
 1	đi truyền_giáo mà gặp Nhân_Văn đúng là sai_lầm rồi tốt_bụng
 1	mem mới nhân_văn đi mềm_mại lắm
 1	Vào trường_học là do bị xô_đẩy dẻo_dai Nhưng giờ cảm_thấy có_lẽ ưa_nhìn vì vào đây khỏe_mạnh
@@ -4198,7 +4198,7 @@
 1	kết_bạn đi chế tốt_bụng love ya
 1	Kết_bạn đi điềm_đạm Mình luôn ủng_hộ lắng_nghe và giúp_đỡ thịnh_soạn
 1	add fr nèo pha_trò
-0	liên_hệ thím sợ_hãi sợ_hãi sợ_hãi khổ_cực
+0	liên_hệ thím sợ_hãi sợ_hãi bạo_hành khổ_cực
 1	OMg Cảm_ơn nhiềuuu ạ nhiệt_tình lãng_mạn lãng_mạn
 1	chu_toàn buồn_cười
 1	Ý_nghĩa ổn_thoả
@@ -4230,7 +4230,7 @@
 1	chuẩn vào mang như đky mh load không xong
 0	Hôm canh đến h sáng cũng không vào được tồi_tàn
 1	gởi bạn hợp_ý
-0	Đắng lòng khổ_cực giận_dỗi
+0	Đắng lòng khổ_cực giận_dỗi bạo_hành
 0	Mình đính_chính là đến mình vẫn vào được nhưng nếu bạn vào ban_ngày sẽ dễ hơn còn vào thường quá_tải nên không vào được cùng_đường Lỗi do mình thôi bạn
 1	Chs mà không vào được từ hôm m cơ lãng_mạn dễ_thương lãng_mạn
 1	điềm_đạm
@@ -4262,11 +4262,11 @@
 1	xin con nhà bạn đi loại này cần nhân_giống mọi người ạ nồng_ấm
 0	mùa_đông không lạnh hôm_nay trời trở lạnh Công_nhận mình lạnh_lẽo đến ghê ghớm Sau khi được lời thú_nhận chắc chết cóng
 0	Chủ thớt đang mơ đúng Ko
-0	bê_bối phẩm
+0	bê_bối bạo_hành
 0	Đoc xong đau
 1	Đọc xong vẫn thấy mình đẹp_trai hơn hấp_dẫn hấp_dẫn
 1	viết sâu quá xinh_xắn
-0	xuống đi thớt trời lạnh
+0	bạo_hành trời lạnh
 0	mua bao_nhiêu oqr hiệu nào vậy
 1	haha
 0	vậy bạn nên cất thật kĩ vào mang ra khoe lại có FA nào hớt tay_trên mất đấy
@@ -4283,7 +4283,7 @@
 0	Ad ơi lời thú_nhận của tớ vừa gửi sao không đăng Cái đấy cấp_thiết lắm Ad ơi
 0	em ơi rơi này Bích_Ngọc
 0	mai ngày / bắt_đầu luôn rồi 
-0	khổ_sở khổ_sở
+0	khổ_sở bạo_hành
 0	Cái tổng khi đăng_kí môn_học là gì ấy các c Ai giải_thích hộ với
 1	có rồi mà k / bay_bướm
 1	cho em hỏi câu hơi ngu người tẹo là đóng học_phí này là cho kì hay kì chu_toàn
