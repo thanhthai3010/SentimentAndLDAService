@@ -54,7 +54,6 @@ an_lành
 ân_nghĩa
 an_nhàn
 an_nhiên
-an_ninh
 an_phận
 an_sinh
 an_thân
@@ -366,7 +365,6 @@ bực_bội
 bực_dọc
 bức_thiết
 bức_xúc
-búi
 bùi
 bụi
 bùi_ngùi
@@ -926,7 +924,6 @@ dạt_dào
 đau_lòng_đến_thế_nào
 đau_nhói
 đau_thương
-đầu_tiên
 đau_xót
 đầy
 đẫy_đà
@@ -3795,3 +3792,9 @@ hí
 thắng_lợi
 hối_hận
 cảm_ơn
+phung_phí
+ru_rú
+xa_xỉ
+chèn_ép
+khốn_nạn
+vl
