@@ -724,3 +724,4 @@ spkt	Sư Phạm Kĩ Thuật
 ngĩ	nghĩ
 bn	bạn
 xĩ	xỉ
+mih	mình
