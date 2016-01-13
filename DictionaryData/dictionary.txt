@@ -723,3 +723,4 @@ cfs	lời thú nhận
 spkt	Sư Phạm Kĩ Thuật
 ngĩ	nghĩ
 bn	bạn
+xĩ	xỉ
