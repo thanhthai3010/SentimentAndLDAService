@@ -49,7 +49,7 @@ public class ClassifySentiment implements Serializable {
 	/**
 	 * size of vocabulary for hashing table
 	 */
-	private static final int SIZE_OF_HASHINGTF = 40000;
+	private static final int SIZE_OF_HASHINGTF = 100000;
 	
 	/**
 	 * value of min document frequence
@@ -115,7 +115,7 @@ public class ClassifySentiment implements Serializable {
                 String filter = datas[1].replaceAll("[0-9]", STRING_SPACE);
                 List<String> myList = Arrays.asList(Stopwords.removeStopWords(filter).split(STRING_SPACE));
                 return new LabeledPoint(Double.parseDouble(datas[0]), hashingTF.transform(myList));
-        }); 
+        }).cache(); 
         // 3.) Create a flat RDD with all vectors
         JavaRDD<Vector> hashedData = tupleData.map(label -> label.features());
 //        hashedData.saveAsTextFile("hashedData");
