@@ -55,9 +55,9 @@ public class Stopwords {
 	 * @param input String
 	 * @return String after remove StopWords
 	 */
-	public static String removeStopWords(String string) {
+	public static String removeStopWords(String inputSentences) {
 		String result = "";
-		String[] words = string.split("\\s+");
+		String[] words = inputSentences.split("\\s+");
 		for (String word : words) {
 			if (!word.isEmpty() && !isStopword(word)) {
 				result += (word + " ");
@@ -65,4 +65,5 @@ public class Stopwords {
 		}
 		return result;
 	}
+	
 }
