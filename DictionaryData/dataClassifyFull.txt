@@ -63,7 +63,7 @@
 1	cơ_cấu cả rồi dịu_hiền
 0	láo_toét và tồi_tàn
 1	nổi_trội nhà mình đi lạc vào thành_phố hồ chí minh cũng nhiều lắm nổi_danh
-1	trong sì gòn nóng bỏ_mẹ chỉ có ngoài bắc thì noel lông cừu ms phát_huy tác_dụng đào_hoa
+1	trong sì gòn nóng chỉ có ngoài bắc thì noel lông cừu ms phát_huy tác_dụng đào_hoa
 0	chi yulee con bò mục_nát
 1	hẳn là hậu quá dịu_hiền
 1	may quá ngon ngủ yên từ tới cảm_ơn tốt_bụng bên nhiều nhé em ngại
@@ -129,7 +129,7 @@
 1	tới cổ rồi đýtt gì nữa m có_hiếu trâm
 1	bổ_ích
 0	những cảnh_báo hèn_nhát cần cảnh_báo ngay_lập_tức ăn 
-1	em mở giáo_trình ra và bắt_đầu_từ giáo_trình nhá à bỏ cái bầy sách ra hiệu_nghiệm
+1	em mở giáo_trình ra và bắt_đầu_từ giáo_trình nhá à cái bầy sách ra hiệu_nghiệm
 0	cả kì không gì thì cuối kì cần gì phải tất_cả là do ăn_ở viết đề_cương rồi đi em hết đừng bỏ câu nào
 1	triết 1 em cứ lấy ví_dụ chém nhé không cần thuộc lý_thuyết hiểu là được
 1	5 năm như anh cho chắc tuấn_tú hăng_say chân_tình tuấn_tú vị_tha vô_địch cần_cù tuấn_tú
@@ -181,7 +181,7 @@
 0	làm điều vô_vị
 1	f5 nút bấm cho mọi vấn_đề hài
 1	cứ từ_từ cháu nào cũng có phần hơm phải vội_vàng quá vậy
-1	năm nay các em bn người bỏ cuộc_chơi rồi trong đó có chị chân_tình
+1	có chị chân_tình
 1	em cảm_ơn admin em được rồi ạ điềm_đạm
 1	hay thật dịu_hiền chung_thủy
 0	khiếp ngày_xưa để quên 1 cái hộp trong có cái kính mới được 1 năm của mình mà chạy loăng quoăng cả tuần sau đó cũng không thấy được ơn giời thế
@@ -296,9 +296,9 @@
 0	có cảm_giác máu đang lên lớ_ngớ là dính phốt
 1	đéo tin toàn_diện
 1	anh ơi tỏ_tình lãng_mạn lịch_lãm đê * * 
-0	 càng nặng_lòng càng khổ
+0	càng nặng_lòng càng khổ
 1	Pepero_Pepero nữa hạnh_phúc
-0	Bỏ nguyên ngày làm_quà tới gây_lộn Trưa ct đây Và tới vẫn FA hèn_mọn
+0	bỏ nguyên ngày làm_quà tới gây_lộn Trưa ct đây Và tới vẫn FA hèn_mọn
 0	Mong như nó mà méo Cơ_mà gió mát quá vô_kỷ_luật
 0	Mai_mốt biết hủ_tiếu hoành_thánh nước bún_bò ở đâu_đây khóc_lóc nặng_lời vô_kỷ_luật
 0	mình thấy nhiều lúc a cũng đông vào mà co ngờ lại như_thế vô_kỷ_luật
@@ -403,7 +403,7 @@
 1	thần_tượng thành_thật
 1	rất thành_thật
 1	ôi hâm_mộ lắm chu_toàn
-1	idol của em tưng_bừng đã từng bỏ tiết chuyên nghành để đi chùa tiết của có_hiếu
+1	idol của em tưng_bừng đã từng tiết chuyên nghành để đi chùa tiết của có_hiếu
 1	chẳng có tiết nào_hay hơn tiết vô_tư
 1	ở nhà đắp chăn ngủ sướng hơn toàn_diện
 0	đi chơi về muộn đi bộ ngang qua ao chùa gần chợ phùng khoang thấy 2 đôi cầm ô che mưa rồi cứ đứng giữa trời mưa nhau chẳng hiểu sao họ không chỗ trú đi trời rét rồi đau_khổ
@@ -1051,14 +1051,14 @@
 0	cố lên mình cũng hay cj bằng kép này và vẫn sống nhởn_nhơ kêu_ca
 1	lên rồi đẹp_duyên thực_ra cải_thiện cũng được cơ_mà tốn time với money #
 1	cố lên nhiều lúc mình cũng thấy hối_hận lắm nhưng nghĩ thương bố_mẹ nên lại cố_gắng thôi
-1	vừa_phải lên chị đời có nhiều khó_khăn chông_gai nhưng không được gục ngã đâu ạ mạnh_mẽ lên chị nhé khi nào chị có ý_nghĩ từ_bỏ thì hãy nghĩ ban_đầu mình đã cố_gắng thế_nào
+1	vừa_phải lên chị đời có nhiều khó_khăn chông_gai nhưng không được gục ngã đâu ạ mạnh_mẽ lên chị nhé khi nào chị có ý_nghĩ thì hãy nghĩ ban_đầu mình đã cố_gắng thế_nào
 1	theo lao rồi thì cố mà theo nhá đừng có để bê xê lết đấy lấp_lánh
-0	ờ mệt lắm đang cố đây dốt_nát
+0	ờ mệt lắm đang cố đây dốt_nát từ_bỏ
 1	không lan quyên cơ_mà học_phí lên rồi nha chế thuận_tiện
-1	bỏ thôi 1 bằng cho nhàn
+1	thôi 1 bằng cho nhàn
 1	cố lên thớt em cũng tình_trạng như thớt đây nhưng mới năm nhất đam lao phải theo lao thôi huy_hoàng
 1	kỳ này em cũng đường_lối nên anh / chị nào có  thì cho em hóng với lý_tưởng
-0	dốt_nát vì ngủ_gật
+0	dốt_nát vì ngủ_gật từ_bỏ
 1	mang sách vào chép đọc kĩ đề vào nhé chắc_chắn trên 5 lấp_lánh
 1	hình_như vẫn còn để khi nào về hôm_nay rồi thử lấp_lánh
 1	biết_đâu hoàn_mĩ
@@ -1330,7 +1330,7 @@
 0	quan_tâm miệng thế_gian làm_gì mệt người nhọ
 1	18 + hết rồi mà ad lỗi_lạc
 1	thương bố_mẹ thương thì cố mà cai nhé rồi chúc bạn thành_công
-1	thực_sự thì đéo phải nó gây nghiện mà là bạn không đủ dũng_cảm để bỏ nó của 1 thánh niên đã cai nghiẹn  thành_công
+1	thực_sự thì đéo phải nó gây nghiện mà là bạn không đủ dũng_cảm để nó của 1 thánh niên đã cai nghiẹn  thành_công
 1	có 1 cách rất đơn_giản là chuyển nghiện cái khác
 0	có cái gì canh_cánh trong lòng
 1	kiểu nói nghe không thực_tâm lỗi_lạc
@@ -1346,7 +1346,7 @@
 1	ngay_thẳng
 1	chủ thớt chắc zai chính_trị rồi hoàn_mĩ
 1	ế khoa mình lên sóng kìa tức_cười
-1	bỏ luôn là chuẩn rồi ngộ_nghĩnh đợi 1 thời_gian rồi chị sẽ nhận được 1 câu anh không quên được cô ấy xin_lỗi em điển_trai điển_trai nhiệt_tình
+1	là chuẩn rồi ngộ_nghĩnh đợi 1 thời_gian rồi chị sẽ nhận được 1 câu anh không quên được cô ấy xin_lỗi em điển_trai điển_trai nhiệt_tình
 1	giống chuyện của cị cách đây 3 năm thế cừ_khôi hệt nhưng cuối_cùng cị quyết_định dứt_khoát thì 3 tháng sau bạn í ct người iêu hy_vọng
 1	tham gớm mê_li
 1	nghe quen_quen song_toàn giống ai đó hồi xưa quá lãng_mạn
@@ -1855,8 +1855,8 @@
 1	chửi mà cũng khang_trang nữa nà nóng_bỏng
 1	sao mà nói_khó nghe thế ngồ_ngộ
 0	ra nhà_khách đi chế khó tánh thật
-0	ngồi xuống là ngủ_gật liền
-1	nàng này hay bõ ra no_nê nàng này bỏ_mẹ rồi nàng ơi = ^ ~ ^ =
+0	ngồi xuống là ngủ_gật liền bỏ_mẹ
+1	nàng này hay bõ ra no_nê nàng này rồi nàng ơi = ^ ~ ^ =
 1	khang_trang tóa nàng ơi thanh_thản nghiêm kiểu gì mà yêu như rứa thì con nào mà vui_sướng
 0	chuyển phòng liền ở_vậy coi_chừng bệnh á
 0	phòng mình cũng v nó mở vòi_nước không tắt luôn kìa chứ nói chi sáng nó dậy cái nó mở nhạc không cho ai ngủ hết tùm_lum chệt mắc mệt cùng_cực
@@ -1874,9 +1874,9 @@
 0	thật lòng mà nói thì bạn c giống chút nào lời_lẽ giọng_điệu chẳng khác_gì bọn vô_học 
 1	cứ cho đi gì bạn muốn nhận ngay_thẳng
 1	bạn chịu_khó qua a 14 lấy nước qua uống đỡ đi
-0	vâng rất nhiềm nan_giải
+0	vâng rất nhiềm nan_giải bỏ_mẹ
 0	làm đơn chuyển qua b đi nan_giải
-0	tồi_tệ tồi
+0	tồi_tệ tồi bỏ_mẹ
 1	ở 4 tươi_sáng mà lộng_lẫy lộng_lẫy
 1	chào bà_con em là khủng_long xanh cho em hỏi 4 ở đâu vậy ngại_ngùng
 1	bảo_vệ cũng tùy người nói chung_chung vậy cũng tội người đàng_hoàng nghiêm_túc như bác kiêm sơn anh tá tân 
@@ -1922,7 +1922,7 @@
 1	đích_thị pồ nhà người_ta tuấn_tú chứ pồ nhà mình không kêu bức tóc thôi chứ cột khỉ gì mạnh_khoẻ
 1	quả_là phát hờn vui_sướng
 1	hồi nảy gặp 1 bạn buộc tóc cho 1 bạn khác tươi_tốt có vẽ hp
-0	thớt kể chi vậy đểu_cáng hờn cả thế giớiiiiiiiii ru_rú áp_lực
+0	thớt kể chi vậy đểu_cáng hờn cả thế giớiiiiiiiii ru_rú áp_lực bỏ_mẹ
 1	thích thì nhích thấy chưa
 1	đáng thân_quen thật
 1	thích nhỡ
@@ -1940,7 +1940,7 @@
 1	anh ời thanh_thản
 1	giá_như có truyện_tranh vô_địch
 1	thoáng
-0	ác_độc dỏm áp_lực
+0	ác_độc dỏm áp_lực bỏ_mẹ
 0	dốt_nát và ngu_xuẩn dỏm áp_lực
 1	sau chuyện này bạn đã cao thêm cm thanh_thản
 0	cái bíp lo đi tinh_tế rồi hối_hận
@@ -1975,8 +1975,8 @@
 1	thanh_niên manh_động lĩnh hậu qả lôi_cuốn
 1	thanh_niên đổ vỏ vui_nhộn
 1	ca này khó hoan_hỉ
-0	dốt_nát và ngu_xuẩn
-0	chịgái nguy_hiểm thặc
+0	dốt_nát và ngu_xuẩn bỏ_mẹ
+0	chị_gái nguy_hiểm thặc bỏ_mẹ
 1	dự_đoán nào thân_thiện
 1	cho mình hỏi 007 tập nào v ạ cao_thượng
 1	ad nói đúng người mạnh phải là người nhấc lên được và đặt xuống nhẹ cố lên
@@ -2332,7 +2332,7 @@
 1	cũng khá_giả mà 1 cũ cho_hay hi
 1	phòng 19h ca_nhạc 16h bắt_đầu sửa_soạn khiêm_tốn
 1	b3 150k ba5 200k tập ở 2 bên và hiền_khô bên ba 5 hơn
-1	những lúc như này càng nên cố_gắng ở bên người không_chỉ mới đó mà bỏ được cố lên thớt
+1	những lúc như này càng nên cố_gắng ở bên người không_chỉ mới đó mà được cố lên thớt
 1	cứ nghĩ trong mình không ở 1 mình hết cô_đơn nhưng coi_chừng gặp cô_hồn
 1	tại_sao phải cừ_khôi cơ chứ hiệu_nghiệm
 1	có thằng ra cướp là có đôi có bạn ngay lung_linh
@@ -4031,7 +4031,7 @@
 1	Ủa trang này là của nhân_văn hà_nội hay tphcm vậy mọi nguời
 0	Ốm người với Nhà_nước và pháp_luật đây Chỉ mong chữ n vào thôi là
 1	Đáng niềm_nở vui_mừng vui_mừng
-1	nắng bỏ mịa đi đông điếc gì hào_hiệp
+1	hào_hiệp
 1	thôi tài_giỏi Chúc các bạn tốt nhé tớ về tết đây hấp_dẫn tài_giỏi
 1	Sắp có đợt gió_mùa rồi Chúc các bạn tốt nhé
 1	Chúng tớ còn từ cơ vui_mừng vui_mừng vui_mừng
@@ -4358,7 +4358,7 @@
 0	đắng mề thiệt chứ
 1	ổn_thoả
 1	thịnh_soạn Nhà mình đi lạc vào thành_phố hồ chí minh cũng nhiều lắm chu_toàn
-1	trong Sì_Gòn nóng bỏ_mẹ chỉ có ngoài Bắc thì lông cừu ms phát_huy tác_dụng hợp_ý
+1	trong Sì_Gòn nóng chỉ có ngoài Bắc thì lông cừu ms phát_huy tác_dụng hợp_ý
 0	Chi_Yulee chán_nản
 1	Hẳn là hậu quá yên_lòng
 1	Mình là Thu_Hồng K_Báo chí đây bạn Cảm_ơn c và anh phụ nhiều thịnh_soạn
@@ -4679,7 +4679,7 @@
 0	Mà tưởng lời thú_nhận bảo không đăng thắc_mắc học_tập bữa mình cũng hỏi xong bị từ_chối  chửi_thề
 0	sau_này sẽ có rắc_rối lúc em đi_lại không bị vi_phạm kỷ_luật chứ khi trừ
 0	hại cho về sau nguyền_rủa
-0	tội_nghiệp thê_thảm bất_lợi ghen_tị
+0	tội_nghiệp thê_thảm tình_hình bất_lợi ghen_tị
 0	Ối giời_ơi thương quá Pm mình cho mình lụm hàng biến_thái
 0	Sao chưa thấy ai pm mình hết ta sợ_hãi đen_đủi
 0	Sao mình chưa bao_giờ nhường nhể phạm_tội
@@ -4720,7 +4720,7 @@
 0	có bạn_trai rồi bạn ơi nói_tục vừa quen hôm_qua Bạn trễ một bước gòi
 0	Nghe mùi châm_chọc mỉa_mai hay_sao á Ngọc_Thiện vi_phạm
 0	Thôi đừng troll em nua mang làn vô là nghi rồi khả_nghi để em sống yên_ổn bừa_bộn
-0	Ác thiệt ha vi_phạm
+0	ác thiệt ha tình_hình vi_phạm
 0	ngơ_ngẩn phiến_diện vi_phạm
 0	cáo_buộc phạm_tội đã vi_phạm hành_vi gì mà áp_dụng bị_cáo là người Toà_án quyết_định đưa ra xét_xử Ở đây công_an chưa vào_cuộc điều_tra và viện kiểm_soát chưa tiến_hành tố_tụng nên chưa_thể ra tòa Vì_vậy bạn vui_lòng sử_dụng từ nghi can Và nên xem_xét kỹ nếu bạn tố_cáo sai và đưa tin_đồn thất_thiệt sẽ bị khép vào tội VU_KHỐNG Thân
 0	Trc mình bị mất cái lumia ở unimart cảnh_giác
@@ -4788,7 +4788,7 @@
 1	Ôi kĩ_càng
 1	bởi em nghi từ ngày mới quen rồi dạo gần đây lại còn hay lén lén nhắn_tin với ai hoá_ra với trai quá phũ lanh_lợi
 0	khả_nghi thấy đứa hay chat chung lắm nha
-0	Cảm_thấy nhức khủng_khiếp
+0	cảm_thấy tình_hình nhức khủng_khiếp
 1	hai đứa có giấu chị chuyện gì không kĩ_càng
 1	sao công_khai lên này vậy choa xúng_xính
 1	tinh_anh
@@ -4807,7 +4807,7 @@
 0	Thâm quá bức_xúc khó_nhọc
 1	nỗi hết da_gà nhưng nói chuẩn phết đấy D
 0	đang đồng_cảm khúc  chung suy_nghĩ này_nọ qua khúc sau trớt quớt không liên_quan gì luôn bức_xúc sơ_suất
-1	cũng bày_đặt lời thú_nhận ổn_định bỏ nha mậy ổn_định
+1	cũng bày_đặt lời thú_nhận ổn_định mậy ổn_định
 0	không hiểu lắm chủ lời thú_nhận k liên_quan j lên đó thê_thảm lên đó là lên đâu phạm_tội
 1	chưa nghe đồn có người bị ji khi thức_ăn trong nhưng phải công_nhận là nó không được vệ_sinh cho lắm ổn_định thơ_mộng và có_thể là tùy chỗ nữa
 1	Lúc trước thì_có KTX C ( trong là ở TĐ ức cho nấu_ăn nay dẹp r thì chỉ còn KTX nội_thành thôi em khỏe_khoắn
@@ -4840,7 +4840,7 @@
 1	lời khuyên chân_thành từ NLU nói với phụ_trách lớp và đi năn_nỉ các đại_đội khác lại bộ nghe_đâu đền k 
 1	Mấy em mất có bộ có là gì ngày_xưa tụi anh còn ( suýt mất chẵn bộ nhờ công đếm lộn của chị phòng thuê cơ thật_thà kĩ_càng thật_thà
 1	bắt_tay lào khỏe_khoắn
-0	sinh_viên bị thất_lạc phiến_diện nhiều_chuyện
+0	tình_hình sinh_viên bị thất_lạc phiến_diện nhiều_chuyện
 1	nhẹ_nhõm
 1	From NLU with love lạc_quan
 1	nhẹ_nhõm
@@ -4869,7 +4869,7 @@
 0	em đừng lo nha ngày cấp chị dốt tiếng anh cây vì năm cấp chị lớp chuyên toán nhưng bây_giờ đã hơn rất nhiều điển_hình là chị chưa từng rớt bất_kỳ nào kẻ_cả tiếng anh dù chị không_thể quá giỏi như cái danh quốc_tế nhưng gpa vẫn trên đều_đều có_thể em sẽ hoi cực so với các bạn là em phải lại tiếng anh từ lớp thấp nhất nhưng đó không phải là vấn_đề quá lớn em nha Cố lên em Tự_tin lên
 0	mấy anh / chị cho em hỏi là sao em chưa trường mình cập_nhật của thí_sinh nộp vào v ạ sàm_sỡ
 1	Quan_trọng là em có tạo ra để cùng nhau tốt không Nếu em có giỏi mà đơn_độc thì hay làm j cũng khó cả
-0	 của mình là đăng_kí mười_mấy buổi luyện của trường tổ_chức Ở giai_đoạn này chắc không còn lo chuyện kĩ_năng tiếng Anh nữa mà lo chiên thuật gọn vô trọng_tâm vậy_là lợi nhất Thấy i nguy_hiểm nhất_là phần speaking không biết cách giải_quyết từ trước là thọt ngay P / s mình mười_mấy buổi xong ở trường và thật i ngay sau đó đều ổn Bỏ mất một buổi speaking = thọt đúng phần đó trong hai lần bức_xúc
+0	 của mình là đăng_kí mười_mấy buổi luyện của trường tổ_chức Ở giai_đoạn này chắc không còn lo chuyện kĩ_năng tiếng Anh nữa mà lo chiên thuật gọn vô trọng_tâm vậy_là lợi nhất Thấy i nguy_hiểm nhất_là phần speaking không biết cách giải_quyết từ trước là thọt ngay P / s mình mười_mấy buổi xong ở trường và thật i ngay sau đó đều ổn bỏ mất một buổi speaking = thọt đúng phần đó trong hai lần bức_xúc
 0	Theo kinh_nghiệm của chị thì trước khi tuần đi ngủ từ h thức_dậy lúc h tập_thể_dục nhẹ là bữa đi làm được tuốt Đừng lo_lắng quá nhiều
 0	thiếu chuyên_nghiệp đùng cái thông_báo tăng là tăng đưa vào thế đã rồi Trong khi đó lúc PR giới_thiệu không hề đề_cập tới chuyện tăng học_phí Lạm_phát là chuyện đương_nhiên
 0	Lúc PR ai_lại đi giới_thiệu việc tăng học_phí trong khi đó có_thể là bất_lợi Cái này phải đọc thật kĩ trong cuốn tư_vấn tuyển_sinh phần học_phí chỗ chú_thích nho_nhỏ mới thấy vụ tăng học_phí hình_như năm không quá % Tuy_vậy đến khi vào trường mình mới biết tuy là DHQG nhưng trường ta tự_chủ tài_chính tức_là từ học_bổng cái này cũng nặng đô nè cơ_sở vật_chất  đều là từ học_phí mà ra Vậy nên về lý mà nói thì trường có_thể tăng tối_đa % học_phí năm áp_dụng với tất_cả các  không phân_biệt k   Nhưng năm vừa rối đợt tăng % đọt tăng % nếu nói là do làm phát không cũng chưa đúng Thiết_nghĩ quá nhiều người thắc_mắc thì trường nên công_khai tài_chính kế_hoạch tương_lai sử_dụng số học_phí đó để làm_gì xây thêm mấy tòa nhà nửa nói_xấu để phần_nào an_ủi 
@@ -4878,13 +4878,13 @@
 1	inbox a nhé Giải_đáp được j a giải_đáp  thật_thà
 0	áp_lực lắm luôn đó 
 0	Mấy bạn hệ IU buồn tụi mình lk buồn khéo_léo
-0	bạc_bẽo phải làm_sao đây
+0	tình_hình bạc_bẽo phải làm_sao đây
 1	tỉ_giá $ thui khỏe_khoắn híhí
 1	chịu thôi hòa_đồng
 0	Hệ IU đở Hệ LK mới chua_chát đau Mah thôi củng vô thế r Mình không muốn nhưng buộc phải chấp_nhận thôi đau
 0	Cùng chung lớp chung giáo_viên làm chung bài mà thằng đóng $ thằng đóng $ ghê_gớm khóc
 1	cố_gắng thật giỏi để xứng_đáng với ước_mơ công_sức và số tiền_của bạn và gia_đình
-0	lần sau tỉ_giá $ thôi bạn hụt_hẫng
+0	lần sau tỉ_giá $ thôi bạn tình_hình hụt_hẫng
 0	max đắng | t mới chết_đứng đây không biết phải làm thế_nào
 1	chúc_m ổn_định
 0	Bị câm_lặng rồi sáng nghe tin này thất_vọng ghê_gớm cứ lên lên lên không cần care không cần gì hết  và cũng không cần lí_do khéo_léo

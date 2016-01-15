@@ -5,7 +5,6 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.spark.api.java.JavaRDD;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -87,7 +86,7 @@ public class SentimentProcess {
 
 			// create ReportData stored data for status
 			ReportData statusReport = new ReportData(
-					getTypeOfColor(sentiStatus), item.getStatus());
+					getTypeOfColor(sentiStatus), removeHTMLTags(item.getStatus()));
 
 			// set status data to List return object
 			lstRP.setStatusData(statusReport);
@@ -168,18 +167,38 @@ public class SentimentProcess {
 	 * @param input
 	 * @return
 	 */
-	private static String replaceURLFromText(String input) {
+	private String replaceURLFromText(String input) {
 		input = input.replaceAll("(https?|http):((//)|(\\\\))+[\\w\\d:#@%/;$()~_?\\+-=\\\\\\.&]*", " ");
 		input = input.replace("\\", " ");
+		input = input.replace("!", " ");
 		input = input.replace("?", " ");
 		input = input.replace("`", " ");
 		input = input.replace("^", " ");
 		input = input.replace("&", " ");
 		input = input.replace("$", " ");
+		input = input.replace("*", " ");
+		input = input.replace("(", " ");
+		input = input.replace(")", " ");
+		input = input.replace("+", " ");
+		input = input.replace("=", " ");
 		input = input.replace("#", " ");
+		input = input.replace("<", " ");
+		input = input.replace(">", " ");
+		input = input.replace("~", " ");
 		return input;
 	}
 
+	/**
+	 * Remove some HTML Tags
+	 * @param input
+	 * @return String output
+	 */
+	private String removeHTMLTags(String input) {
+		input = input.replace("<", " ");
+		input = input.replace(">", " ");
+		return input;
+	}
+	
 	public static void main(String[] args) {
 		SparkUtil.createJavaSparkContext();
 		Checker.init();
@@ -189,7 +208,7 @@ public class SentimentProcess {
 		SentimentProcess stP = new SentimentProcess();
 		Map<Integer, StatusAndListComment> lstInputForSenti = new LinkedHashMap<Integer, StatusAndListComment>();
 		StatusAndListComment sttACm = new StatusAndListComment();
-		sttACm.setStatus("khoái trá, vui vẻ.");
+		sttACm.setStatus("BẠN NAM HỎI BÀI MÌNH Ạ.. THẾ NHÉ   >>>.<<<<OMG.. mình hơi nóng tính ... đầu tháng đừng gạch đá mình nhé.. các bạn..thân ái chào tạm biệt và không hẹn gặp lại ở CON PHÉT SỪN nữa đâu nhá..Thật là VI DIỆU mè.");
 		List<String> listComment = new ArrayList<String>();
 //		JavaRDD<String> listInput = SparkUtil.getJavaSparkContext().textFile("./DictionaryData/listInput.txt");
 		
