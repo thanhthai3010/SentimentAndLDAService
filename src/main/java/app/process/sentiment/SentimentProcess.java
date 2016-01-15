@@ -99,7 +99,7 @@ public class SentimentProcess {
 
 				// create comment report object
 				ReportData commentReport = new ReportData(
-						getTypeOfColor(getTypeOfColor(sentiComment)), comments);
+						getTypeOfColor(getTypeOfColor(sentiComment)), removeHTMLTags(comments));
 				listCommentReport.add(commentReport);
 			}
 
