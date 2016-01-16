@@ -4,6 +4,8 @@ import java.rmi.RemoteException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -32,6 +34,16 @@ public class FBDatabaseProcess {
 	 * facebook data to insert into database
 	 */
 	private FacebookDataToInsertDB fbDataToInsertDB;
+	
+	/**
+	 * break new line
+	 */
+	private static String NEW_LINE = System.getProperty("line.separator");
+	
+	/**
+	 * String blank
+	 */
+	private static final String STRING_BLANK = "";
 
 	private static final Logger logger = LoggerFactory
 			.getLogger(FBDatabaseProcess.class);
@@ -282,7 +294,7 @@ public class FBDatabaseProcess {
 
 		// loop all pageID input
 		for (String pageID : lstPageID) {
-			String getTableSQL = "SELECT A.PAGE_ID, A.POST_ID, A.POST_CONTENT, B.COMMENT_ID, B.COMMENT_CONTENT "
+			String getTableSQL = "SELECT A.PAGE_ID, A.POST_ID, A.POST_CONTENT, B.COMMENT_ID, B.COMMENT_CONTENT, A.DATE_TIME "
 					+ " FROM POST_DATA A "
 					+ " LEFT JOIN COMMENT_DATA B "
 					+ " ON B.PAGE_ID = A.PAGE_ID "
@@ -305,14 +317,20 @@ public class FBDatabaseProcess {
 				ResultSet rs = preparedStatement.executeQuery();
 				List<String> lstComment = new ArrayList<String>();
 				// default postID
-				String postID = "";
+				String postID = STRING_BLANK;
 				// default postContent
-				String postContent = "";
+				String postContent = STRING_BLANK;
+				// default postCreateTime
+				String postCreateTime = STRING_BLANK;
 				// loop for all records
 				int index = 0;
 				while (rs.next()) {
-					if (postID.equals("") || postID.equals(rs.getString("POST_ID"))) {
+					if (postID.equals(STRING_BLANK) || postID.equals(rs.getString("POST_ID"))) {
+						postCreateTime = formatDateMMDDYYYY(rs.getString("DATE_TIME"));						
+						
 						postContent = rs.getString("POST_CONTENT");
+						postContent = postCreateTime.toString() + NEW_LINE + postContent;
+						
 						String cmContent = rs.getString("COMMENT_CONTENT");
 						if (cmContent != null) {
 							lstComment.add(cmContent);
@@ -328,7 +346,10 @@ public class FBDatabaseProcess {
 						if (cmContent != null) {
 							lstComment.add(cmContent);
 						}
+						postCreateTime = formatDateMMDDYYYY(rs.getString("DATE_TIME"));						
+						
 						postContent = rs.getString("POST_CONTENT");
+						postContent = postCreateTime.toString() + NEW_LINE + postContent;
 					}
 					// update postID value
 					postID = rs.getString("POST_ID");
@@ -489,13 +510,36 @@ public class FBDatabaseProcess {
 		return pageInfo;
 	}
 
+	
+	/**
+	 * Formate date from database to MM/dd/YYYY
+	 * @param dateInput
+	 * @return
+	 */
+	private String formatDateMMDDYYYY(String strInput) {
+		String strOutPut = STRING_BLANK;
+		java.util.Date dateInput = new java.util.Date();
+		
+		SimpleDateFormat sdfmOld = new SimpleDateFormat("yyyy-MM-dd");
+		try {
+			dateInput = sdfmOld.parse(strInput);
+		} catch (ParseException e) {
+			logger.info("Can't formatDateMMDDYYYY " + strInput);
+		}
+		
+		SimpleDateFormat sdfmNew = new SimpleDateFormat("MM/dd/yyyy");
+		strOutPut = sdfmNew.format(dateInput);
+		
+		return strOutPut;
+	}
+	
 	public List<String> getCommentData() {
 		List<String> listComment = new ArrayList<String>();
 
 		PreparedStatement preparedStatement = null;
 
 		String getTableSQL = "SELECT COMMENT_CONTENT" + " FROM COMMENT_DATA "
-				+ " WHERE PAGE_ID = 541752015846507";
+				+ " WHERE PAGE_ID = 500541623341892";
 		preparedStatement = JdbcMySQLDriver.getPrepareStm(getTableSQL);
 		ResultSet rs;
 		try {
@@ -518,10 +562,10 @@ public class FBDatabaseProcess {
 		List<String> lstPageID = new ArrayList<String>();
 		lstPageID.add("447498478655695");
 		FacebookData data = fbd.getFBDataByPageIDAndDate(lstPageID,
-				"2015-12-17", "2016-01-03");
+				"2016-01-01", "2016-01-04");
 		for (Integer key : data.getFbDataForService().keySet()) {
 			System.out.println("-- " + key );
-			System.out.println("-- " + data.getFbDataForService().get(key).getListComment() );
+			System.out.println("-- " + data.getFbDataForService().get(key).getStatus());
 		}
 	}
 }

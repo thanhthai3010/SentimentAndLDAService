@@ -90,7 +90,7 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 			// init data for classify sentiment
 			ClassifySentiment.createClassify();
 		} catch (Exception e) {
-			e.printStackTrace();
+			logger.info("Can't create RMI " + e.getMessage());
 		}
 	}
 
