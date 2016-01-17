@@ -19,6 +19,7 @@ import app.server.handling.JdbcMySQLDriver;
 import app.utils.dto.Comment_Data;
 import app.utils.dto.FacebookData;
 import app.utils.dto.FacebookDataToInsertDB;
+import app.utils.dto.Feed_Back;
 import app.utils.dto.Page_Info;
 import app.utils.dto.Post_Data;
 import app.utils.dto.StatusAndListComment;
@@ -531,6 +532,42 @@ public class FBDatabaseProcess {
 		strOutPut = sdfmNew.format(dateInput);
 		
 		return strOutPut;
+	}
+	
+	/**
+	 * Save data from feedBack of endUser
+	 * @param feedBack Feed_Back
+	 */
+	public void saveFeedBack(Feed_Back feedBack) {
+		// PreparedStatement
+		PreparedStatement preparedStatement = null;
+
+		String insertTableSQL = "INSERT INTO FEED_BACK"
+				+ " (FEEDBACK_CONTENT, FEEDBACK_LABEL) VALUES"
+				+ " (?, ?)";
+
+		try {
+			preparedStatement = JdbcMySQLDriver.getPrepareStm(insertTableSQL);
+
+			// Set page name
+			preparedStatement.setString(1, feedBack.getFeedBack_Content());
+
+			// Set page image
+			preparedStatement.setInt(2, feedBack.getFeedBack_Label());
+
+			// execute insert SQL stetement
+			preparedStatement.executeUpdate();
+			logger.info("Done save FEED_BACK");
+		} catch (SQLException e) {
+			logger.info(e.getMessage());
+		} finally {
+			if (preparedStatement != null)
+				try {
+					preparedStatement.close();
+					JdbcMySQLDriver.closeConn();
+				} catch (SQLException logOrIgnore) {
+				}
+		}
 	}
 	
 	public List<String> getCommentData() {

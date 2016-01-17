@@ -6,6 +6,7 @@ import java.util.List;
 
 import app.utils.dto.FacebookData;
 import app.utils.dto.FacebookDataToInsertDB;
+import app.utils.dto.Feed_Back;
 import app.utils.dto.ListReportData;
 import app.utils.dto.ListTopic;
 import app.utils.dto.Page_Info;
@@ -79,4 +80,11 @@ public interface ServerInterf extends Remote {
 	 * @throws RemoteException
 	 */
 	public List<Page_Info> getListPageInfo() throws RemoteException;
+	
+	/**
+	 * Save feedBack from endUser
+	 * @param feedBack Feed_Back
+	 * @throws RemoteException
+	 */
+	public void saveFeedBack(Feed_Back feedBack) throws RemoteException;
 }

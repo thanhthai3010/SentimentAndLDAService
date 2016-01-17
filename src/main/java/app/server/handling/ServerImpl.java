@@ -23,6 +23,7 @@ import app.process.lda.LDAProcess;
 import app.process.lda.Stopwords;
 import app.utils.dto.FacebookData;
 import app.utils.dto.FacebookDataToInsertDB;
+import app.utils.dto.Feed_Back;
 import app.utils.dto.ListReportData;
 import app.utils.dto.ListTopic;
 import app.utils.dto.Page_Info;
@@ -190,5 +191,10 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 	@Override
 	public Page_Info getPageInfoByPageID(String pageID) throws RemoteException {
 		return fbDatabase.getPageInfoByPageID(pageID);
+	}
+
+	@Override
+	public void saveFeedBack(Feed_Back feedBack) throws RemoteException {
+		fbDatabase.saveFeedBack(feedBack);
 	}
 }
