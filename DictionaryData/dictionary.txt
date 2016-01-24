@@ -719,7 +719,6 @@ vk	vợ
 ck	chồng
 vl	vãi
 vcl	vãi
-cfs	lời thú nhận
 spkt	Sư Phạm Kĩ Thuật
 ngĩ	nghĩ
 bn	bạn
