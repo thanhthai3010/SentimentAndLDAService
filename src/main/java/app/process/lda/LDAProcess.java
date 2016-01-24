@@ -38,7 +38,6 @@ import app.utils.spark.SparkUtil;
  */
 public class LDAProcess implements Serializable {
 
-
 	/**
 	 * 
 	 */
@@ -70,7 +69,7 @@ public class LDAProcess implements Serializable {
 	/**
 	 * Number of iterations
 	 */
-	private static final int MAX_ITERATIONS = 20;
+	private static final int MAX_ITERATIONS = 50;
 	
 	/**
 	 * Some parameter to run LDA Model
@@ -82,6 +81,11 @@ public class LDAProcess implements Serializable {
 	 * Max value of number of topics
 	 */
 	private static final int MAX_NUMBER_TOPIC = 10;
+	
+	/**
+	 * Default value of seed.
+	 */
+	private static final int DEFAULT_SEED_VALUE = 0;
 	
 	/**
 	 * This will contain
@@ -495,7 +499,7 @@ public class LDAProcess implements Serializable {
 		for (int i = DEFAULT_NUMBER_OF_TOPIC; i < MAX_NUMBER_TOPIC; i++) {
 			
 			DistributedLDAModel estimateLDA =	(DistributedLDAModel) new LDA()
-			.setK(i).setMaxIterations(maxIterations).run(inputVectorForLDA);
+			.setK(i).setMaxIterations(maxIterations).setSeed(DEFAULT_SEED_VALUE).run(inputVectorForLDA);
 			
 			// get logLikelihood() value:
 			double logLikelihood = estimateLDA.logLikelihood();
