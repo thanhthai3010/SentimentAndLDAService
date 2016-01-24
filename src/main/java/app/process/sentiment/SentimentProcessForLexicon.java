@@ -81,11 +81,10 @@ public class SentimentProcessForLexicon {
 			String correctSentence = correctSpellAndEmoticons(comment.toLowerCase());
 			correctSentence = correctSentence.replaceAll("[0-9]", REGEX_SPACE);
 			String removedURL = replaceURLFromText(correctSentence);
-			removedURL = removedURL.replaceAll(
-					"[\\<\\>\\|\\/\\:\\#\\)\\(\\%\\+]", "");
+			//removedURL = removedURL.replaceAll("[\\<\\>\\|\\/\\:\\#\\)\\(\\%\\+]", "");
 			if(removedURL.length() > 7){
 				// sentiment value of comment
-				sentiComment = runLexiconSentiment(removedURL);
+				sentiComment = runAnalyzeSentiment(removedURL);
 				// create comment report object
 				commentReport = new ReportData(
 						getTypeOfColor(sentiComment), removedURL);
@@ -105,6 +104,8 @@ public class SentimentProcessForLexicon {
 		int numCore = Runtime.getRuntime().availableProcessors();
         final ScheduledExecutorService sES = Executors.newScheduledThreadPool(numCore - 1);
 		
+        listPieData.clear();
+        
 		for (final int postID : lstInputForSenti.keySet()) {
 			
 			Runnable excuteOneStatus = new Runnable() {
@@ -220,11 +221,11 @@ public class SentimentProcessForLexicon {
 		double rs = 0.0;
 		try {
 			// First, we need to correct spelling and covert emoticons
-			String correctSentence = correctSpellAndEmoticons(inputText);
+			/*String correctSentence = correctSpellAndEmoticons(inputText);
 			correctSentence = correctSentence.replaceAll("[0-9]", REGEX_SPACE);
-			String removeURL = replaceURLFromText(correctSentence);
+			String removeURL = replaceURLFromText(correctSentence);*/
 			// Token each word in this sentence
-			String[] rsCheckedAndToken = tokenizer.tokenize(removeURL);
+			String[] rsCheckedAndToken = tokenizer.tokenize(inputText);
 			if (rsCheckedAndToken.length > 0) {
 				// Calculate score of this sentence
 				rs = ClassifySentiment.getClassifyOfSentiment(rsCheckedAndToken[0]);
@@ -308,10 +309,10 @@ public class SentimentProcessForLexicon {
 		FacebookData fbData = fbDB.getFBDataByPageIDAndDate(new ArrayList<String>(){
 			private static final long serialVersionUID = 1L;
 			{
-				add("541752015846507");//UEL 
+				add("220306294811118");//UEL 
 				//add("436347149778897");//KTXA
 			}
-		}, "2015-09-01", "2015-10-15");
+		}, "2015-10-01", "2015-10-10");
 		System.out.println("data size: " + fbData.getFbDataForService().size());
 		
 		SentimentProcessForLexicon sm = new SentimentProcessForLexicon();

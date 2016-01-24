@@ -20,6 +20,9 @@ public class Topic implements Serializable {
 	
 	/** value to draw Word-Cloud */
 	private List<TextValueWordCloud> textValues;
+	
+	//qtran
+	private String titleTooltip;
 
 	public Topic(int idTopic) {
 		this.idTopic = idTopic;
@@ -40,5 +43,13 @@ public class Topic implements Serializable {
 
 	public void setTextValues(List<TextValueWordCloud> textValues) {
 		this.textValues = textValues;
+	}
+
+	public String getTitleTooltip() {
+		return titleTooltip;
+	}
+
+	public void setTitleTooltip(String titleTooltip) {
+		this.titleTooltip = titleTooltip;
 	}
 }

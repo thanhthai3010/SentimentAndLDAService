@@ -5,6 +5,7 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.sql.SQLException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -120,6 +121,8 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 		Map<Integer, LinkedHashMap<String, Double>> describeTopics = LDAProcess.getDescribeTopics();
 		
 		ListTopic listTP = new ListTopic();
+		StringBuffer titleTooltip = new StringBuffer();
+		DecimalFormat doubleFormat = new DecimalFormat("0.000");
 
 		for (Integer key : describeTopics.keySet()) {
 			Topic tp = new Topic(key);
@@ -127,7 +130,14 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterf {
 			for (Entry<String, Double> entry : value.entrySet()) {
 				TextValueWordCloud ns = new TextValueWordCloud(entry.getKey(), entry.getValue());
 				tp.getTextValues().add(ns);
+				//qtran
+				titleTooltip.append(entry.getKey());
+				titleTooltip.append(": ");
+				titleTooltip.append(doubleFormat.format(entry.getValue()));
+				titleTooltip.append(",");
 			}
+			tp.setTitleTooltip(titleTooltip.toString());
+			titleTooltip.delete(0, titleTooltip.length());
 			listTP.add(tp);
 		}
 		
